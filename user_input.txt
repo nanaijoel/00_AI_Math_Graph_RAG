@@ -1,1 +1,1 @@
-Definition, satz, Bemerkungen und Rechenregeln zu Gradient
+Satz udn Definition und Beispiele zu Substitution

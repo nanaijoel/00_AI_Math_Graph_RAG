@@ -23,7 +23,7 @@ def main():
 
     call_script("03_graph_search_keywords.py", user_input)
 
-    # call_script("05_create_vector_guess.py", user_input)
+    call_script("05_create_vector_guess.py", user_input)
 
     call_script("06_prepare_LLM_input.py", user_input)
 

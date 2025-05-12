@@ -13,64 +13,38 @@ Verwende dazu folgende Struktur:
 Beginne den Text nach \begin{document} und beende ihn mit \end{document}.
 
 ### USER-FRAGE ###
-Definition, satz, Bemerkungen und Rechenregeln zu Gradient
+Satz udn Definition und Beispiele zu Substitution
 
 ### GRAPH-SUCHE ###
 ##### STAGE: Alle Begriffe in Unterkapiteln #####
 
-Seitenbereich: 40–41
+Seitenbereich: 61–64
 
 → Nachbarn (ausgehend):
-  → 2.5.2_Definition_Definition_2.19 (Seite 40)
-  → 2.5.2_Bemerkungen_Bemerkungen (Seite 40)
-  → 2.5.2_Beispiele_Beispiele (Seite 41)
-  → 2.5.2_Satz_Satz_2.12 (Seite 41)
-  → 2.5.2_Satz_Satz_2.13 (Seite 41)
+  → 3.1.1_Satz_Satz_3.1 (Seite 61)
+  → 3.1.1_Beweis_Beweis_Durch_Anwenden_der_Sum (Seite 61)
+  → 3.1.1_Beispiele_Beispiele (Seite 61)
+  → 3.1.1_Bemerkungen_Bemerkungen (Seite 63)
+  → 3.1.1_Satz_Satz_3.2 (Seite 64)
+  → 3.1.1_Beweis_Beweis_Wir_zeigen_mehrere_Var (Seite 64)
 ← Nachbarn (eingehend):
-  ← 2.5 Mehrfach-Differentiale (Seite 40)
-
-==================================================
-
-Seitenbereich: 45–46
-
-→ Nachbarn (ausgehend):
-  → 2.5.6_Satz_Satz_2.17 (Seite 45)
-  → 2.5.6_Beweis_Beweis_Siehe_Übungen. (Seite 45)
-  → 2.5.6_Satz_Satz_2.18 (Seite 45)
-  → 2.5.6_Bemerkungen_Bemerkungen (Seite 46)
-  → 2.5.6_Definition_Definition_2.25 (Seite 46)
-  → 2.5.6_Anwendungen_Anwendungen (Seite 46)
-← Nachbarn (eingehend):
-  ← 2.5 Mehrfach-Differentiale (Seite 40)
+  ← 3.1 Integrationsmethoden (Seite 61)
 
 ==================================================
 
 ##### STAGE: Einzelbegriffe in Unterkapiteln #####
 
-Seitenbereich: 40–41
+Seitenbereich: 61–64
 
 → Nachbarn (ausgehend):
-  → 2.5.2_Definition_Definition_2.19 (Seite 40)
-  → 2.5.2_Bemerkungen_Bemerkungen (Seite 40)
-  → 2.5.2_Beispiele_Beispiele (Seite 41)
-  → 2.5.2_Satz_Satz_2.12 (Seite 41)
-  → 2.5.2_Satz_Satz_2.13 (Seite 41)
+  → 3.1.1_Satz_Satz_3.1 (Seite 61)
+  → 3.1.1_Beweis_Beweis_Durch_Anwenden_der_Sum (Seite 61)
+  → 3.1.1_Beispiele_Beispiele (Seite 61)
+  → 3.1.1_Bemerkungen_Bemerkungen (Seite 63)
+  → 3.1.1_Satz_Satz_3.2 (Seite 64)
+  → 3.1.1_Beweis_Beweis_Wir_zeigen_mehrere_Var (Seite 64)
 ← Nachbarn (eingehend):
-  ← 2.5 Mehrfach-Differentiale (Seite 40)
-
-==================================================
-
-Seitenbereich: 45–46
-
-→ Nachbarn (ausgehend):
-  → 2.5.6_Satz_Satz_2.17 (Seite 45)
-  → 2.5.6_Beweis_Beweis_Siehe_Übungen. (Seite 45)
-  → 2.5.6_Satz_Satz_2.18 (Seite 45)
-  → 2.5.6_Bemerkungen_Bemerkungen (Seite 46)
-  → 2.5.6_Definition_Definition_2.25 (Seite 46)
-  → 2.5.6_Anwendungen_Anwendungen (Seite 46)
-← Nachbarn (eingehend):
-  ← 2.5 Mehrfach-Differentiale (Seite 40)
+  ← 3.1 Integrationsmethoden (Seite 61)
 
 ==================================================
 
@@ -78,287 +52,139 @@ Seitenbereich: 45–46
 
 
 ### WICHTIGE LATEX-SEITEN ###
-### LaTeX-Seite 40 ###
+### LaTeX-Seite 61 ###
 
-\subsection*{2.5 Mehrfach-Differentiale}
-\subsection*{2.5.1 Partielle Ableitungen}
-Wir betrachten die folgende Definition.
+\section*{Kapitel 3}
+\section*{Integralrechnung}
+\subsection*{3.1 Integrationsmethoden}
+\subsection*{3.1.1 Substitution}
+Wir betrachten den folgenden Satz.
 
-\section*{Definition 2.18 Partielle Ableitung}
-Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine reellwertige Funktion. Die partiellen Ableitungen von $f$ sind die Ableitungen von $f$ nach jeweils einer der $n$ Variablen, wobei die anderen als Konstanten betrachtet werden.
+\section*{Satz 3.1 Integration durch Substitution}
+Seien $f: \mathbb{R} \rightarrow \mathbb{R}$ eine integrierbare Funktion mit Stammfunktion $F: \mathbb{R} \rightarrow \mathbb{R}, u: \mathbb{R} \rightarrow \mathbb{R}$ eine differentierbare Funktion und $x_{0}, x_{\mathrm{E}} \in \mathbb{R}$ mit $x_{0}<x_{\mathrm{E}}$, dann gilt folgendes.\\
+(a) $\int f(u(x)) \cdot u^{\prime}(x) \mathrm{d} x=\int f(u) \mathrm{d} u=F(u(x))+c$\\
+(b) $\int_{x_{0}}^{x_{\mathrm{E}}} f(u(x)) \cdot u^{\prime}(x) \mathrm{d} x=\int_{u\left(x_{0}\right)}^{u\left(x_{\mathrm{E}}\right)} f(u) \mathrm{d} u=F\left(u\left(x_{\mathrm{E}}\right)\right)-F\left(u\left(x_{0}\right)\right)$
 
-Bemerkungen:\\
-i) Eine reellwertige Funktion heisst differntierbar, wenn alle partiellen Ableitungen existieren und stetig sind.\\
-ii) Wie die Ableitung in 1D können auch die partiellen Ableitungen in nD mit Hilfe des Newton-Differenzenquotienten definiert werden gemäss
-
-
-\begin{equation*}
-f_{, \mu}\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right):=\lim _{\delta s \rightarrow 0} \frac{f\left(x_{1} ; x_{2} ; \ldots ; x_{\mu}+\delta s ; \ldots ; x_{n}\right)-f\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right)}{\delta s} . \tag{2.134}
-\end{equation*}
-
-
-iii) Für die Masseinheit erhalten wir
+Beweis: Durch Anwenden der Summen-Regel und Ketten-Regel und weil $F^{\prime}=f$ erhalten wir
 
 
 \begin{equation*}
-\left[f_{, \mu}\right]=\frac{[f]}{\left[x_{\mu}\right]} . \tag{2.135}
+(F(u(x))+c)^{\prime}=F^{\prime}(u(x)) \cdot u^{\prime}(x)+0=f(u(x)) \cdot u^{\prime}(x) . \tag{3.1}
 \end{equation*}
 
 
-iv) Die partiellen Ableitungen beschreiben an jedem Punkt die Steigungen des Funktionsgraphen in Richtung der Koordinatenachsen.\\
-v) In der Literatur sind folgende Schreibweisen gebräuchlich
-
-
-\begin{equation*}
-f_{, \mu}=f_{, x_{\mu}}=f_{x_{\mu}}=\frac{\partial f}{\partial x_{\mu}}=\frac{\partial}{\partial x_{\mu}} f=\partial_{\mu} f . \tag{2.136}
-\end{equation*}
-
-
-\subsection*{2.5.2 Gradient}
-Wir betrachten die folgende Definition.\\
-Definition 2.19 Gradient\\
-Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare reellwertige Funktion. Der Gradient von $f$ ist das Vektorfeld
-
-\[
-\boldsymbol{\nabla} f:=\left[\begin{array}{l}
-f_{, 1}  \tag{2.137}\\
-f_{, 2} \\
-\vdots \\
-f_{, n}
-\end{array}\right]
-\]
-
-Bemerkungen:\\
-i) Der Gradient ist eine allgemeine Konstruktion in nD.
-
-### LaTeX-Seite 41 ###
-
-ii) Ist $f$ ein Skalarfeld, dann ist $\boldsymbol{\nabla} f$ ein Vektorfeld.
+Aus der Newton-Leibniz-Formel folgt sofort (a) und durch Einsetzen der Integrationsgrenzen erhalten wir (b). Damit haben wir den Satz bewiesen.
 
 Beispiele:
 
 \begin{itemize}
-  \item Wir betrachten
+  \item Wir betrachten das unbestimmte Integral
 \end{itemize}
 
 
 \begin{equation*}
-f(x ; y):=x^{2} \cdot y^{2} . \tag{2.138}
+F(x)=\int x \cdot \cos \left(x^{2}\right) \mathrm{d} x . \tag{3.2}
 \end{equation*}
 
 
-Der Gradient von $f$ ist
-
-\[
-\underline{\underline{\nabla f f}}=\left[\begin{array}{l}
-f_{, 1}  \tag{2.139}\\
-f_{, 2}
-\end{array}\right]=\left[\begin{array}{l}
-2 x \cdot y^{2} \\
-x^{2} \cdot 2 y
-\end{array}\right]=\left[\begin{array}{l}
-2 x y^{2} \\
-2 x^{2} y
-\end{array}\right] .
-\]
-
-\begin{itemize}
-  \item Wir betrachten
-\end{itemize}
+Als Substitution wählen wir
 
 
 \begin{equation*}
-f(x ; y ; z):=x^{2} \cdot y+z . \tag{2.140}
+u(x):=x^{2} \Rightarrow u^{\prime}(x)=2 x . \tag{3.3}
 \end{equation*}
 
 
-Der Gradient von $f$ ist
+Wir zeigen mehrere Varianten, um das unbestimmte Integral zu berechnen.
 
-\[
-\underline{\underline{\boldsymbol{\nabla} f}}=\left[\begin{array}{l}
-f_{, 1}  \tag{2.141}\\
-f_{, 2} \\
-f_{3,3}
-\end{array}\right]=\left[\begin{array}{c}
-2 x \cdot y+0 \\
-x^{2} \cdot 1+0 \\
-0+1
-\end{array}\right]=\underline{\underline{\left[\begin{array}{c}
-2 x y \\
-x^{2} \\
-1
-\end{array}\right]} . . . . ~}
-\]
+### LaTeX-Seite 63 ###
 
-Wir betrachten den folgenden Satz.\\
-Satz 2.12 Elementare Rechenregeln für Gradienten\\
-Seien $n \in \mathbb{N}^{+}, g, h: \mathbb{R}^{n} \rightarrow \mathbb{R}$ differentierbare Funktionen und $a, b \in \mathbb{R}$, dann gelten die folgenden Rechenregeln.\\
-(a) Faktor-Regel:\\
-(c) Linearität:
+und somit
 
-$$
-\boldsymbol{\nabla}(a \cdot g)=a \cdot \nabla g
-$$
 
-$$
-\boldsymbol{\nabla}(a \cdot g+b \cdot h)=a \cdot \boldsymbol{\nabla} g+b \cdot \boldsymbol{\nabla} h
-$$
+\begin{align*}
+\underline{\underline{I}} & =\int_{0}^{\frac{\pi}{2}} \sqrt{1-\sin ^{2}(\varphi)} \cdot \cos (\varphi) \mathrm{d} \varphi=\int_{0}^{\frac{\pi}{2}} \sqrt{\cos ^{2}(\varphi)} \cdot \cos (\varphi) \mathrm{d} \varphi=\int_{0}^{\frac{\pi}{2}}|\cos (\varphi)| \cdot \cos (\varphi) \mathrm{d} \varphi \\
+& =\int_{0}^{\frac{\pi}{2}} \cos (\varphi) \cdot \cos (\varphi) \mathrm{d} \varphi=\int_{0}^{\frac{\pi}{2}} \cos ^{2}(\varphi) \mathrm{d} \varphi=\ldots=\frac{\pi}{\underline{4}} \tag{3.14}
+\end{align*}
 
-(b) Summen-Regel:\\
-(d) Produkt-Regel:
 
-$$
-\boldsymbol{\nabla}(g+h)=\boldsymbol{\nabla} g+\boldsymbol{\nabla} h
-$$
+Das verbleibende Integral ist ein Standard-Integral, dass durch partielle Integration berechnet werden kann.
 
-$$
-\boldsymbol{\nabla}(g \cdot h)=(\boldsymbol{\nabla} g) \cdot h+g \cdot \boldsymbol{\nabla} h
-$$
+Bemerkungen:\\
+i) Die Idee hinter der Integration durch Substitution ist die Umkehrung der Ketten-Regel aus der Differentialrechnung.\\
+ii) Durch Anwenden der Substitution kann eine schwierige Integration auf eine einfachere Integration zurückgeführt werden.\\
+iii) Der Begriff Substitution bedeutet "Ersetzung".\\
+iv) Bei der Substitution wird die unabhängige Variable gewechselt gemäss
 
+
+\begin{equation*}
+x \mapsto u \quad \text { oder } \quad u \mapsto x . \tag{3.15}
+\end{equation*}
+
+
+v) Das Kalkulieren mit den Differentialsymbolen ist analog zu den Berechnungsschritten in einem Archimedes-Cauchy-Riemann-Approximationsprozess gemäss\\
+$\delta I \approx f(u(x)) \cdot u^{\prime}(x) \cdot \delta x \approx f(u(x)) \cdot \frac{\delta u}{\delta x} \cdot \delta x=f(u) \cdot \delta u$.\\
+vi) Eine häufige Fehlerquelle bei der Berechnung von bestimmten Integralen durch Substitution ist das Anpassen der Integrationsgrenzen.\\
+vii) In den meisten Fällen aus der Praxis (ca. 90\%) ist die Substitution $u$ eine lineare Funktion der Form\\
+$u(x)=m \cdot x+q \Rightarrow \frac{\mathrm{~d} u}{\mathrm{~d} x}=u^{\prime}(x)=m \Leftrightarrow \mathrm{~d} x=\frac{1}{m} \mathrm{~d} u$.\\
+Erkennt man dies vorweg, dann kann das einfachere Verfahren der linearen Modifikation durchgeführt werden.
+
+Die Methode der Substitution hat nicht nur praktische Bedeutung bei der Berechnung von konkreten Integralen sondern auch bei der Herleitung von Integralformeln. Ein Standard-Beispiel ist die Formel für die kinetische Energie aus der Physik. Dazu betrachten wir einen Körper der Masse $m$, welcher von der Anfangsgeschwindigkeit $v_{0}$ auf die Endgeschwindigkeit $v_{\mathrm{E}}$ beschleunigt wird. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_38b1aac7586f7bdbab24g-1}
+
+Wir betrachten dazu den folgenden Satz.
+
+### LaTeX-Seite 64 ###
+
+\section*{Satz 3.2 Beschleunigungsarbeit}
+Um einen Körper der Masse $m$ von der Anfangsgeschwindigkeit $v_{0}$ auf die Endgeschwindigkeit $v_{\mathrm{E}}$ zu beschleunigen, muss am Körper eine Beschleunigungsarbeit geleistet werden von
+
+
+\begin{equation*}
+\Delta W=\frac{m}{2} \cdot v_{\mathrm{E}}^{2}-\frac{m}{2} \cdot v_{0}^{2} . \tag{3.18}
+\end{equation*}
+
+
+Beweis: Wir zeigen mehrere Varianten um die Beschleunigungsarbeit zu berechnen.\\
+Variante 1: Mit Hilfe des Arbeitsintegrals und mehrfacher Substitution erhalten wir
+
+
+\begin{align*}
+\underline{\underline{\Delta W}} & =\int_{s_{0}}^{s_{\mathrm{E}}} F(s) \mathrm{d} s=\int_{t_{0}}^{t_{\mathrm{E}}} F(s(t)) \cdot \dot{s}(t) \mathrm{d} t=\int_{t_{0}}^{t_{\mathrm{E}}} m \cdot a(t) \cdot v(t) \mathrm{d} t=m \int_{t_{0}}^{t_{\mathrm{E}}} v(t) \cdot \dot{v}(t) \mathrm{d} t \\
+& =m \int_{v_{0}}^{v_{\mathrm{E}}} v \mathrm{~d} v=\left.m \cdot \frac{1}{2} \cdot\left[v^{2}\right]\right|_{v_{0}} ^{v_{\mathrm{E}}}=\frac{m}{2} \cdot\left(v_{\mathrm{E}}^{2}-v_{0}^{2}\right)=\underline{\underline{\frac{m}{2}} \cdot v_{\mathrm{E}}^{2}-\frac{m}{2} \cdot v_{0}^{2} .} \tag{3.19}
+\end{align*}
+
+
+Variante 2: Wir verwenden einen Archimedes-Cauchy-Riemann-Approximationsprozess. Dabei gehen wir nach folgenden Schritten vor.
+
+S1 Lokal: Wir betrachten ein kleines Wegstück $\delta$ s. Die Beschleunigungsarbeit entlang $\delta s$ ist
+
+
+\begin{equation*}
+\underline{\delta W} \approx F(s) \cdot \delta s \approx m \cdot a(t) \cdot \frac{\delta s}{\delta t} \cdot \delta t \approx m \cdot \frac{\delta v}{\delta t} \cdot v \cdot \delta t=\underline{m \cdot v} \cdot \delta v . \tag{3.20}
+\end{equation*}
+
+
+S2 Global: Durch Integration über $v$ erhalten wir die Beschleunigungsarbeit
+
+
+\begin{equation*}
+\underline{\underline{\Delta W}}=m \int_{v_{0}}^{v_{\mathrm{E}}} v \mathrm{~d} v=\left.m \cdot \frac{1}{2} \cdot\left[v^{2}\right]\right|_{v_{0}} ^{v_{\mathrm{E}}}=\frac{m}{2} \cdot\left(v_{\mathrm{E}}^{2}-v_{0}^{2}\right)=\underline{\underline{\frac{m}{2}} \cdot v_{\mathrm{E}}^{2}-\frac{m}{2} \cdot v_{0}^{2}} . \tag{3.21}
+\end{equation*}
+
+
+Damit haben wir den Satz bewiesen.
+
+\subsection*{3.1.2 Partielle Integration}
 Wir betrachten den folgenden Satz.
 
-\section*{Satz 2.13 Ketten-Regeln für Gradienten}
-Seien $n \in \mathbb{N}^{+}$, dann gelten folgende Ketten-Regeln.\\
-(a) Ketten-Regel A: Für differentierbare $g: \mathbb{R} \rightarrow \mathbb{R}$ und $h: \mathbb{R}^{n} \rightarrow \mathbb{R}$ gilt
+\section*{Satz 3.3 Partielle Integration}
+Seien $g, h: \mathbb{R} \rightarrow \mathbb{R}$ differentierbare und integrierbare Funktionen und $x_{0}, x_{\mathrm{E}} \in \mathbb{R}$ mit $x_{0}<x_{\mathrm{E}}$, dann gilt folgendes.\\
+(a) $\begin{gathered}\downarrow \\ \int g^{\downarrow}(x) \cdot h^{\prime}(x) \mathrm{d} x=g(x) \cdot h(x)-\int g^{\prime}(x) \cdot h(x) \mathrm{d} x\end{gathered}$
 
-$$
-f\left(x^{1} ; \ldots ; x^{n}\right):=g\left(h\left(x^{1} ; \ldots ; x^{n}\right)\right) \Rightarrow \boldsymbol{\nabla} f=g^{\prime}\left(h\left(x^{1} ; \ldots ; x^{n}\right)\right) \cdot \boldsymbol{\nabla} h .
-$$
+(b) $\quad$\begin{tabular}{c}
+$x_{x_{0}}^{x_{\mathrm{E}}} \stackrel{\downarrow}{g(x)} \cdot h^{\prime}(x) \mathrm{d} x=\left.[g(x) \cdot h(x)]\right|_{x_{0}} ^{x_{\mathrm{E}}}-\int_{x_{0}}^{x_{\mathrm{E}}} g^{\prime}(x) \cdot h(x) \mathrm{d} x$ \\
+\hline
+\end{tabular}
 
-(b) Ketten-Regel B: Für differentierbare $g: \mathbb{R}^{n} \rightarrow \mathbb{R}$ und $\mathbf{h}: \mathbb{R} \rightarrow \mathbb{R}^{n}$ gilt
-
-$$
-f(x):=g(\mathbf{h}(x)) \Rightarrow f^{\prime}(x)=\left\langle\boldsymbol{\nabla} g(\mathbf{h}(x)), \mathbf{h}^{\prime}(x)\right\rangle .
-$$
-
-### LaTeX-Seite 45 ###
-
-Wir betrachten den folgenden Satz.\\
-Satz 2.16 Elementare Rechenregeln für Rotationen\\
-Seien $n \in\{2,3\}, \mathbf{v}, \mathbf{w}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ differentierbare Vektorfelder, $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare Funktion und $a, b \in \mathbb{R}$, dann gelten die folgenden Rechenregeln.\\
-(a) Faktor-Regel:
-
-$$
-\operatorname{rot}(a \cdot \mathbf{v})=a \cdot \operatorname{rot}(\mathbf{v})
-$$
-
-(c) Linearität:
-
-$$
-\operatorname{rot}(a \cdot \mathbf{v}+b \cdot \mathbf{w})=a \cdot \operatorname{rot}(\mathbf{v})+b \cdot \operatorname{rot}(\mathbf{w})
-$$
-
-(b) Summen-Regel:
-
-$$
-\operatorname{rot}(\mathbf{v}+\mathbf{w})=\operatorname{rot}(\mathbf{v})+\operatorname{rot}(\mathbf{w})
-$$
-
-(d) Produkt-Regel für $n=3$ :
-
-$$
-\operatorname{rot}(f \cdot \mathbf{v})=\boldsymbol{\nabla} f \times \mathbf{v}+f \cdot \operatorname{rot}(\mathbf{v})
-$$
-
-\subsection*{2.5.6 Weiteres zu Gradient, Divergenz und Rotation}
-\subsection*{2.5.6.1 Kombinierte Rechenregeln}
-Wir betrachten den folgenden Satz.\\
-Satz 2.17 Kombinierte Rechenregeln für Gradient, Divergenz \& Rotation\\
-Seien $n \in \mathbb{N}^{+}, \mathbf{v}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ ein differentierbares Vektorfeld und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare Funktion, dann gelten die folgenden Rechenregeln.\\
-(a) Divergenz eines Gradienten:
-
-$$
-\operatorname{div}(\boldsymbol{\nabla} f)=\Delta f
-$$
-
-(c) Divergenz einer Rotation für $n=3$ :
-
-$$
-\operatorname{div}(\operatorname{rot}(\mathbf{v}))=0
-$$
-
-(b) Rotation eines Gradienten für $n \in\{2,3\}$ :
-
-$$
-\operatorname{rot}(\boldsymbol{\nabla} f)=0
-$$
-
-(d) Rotation einer Rotation für $n=3$ :
-
-$$
-\operatorname{rot}(\operatorname{rot}(\mathbf{v}))=\boldsymbol{\nabla} \operatorname{div}(\mathbf{v})-\Delta \mathbf{v}
-$$
-
-Beweis: Siehe Übungen.\\
-Wir betrachten den folgenden Satz.\\
-Satz 2.18 Rechenregeln für Vektor-Produkte in 3D\\
-Seien $\mathbf{v}, \mathbf{w}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ differentierbare Vektorfelder und $g, h: \mathbb{R}^{3} \rightarrow \mathbb{R}$ differentierbare Funktionen, dann gelten die folgenden Rechenregeln.\\
-(a) Divergenz eines Vektor-Produkts:
-
-$$
-\operatorname{div}(\mathbf{v} \times \mathbf{w})=\langle\operatorname{rot}(\mathbf{v}), \mathbf{w}\rangle-\langle\mathbf{v}, \operatorname{rot}(\mathbf{w})\rangle
-$$
-
-(b) Rotation eines Vektor-Produkts:
-
-$$
-\operatorname{rot}(\mathbf{v} \times \mathbf{w})=\boldsymbol{\nabla}_{\mathbf{w}} \mathbf{v}-\boldsymbol{\nabla}_{\mathbf{v}} \mathbf{w}+\operatorname{div}(\mathbf{w}) \cdot \mathbf{v}-\operatorname{div}(\mathbf{v}) \cdot \mathbf{w}
-$$
-
-(c) Divergenz eines Vektor-Produkts von Gradienten:
-
-$$
-\operatorname{div}(\boldsymbol{\nabla} g \times \boldsymbol{\nabla} h)=0
-$$
-
-### LaTeX-Seite 46 ###
-
-Bemerkungen:\\
-i) Jeder Gradient ist wirbelfrei.\\
-ii) Jede Rotation ist quellenfrei.\\
-iii) In kartesischen Koordinaten ist $\Delta \mathbf{v}$ komponentenweise zu berechnen.\\
-iv) Die Terme $\boldsymbol{\nabla}_{\mathbf{w}} \mathbf{v}$ und $\boldsymbol{\nabla}_{\mathbf{v}} \mathbf{w}$ bezeichnen sogenannte Richtungsableitungen (siehe nächste Abschnitte.)
-
-\subsection*{2.5.6.2 Nabla-Operator}
-Wir betrachten die folgende Definition.\\
-Definition 2.25 Nabla-Operator in nD\\
-Sei $n \in \mathbb{N}^{+}$, dann ist der Nabla-Operator in $\mathbb{R}^{n}$ der Differentialoperator
-
-\[
-\boldsymbol{\nabla}:=\left[\begin{array}{c}
-\partial_{1}  \tag{2.159}\\
-\vdots \\
-\partial_{n}
-\end{array}\right] .
-\]
-
-Bemerkungen:\\
-i) Der Nabla-Operator ist ein abstrakter Differentialoperator, welcher erst bei seiner Anwendung auf eine Funktion bzw. ein Vektorfeld eine sinnvolle mathematische Grösse ergibt.\\
-ii) Durch den Nabla-Operator können die Divergenz in nD und die Rotation in 3D durch Vektor-Operationen ausgedrückt werden. Insbesondere in älterer Literatur findet man die Schreibweisen
-
-
-\begin{equation*}
-\operatorname{div}(\mathbf{v})=\langle\boldsymbol{\nabla}, \mathbf{v}\rangle=\boldsymbol{\nabla} \cdot \mathbf{v} \tag{2.160}
-\end{equation*}
-
-
-$\operatorname{rot}(\mathbf{v})=\boldsymbol{\nabla} \times \mathbf{v}$.
-
-\subsection*{2.5.6.3 Anwendungen}
-Viele wichtige Formeln in der Physik werden durch Divergenz bzw. Rotation von Vektorfeldern ausgedrückt.
-
-\begin{itemize}
-  \item Strömungsdynamik: Beschreibt v das Geschwindigkeitsvektorfeld eines inkompressiblen Mediums (z.B. Wasser), dann ist es quellenfrei, d.h.\\
-$\operatorname{div}(\mathbf{v})=0$.
-  \item Elektrodynamik: Die Maxwell-Gleichungen beschreiben jeweils Divergenz und Rotation des E-Feldes und B-Feldes. Es gilt
-\end{itemize}
-
-\[
-\begin{array}{l|l}
-\operatorname{div}(\mathbf{E})=\frac{1}{\varepsilon_{0}} \cdot \rho & \operatorname{rot}(\mathbf{E})=-\dot{\mathbf{B}}  \tag{2.163}\\
-\operatorname{div}(\mathbf{B})=0 & \operatorname{rot}(\mathbf{B})=\varepsilon_{0} \cdot \mu_{0} \cdot \dot{\mathbf{E}}+\mu_{0} \cdot \mathbf{J} .
-\end{array}
-\]
-
-Der Ladungs-Erhaltungssatz kann ausgedrückt werden durch die Kontinuitätsgleichung\\
-$\dot{\rho}+\operatorname{div}(\mathbf{J})=0$.
+Beweis: Übung.
