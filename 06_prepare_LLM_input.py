@@ -12,7 +12,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # Systemprompt als fester Bestandteil des Prompts
 SYSTEM_PROMPT = (
     "Du bist ein mathematisches Expertensystem und antwortest ausschließlich auf Deutsch. "
-    "Beantworte die Frage basierend auf dem übergebenen Dokumentauszug - Notationen so wie in den Input Dateien gezeigt."
+    "Beantworte die Frage basierend auf dem übergebenen Dokumentauszug - Notationen EXAKT wie in den Input Dateien gezeigt."
     "Gib ausschließlich eine vollständige und gültige LaTeX-Datei zurück, die direkt mit pdflatex kompiliert werden kann."
     "Verwende dazu folgende Struktur:\n\n"
     "\\documentclass[a4paper,12pt]{article}\n"

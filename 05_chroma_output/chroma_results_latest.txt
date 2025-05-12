@@ -1,54 +1,54 @@
 === TREFFER 1 ===
-ID: 6.1.1 Definition_262
-Score (Abstand): 0.5561665296554565
-Text: Definition
+ID: 2.6.4 Zerlegungssatz_147
+Score (Abstand): 0.7549784779548645
+Text: Zerlegungssatz
 Typ: subsection
-Seite: 89
+Seite: 51
 
 ==================================================
 
 === TREFFER 2 ===
-ID: 6.2.1 Definition_302
-Score (Abstand): 0.5561665296554565
-Text: Definition
-Typ: subsection
-Seite: 102
+ID: Definition_129
+Score (Abstand): 0.823458194732666
+Text: Nabla-Operator in nD Sei n ∈N+, dann ist der Nabla-Operator in Rn der Differentialoperator ∇:=   ∂1 ... ∂n  . (2.159)
+Typ: Definition
+Seite: 46
 
 ==================================================
 
 === TREFFER 3 ===
-ID: 6.3.1 Definition_317
-Score (Abstand): 0.5561665296554565
-Text: Definition
+ID: 7.3.1 Skalar-Produkt_444
+Score (Abstand): 0.8340522050857544
+Text: Skalar-Produkt
 Typ: subsection
-Seite: 107
+Seite: 141
 
 ==================================================
 
 === TREFFER 4 ===
-ID: 7.1.1 Definition_402
-Score (Abstand): 0.5561665296554565
-Text: Definition
+ID: 2.1.1 Skalarfelder_16
+Score (Abstand): 0.8365676999092102
+Text: Skalarfelder
 Typ: subsection
-Seite: 131
+Seite: 9
 
 ==================================================
 
 === TREFFER 5 ===
-ID: 7.2.1 Definition_428
-Score (Abstand): 0.5561665296554565
-Text: Definition
+ID: 2.5.4 Divergenz_114
+Score (Abstand): 0.8410245180130005
+Text: Divergenz
 Typ: subsection
-Seite: 138
+Seite: 43
 
 ==================================================
 
 === TREFFER 6 ===
-ID: 2.6.4 Zerlegungssatz_147
-Score (Abstand): 0.6406797766685486
-Text: Zerlegungssatz
-Typ: subsection
-Seite: 51
+ID: Bemerkungen_130
+Score (Abstand): 0.8714405298233032
+Text: i) Der Nabla-Operator ist ein abstrakter Differentialoperator, welcher erst bei seiner Anwen- dung auf eine Funktion bzw. ein Vektorfeld eine sinnvolle mathematische Grösse ergibt. ii) Durch den Nabla-Operator können die Divergenz in nD und die Rotation in 3D durch Vektor-Operationen ausgedrückt werden. Insbesondere in älterer Literatur findet man die Schreibweisen div(v) = ⟨∇, v⟩= ∇· v (2.160) rot(v) = ∇× v. (2.161)
+Typ: Bemerkungen
+Seite: 46
 
 ==================================================
 

@@ -1,1 +1,1 @@
-Definitionen des ganzen skripts
+Nabla-Operator alle Informationen im Skript

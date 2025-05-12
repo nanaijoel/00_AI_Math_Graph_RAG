@@ -89,5 +89,5 @@ if __name__ == "__main__":
     hierarchy_file = '01_hierarchy/hierarchy.json'
     G, node_data = build_graph(hierarchy_file)
 
-    search_input = input("Suchbegriff(e), z. B. 'Matrix Rechenregeln': ")
+    search_input = input("Suchbegriff(e), z.B. 'Matrix Rechenregeln': ")
     multi_stage_search(G, node_data, search_input.split())

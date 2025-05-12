@@ -1,4 +1,4 @@
-Du bist ein mathematisches Expertensystem und antwortest ausschließlich auf Deutsch. Beantworte die Frage basierend auf dem übergebenen Dokumentauszug - Notationen so wie in den Input Dateien gezeigt.Gib ausschließlich eine vollständige und gültige LaTeX-Datei zurück, die direkt mit pdflatex kompiliert werden kann.Verwende dazu folgende Struktur:
+Du bist ein mathematisches Expertensystem und antwortest ausschließlich auf Deutsch. Beantworte die Frage basierend auf dem übergebenen Dokumentauszug - Notationen EXAKT wie in den Input Dateien gezeigt.Gib ausschließlich eine vollständige und gültige LaTeX-Datei zurück, die direkt mit pdflatex kompiliert werden kann.Verwende dazu folgende Struktur:
 
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
@@ -11,7 +11,7 @@ Du bist ein mathematisches Expertensystem und antwortest ausschließlich auf Deu
 Beginne den Text nach \begin{document} und beende ihn mit \end{document}.
 
 ### USER-FRAGE ###
-Definitionen des ganzen skripts
+Nabla-Operator alle Informationen im Skript
 
 ### GRAPH-SUCHE ###
 ##### STAGE: Kapitel-/Abschnittstitel mit 'matrix' #####
@@ -73,60 +73,90 @@ Seite: 138
 
 ### CHROMA-SUCHE ###
 === TREFFER 1 ===
-ID: 6.1.1 Definition_262
-Score (Abstand): 0.5561665296554565
-Text: Definition
-Typ: subsection
-Seite: 89
-
-==================================================
-
-=== TREFFER 2 ===
-ID: 6.2.1 Definition_302
-Score (Abstand): 0.5561665296554565
-Text: Definition
-Typ: subsection
-Seite: 102
-
-==================================================
-
-=== TREFFER 3 ===
-ID: 6.3.1 Definition_317
-Score (Abstand): 0.5561665296554565
-Text: Definition
-Typ: subsection
-Seite: 107
-
-==================================================
-
-=== TREFFER 4 ===
-ID: 7.1.1 Definition_402
-Score (Abstand): 0.5561665296554565
-Text: Definition
-Typ: subsection
-Seite: 131
-
-==================================================
-
-=== TREFFER 5 ===
-ID: 7.2.1 Definition_428
-Score (Abstand): 0.5561665296554565
-Text: Definition
-Typ: subsection
-Seite: 138
-
-==================================================
-
-=== TREFFER 6 ===
 ID: 2.6.4 Zerlegungssatz_147
-Score (Abstand): 0.6406797766685486
+Score (Abstand): 0.7549784779548645
 Text: Zerlegungssatz
 Typ: subsection
 Seite: 51
 
 ==================================================
 
+=== TREFFER 2 ===
+ID: Definition_129
+Score (Abstand): 0.823458194732666
+Text: Nabla-Operator in nD Sei n ∈N+, dann ist der Nabla-Operator in Rn der Differentialoperator ∇:=   ∂1 ... ∂n  . (2.159)
+Typ: Definition
+Seite: 46
+
+==================================================
+
+=== TREFFER 3 ===
+ID: 7.3.1 Skalar-Produkt_444
+Score (Abstand): 0.8340522050857544
+Text: Skalar-Produkt
+Typ: subsection
+Seite: 141
+
+==================================================
+
+=== TREFFER 4 ===
+ID: 2.1.1 Skalarfelder_16
+Score (Abstand): 0.8365676999092102
+Text: Skalarfelder
+Typ: subsection
+Seite: 9
+
+==================================================
+
+=== TREFFER 5 ===
+ID: 2.5.4 Divergenz_114
+Score (Abstand): 0.8410245180130005
+Text: Divergenz
+Typ: subsection
+Seite: 43
+
+==================================================
+
+=== TREFFER 6 ===
+ID: Bemerkungen_130
+Score (Abstand): 0.8714405298233032
+Text: i) Der Nabla-Operator ist ein abstrakter Differentialoperator, welcher erst bei seiner Anwen- dung auf eine Funktion bzw. ein Vektorfeld eine sinnvolle mathematische Grösse ergibt. ii) Durch den Nabla-Operator können die Divergenz in nD und die Rotation in 3D durch Vektor-Operationen ausgedrückt werden. Insbesondere in älterer Literatur findet man die Schreibweisen div(v) = ⟨∇, v⟩= ∇· v (2.160) rot(v) = ∇× v. (2.161)
+Typ: Bemerkungen
+Seite: 46
+
+==================================================
+
 ### WICHTIGE LATEX-SEITEN ###
+### LaTeX-Seite 9 ###
+
+\section*{Kapitel 2}
+\section*{Vektoranalysis}
+\subsection*{2.1 Grundlagen}
+\subsection*{2.1.1 Skalarfelder}
+\subsection*{2.1.1.1 Definition}
+Wir betrachten die folgende Definition.\\
+Definition 2.1 Reellwertige Funktion in mehreren reellen Variablen\\
+Seien $n \in \mathbb{N}^{+}, A \subseteq \mathbb{R}^{n}$ und $B \subseteq \mathbb{R}$. Eine Funktion auf $A$ der Form $f: A \rightarrow B$ heisst reellwertige Funktion in $n$ reellen Variablen.
+
+Bemerkungen:\\
+i) Die reellen Variablen werden nach dem Funktionsnamen $f$ in runden Klammern aufgezählt, jeweils durch ein Semicolon getrennt.
+
+
+\begin{align*}
+n=1: & f(x) & =\ldots  \tag{2.1}\\
+n=2: & f(x ; y) & =\ldots  \tag{2.2}\\
+n=3: & f(x ; y ; z) & =\ldots  \tag{2.3}\\
+\text { allg: } & f\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right) & =\ldots \tag{2.4}
+\end{align*}
+
+
+ii) Wird die Definitionsmenge $A$ als Teilmenge eines geometrischen Raumes interpretiert, dann wird $f$ als Skalarfeld auf $A$ bezeichnet.\\
+iii) Im allgemeinen können die reellen Variablen $x_{1}, x_{2}, \ldots, x_{n} \in \mathbb{R}$ und der Funktionswert $f\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right)$ bliebige und auch unterschiedliche Masseinheiten tragen.\\
+iv) Gilt $n \geq 2$ und enthält die Definitionsmenge $A$ einen auch noch so kleinen Würfel in nD, dann kann $f$ nicht injektiv sein.\\
+v) Aus dem Wert von $n$ kann apriori keine Aussage über die Surjektivität der Funktion gemacht werden.\\
+vi) Der Begriff Beschränktheit lässt sich direkt von 1D auf $n D$ übertragen.\\
+vii) Der Begriff Monotonie lässt sich nicht von 1D auf nD übertragen.
+
 ### LaTeX-Seite 40 ###
 
 \subsection*{2.5 Mehrfach-Differentiale}
@@ -251,6 +281,136 @@ Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine 
 \begin{equation*}
 \Delta f:=\operatorname{tr}\left(\nabla^{2} f\right)=f_{, 1,1}+f_{, 2,2}+\ldots+f_{, n, n} . \tag{2.148}
 \end{equation*}
+
+### LaTeX-Seite 43 ###
+
+\subsection*{2.5.4 Divergenz}
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.22 Divergenz}
+Seien $n \in \mathbb{N}^{+}$und $\mathbf{v}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ ein differentierbares Vektorfeld mit Komponenten
+
+\[
+\mathbf{v}\left(x^{1} ; \ldots ; x^{n}\right)=\left[\begin{array}{c}
+v^{1}\left(x^{1} ; \ldots ; x^{n}\right)  \tag{2.149}\\
+\vdots \\
+v^{n}\left(x^{1} ; \ldots ; x^{n}\right)
+\end{array}\right] .
+\]
+
+Die Divergenz von $\mathbf{v}$ ist
+
+
+\begin{equation*}
+\operatorname{div}(\mathbf{v}):=v^{1}{ }_{, 1}+v^{2}{ }_{, 2}+\ldots+v^{n}{ }_{, n} . \tag{2.150}
+\end{equation*}
+
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten
+\end{itemize}
+
+\[
+\mathbf{v}(x ; y):=\left[\begin{array}{l}
+x \cdot y^{2}  \tag{2.151}\\
+x^{3} \cdot y^{3}
+\end{array}\right] .
+\]
+
+Die Divergenz von v ist
+
+
+\begin{equation*}
+\underline{\underline{\operatorname{div}(\mathbf{v})}}=v^{1}{ }_{, 1}+v_{, 2}^{2}=\left(x \cdot y^{2}\right)_{, x}+\left(x^{3} \cdot y^{3}\right)_{, y}=1 \cdot y^{2}+x^{3} \cdot 3 \cdot y^{2}=\underline{\underline{y^{2}} \cdot\left(1+3 x^{3}\right) .} \tag{2.152}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Divergenz eines Vektorfeldes ist eine allgemeine Konstruktion in nD.\\
+ii) Die Divergenz eines Vektorfeldes ist ein Skalarfeld.\\
+iii) Die Divergenz eines Vektorfeldes ist ein Mass für dessen Quellendichte.\\
+iv) Ein Vektorfeld $\mathbf{v}$ heisst quellenfrei, falls gilt
+
+
+\begin{equation*}
+\operatorname{div}(\mathbf{v})=0 . \tag{2.153}
+\end{equation*}
+
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.15 Elementare Rechenregeln für Divergenzen\\
+Seien $n \in \mathbb{N}^{+}, \mathbf{v}, \mathbf{w}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ differentierbare Vektorfelder, $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare Funktion und $a, b \in \mathbb{R}$, dann gelten die folgenden Rechenregeln.\\
+(a) Faktor-Regel:\\
+(c) Linearität:
+
+$$
+\operatorname{div}(a \cdot \mathbf{v})=a \cdot \operatorname{div}(\mathbf{v})
+$$
+
+$$
+\operatorname{div}(a \cdot \mathbf{v}+b \cdot \mathbf{w})=a \cdot \operatorname{div}(\mathbf{v})+b \cdot \operatorname{div}(\mathbf{w})
+$$
+
+(b) Summen-Regel:\\
+(d) Produkt-Regel:
+
+$$
+\operatorname{div}(\mathbf{v}+\mathbf{w})=\operatorname{div}(\mathbf{v})+\operatorname{div}(\mathbf{w})
+$$
+
+### LaTeX-Seite 46 ###
+
+Bemerkungen:\\
+i) Jeder Gradient ist wirbelfrei.\\
+ii) Jede Rotation ist quellenfrei.\\
+iii) In kartesischen Koordinaten ist $\Delta \mathbf{v}$ komponentenweise zu berechnen.\\
+iv) Die Terme $\boldsymbol{\nabla}_{\mathbf{w}} \mathbf{v}$ und $\boldsymbol{\nabla}_{\mathbf{v}} \mathbf{w}$ bezeichnen sogenannte Richtungsableitungen (siehe nächste Abschnitte.)
+
+\subsection*{2.5.6.2 Nabla-Operator}
+Wir betrachten die folgende Definition.\\
+Definition 2.25 Nabla-Operator in nD\\
+Sei $n \in \mathbb{N}^{+}$, dann ist der Nabla-Operator in $\mathbb{R}^{n}$ der Differentialoperator
+
+\[
+\boldsymbol{\nabla}:=\left[\begin{array}{c}
+\partial_{1}  \tag{2.159}\\
+\vdots \\
+\partial_{n}
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Der Nabla-Operator ist ein abstrakter Differentialoperator, welcher erst bei seiner Anwendung auf eine Funktion bzw. ein Vektorfeld eine sinnvolle mathematische Grösse ergibt.\\
+ii) Durch den Nabla-Operator können die Divergenz in nD und die Rotation in 3D durch Vektor-Operationen ausgedrückt werden. Insbesondere in älterer Literatur findet man die Schreibweisen
+
+
+\begin{equation*}
+\operatorname{div}(\mathbf{v})=\langle\boldsymbol{\nabla}, \mathbf{v}\rangle=\boldsymbol{\nabla} \cdot \mathbf{v} \tag{2.160}
+\end{equation*}
+
+
+$\operatorname{rot}(\mathbf{v})=\boldsymbol{\nabla} \times \mathbf{v}$.
+
+\subsection*{2.5.6.3 Anwendungen}
+Viele wichtige Formeln in der Physik werden durch Divergenz bzw. Rotation von Vektorfeldern ausgedrückt.
+
+\begin{itemize}
+  \item Strömungsdynamik: Beschreibt v das Geschwindigkeitsvektorfeld eines inkompressiblen Mediums (z.B. Wasser), dann ist es quellenfrei, d.h.\\
+$\operatorname{div}(\mathbf{v})=0$.
+  \item Elektrodynamik: Die Maxwell-Gleichungen beschreiben jeweils Divergenz und Rotation des E-Feldes und B-Feldes. Es gilt
+\end{itemize}
+
+\[
+\begin{array}{l|l}
+\operatorname{div}(\mathbf{E})=\frac{1}{\varepsilon_{0}} \cdot \rho & \operatorname{rot}(\mathbf{E})=-\dot{\mathbf{B}}  \tag{2.163}\\
+\operatorname{div}(\mathbf{B})=0 & \operatorname{rot}(\mathbf{B})=\varepsilon_{0} \cdot \mu_{0} \cdot \dot{\mathbf{E}}+\mu_{0} \cdot \mathbf{J} .
+\end{array}
+\]
+
+Der Ladungs-Erhaltungssatz kann ausgedrückt werden durch die Kontinuitätsgleichung\\
+$\dot{\rho}+\operatorname{div}(\mathbf{J})=0$.
 
 ### LaTeX-Seite 51 ###
 
@@ -435,177 +595,6 @@ iii) Der Kommutator ist als Operation schiefsymmetrisch, d.h. es gilt
 [A, B]=-[B, A] . \tag{6.14}
 \end{equation*}
 
-### LaTeX-Seite 102 ###
-
-\subsection*{6.2 Lineare Abbildungen}
-\subsection*{6.2.1 Definition}
-Mit Hilfe von Matrizen können geometrische Abbildungen beschrieben werden. Wir machen dazu zwei Definitionen.
-
-Definition 6.13 Lineare Abbildung - Version 1\\
-Seien $m, n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, m, \mathbb{R})$. Eine Abbildung der Form
-
-
-\begin{align*}
-a: \mathbb{R}^{m} & \rightarrow \mathbb{R}^{n} \\
-\mathbf{x} & \mapsto a(\mathbf{x}):=A \cdot \mathbf{x} \tag{6.32}
-\end{align*}
-
-
-heisst lineare Abbildung.
-
-Definition 6.14 Lineare Abbildung - Version 2\\
-Seien $m, n \in \mathbb{N}^{+}$. Eine lineare Abbildung ist eine Abbildung des Typs $a: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ mit der Eigenschaft, dass für alle $\mathbf{v}, \mathbf{w} \in \mathbb{R}^{m}$ und $x, y \in \mathbb{R}$ gilt
-
-
-\begin{equation*}
-a(x \cdot \mathbf{v}+y \cdot \mathbf{w})=x \cdot a(\mathbf{v})+y \cdot a(\mathbf{w}) \tag{6.33}
-\end{equation*}
-
-
-Bemerkungen:\\
-i) Die beiden Definitionen sind äquivalent. Es ist leicht einzusehen, dass die linearen Abbildungen gemäss Definition 6.13 die Haupteigenschaft (6.33) aus Definition 6.14 erfüllen. Es gilt
-
-
-\begin{align*}
-\underline{\underline{a(x \cdot \mathbf{v}+y \cdot \mathbf{w})}} & =A \cdot(x \cdot \mathbf{v}+y \cdot \mathbf{w})=A \cdot x \cdot \mathbf{v}+A \cdot y \cdot \mathbf{w}=x \cdot A \cdot \mathbf{v}+y \cdot A \cdot \mathbf{w} \\
-& =\underline{\underline{x \cdot a(\mathbf{v})+y \cdot a(\mathbf{w})}} \tag{6.34}
-\end{align*}
-
-
-ii) Die Matrix A, welche gemäss Definition 6.13 eine lineare Abbildung a beschreibt, wird Abbildungsmatrix genannt.\\
-iii) Ist die Abbildungsmatrix A quadratisch, d.h. $m=n$, dann ist $a$ eine Selbstabbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$.\\
-iv) Bekannte geometrische Abbildungen wie Streckungen, Projektionen, Spiegelungen und Rotationen sind lineare Abbildungen, welche jeweils durch eine Abbildungsmatrix ausgedrückt werden können.\\
-v) Für alle linearen Abbildungen gilt offensichtlich
-
-
-\begin{equation*}
-\underline{\underline{a(0)}}=A \cdot 0=\underline{\underline{0 .}} \tag{6.35}
-\end{equation*}
-
-
-vi) Für $n=m=1$ gibt es eine historisch bedingte Begriffskollision zwischen einer linearen Funktion in der Analysis und einer linearen Abbildung in der linearen Algebra.
-
-
-\begin{align*}
-\text { Analysis: } & f(x)=m \cdot x+q \\
-\text { Lineare Algebra: } & a(x)=A \cdot x \tag{6.36}
-\end{align*}
-
-### LaTeX-Seite 107 ###
-
-\subsection*{6.3 Orthogonale Matrizen}
-\subsection*{6.3.1 Definition}
-Es gibt reguläre Matrizen, deren Inverse gerade auch ihre Transponierte ist. Dies ist eine sehr interessante Eigenschaft, die sowohl algebraische als auch geometrische Konsequenzen hat.
-
-\section*{Definition 6.15 Orthogonale Matrix}
-Sei $n \in \mathbb{N}^{+}$. Eine reguläre Matrix $A \in \mathbb{M}(n, n, \mathbb{R})$ heisst orthogonal, falls
-
-
-\begin{equation*}
-A^{-1}=A^{T} \text {. } \tag{6.52}
-\end{equation*}
-
-
-Ferner definieren wir die Menge aller orthogonalen $n \times n$-Matrizen.
-
-\section*{Definition 6.16 Orthogonale Gruppe}
-Sei $n \in \mathbb{N}^{+}$. Die orthogonale Gruppe in nD ist die Menge
-
-
-\begin{equation*}
-\mathrm{O}(n):=\left\{A \in \mathbb{M}(n, n, \mathbb{R}) \mid A^{-1}=A^{T}\right\} . \tag{6.53}
-\end{equation*}
-
-
-Wir betrachten den folgenden Satz.
-
-\section*{Satz 6.6 Orthogonale Gruppe}
-Sei $n \in \mathbb{N}^{+}$, dann bildet $\mathrm{O}(n)$ eine algebraische Gruppe, d.h. für alle $A, B, C \in \mathrm{O}(n)$ gilt folgendes.\\
-(a) Endogenität:
-
-$$
-A \cdot B \in \mathrm{O}(n)
-$$
-
-(c) Neutrales Element:
-
-$$
-\mathbb{1} \in \mathrm{O}(n)
-$$
-
-(b) Assoziativität:
-
-$$
-(A \cdot B) \cdot C=A \cdot(B \cdot C)
-$$
-
-(d) Inverse Elemente:
-
-$$
-A^{-1} \in \mathrm{O}(n)
-$$
-
-Bemerkungen:\\
-i) Offensichtlich gilt $\mathbb{1} \in \mathrm{O}(n)$ für alle $n \in \mathbb{N}^{+}$, denn es gilt
-
-
-\begin{equation*}
-\mathbb{1}^{-1}=\mathbb{1}=\mathbb{1}^{T} . \tag{6.54}
-\end{equation*}
-
-
-ii) Ist eine Matrix orthogonal und symmetrisch, dann folgt
-
-
-\begin{equation*}
-\underline{\underline{A^{-1}}}=A^{T}=\underline{\underline{A}} \Rightarrow \underline{\underline{A^{2}}}=A \cdot A=A^{-1} \cdot A=\underline{\underline{\mathbb{1}}} \tag{6.55}
-\end{equation*}
-
-
-Die orthogonalen symmetrischen Matrizen verhalten sich wie Wurzeln der Einheitsmatrix.\\
-iii) Ist eine Matrix orthogonal und schiefsymmetrisch, dann folgt
-
-
-\begin{equation*}
-\underline{\underline{A^{-1}}}=A^{T}=\underline{\underline{-A}} \Rightarrow \underline{\underline{A^{2}}}=-A^{-1} \cdot A=\underline{\underline{-\mathbb{1}}} . \tag{6.56}
-\end{equation*}
-
-
-Die orthogonalen schiefsymmetrischen Matrizen verhalten sich ähnlich wie die imaginäre Einheit $\mathrm{i} \in \mathbb{C}$.
-
-### LaTeX-Seite 131 ###
-
-\section*{Kapitel 7}
-\section*{Vektorräume}
-\subsection*{7.1 Vektorraumstruktur}
-\subsection*{7.1.1 Definition}
-Die fundamentale Struktur der linearen Algebra ist der Vektorraum. Dieser wird, wie in der modernen Mathematik allgemein üblich, mit Hilfe einer überschaubaren Aufzählung von grundlegenden Eigenschaften, den sogenannten Axiomen, definiert.
-
-\section*{Definition 7.1 Vektorraum}
-Ein Vektorraum ist ein Quadrupel $(V, \mathbb{K},+, \cdot)$, bestehend aus eine Menge $V$, einem Zahlenkörper $\mathbb{K}$ und zwei Operationen
-
-
-\begin{align*}
-+: V \times V & \rightarrow V \\
-(\mathbf{v} ; \mathbf{w}) & \mapsto \mathbf{v}+\mathbf{w}
-\end{aligned} \quad \text { und } \quad \begin{aligned}
-\cdot: \mathbb{K} \times V & \rightarrow V  \tag{7.1}\\
-(a ; \mathbf{v}) & \mapsto a \cdot \mathbf{v},
-\end{align*}
-
-
-so dass für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{K}$ die folgenden Axiome gelten.\\
-VR-1 $(\mathbf{u}+\mathbf{v})+\mathbf{w}=\mathbf{u}+(\mathbf{v}+\mathbf{w})$\\
-$\mathbf{V R}$-2 Es gibt ein $\mathbf{0} \in V$ mit $\mathbf{0}+\mathbf{v}=\mathbf{v}$ für alle $\mathbf{v} \in V$.\\
-VR-3 Für jedes $\mathbf{v} \in V$ gibt es ein $-\mathbf{v} \in V$ mit $\mathbf{v}+(-\mathbf{v})=\mathbf{0}$.\\
-VR-4 w $+\mathbf{v}=\mathbf{v}+\mathbf{w}$\\
-VR-5 $a \cdot(\mathbf{v}+\mathbf{w})=a \cdot \mathbf{v}+a \cdot \mathbf{w}$\\
-VR-6 $(a+b) \cdot \mathbf{v}=a \cdot \mathbf{v}+b \cdot \mathbf{v}$\\
-VR-7 $(a \cdot b) \cdot \mathbf{v}=a \cdot(b \cdot \mathbf{v})$\\
-VR-8 $1 \cdot v=v$
-
-Entwickelt man eine mathematische Theorie ausgehend von Axiomen, dann müssen auch Aussagen, deren Gültigkeit in praktischen Anwendungen "selbstverständlich" ist, sorgfältig aus diesen Axiomen bewiesen werden. Ein schönes Beispiel ist die sogenannte Null-Koinzidenz, welche in allen Vektorräumen gilt.
-
 ### LaTeX-Seite 138 ###
 
 \subsection*{7.2 Lineare Abbildungen}
@@ -722,6 +711,68 @@ ii) Die Eigenschaften einer linearen Abbildung können aus den Eigenschaften ihr
 iii) Analog zur Situation für eine lineare Abbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ gelten auch hier der Verknüpfungssatz und der Inversionssatz für bijektive, lineare Abbildungen\\
 iv) Analog zur Situation für eine lineare Abbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ kann die Abbildungsmatrix mit Hilfe des Spalten-Vektor-Konstruktionsverfahrens gefunden werden.\\
 v) Wählt man in $V$ bzw. $W$ eine andere Basis, dann wird die gleiche lineare Abbildung durch eine andere Abbildungsmatrix beschrieben.
+
+### LaTeX-Seite 141 ###
+
+\subsection*{7.3 Skalar-Produkt \& Metrik}
+\subsection*{7.3.1 Skalar-Produkt}
+\subsection*{7.3.1.1 Definition}
+Wir betrachten die folgende Definition.\\
+Definition 7.10 Skalar-Produkt\\
+Sei $(V, \mathbb{K},+, \cdot)$ ein Vektorraum über dem Zahlenkörper $\mathbb{K}$. Ein Skalar-Produkt auf $V$ ist eine Operation der Form
+
+
+\begin{align*}
+V \times V & \rightarrow \mathbb{K} \\
+(\mathbf{v} ; \mathbf{w}) & \mapsto\langle\mathbf{v}, \mathbf{w}\rangle, \tag{7.48}
+\end{align*}
+
+
+so dass für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{K}$ die folgenden Axiome gelten.\\
+SP-1 Linearität im 2. Argument:
+
+
+\begin{equation*}
+\langle\mathbf{u}, a \cdot \mathbf{v}+b \cdot \mathbf{w}\rangle=a \cdot\langle\mathbf{u}, \mathbf{v}\rangle+b \cdot\langle\mathbf{u}, \mathbf{w}\rangle \tag{7.49}
+\end{equation*}
+
+
+SP-2 Symmetrie:
+
+
+\begin{equation*}
+\langle\mathbf{w}, \mathbf{v}\rangle=\langle\mathbf{v}, \mathbf{w}\rangle^{*} \tag{7.50}
+\end{equation*}
+
+
+SP-3 Nicht-Degeneriertheit:
+
+
+\begin{equation*}
+\langle\mathbf{v}, \mathbf{p}\rangle=0 \text { für alle } \mathbf{p} \in V \Leftrightarrow \mathbf{v}=0 \tag{7.51}
+\end{equation*}
+
+
+Wir betrachten die folgende Definition.\\
+Definition 7.11 Positive Definitheit\\
+Sei $(V, \mathbb{K},+, \cdot)$ ein Vektorraum über dem Zahlenkörper $\mathbb{K} \in\{\mathbb{R}, \mathbb{C}\}$, dann heisst ein SkalarProdukt $\langle.,$.$\rangle auf V$ positiv definit, falls für alle $\mathbf{v} \in V$ gilt
+
+
+\begin{equation*}
+\langle\mathbf{v}, \mathbf{v}\rangle \geq 0 \quad \text { und } \quad\langle\mathbf{v}, \mathbf{v}\rangle=0 \Leftrightarrow \mathbf{v}=0 . \tag{7.52}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) In der Literatur sind die Begriffe Skalar-Produkt und inneres Produkt synonym.\\
+ii) Aus der positiven Definitheit folgt sofort SP-3. Deshalb wird bei positiv definiten SkalarProdukten das Axiom SP-3 durch die Eigenschaft der positiven Definitheit ersetzt.\\
+iii) Je nach Wahl von $\mathbb{K} \in\{\mathbb{R}, \mathbb{C}\}$ vereinfacht sich SP-2. Es gilt
+
+
+\begin{align*}
+& \mathbb{K}=\mathbb{R} \Rightarrow\langle\mathbf{w}, \mathbf{v}\rangle=\langle\mathbf{v}, \mathbf{w}\rangle  \tag{7.53}\\
+& \mathbb{K}=\mathbb{C} \Rightarrow\langle\mathbf{w}, \mathbf{v}\rangle=\langle\mathbf{v}, \mathbf{w}\rangle^{*} . \tag{7.54}
+\end{align*}
 
 ### LaTeX-Seite 142 ###
 

@@ -8,42 +8,42 @@
 \geometry{margin=2.5cm}
 
 \begin{document}
-
-\section*{Kapitel 6}
-\section*{Matrizen \& Lineare Abbildungen}
-\subsection*{6.1 Matrix-Algebra}
-\subsection*{6.1.1 Definition}
-Wir machen folgende Definition.\\
-Definition 6.1 Matrix\\
-Seien $m, n \in \mathbb{N}^{+}$. Eine reelle $m \times n$-Matrix $A$ ist eine Zahlentabelle mit $m$ Zeilen und $n$ Spalten der Form
+\noindent
+In den verwendeten Quellen, speziell auf Seite 46, wird der Nabla-Operator $\boldsymbol{\nabla}$ in n-dimensionalen Raum $\mathbb{R}^n$ als der Vektor der partiellen Ableitungen definiert:
 
 \[
-A=\left[\begin{array}{llll}
-A^{1}{ }_{1} & A^{1}{ }_{2} & \ldots & A^{1}{ }_{n}  \tag{6.1}\\
-A^{2}{ }_{1} & A^{2}{ }_{2} & \ldots & A^{2}{ }_{n} \\
-\vdots & \vdots & \vdots & \vdots \\
-A^{m}{ }_{1} & A^{m}{ }_{2} & \ldots & A^{m}{ }_{n}
-\end{array}\right],
+\boldsymbol{\nabla} := \begin{bmatrix}
+\partial_1 \\
+\vdots \\
+\partial_n
+\end{bmatrix}.
 \]
 
-wobei alle $A^{i}{ }_{j} \in \mathbb{R}$.\\
-Bemerkungen:\\
-i) Die Zahlen $m$ und $n$ heissen Dimensionen der Matrix $A$.\\
-ii) Die reellen Zahlen $A^{i}{ }_{j}$ heissen Komponenten der Matrix $A$. Eine $m \times n$-Matrix besteht offensichtlich aus $m \cdot n$ Komponenten.\\
-iii) Wir werden später sehen, dass es sinnvoll ist, den Zeilen-Index $i$ oben und den SpaltenIndex $j$ unten zu schreiben.\\
-iv) Für die Menge aller reellen $m \times n$-Matrizen gibt es verschiedene Bezeichnungen. Wir verwenden
+Dies ermöglicht, Operationen wie Divergenz und Rotation auf Vektorfelder anzuwenden. Der Nabla-Operator $\boldsymbol{\nabla}$ kann benutzt werden, um verschiedene wichtige Differentialoperationen durchzuführen:
 
-\begin{equation*}
-\mathbb{M}(m, n, \mathbb{R})=\mathbb{R}^{m \times n} . \tag{6.2}
-\end{equation*}
+\begin{itemize}
+    \item \textbf{Gradient eines Skalarfeldes $f$}: 
+    \[
+    \boldsymbol{\nabla} f = \begin{bmatrix}
+    \frac{\partial f}{\partial x_1} \\
+    \vdots \\
+    \frac{\partial f}{\partial x_n}
+    \end{bmatrix},
+    \]
+    wobei $f: \mathbb{R}^n \to \mathbb{R}$.
+    
+    \item \textbf{Divergenz eines Vektorfeldes $\mathbf{v}$}:
+    \[
+    \text{div}(\mathbf{v}) = \boldsymbol{\nabla} \cdot \mathbf{v} = \sum_{i=1}^n \frac{\partial v_i}{\partial x_i},
+    \]
+    wobei $\mathbf{v}: \mathbb{R}^n \to \mathbb{R}^n$.
+    
+    \item \textbf{Rotation eines Vektorfeldes $\mathbf{v}$ in $\mathbb{R}^3$}:
+    \[
+    \text{rot}(\mathbf{v}) = \boldsymbol{\nabla} \times \mathbf{v},
+    \]
+    spezifisch für drei Dimensionen.
+\end{itemize}
 
-v) Wir betrachten die Matrix
-
-\[
-M=\left[\begin{array}{lll}
-1 & 2 & 3  \tag{6.3}\\
-4 & 5 & 6
-\end{array}\right] .
-\]
-
+Zusätzlich zu diesen Anwendungen wird der Nabla-Operator in der theoretischen Physik und in der Ingenieurwissenschaft häufig verwendet, um fundamentale Gesetze wie die Maxwell-Gleichungen zu formulieren.
 \end{document}
