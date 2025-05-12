@@ -9,42 +9,9 @@
 
 \begin{document}
 
-\section*{Integration durch Substitution}
-In der Integralrechnung ist die Substitutionsmethode ein weit verbreiteter Ansatz, um die Integration bestimmter Integrale zu vereinfachen, indem eine Variable durch eine Funktion einer anderen Variable ersetzt wird. Diese Methode basiert auf der Kettenregel der Differentialrechnung.
-
-\subsection*{Definition der Substitution}
-Die Substitution ist eine Methode, bei der wir eine neue Variable \( u \) einführen, die durch eine Funktion \( u = g(x) \) von der ursprünglichen Variablen \( x \) definiert wird. Anschließend wird das Differential \( dx \) durch \( du \) ersetzt, welches durch das Differenzial der Funktion \( g \) ausgedrückt wird:
-
-\[
-du = g'(x) \, dx
-\]
-
-\subsection*{Satz zur Substitution}
-Für eine Funktion \( f \) und eine differenzierbare Funktion \( g \) mit \( u = g(x) \), gilt, dass:
-
-\[
-\int f(x) \, dx = \int f(g(u)) g'(u) \, du
-\]
-
-vorausgesetzt, das Integral auf der rechten Seite existiert und \( g' \) ist die Ableitung von \( g \).
-
-\subsection*{Beispiele}
-\begin{enumerate}
-    \item Integriere \( \int x^2 \sin(x^3) \, dx \) mittels Substitution.
-    
-    Setze \( u = x^3 \), dann ist \( du = 3x^2 \, dx \) und \( dx = \frac{du}{3x^2} \). Das Integral wird zu:
-    
-    \[
-    \int x^2 \sin(x^3) \, dx = \int x^2 \sin(u) \frac{du}{3x^2} = \frac{1}{3} \int \sin(u) \, du = -\frac{1}{3} \cos(u) + C = -\frac{1}{3} \cos(x^3) + C
-    \]
-    
-    \item Berechne \( \int e^{2x} \, dx \) über Substitution.
-    
-    Setze \( u = 2x \) und dann ist \( du = 2 \, dx \) bzw. \( dx = \frac{du}{2} \). Das Integral wird dann:
-    
-    \[
-    \int e^{2x} \, dx = \int e^u \frac{du}{2} = \frac{1}{2} \int e^u \, du = \frac{1}{2} e^u + C = \frac{1}{2} e^{2x} + C
-    \]
-\end{enumerate}
+\section*{Definition eines homogenen Vektorfelds}
+Ein Vektorfeld $\mathbf{v}: A \rightarrow B$, definiert über Teilmengen $A, B \subseteq \mathbb{R}^n$ mit $n \in \mathbb{N}^+ \backslash \{1\}$, heißt \textit{homogen}, wenn ein Vektor $\mathbf{w} \in B$ existiert, so dass für alle Punkte $\mathbf{p} \in A$ gilt:
+\[ \mathbf{v}(\mathbf{p}) = \mathbf{w}. \]
+Dies bedeutet, dass das Vektorfeld $\mathbf{v}$ an jedem Punkt in $A$ den gleichen Vektor $\mathbf{w}$ annimmt.
 
 \end{document}

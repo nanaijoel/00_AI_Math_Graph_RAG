@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.1)  12 MAY 2025 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.1)  13 MAY 2025 01:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,28 +309,17 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
 
 (C:\Users\joeln\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
 
 
 (C:\Users\joeln\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.14175pt too wide) detected at line 39
-[] \OML/cmm/m/it/12 x[] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 
-) \OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 x[] []\OT1/cmr/m/n/
-12 (\OML/cmm/m/it/12 u\OT1/cmr/m/n/12 )[] = [] [] [](\OML/cmm/m/it/12 u\OT1/cmr
-/m/n/12 ) \OML/cmm/m/it/12 du \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@[] []\OT1/c
-mr/m/n/12 (\OML/cmm/m/it/12 u\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 C \OT1/cmr/m/
-n/12 = \OMS/cmsy/m/n/12 ^^@[] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m
-/n/12 ) + \OML/cmm/m/it/12 C
- []
-
-
 
 [1
 
@@ -342,29 +331,28 @@ L3 programming layer <2025-03-26>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5108 strings out of 469959
- 81138 string characters out of 5469835
- 476603 words of memory out of 5000000
+ 5110 strings out of 469959
+ 81110 string characters out of 5469835
+ 470603 words of memory out of 5000000
  31845 multiletter control sequences out of 15000+600000
- 635322 words of font info for 63 fonts, out of 8000000 for 9000
+ 635391 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,5n,70p,498b,151s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\joeln\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
-1440.pk> <C:\Users\joeln\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+ 63i,5n,70p,442b,151s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\joeln\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
+1200.pk> <C:\Users\joeln\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecrm1200.pk> <C:\Users\joeln\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx1728.pk><C:/Users/joeln/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><C:/Users/joeln/AppData/Local/Programs/MiKTeX/font
+ublic/amsfonts/cm/cmbx12.pfb><C:/Users/joeln/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/joeln/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/joeln/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/joeln/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/joeln/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/j
-oeln/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/joeln/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb>
-Output written on llm_output_latest.pdf (1 page, 103815 bytes).
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/joeln/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
+/joeln/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb>
+Output written on llm_output_latest.pdf (1 page, 81425 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

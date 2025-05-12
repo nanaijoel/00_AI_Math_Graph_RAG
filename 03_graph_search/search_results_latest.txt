@@ -1,32 +1,16 @@
-##### STAGE: Alle Begriffe in Unterkapiteln #####
-
-Seitenbereich: 61–64
-
-→ Nachbarn (ausgehend):
-  → 3.1.1_Satz_Satz_3.1 (Seite 61)
-  → 3.1.1_Beweis_Beweis_Durch_Anwenden_der_Sum (Seite 61)
-  → 3.1.1_Beispiele_Beispiele (Seite 61)
-  → 3.1.1_Bemerkungen_Bemerkungen (Seite 63)
-  → 3.1.1_Satz_Satz_3.2 (Seite 64)
-  → 3.1.1_Beweis_Beweis_Wir_zeigen_mehrere_Var (Seite 64)
-← Nachbarn (eingehend):
-  ← 3.1 Integrationsmethoden (Seite 61)
-
-==================================================
-
 ##### STAGE: Einzelbegriffe in Unterkapiteln #####
 
-Seitenbereich: 61–64
+Seitenbereich: 13–15
 
 → Nachbarn (ausgehend):
-  → 3.1.1_Satz_Satz_3.1 (Seite 61)
-  → 3.1.1_Beweis_Beweis_Durch_Anwenden_der_Sum (Seite 61)
-  → 3.1.1_Beispiele_Beispiele (Seite 61)
-  → 3.1.1_Bemerkungen_Bemerkungen (Seite 63)
-  → 3.1.1_Satz_Satz_3.2 (Seite 64)
-  → 3.1.1_Beweis_Beweis_Wir_zeigen_mehrere_Var (Seite 64)
+  → 2.1.2_Definition_Definition (Seite 13)
+  → 2.1.2_Definition_Definition_2.3 (Seite 13)
+  → 2.1.2_Bemerkungen_Bemerkungen (Seite 15)
+  → 2.1.2_Anwendungen_Anwendungen (Seite 14)
+  → 2.1.2_Definition_Definition_2.4 (Seite 15)
+  → 2.1.2_Definition_Definition_2.5 (Seite 15)
 ← Nachbarn (eingehend):
-  ← 3.1 Integrationsmethoden (Seite 61)
+  ← 2.1 Grundlagen (Seite 9)
 
 ==================================================
 
