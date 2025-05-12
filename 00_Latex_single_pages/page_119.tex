@@ -1,0 +1,79 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+iv) In jedem Fall gilt $\sigma(p) \in\{-1,+1\}$. Es werden folgende Bezeichnungen verwendet:
+
+
+\begin{align*}
+& \sigma(p)=-1 \Leftrightarrow p \text { ist eine ungerade Permutation }  \tag{6.107}\\
+& \sigma(p)=+1 \Leftrightarrow p \text { ist eine gerade Permutation. }
+\end{align*}
+
+
+Mit diesen Vorbreitungen sind wir nun bereit, die Determinante einer beliebigen quadratischen Matrix mit Hilfe der Leibniz-Formel zu definieren.
+
+\section*{Definition 6.21 Determinante}
+Seien $n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, n, \mathbb{R})$. Die Determinante der Matrix $A$ ist die reelle Zahl
+
+
+\begin{equation*}
+\operatorname{det}(A):=\sum_{p \in S_{n}} \sigma(p) \cdot A^{p(1)}{ }_{1} \cdot \ldots \cdot A^{p(n)}{ }_{n} . \tag{6.108}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Gemäss Leibniz-Formel (6.108) wird die Determinante einer quadratischen Matrix $A \in$ $M(n, n, \mathbb{R})$ durch folgende Schritte gebildet.
+
+S1 Man sucht sich alle Möglichkeiten, um $n$ Komponenten aus $A$ auszuwählen, so dass aus jeder Zeile und jeder Spalte genau eine Komponente vertreten ist.\\
+S2 Man berechnet für jede Möglichkeit aus Schritt S1 das Produkt der gefundenen Komponenten.\\
+S3 Man multipliziert jedes dieser Produkte aus Schritt S2 mit dem Vorzeichen der Permutation zwischen Zeilen- und Spaltenindizes.\\
+S4 Man addiert alle Produkte mit den entsprechenden Vorzeichen.\\
+ii) Für $n=2$ gibt es nur die folgenden $n!=2$ ! $=1 \cdot 2=2$ Permutationen.
+
+\begin{center}
+\begin{tabular}{|c|cc|cc|}
+\hline
+$k$ & $p_{k}(1)$ & $p_{k}(2)$ & $\rho\left(p_{k}\right)$ & $\sigma\left(p_{k}\right)$ \\
+\hline\hline
+1 & 1 & 2 & 0 & +1 \\
+2 & 2 & 1 & 1 & -1 \\
+\hline
+\end{tabular}
+\end{center}
+
+Die Determinante einer $2 \times 2$-Matrix ist folglich
+
+
+\begin{equation*}
+\operatorname{det}(A)=A_{1}^{1} \cdot A^{2}{ }_{2}-A_{1}^{2} \cdot A^{1}{ }_{2} . \tag{6.110}
+\end{equation*}
+
+
+iii) Für $n=3$ gibt es die folgenden $n!=3!=1 \cdot 2 \cdot 3=6$ Permutationen.
+
+\begin{center}
+\begin{tabular}{|c|ccc|cc|}
+\hline
+$k$ & $p_{k}(1)$ & $p_{k}(2)$ & $p_{k}(3)$ & $\rho\left(p_{k}\right)$ & $\sigma\left(p_{k}\right)$ \\
+\hline\hline
+1 & 1 & 2 & 3 & 0 & +1 \\
+2 & 2 & 3 & 1 & 2 & +1 \\
+3 & 3 & 1 & 2 & 2 & +1 \\
+4 & 3 & 2 & 1 & 3 & -1 \\
+5 & 1 & 3 & 2 & 1 & -1 \\
+6 & 2 & 1 & 3 & 1 & -1 \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{document}

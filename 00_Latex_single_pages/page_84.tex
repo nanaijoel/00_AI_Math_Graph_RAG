@@ -1,0 +1,78 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{5.3 Quadratische Gleichungen}
+Wir betrachten eine quadratische Gleichung mit reellen Koeffizienten $a, b, c \in \mathbb{R}$ mit $a \neq 0$ der Form
+
+
+\begin{equation*}
+a z^{2}+b z+c=0 \tag{5.20}
+\end{equation*}
+
+
+Dabei suchen wir alle komplexen Lösungen $z \in \mathbb{C}$ dieser Gleichung. Zunächst betrachten die Diskriminante
+
+
+\begin{equation*}
+D:=b^{2}-4 \cdot a \cdot c \tag{5.21}
+\end{equation*}
+
+
+Je nach Vorzeichen der Diskriminante ergeben sich unterschiedliche Lösungsmengen. Wir betrachten diese Fälle getrennt.
+
+Fall 1: Fall $D>0$. In diesem Fall erhalten wir zwei reelle Lösungen
+
+
+\begin{equation*}
+z_{1,2}=\frac{-b \pm \sqrt{D}}{2 \cdot a} \tag{5.22}
+\end{equation*}
+
+
+Fall 2: Fall $D=0$. In diesem Fall erhalten wir eine reelle Lösung
+
+
+\begin{equation*}
+z=x_{\mathrm{s}}=-\frac{b}{2 \cdot a} \tag{5.23}
+\end{equation*}
+
+
+Fall 3: Fall $D<0$. In diesem Fall erhalten wir zwei komplexe Lösungen
+
+
+\begin{equation*}
+z_{1,2}=\frac{-b \pm \sqrt{D}}{2 \cdot a}=\frac{-b \pm \mathrm{i} \cdot \sqrt{|D|}}{2 \cdot a}=-\frac{b}{2 \cdot a} \pm \mathrm{i} \cdot \frac{\sqrt{|D|}}{2 \cdot a} \tag{5.24}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Jede quadratische Gleichung mit reellen Koeffizienten hat demnach in $\mathbb{C}$ mindestens 1 Lösung und höchstens 2 Lösungen.\\
+ii) $\operatorname{Im}$ Fall $D<0$ gilt
+
+
+\begin{align*}
+& \operatorname{Re}\left(z_{1}\right)=\operatorname{Re}\left(z_{2}\right)=x_{\mathrm{s}}=-\frac{b}{2 \cdot a}  \tag{5.25}\\
+& \operatorname{Im}\left(z_{1}\right)=-\operatorname{Im}\left(z_{2}\right) \tag{5.26}
+\end{align*}
+
+
+Daraus folgt, dass die beiden Lösungen zueinander komplex konjugiert sind, d.h.
+
+
+\begin{equation*}
+z_{2}=z_{1}^{*} \tag{5.27}
+\end{equation*}
+
+
+iii) Quadratische Gleichungen mit nichtreellen Koeffizienten haben so gut wie keine Anwendungen in der Praxis.
+
+
+\end{document}

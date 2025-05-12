@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{7.1.3 Unterräume}
+Eine Teilmenge eines Vektorraums kann selbst wieder ein Vektorraum sein. Dazu machen wir die folgende Definition.
+
+\section*{Definition 7.6 Unterraum}
+Sei $(V, \mathbb{K},+, \cdot)$ ein Vektorraum. Eine Teilmenge $W \subseteq V$ heisst $\operatorname{Unterraum}$ von $V$, falls $(W, \mathbb{K},+, \cdot)$ ebenfalls ein Vektorraum ist.
+
+\section*{Bemerkungen:}
+i) In der Literatur werden Unterräume auch Teilräume genannt.\\
+ii) Um kompakt auszudrücken, dass $W \subseteq V$ nicht nur eine Teilmenge sondern ein Unterraum von $V$ ist, verwendet man die Schreibweise
+
+
+\begin{equation*}
+W \leq V \tag{7.30}
+\end{equation*}
+
+
+iii) Jeder Unterraum eines Vektorraums $V$ muss mindestens 0 enthalten.\\
+iv) Jeder Vektorraum hat zumindest sich selbst und den trivialen Vektorraum als Unterraum. Für jeden Vektorraum $V$ gilt also
+
+
+\begin{equation*}
+\{0\} \leq V \quad \text { und } \quad V \leq V \tag{7.31}
+\end{equation*}
+
+
+Mit Hilfe des folgenden Satzes kann sehr einfach getestet werden, ob eine Teilmenge eines Vektorraums ein Unterraum ist.
+
+Satz 7.5 Test auf Unterraum\\
+Sei $(V, \mathbb{K},+, \cdot)$ ein Vektorraum und $W \subseteq V$. Dann gilt
+
+
+\begin{equation*}
+W \leq V \Leftrightarrow \operatorname{span}(W)=W \tag{7.32}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Eine Teilmenge eines Vektorraums ist also genau dann ein Unterraum, wenn sie abgeschlossen ist unter der Bildung von Linearkombinationen.\\
+ii) Um nachzuweisen, das $W \leq V$ muss man also zeigen, dass
+
+
+\begin{equation*}
+\mathbf{w}_{1}, \mathbf{w}_{2} \in W, x_{1}, x_{2} \in \mathbb{K} \Rightarrow x_{1} \cdot \mathbf{w}_{1}+x_{2} \cdot \mathbf{w}_{2} \in W . \tag{7.33}
+\end{equation*}
+
+
+Beispiele:
+
+\begin{itemize}
+  \item Für jedes $m, n \in \mathbb{N}^{+}$mit $m \leq n$ gilt $\mathbb{K}^{m} \leq \mathbb{K}^{n}$.
+  \item Für jedes $m, n \in \mathbb{N}^{+}$mit $m \leq n$ gilt $\mathcal{P}_{m}(\mathbb{R}) \leq \mathcal{P}_{n}(\mathbb{R})$.
+  \item Jede Gerade in der Ebene kann als Unterraum der Ebene aufgefasst werden.
+  \item Jede Gerade oder Ebene im Raum kann als Unterraum des Raumes aufgefasst werden.
+\end{itemize}
+
+\end{document}

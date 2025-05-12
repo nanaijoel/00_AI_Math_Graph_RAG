@@ -1,0 +1,53 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{1.2.4 Anwendungen}
+\subsection*{1.2.4.1 Drehmoment einer Streckenlast}
+Wir betrachten einen drehbar gelagerten Balken der Länge L, welcher durch eine konstante Streckenlast $Q$ gleichmässig belastet wird. Die Situation ist in der folgendne Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_2ed1ec4774790c83b795g-1}
+
+Um das Drehmoment der Streckenlast zu berechnen, verwenden wir einen Archimedes-Cauchy-Riemann-Approximationsprozess. Dabei gehen wir nach folgenden Schritten vor.
+
+S1 Lokal: Wir betrachten ein kleines Teilstück des Balkens an der Position $x$ mit Länge $\delta x$. Das Drehmoment, welches die Streckenlast auf das Teilstück ausübt beträgt
+
+
+\begin{equation*}
+\underline{\delta M} \approx r(x) \cdot \delta F=\underline{x \cdot Q \cdot \delta x} . \tag{1.11}
+\end{equation*}
+
+
+S2 Global: Durch Integration über $x$ können wir das gesamte Drehmoment der Streckenlast berechnen. Wir erhalten
+
+
+\begin{equation*}
+\underline{\underline{M}}=\int_{0}^{L} x \cdot Q \mathrm{~d} x=Q \int_{0}^{L} x \mathrm{~d} x=\left.Q \cdot \frac{1}{2} \cdot\left[x^{2}\right]\right|_{0} ^{L}=\frac{1}{2} \cdot Q \cdot\left(L^{2}-0^{2}\right)=\underline{\underline{\frac{1}{2}} \cdot Q \cdot L^{2} .} \tag{1.12}
+\end{equation*}
+
+
+\subsection*{1.2.4.2 Staukräfte}
+Wir betrachten eine Staumauer mit veränderlicher Breite $b(z)$, welche ein Medium mit Dichte $\rho$ staut. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_2ed1ec4774790c83b795g-1(1)}
+
+Um die Kraft des gesamten Mediums auf die Staumauer zu berechnen, verwenden wir einen Archimedes-Cauchy-Riemann-Approximationsprozess. Dabei gehen wir nach folgenden Schritten vor.
+
+S1 Lokal: Wir betrachten einen kleinen horizontalen Streifen an der Position z mit Höhe $\delta t$. Die Kraft, welche das Medium auf diesen Streifen ausübt, beträgt
+
+
+\begin{equation*}
+\underline{\delta F} \approx p(z) \cdot \delta A=\underline{\rho \cdot g \cdot z \cdot b(z) \cdot \delta z .} \tag{1.13}
+\end{equation*}
+
+
+
+\end{document}

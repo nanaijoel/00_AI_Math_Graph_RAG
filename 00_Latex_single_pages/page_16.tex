@@ -1,0 +1,83 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.2 Parametrisierte Kurven \& Linienintegrale}
+\subsection*{2.2.1 Parametrisierte Kurven}
+\subsection*{2.2.1.1 Definition}
+Wir betrachten die folgende Definition.\\
+Definition 2.6 Parametrisierte Kurve\\
+Seien $n \in \mathbb{N}^{+}$und $\tau_{0}, \tau_{\mathrm{E}} \in \mathbb{R}$ mit $\tau_{0}<\tau_{\mathrm{E}}$. Eine parametrisierte Kurve ist eine differentierbare Funktion der Form
+
+
+\begin{align*}
+& \mathbf{s}:\left[\tau_{0}, \tau_{\mathrm{E}}\right] \rightarrow \mathbb{R}^{n} \\
+& \tau \mapsto \mathbf{s}(\tau):=\left[\begin{array}{c}
+s_{1}(\tau) \\
+s_{2}(\tau) \\
+\vdots \\
+s_{n}(\tau)
+\end{array}\right] . \tag{2.36}
+\end{align*}
+
+
+Analog zur Vektor-Kinematik in der Physik definiert man weitere Begriffe, um eine parametrisierte Kurve zu beschreiben. Wir betrachten dazu die folgende Definition.
+
+Definition 2.7 Weitere Begriffe\\
+Seien $n \in \mathbb{N}^{+}, \tau_{0}, \tau_{\mathrm{E}} \in \mathbb{R}$ mit $\tau_{0}<\tau_{\mathrm{E}}$ und $\mathbf{s}:\left[\tau_{0}, \tau_{\mathrm{E}}\right] \rightarrow \mathbb{R}^{n}$ eine parametrisierte Kurve.\\
+(a) Geschwindigkeitsvektor:\\
+(d) Beschleunigungsvektor:
+
+$$
+\mathbf{v}(\tau):=\dot{\mathbf{s}}(\tau)
+$$
+
+$$
+\mathbf{a}(\tau):=\dot{\mathbf{v}}(\tau)
+$$
+
+(b) Bahngeschwindigkeit:
+
+$$
+v(\tau):=|\mathbf{v}(\tau)|
+$$
+
+(c) Bahnvektor für $v(\tau) \neq 0$ :
+
+$$
+\hat{\mathbf{e}}(\tau):=\hat{\mathbf{v}}(\tau)
+$$
+
+(e) Bahnbeschleunigung:
+
+$$
+a_{\mathrm{B}}(\tau):=\langle\mathbf{a}(\tau), \hat{\mathbf{e}}(\tau)\rangle
+$$
+
+(f) Bahn:
+
+$$
+B=\mathbf{s}\left(\left[\tau_{0}, \tau_{\mathrm{E}}\right]\right)
+$$
+
+Bemerkungen:\\
+i) Der Ortsvektor $\mathbf{s}(\tau)$ zeigt für jedes $\tau$ vom Ursprung auf den entsprechenden Punkt der Bahn der parametrisierten Kurve in $\mathbb{R}^{n}$.\\
+ii) Für die Masseinheiten erhalten wir
+
+
+\begin{align*}
+& {[\mathbf{v}]=[v]=\frac{[\mathbf{s}]}{[\tau]}}  \tag{2.37}\\
+& {[\mathbf{a}]=\left[a_{\mathrm{B}}\right]=\frac{[\mathbf{s}]}{[\tau]^{2}} .} \tag{2.38}
+\end{align*}
+
+
+
+\end{document}

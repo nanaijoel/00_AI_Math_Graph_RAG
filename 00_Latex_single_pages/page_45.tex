@@ -1,0 +1,92 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Wir betrachten den folgenden Satz.\\
+Satz 2.16 Elementare Rechenregeln für Rotationen\\
+Seien $n \in\{2,3\}, \mathbf{v}, \mathbf{w}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ differentierbare Vektorfelder, $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare Funktion und $a, b \in \mathbb{R}$, dann gelten die folgenden Rechenregeln.\\
+(a) Faktor-Regel:
+
+$$
+\operatorname{rot}(a \cdot \mathbf{v})=a \cdot \operatorname{rot}(\mathbf{v})
+$$
+
+(c) Linearität:
+
+$$
+\operatorname{rot}(a \cdot \mathbf{v}+b \cdot \mathbf{w})=a \cdot \operatorname{rot}(\mathbf{v})+b \cdot \operatorname{rot}(\mathbf{w})
+$$
+
+(b) Summen-Regel:
+
+$$
+\operatorname{rot}(\mathbf{v}+\mathbf{w})=\operatorname{rot}(\mathbf{v})+\operatorname{rot}(\mathbf{w})
+$$
+
+(d) Produkt-Regel für $n=3$ :
+
+$$
+\operatorname{rot}(f \cdot \mathbf{v})=\boldsymbol{\nabla} f \times \mathbf{v}+f \cdot \operatorname{rot}(\mathbf{v})
+$$
+
+\subsection*{2.5.6 Weiteres zu Gradient, Divergenz und Rotation}
+\subsection*{2.5.6.1 Kombinierte Rechenregeln}
+Wir betrachten den folgenden Satz.\\
+Satz 2.17 Kombinierte Rechenregeln für Gradient, Divergenz \& Rotation\\
+Seien $n \in \mathbb{N}^{+}, \mathbf{v}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ ein differentierbares Vektorfeld und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare Funktion, dann gelten die folgenden Rechenregeln.\\
+(a) Divergenz eines Gradienten:
+
+$$
+\operatorname{div}(\boldsymbol{\nabla} f)=\Delta f
+$$
+
+(c) Divergenz einer Rotation für $n=3$ :
+
+$$
+\operatorname{div}(\operatorname{rot}(\mathbf{v}))=0
+$$
+
+(b) Rotation eines Gradienten für $n \in\{2,3\}$ :
+
+$$
+\operatorname{rot}(\boldsymbol{\nabla} f)=0
+$$
+
+(d) Rotation einer Rotation für $n=3$ :
+
+$$
+\operatorname{rot}(\operatorname{rot}(\mathbf{v}))=\boldsymbol{\nabla} \operatorname{div}(\mathbf{v})-\Delta \mathbf{v}
+$$
+
+Beweis: Siehe Übungen.\\
+Wir betrachten den folgenden Satz.\\
+Satz 2.18 Rechenregeln für Vektor-Produkte in 3D\\
+Seien $\mathbf{v}, \mathbf{w}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ differentierbare Vektorfelder und $g, h: \mathbb{R}^{3} \rightarrow \mathbb{R}$ differentierbare Funktionen, dann gelten die folgenden Rechenregeln.\\
+(a) Divergenz eines Vektor-Produkts:
+
+$$
+\operatorname{div}(\mathbf{v} \times \mathbf{w})=\langle\operatorname{rot}(\mathbf{v}), \mathbf{w}\rangle-\langle\mathbf{v}, \operatorname{rot}(\mathbf{w})\rangle
+$$
+
+(b) Rotation eines Vektor-Produkts:
+
+$$
+\operatorname{rot}(\mathbf{v} \times \mathbf{w})=\boldsymbol{\nabla}_{\mathbf{w}} \mathbf{v}-\boldsymbol{\nabla}_{\mathbf{v}} \mathbf{w}+\operatorname{div}(\mathbf{w}) \cdot \mathbf{v}-\operatorname{div}(\mathbf{v}) \cdot \mathbf{w}
+$$
+
+(c) Divergenz eines Vektor-Produkts von Gradienten:
+
+$$
+\operatorname{div}(\boldsymbol{\nabla} g \times \boldsymbol{\nabla} h)=0
+$$
+
+
+\end{document}

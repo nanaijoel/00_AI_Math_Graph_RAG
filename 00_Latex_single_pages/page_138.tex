@@ -1,0 +1,67 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{7.2 Lineare Abbildungen}
+\subsection*{7.2.1 Definition}
+Der Begriff lineare Abbildung lässt sich zwischen allgemeinen Vektorräumen definieren.
+
+\section*{Definition 7.7 Lineare Abbildung}
+Seien $(V, \mathbb{K},+, \cdot)$ und $(W, \mathbb{K},+, \cdot)$ zwei Vektorräume über dem gleichen Zahlenkörper $\mathbb{K}$. Eine Abbildung der Form
+
+
+\begin{equation*}
+a: V \rightarrow W \tag{7.34}
+\end{equation*}
+
+
+heisst lineare Abbildung, falls für alle $\mathbf{u}, \mathbf{v} \in V$ und $x, y \in \mathbb{K}$ gilt
+
+
+\begin{equation*}
+a(x \cdot \mathbf{u}+y \cdot \mathbf{v})=x \cdot a(\mathbf{u})+y \cdot a(\mathbf{v}) \tag{7.35}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Für diese Definition ist es sehr wichtig, dass die Vektorräume $V$ und $W$ über dem gleichen Zahlenkörper $\mathbb{K}$ definiert sind.\\
+ii) Diese Definition entspricht der Definition 6.14 aus Abschnitt 6.2.1.\\
+iii) Eine lineare Abbildung erkennt man daran, dass sie die Struktur einer Linearkombination respektiert.\\
+iv) Für alle linearen Abbildungen gilt offensichtlich
+
+
+\begin{equation*}
+\underline{\underline{a(0)}}=a(0 \cdot 0)=0 \cdot a(0)=\underline{\underline{0}} . \tag{7.36}
+\end{equation*}
+
+
+Beispiele:
+
+\begin{itemize}
+  \item Die bereits bekannten geometrisch definierten linearen Abbildungen in $\mathbb{R}^{n}$ wie Spiegelungen, Drehungen, Projektionen etc...
+  \item Die Ableitung $d: \mathcal{P}_{n}(\mathbb{R}) \rightarrow \mathcal{P}_{n}(\mathbb{R})$ oder $d: \mathcal{P}_{n}(\mathbb{R}) \rightarrow \mathcal{P}_{n-1}(\mathbb{R})$.
+  \item Die Orthogonal-Projektion in $\mathcal{L}^{2}(\mathbb{R})$.
+\end{itemize}
+
+\subsection*{7.2.2 Matrix-Darstellung}
+Betrachtet man eine lineare Abbildung zwischen zwei endlich dimensionalen Vektorräumen und wählt in beiden jeweils eine Basis, dann kann man die lineare Abbildung durch eine Abbildungsmatrix darstellen.
+
+\section*{Definition 7.8 Abbildungsmatrix}
+Seien $(V, \mathbb{K},+, \cdot)$ und $(W, \mathbb{K},+, \cdot)$ zwei Vektorräume über dem gleichen Zahlenkörper $\mathbb{K}$ mit den endlichen Dimensionen $\operatorname{dim}(V)=n \in \mathbb{N}^{+}$bzw. $\operatorname{dim}(W)=m \in \mathbb{N}^{+}$und Basen $\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subseteq$ $V$ bzw. $\left\{\mathbf{E}_{1}, \ldots, \mathbf{E}_{m}\right\} \subseteq W$ sowie $a: V \rightarrow W$ eine lineare Abbildung. Die Abbildungsmatrix von $a$ bezüglich der gewählten Basen ist die Matrix $A \in \mathbb{M}(m, n, \mathbb{K})$ mit den Komponenten $A^{i}{ }_{j} \in \mathbb{K}$, so dass für alle $j \in\{1, \ldots, n\}$ gilt
+
+
+\begin{equation*}
+a\left(\mathbf{e}_{j}\right)=\sum_{i=1}^{m} A_{j}^{i} \cdot \mathbf{E}_{i} . \tag{7.37}
+\end{equation*}
+
+
+
+\end{document}

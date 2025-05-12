@@ -1,0 +1,83 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+iii) Beispiel-Codes zur Berechnung des charakteristischen Polynoms mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $\mathrm{p}=$ charpoly (A) \\
+\hline
+Mathematica/WolframAlpha & $\mathrm{p}=$ CharacteristicPolynomial $[\mathrm{A}, \mathrm{x}]$ \\
+\hline
+Python/Numpy & import numpy as np; p=np.poly(A) \\
+\hline
+Python/Sympy & import sympy as sp; p=A.charpoly() \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten die Matrix\\
+$A=\left[\begin{array}{ll}7 & 2 \\ 3 & 8\end{array}\right]$.\\
+Es folgt
+\end{itemize}
+
+
+\begin{align*}
+\operatorname{tr}(A) & =7+8=15  \tag{6.164}\\
+\operatorname{det}(A) & =7 \cdot 8-3 \cdot 2=56-6=50  \tag{6.165}\\
+\underline{\underline{p_{A}(\lambda)}} & =\lambda^{2}-\operatorname{tr}(A) \cdot \lambda+\operatorname{det}(A)=\underline{\underline{\lambda^{2}-15 \lambda+50 .}} \tag{6.166}
+\end{align*}
+
+
+\begin{itemize}
+  \item $A=\left[\begin{array}{ll}5 & 1 \\ 1 & 5\end{array}\right] \Rightarrow \ldots \Rightarrow p_{A}(\lambda)=\lambda^{2}-10 \lambda+24$
+  \item $A=\left[\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right] \Rightarrow \ldots \Rightarrow p_{A}(\lambda)=\lambda^{2}-1$
+\end{itemize}
+
+\subsection*{6.5.4 Eigenwerte \& Eigenvektoren berechnen}
+Um die Eigenwerte und Eigenvektoren einer Matrix zu berechnen, hilft uns der folgende Satz weiter.
+
+Satz 6.22 Eigenwerte sind Nullstellen des charakteristischen Polynoms\\
+Seien $n \in \mathbb{N}^{+}, A \in \mathbb{M}(n, n, \mathbb{R})$ und $\lambda \in \mathbb{R}$. Dann gilt
+
+
+\begin{equation*}
+\lambda \in \operatorname{Spec}(A) \Leftrightarrow p_{A}(\lambda)=0 . \tag{6.167}
+\end{equation*}
+
+
+Beweis: Für einen Eigenwert $\lambda \in \mathbb{R}$ und einen zugehörigen Eigenvektor $\mathbf{E} \in \mathbb{R}^{n} \backslash\{0\}$ gilt
+
+$$
+\begin{array}{lll} 
+& A \cdot \mathbf{E}=\lambda \cdot \mathbf{E} & \mid-A \cdot \mathbf{E} \\
+\Leftrightarrow & \lambda \cdot \mathbf{E}-A \cdot \mathbf{E}=0 & \\
+\Leftrightarrow & (\lambda \cdot \mathbb{1}-A) \cdot \mathbf{E}=0 . &
+\end{array}
+$$
+
+Dies ist ein homogenes, lineares Gleichungssystem für $\mathbf{E}$, das genau dann von 0 verschiedene Lösungen hat, wenn die Matrix $\lambda \cdot \mathbb{1}-A$ singulär ist. Demnach muss gelten
+
+
+\begin{equation*}
+\underline{\underline{0}}=\operatorname{det}(\lambda \cdot \mathbb{1}-A)=\underline{\underline{p_{A}(\lambda)}} . \tag{6.171}
+\end{equation*}
+
+
+Damit haben wir den Satz bewiesen.
+
+
+\end{document}

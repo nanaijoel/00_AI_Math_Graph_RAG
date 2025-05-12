@@ -1,0 +1,66 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+iv) Ganz besonders bequem lässt sich ein LGLS lösen, wenn die linke Seite eine orthogonale Matrix ist. Gilt $A \in \mathrm{O}(n)$, dann folgt
+
+\[
+\begin{array}{rlrl} 
+& A \cdot \mathbf{u} & =\mathbf{b} & \mid A^{T} . \\
+\Leftrightarrow & A^{T} \cdot A \cdot \mathbf{u}=A^{-1} \cdot A \cdot \mathbf{u}=A^{T} \cdot \mathbf{b} & \\
+\Leftrightarrow & \mathbb{1} \cdot \mathbf{u}=A^{T} \cdot \mathbf{b} . & \tag{6.59}
+\end{array}
+\]
+
+Daraus erhalten wir die Lösung
+
+
+\begin{equation*}
+\underline{\underline{\mathbf{u}}=A^{T} \cdot \mathbf{b}} \tag{6.60}
+\end{equation*}
+
+
+Das LGLS ist demnach eindeutig lösbar und die Lösung lässt sich ganz einfach durch Multiplikation der rechten Seite von links mit der Transponierten von $A$ berechnen.
+
+Beispiele:
+
+\begin{itemize}
+  \item $\left[\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right]$
+  \item $\frac{1}{\sqrt{13}} \cdot\left[\begin{array}{rr}-2 & 3 \\ 3 & 2\end{array}\right]$
+  \item $\frac{1}{5} \cdot\left[\begin{array}{rrr}3 & -4 & 0 \\ 4 & 3 & 0 \\ 0 & 0 & 5\end{array}\right]$
+\end{itemize}
+
+\subsection*{6.3.2 Geometrische Eigenschaften}
+Die Spalten-Vektoren einer orthogonalen Matrix haben bemerkenswerte geometrische Eigenschaften.
+
+Satz 6.7 Orthonormalität der Spalten-Vektoren\\
+Seien $n \in \mathbb{N}^{+}$und $A \in \mathrm{O}(n)$ mit Spaltenvektoren $\mathbf{a}_{1}, \ldots, \mathbf{a}_{n} \in \mathbb{R}^{n}$, d.h.
+
+\[
+A=\left[\begin{array}{llll}
+\mathbf{a}_{1} & \mathbf{a}_{2} & \ldots & \mathbf{a}_{n} \tag{6.61}
+\end{array}\right] .
+\]
+
+Dann gilt
+
+\[
+\left\langle\mathbf{a}_{i}, \mathbf{a}_{j}\right\rangle=\delta_{i j}=\left\{\begin{array}{l|l}
+1 & i=j  \tag{6.62}\\
+0 & i \neq j
+\end{array}\right.
+\]
+
+Beweis: Weil $A$ orthogonal ist, gilt\\
+$\mathbb{\#}=A^{-1} \cdot A=A^{T} \cdot A=\left[\begin{array}{c}\mathbf{a}_{1}^{T} \\ \mathbf{a}_{2}^{T} \\ \vdots \\ \mathbf{a}_{n}^{T}\end{array}\right] \cdot\left[\begin{array}{llll}\mathbf{a}_{1} & \mathbf{a}_{2} & \ldots & \mathbf{a}_{n}\end{array}\right]=\left[\begin{array}{cccc}\mathbf{a}_{1}^{T} \cdot \mathbf{a}_{1} & \mathbf{a}_{1}^{T} \cdot \mathbf{a}_{2} & \ldots & \mathbf{a}_{1}^{T} \cdot \mathbf{a}_{n} \\ \mathbf{a}_{2}^{T} \cdot \mathbf{a}_{1} & \mathbf{a}_{2}^{T} \cdot \mathbf{a}_{2} & \ldots & \mathbf{a}_{2}^{T} \cdot \mathbf{a}_{n} \\ \vdots & \vdots & \vdots & \vdots \\ \mathbf{a}_{n}^{T} \cdot \mathbf{a}_{1} & \mathbf{a}_{n}^{T} \cdot \mathbf{a}_{2} & \ldots & \mathbf{a}_{n}^{T} \cdot \mathbf{a}_{n}\end{array}\right]$
+
+
+\end{document}

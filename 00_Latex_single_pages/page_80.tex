@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{5.1.3 Zahlenumfang}
+Nach Konstruktion enthält $\mathbb{C}$ offensichtlich die folgenden Zahlen.
+
+\begin{enumerate}
+  \item alle $x \in \mathbb{R}$
+  \item $\mathrm{i} \in \mathbb{C} \backslash \mathbb{R}$
+  \item alle reellen Vielfachen von i, d.h. $y \cdot \mathrm{i}$ mit $y \in \mathbb{R}$
+  \item alle Linearkombinationen der Form $z=x+y \cdot \mathrm{i}$ mit $x, y \in \mathbb{R}$
+\end{enumerate}
+
+Tatsache ist, dass diese Aufzählung bereits alle komplexen Zahlen umfasst. Wir betrachten dazu den folgenden Satz.
+
+Satz 5.1 Arithmetische Form\\
+Für jedes $z \in \mathbb{C}$ gibt es eindeutige $x, y \in \mathbb{R}$, so dass gilt
+
+
+\begin{equation*}
+z=x+y \cdot \mathrm{i} . \tag{5.2}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Jede komplexe Zahl lässt sich darstellen durch 2 reelle Zahlen. Somit muss $\mathbb{C}$ eine ähnliche Struktur haben wie $\mathbb{R}^{2}$.\\
+ii) Für $y=0$ erhält man gerade alle reellen Zahlen.\\
+iii) Die reellen Vielfachen von i sind die gesuchten neuen Zahlen, deren Quadrate einen negativen reellen Wert haben. Beispiele:
+
+
+\begin{align*}
+& z=2 \cdot \mathrm{i} \Rightarrow z^{2}=(2 \cdot \mathrm{i})^{2}=2^{2} \cdot \mathrm{i}^{2}=4 \cdot(-1)=-4  \tag{5.3}\\
+& z=\sqrt{3} \cdot \mathrm{i} \Rightarrow z^{2}=(\sqrt{3} \cdot \mathrm{i})^{2}=3 \cdot(-1)=-3  \tag{5.4}\\
+& z=y \cdot \mathrm{i} \Rightarrow z^{2}=(y \cdot \mathrm{i})^{2}=y^{2} \cdot(-1)=-y^{2} . \tag{5.5}
+\end{align*}
+
+
+Wir betrachten folgende Definition.
+
+\section*{Definition 5.2 Weitere Bezeichnungen}
+Seien $z \in \mathbb{C}$ und $x, y \in \mathbb{R}$ mit
+
+
+\begin{equation*}
+z=x+y \cdot \mathrm{i} . \tag{5.6}
+\end{equation*}
+
+
+Es werden die folgenden Bezeichnungen verwendet.\\
+(a) Realteil von $z$\\
+(c) Betrag von $z$
+
+$$
+\operatorname{Re}(z):=x .
+$$
+
+$$
+|z|:=\sqrt{x^{2}+y^{2}} .
+$$
+
+(b) Imaginärteil von $z$\\
+(d) Komplex-Konjugierte von $z$
+
+$$
+\operatorname{Im}(z):=y .
+$$
+
+$$
+z^{*}:=x-y \cdot \mathrm{i} .
+$$
+
+
+\end{document}

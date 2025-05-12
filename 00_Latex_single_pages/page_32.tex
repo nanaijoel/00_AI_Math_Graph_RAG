@@ -1,0 +1,37 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{bbold}
+
+\begin{document}
+Beispiele:
+
+\begin{itemize}
+  \item Eine Ebene, welche durch den Punkt $\mathbf{P}_{0}$ verläuft und aufgespannt wird durch die beiden Vektoren $\mathbf{v}$ und w.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_c8bbd61832592ca22f9eg-1}
+\end{itemize}
+
+Das Karten-Gebiet ist $U=\mathbb{R}^{2}$ und die übliche Parametrisierung lautet\\
+$\mathbf{P}(u ; v)=\mathbf{P}_{0}+u \cdot \mathbf{v}+v \cdot \mathbf{w}$.\\
+Diese Parametrisierung ist eine bijektive Abbildung zwischen der ganzen $u$-v-Ebene und der zu parametrisierenden Ebene $M$ in 3D.
+
+\begin{itemize}
+  \item Eine Sphäre mit Radius $R>0$ und Mittelpunkt am Ursprung.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_c8bbd61832592ca22f9eg-1(1)}
+\end{itemize}
+
+Das Karten-Gebiet ist $U=[0, \pi] \times[0,2 \pi[$ und die übliche Parametrisierung lautet\\
+$\mathbf{P}(\theta ; \varphi)=\left[\begin{array}{c}x(\theta ; \varphi) \\ y(\theta ; \phi) \\ z(\theta ; \varphi)\end{array}\right]=\left[\begin{array}{r}R \cdot \sin (\theta) \cdot \cos (\varphi) \\ R \cdot \sin (\theta) \cdot \sin (\varphi) \\ R \cdot \cos (\theta)\end{array}\right]$.\\
+Diese Parametrisierung ist nicht injektiv, weil die Strecken $\{0\} \times[0,2 \pi[$ und $\{\pi\} \times[0,2 \pi[$ jeweils als Ganzes auf den Nord- bzw. Südpol der Sphäre abgebildet werden.
+
+
+\end{document}

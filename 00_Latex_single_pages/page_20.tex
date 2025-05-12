@@ -1,0 +1,34 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+iii) Man kann zeigen, dass das Linienintegral I bis auf das Vorzeichen nicht von der Wahl der Parametrisierung sondern nur von der Bahn abhängt (sofern mehrfache Durchläufe auch mehrfach gerechnet werden).\\
+iv) Wählt man für den Kurvenparameter die geometrische Weglänge $\tau=s$ entlang der Bahn ("Kilometrierung"), dann gilt\\
+$\mathbf{v}(s)=v(s) \cdot \hat{\mathbf{e}}(s)=1 \cdot \hat{\mathbf{e}}(s)=\hat{\mathbf{e}}(s)$.\\
+Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_92f2456d31e5eb52c995g-1}
+
+Somit folgt\\
+$\underline{\underline{I}}=\int_{\tau_{0}}^{\tau_{\mathrm{E}}}\langle\mathbf{w}, \mathbf{v}\rangle \mathrm{d} \tau=\underline{\underline{\int_{s_{0}}}\langle\mathbf{w}, \hat{\mathbf{e}}\rangle \mathrm{d} s}$.\\
+v) Um ein Linienintegral auszurechnen, müssen die Koordinaten der Punkte entlang der parametrisierten Kurve im Vektorfeld eingesetzt werden. Vollständig ausgeschrieben mit allen Abhängigkeiten ergibt dies\\
+$I=\int_{\tau_{0}}^{\tau_{\mathrm{E}}}\langle\mathbf{w}(\mathbf{s}(\tau)), \mathbf{v}(\tau)\rangle \mathrm{d} \tau=\int_{s_{0}}^{s_{\mathrm{E}}}\langle\mathbf{w}(\mathbf{s}(s)), \hat{\mathbf{e}}(s)\rangle \mathrm{d} s$.\\
+vi) In der Literatur findet man für Linienintegrale entlang einer Kurve $\gamma$ die Schreibweisen $I=\int_{\tau_{0}}^{\tau_{\mathrm{E}}}\langle\mathbf{w}, \mathbf{v}\rangle \mathrm{d} \tau=\int_{s_{0}}^{s_{\mathrm{E}}}\langle\mathbf{w}, \hat{\mathbf{e}}\rangle \mathrm{d} s=\int_{\gamma}\langle\mathbf{w}, \hat{\mathbf{e}}\rangle \mathrm{d} s=\int_{\gamma} \mathbf{w} \cdot \mathrm{d} \mathbf{s}$.\\
+vii) Ein Linienintegral über eine geschlossene Kurve heisst Zirkulation des Vektorfeldes entlang der betreffenden Kurve.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_92f2456d31e5eb52c995g-1(1)}
+
+In diesem Fall verwendet man das Ring-Integralzeichen, d.h.\\
+$\Upsilon=\oint_{\tau_{0}}^{\tau_{\mathrm{E}}}\langle\mathbf{w}, \mathbf{v}\rangle \mathrm{d} \tau=\oint_{s_{0}}^{s_{\mathrm{E}}}\langle\mathbf{w}, \hat{\mathbf{e}}\rangle \mathrm{d} s=\oint_{\gamma} \mathbf{w} \cdot \mathrm{d} \mathbf{s}$.\\
+viii) Das Linienintegral eines Vektorfeldes $\mathbf{w}$ entlang einer Kurve ist das Integral des Anteils von w, welcher entlang ê und somit entlang der Kurve zeigt. Der zu ê bzw. zur Kurve senkrechte Anteil von $\mathbf{w}$ ist für das Linienintegral irrelevant.
+
+
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+In der Analysis heisst eine Funktion genau dann linear, wenn ihr Graph eine Gerade ist. Somit ist im Funktionsterm nebst dem Term $m \cdot x$ auch noch eine Konstante $q \neq 0$ zulässig. In der linearen Algebra würde solch ein $q$ jedoch die Gültigkeit der Haupteigenschaft (6.33) verhindern.
+
+\subsection*{6.2.2 Eigenschaften}
+Die Abbildungsmatrix der Verknüpfung von zwei linearen Abbildungen lässt sich auf einfache Weise aus den Abbildungsmatrizen der beiden verknüpften linearen Abbildungen berechnen.
+
+\section*{Satz 6.3 Verknüpfungssatz}
+Seien $m, n, l \in \mathbb{N}^{+}$und $a: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ sowie $b: \mathbb{R}^{n} \rightarrow \mathbb{R}^{l}$ zwei lineare Abbildungen mit Abbildungsmatrizen $A \in \mathbb{M}(n, m, \mathbb{R})$ bzw. $B \in \mathbb{M}(l, n, \mathbb{R})$. Dann ist die Verknüpfung
+
+
+\begin{align*}
+c: \mathbb{R}^{m} & \rightarrow \mathbb{R}^{l} \\
+\mathbf{x} & \mapsto c(\mathbf{x}):=b(a(\mathbf{x})) \tag{6.37}
+\end{align*}
+
+
+ebenfalls eine lineare Abbildung mit Abbildungsmatrix
+
+
+\begin{equation*}
+C=B \cdot A . \tag{6.38}
+\end{equation*}
+
+
+Beweis: Wegen der Assoziativität des Matrix-Produkts finden wir für alle $\mathbf{x} \in \mathbb{R}^{m}$
+
+
+\begin{equation*}
+c(\mathbf{x})=b(a(\mathbf{x}))=b(A \cdot \mathbf{x})=B \cdot(A \cdot \mathbf{x})=\underline{(B \cdot A) \cdot \mathbf{x}=: C \cdot \mathbf{x},} \tag{6.39}
+\end{equation*}
+
+
+wobei gelten muss
+
+
+\begin{equation*}
+\underline{C=B \cdot A .} \tag{6.40}
+\end{equation*}
+
+
+Damit haben wir den Satz bewiesen.\\
+Ist eine lineare Abbildung bijektiv, dann ist auch die Umkehrabbildung wieder eine lineare Abbildung, deren Abbildungsmatrix gerade die Inverse der ursprünglichen Abbildungsmatrix ist.
+
+Satz 6.4 Inversionssatz\\
+Seien $m, n \in \mathbb{N}^{+}$und $a: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ eine lineare Abbildung mit Abbildungsmatrix $A \in \mathbb{M}(n, m, \mathbb{R})$. Dann gilt folgendes.\\
+(a) a bijektiv $\Rightarrow n=m$\\
+(b) a bijektiv $\Leftrightarrow A$ regulär\\
+(c) $a$ bijektiv $\Rightarrow a^{-1}(\mathbf{y})=A^{-1} \cdot \mathbf{y}$.
+
+Bemerkungen:\\
+i) Die Verknüpfung von zwei linearen Abbildungen geschieht durch Matrix-Multiplikation der Abbildungsmatrizen. Dabei muss die Reihenfolge beachtet werden, d.h.
+
+
+\begin{equation*}
+a(\mathbf{x}):=a_{N}\left(\ldots a_{2}\left(a_{1}(\mathbf{x})\right)\right) \Rightarrow A=A_{N} \cdot \ldots \cdot A_{2} \cdot A_{1} . \tag{6.41}
+\end{equation*}
+
+
+ii) Die Umkehrung einer bijektiven linearen Abbildung geschieht durch Inversion der Abbildungsmatrix.
+
+
+\end{document}

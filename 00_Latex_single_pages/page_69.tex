@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{3.2.1.2 Integration über ein beidseitig unendliches Intervall}
+Wir betrachten die gesamte Fläche zwischen dem Graphen einer Funktion $f: \mathbb{R} \rightarrow \mathbb{R}$ und der $x$-Achse. Eine solche Situation ist im folgenden $x-y$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_8cebfced61e2a1b07c53g-1}
+
+Wir betrachten die folgende Definition.\\
+Definition 3.2 Uneigentliches Integral mit zwei unendlichen Grenzen.\\
+Seien $f: \mathbb{R} \rightarrow \mathbb{R}$ eine integrierbare Funktion und $x_{0} \in \mathbb{R}$. Das uneigentliche Integral von $f$ über die reellen Zahlen ist
+
+
+\begin{equation*}
+\int_{-\infty}^{\infty} f(x) \mathrm{d} x:=\lim _{r \rightarrow \infty} \int_{-r}^{x_{0}} f(x) \mathrm{d} x+\lim _{s \rightarrow \infty} \int_{x_{0}}^{s} f(x) \mathrm{d} x \tag{3.36}
+\end{equation*}
+
+
+falls beide Grenzwerte konvergieren.
+
+Bemerkungen:\\
+i) Das uneigentliche Integral wird als Summe von zwei Grenzwerten berechnet und existiert somit nur dann, wenn beide einzeln konvergieren.\\
+ii) Für die Aufteilung kann ein beliebiges $x_{0} \in \mathbb{R}$ gewählt werden.\\
+iii) Falls das uneigentliche Integral existiert, dann konvergiert auch der zweiseitige Grenzwert und es gilt\\
+$I=\int_{-\infty}^{\infty} f(x) \mathrm{d} x=\lim _{s \rightarrow \infty} \int_{-s}^{s} f(x) \mathrm{d} x$.\\
+iv) Aus der Konvergenz des zweiseitigen Grenzwertes folgt jedoch nicht die Existenz des uneigentlichen Integrals! In solchen Fällen führt das Verwenden des zweiseitigen Grenzwertes zu Fehlschlüssen und falschen Ergebnissen, wie die folgenden Beispiele zeigen.
+
+
+\begin{align*}
+I & =\int_{-\infty}^{\infty} x \mathrm{~d} x=\lim _{s \rightarrow \infty} \int_{-s}^{s} x \mathrm{~d} x=\left.\lim _{s \rightarrow \infty} \frac{1}{2} \cdot\left[x^{2}\right]\right|_{-s} ^{s}=\lim _{s \rightarrow \infty} \frac{1}{2} \cdot\left(s^{2}-(-s)^{2}\right) \\
+& =\frac{1}{2} \cdot \lim _{s \rightarrow \infty} 0=0 \quad \text { konvergent! }  \tag{3.38}\\
+I & =\int_{-\infty}^{\infty} x \mathrm{~d} x=\lim _{s \rightarrow \infty} \int_{-s}^{s+1} x \mathrm{~d} x=\left.\lim _{s \rightarrow \infty} \frac{1}{2} \cdot\left[x^{2}\right]\right|_{-s} ^{s+1}=\lim _{s \rightarrow \infty} \frac{1}{2} \cdot\left((s+1)^{2}-(-s)^{2}\right) \\
+& =\frac{1}{2} \cdot \lim _{s \rightarrow \infty}\left(s^{2}+2 s+1-s^{2}\right)=\frac{1}{2} \cdot \lim _{s \rightarrow \infty}(2 s+1)=\infty \quad \text { divergent! } \tag{3.39}
+\end{align*}
+
+
+
+\end{document}

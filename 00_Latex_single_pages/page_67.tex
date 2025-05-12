@@ -1,0 +1,65 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{3.2 Uneigentliche Integrale}
+\subsection*{3.2.1 Integration über unendliche Intervalle}
+\subsection*{3.2.1.1 Integration über ein einseitig unendliches Intervall}
+Eine Fläche kann durch eine unendlich lange Randkurve begrenzt sein und trotzdem einen endlichen Flächeninhalt haben. Wir betrachten den Graphen einer Funktion $f: \mathbb{R} \rightarrow \mathbb{R}$, welche sich für $x \rightarrow \infty$ asymptotisch der $x$-Achse annähert. Eine solche Situation ist im folgenden $x$ - $y$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_2bba3dc5ed5033204f9eg-1}
+
+Wir betrachten die folgende Definition.\\
+Definition 3.1 Uneigentliches Integral mit einer unendlichen Grenze.\\
+Seien $x_{0}, x_{\mathrm{E}} \in \mathbb{R}$ und $f: \mathbb{R} \rightarrow \mathbb{R}$ eine integrierbare Funktion. Die uneigentlichen Integrale von $f$ Richtung $\pm \infty$ sind\\
+(a) $\int_{x_{0}}^{\infty} f(x) \mathrm{d} x:=\lim _{s \rightarrow \infty} \int_{x_{0}}^{s} f(x) \mathrm{d} x$,\\
+(b) $\int_{-\infty}^{x_{\mathrm{E}}} f(x) \mathrm{d} x:=\lim _{s \rightarrow \infty} \int_{-s}^{x_{\mathrm{E}}} f(x) \mathrm{d} x$,\\
+falls die betreffenden Grenzwerte jeweils konvergieren.
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten das uneigentliche Integral
+\end{itemize}
+
+
+\begin{equation*}
+\underline{\underline{I}}=\int_{2}^{\infty} \frac{1}{x^{2}} \mathrm{~d} x=\lim _{s \rightarrow \infty} \int_{2}^{s} \frac{1}{x^{2}} \mathrm{~d} x=\left.\lim _{s \rightarrow \infty}\left[-\frac{1}{x}\right]\right|_{2} ^{s}=\lim _{s \rightarrow \infty}\left(-\frac{1}{s}+\frac{1}{2}\right)=0+\frac{1}{2}=\underline{\underline{\frac{1}{2}}} . \tag{3.30}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Wir betrachten das uneigentliche Integral
+\end{itemize}
+
+
+\begin{equation*}
+I=\int_{2}^{\infty} \frac{1}{x} \mathrm{~d} x=\lim _{s \rightarrow \infty} \int_{2}^{s} \frac{1}{x} \mathrm{~d} x=\lim _{s \rightarrow \infty} \ln \left(\frac{s}{2}\right)=\infty . \tag{3.31}
+\end{equation*}
+
+
+Dieses uneigentliche Integral ist divergent und existiert daher nicht.
+
+\begin{itemize}
+  \item Wir betrachten das uneigentliche Integral
+\end{itemize}
+
+
+\begin{align*}
+\underline{\underline{I}} & =\int_{\ln (2)}^{\infty} \mathrm{e}^{-x} \mathrm{~d} x=\lim _{s \rightarrow \infty} \int_{\ln (2)}^{s} \mathrm{e}^{-x} \mathrm{~d} x=\left.\lim _{s \rightarrow \infty}\left[-\mathrm{e}^{-x}\right]\right|_{\ln (2)} ^{s}=\lim _{s \rightarrow \infty}\left(-\mathrm{e}^{-s}+\mathrm{e}^{-\ln (2)}\right)=0+\mathrm{e}^{-\ln (2)} \\
+& =\mathrm{e}^{-\ln (2)}=\frac{1}{\mathrm{e}^{\ln (2)}}=\underline{\underline{1}} . \tag{3.32}
+\end{align*}
+
+
+
+\end{document}

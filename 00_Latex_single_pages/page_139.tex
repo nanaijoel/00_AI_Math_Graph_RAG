@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Bemerkenswerterweise gilt nun der folgende Satz.\\
+Satz 7.6 Berechnung mit der Abbildungsmatrix\\
+Seien $(V, \mathbb{K},+, \cdot)$ und ( $W, \mathbb{K},+, \cdot$ ) zwei Vektorräume über dem gleichen Zahlenkörper $\mathbb{K}$ mit den endlichen Dimensionen $\operatorname{dim}(V)=n \in \mathbb{N}^{+}$bzw. $\operatorname{dim}(W)=m \in \mathbb{N}^{+}$und Basen $\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subseteq$ $V$ bzw. $\left\{\mathbf{E}_{1}, \ldots, \mathbf{E}_{m}\right\} \subseteq W$ sowie $a: V \rightarrow W$ eine lineare Abbildung mit Abbildungsmatrix $A \in \mathbb{M}(m, n, \mathbb{K})$. Ferner seien
+
+
+\begin{equation*}
+\mathbf{v}=\sum_{j=1}^{n} v^{j} \cdot \mathbf{e}_{j} \in V \quad \text { und } \quad \mathbf{w}=\sum_{i=1}^{m} w^{i} \cdot \mathbf{E}_{i} \in W \tag{7.38}
+\end{equation*}
+
+
+für welche gilt
+
+
+\begin{equation*}
+\mathbf{w}=a(\mathbf{v}) . \tag{7.39}
+\end{equation*}
+
+
+Für die Komponenten von v und w gilt dann die Beziehung
+
+\[
+\left[\begin{array}{c}
+w^{1}  \tag{7.40}\\
+\vdots \\
+w^{m}
+\end{array}\right]=\left[\begin{array}{ccc}
+A^{1}{ }_{1} & \ldots & A^{1}{ }_{n} \\
+\vdots & \vdots & \vdots \\
+A^{m} & \ldots & A^{m}{ }_{n}
+\end{array}\right] \cdot\left[\begin{array}{c}
+v^{1} \\
+\vdots \\
+v^{n}
+\end{array}\right] .
+\]
+
+Beweis: Durch Einsetzen der Basis-Darstellung von v und weil a eine lineare Abbildung ist, erhalten wir
+
+
+\begin{align*}
+\sum_{i=1}^{m} w^{i} \cdot \mathbf{E}_{i} & =\mathbf{w}=a(\mathbf{v})=a\left(\sum_{j=1}^{n} v^{j} \cdot \mathbf{e}_{j}\right)=\sum_{j=1}^{n} v^{j} \cdot a\left(\mathbf{e}_{j}\right)=\sum_{j=1}^{n} v^{j} \cdot \sum_{i=1}^{m} A_{j}^{i} \cdot \mathbf{E}_{i} \\
+& =\sum_{i=1}^{m} \underbrace{\sum_{j=1}^{n} A_{j}^{i} \cdot v^{j}}_{=w^{i}} \cdot \mathbf{E}_{i} . \tag{7.41}
+\end{align*}
+
+
+Wegen der Eindeutigkeit der Basis-Darstellung folgt aus einem Koeffizientenvergleich für alle $i \in\{1, \ldots, m\}$, dass
+
+
+\begin{equation*}
+w^{i}=\sum_{j=1}^{n} A_{j}^{i} \cdot v^{j} . \tag{7.42}
+\end{equation*}
+
+
+In Matrix-Schreibweise entspricht dies genau (7.40) und wir haben den Satz bewiesen.\\
+Bemerkungen:\\
+i) Sind in den Vektorräumen $V$ und $W$ jeweils Basen gewählt, dann reduziert sich die Anwendung einer linearen Abbildung auf eine Matrix-Multiplikation analog zur Situation für eine lineare Abbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$.\\
+ii) Die Eigenschaften einer linearen Abbildung können aus den Eigenschaften ihrer Abbildungsmatrix abgelesen werden.\\
+iii) Analog zur Situation für eine lineare Abbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ gelten auch hier der Verknüpfungssatz und der Inversionssatz für bijektive, lineare Abbildungen\\
+iv) Analog zur Situation für eine lineare Abbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ kann die Abbildungsmatrix mit Hilfe des Spalten-Vektor-Konstruktionsverfahrens gefunden werden.\\
+v) Wählt man in $V$ bzw. $W$ eine andere Basis, dann wird die gleiche lineare Abbildung durch eine andere Abbildungsmatrix beschrieben.
+
+
+\end{document}

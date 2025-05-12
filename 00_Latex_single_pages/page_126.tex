@@ -1,0 +1,67 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.5 Eigenwerte \& Eigenvektoren}
+\subsection*{6.5.1 Einleitung}
+Wir betrachten\\
+$A=\left[\begin{array}{ll}7 & 2 \\ 3 & 8\end{array}\right], \quad \mathbf{u}=\left[\begin{array}{l}2 \\ 1\end{array}\right], \quad \mathbf{E}_{1}=\left[\begin{array}{r}1 \\ -1\end{array}\right], \quad \mathbf{E}_{2}=\left[\begin{array}{l}2 \\ 3\end{array}\right]$.\\
+Dann gilt
+
+\[
+A \cdot \mathbf{u}=\left[\begin{array}{ll}7 & 2  \tag{6.150}\\ 3 & 8\end{array}\right] \cdot\left[\begin{array}{l}2 \\ 1\end{array}\right]=\left[\begin{array}{c}7 \cdot 2+2 \cdot 1 \\ 3 \cdot 2+8 \cdot 1\end{array}\right]=\left[\begin{array}{l}16 \\ 14\end{array}\right]
+\]
+
+\[
+\underline{\underline{A \cdot \mathbf{E}_{1}}}=\left[\begin{array}{ll}7 & 2  \tag{6.151}\\ 3 & 8\end{array}\right] \cdot\left[\begin{array}{r}1 \\ -1\end{array}\right]=\left[\begin{array}{l}7 \cdot 1+2 \cdot(-1) \\ 3 \cdot 1+8 \cdot(-1)\end{array}\right]=\left[\begin{array}{r}5 \\ -5\end{array}\right]=5 \cdot\left[\begin{array}{r}1 \\ -1\end{array}\right]=\underline{\underline{5 \cdot \mathbf{E}_{1}}}
+\]
+
+\[
+\underline{\underline{A \cdot \mathbf{E}_{2}}}=\left[\begin{array}{ll}7 & 2  \tag{6.152}\\ 3 & 8\end{array}\right] \cdot\left[\begin{array}{l}2 \\ 3\end{array}\right]=\left[\begin{array}{l}7 \cdot 2+2 \cdot 3 \\ 3 \cdot 2+8 \cdot 3\end{array}\right]=\left[\begin{array}{l}20 \\ 30\end{array}\right]=10 \cdot\left[\begin{array}{l}2 \\ 3\end{array}\right]=\underline{\underline{10 \cdot \mathbf{E}_{2}} .}
+\]
+
+Beobachtungen: Bei der Wirkung von $A$ auf u fällt nichts besonderes auf. Die Wirkung von $A$ auf die Vektoren $\mathbf{E}_{1}$ und $\mathbf{E}_{2}$ ist jedoch eine einfache Streckung um die Faktoren 5 bzw. 10.
+
+\subsection*{6.5.2 Definition \& Eigenschaften}
+Wir machen folgende Definition.\\
+Definition 6.24 Eigenwert \& Eigenvektor\\
+Seien $n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, n, \mathbb{R})$. Ein Vektor $\mathbf{E} \in \mathbb{R}^{n} \backslash\{0\}$ heisst Eigenvektor von $A$ zum Eigenwert $\lambda \in \mathbb{R}$, falls gilt
+
+
+\begin{equation*}
+A \cdot \mathbf{E}=\lambda \cdot \mathbf{E} . \tag{6.153}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Weil $A \cdot 0=0$ für jede Matrix $A$ gilt, zählt $0 \in \mathbb{R}^{n}$ nicht als Eigenvektor und wird bei der Definition explizit ausgeschlossen. Die Zahl $0 \in \mathbb{R}$ kann jedoch als Eigenwert auftreten.\\
+ii) Die Menge aller Eigenwerte einer Matrix $A$ wird Spektrum von $A$ genannt. Man schreibt
+
+
+\begin{equation*}
+\operatorname{Spec}(A):=\left\{\lambda_{1}, \ldots, \lambda_{m}\right\} . \tag{6.154}
+\end{equation*}
+
+
+iii) Sind $\mathbf{E}_{1}$ und $\mathbf{E}_{2}$ Eigenvektoren von $A$ zum gleichen Eigenwert $\lambda$ und $a, b \in \mathbb{R}$, dann gilt
+
+
+\begin{align*}
+A \cdot\left(a \cdot \mathbf{E}_{1}+b \cdot \mathbf{E}_{2}\right) & =a \cdot A \cdot \mathbf{E}_{1}+b \cdot A \cdot \mathbf{E}_{2}=a \cdot \lambda \cdot \mathbf{E}_{1}+b \cdot \lambda \cdot \mathbf{E}_{2} \\
+& =\lambda \cdot\left(a \cdot \mathbf{E}_{1}+b \cdot \mathbf{E}_{2}\right) . \tag{6.155}
+\end{align*}
+
+
+Das heisst auch jede Linearkombination der Form $\left(a \cdot \mathbf{E}_{1}+b \cdot \mathbf{E}_{2}\right)$ ist wieder Eigenvektor von $A$ zum gleichen Eigenwert $\lambda$. Die Eigenvektoren zu einem Eigenwert bilden daher wieder einen Vektorraum, den sogenannten Eigenraum $E_{k}$ zum Eigenwert $\lambda$.\\
+iv) Weil alle Vielfache eines Eigenvektors wieder Eigenvektoren zum gleichen Eigenwert sind, gibt es zu jedem Eigenwert $\lambda_{k}$ einer Matrix auch einen Einheitseigenvektor $\hat{\mathbf{E}}_{k}$.
+
+
+\end{document}

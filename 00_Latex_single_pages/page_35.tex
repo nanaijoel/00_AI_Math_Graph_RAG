@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+Beweis: Es seien $\mathbf{e}_{1}$ und $\mathbf{e}_{2}$ die Koordinatenbasis-Vektorfelder der parametrisierten Fläche mit Zwischenwinkel $\alpha:=\measuredangle\left(\mathbf{e}_{1} ; \mathbf{e}_{2}\right) \in[0, \pi]$. Somit folgt $\sin (\alpha) \geq 0$ und
+
+
+\begin{align*}
+\underline{\underline{\sqrt{g}}} & =\sqrt{\operatorname{det}(G)}=\sqrt{g_{11} \cdot g_{22}-g_{12} \cdot g_{21}}=\sqrt{\left\langle\mathbf{e}_{1}, \mathbf{e}_{1}\right\rangle \cdot\left\langle\mathbf{e}_{2}, \mathbf{e}_{2}\right\rangle-\left\langle\mathbf{e}_{1}, \mathbf{e}_{2}\right\rangle \cdot\left\langle\mathbf{e}_{2}, \mathbf{e}_{1}\right\rangle} \\
+& =\sqrt{\left|\mathbf{e}_{1}\right|^{2} \cdot\left|\mathbf{e}_{2}\right|^{2}-\left\langle\mathbf{e}_{1}, \mathbf{e}_{2}\right\rangle^{2}}=\sqrt{\left|\mathbf{e}_{1}\right|^{2} \cdot\left|\mathbf{e}_{2}\right|^{2}-\left|\mathbf{e}_{1}\right|^{2} \cdot\left|\mathbf{e}_{2}\right|^{2} \cdot \cos ^{2}(\alpha)} \\
+& =\sqrt{\left|\mathbf{e}_{1}\right|^{2} \cdot\left|\mathbf{e}_{2}\right|^{2} \cdot\left(1-\cos ^{2}(\alpha)\right)}=\sqrt{\left|\mathbf{e}_{1}\right|^{2} \cdot\left|\mathbf{e}_{2}\right|^{2} \cdot \sin ^{2}(\alpha)}=\left|\mathbf{e}_{1}\right| \cdot\left|\mathbf{e}_{2}\right| \cdot \sin (\alpha) \\
+& =\left|\mathbf{e}_{1} \times \mathbf{e}_{2}\right|=\underline{\underline{\mathbf{n} \mid} .} \tag{2.110}
+\end{align*}
+
+
+Damit haben wir den Satz bewiesen.\\
+Bemerkungen:\\
+i) Wegen $g>0$ kann die Wurzel immer in den reellen Zahlen gezogen werden und es gilt
+
+
+\begin{equation*}
+\sqrt{g}>0 . \tag{2.111}
+\end{equation*}
+
+
+ii) Für den Einheitsnormalen-Vektor folgt
+
+
+\begin{equation*}
+\hat{\mathbf{n}}:= \pm \frac{1}{\sqrt{g}} \cdot \mathbf{n} . \tag{2.112}
+\end{equation*}
+
+
+
+\end{document}

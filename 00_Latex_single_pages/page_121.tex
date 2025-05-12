@@ -1,0 +1,60 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\begin{itemize}
+  \item $\operatorname{det}\left(\left[\begin{array}{rrr}3 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & 4\end{array}\right]\right)=3 \cdot(-2) \cdot 4=-24$
+  \item $\operatorname{det}\left(\left[\begin{array}{rrr}3 & 0 & 0 \\ 7 & -2 & 0 \\ 5 & -8 & 4\end{array}\right]\right)=3 \cdot(-2) \cdot 4=-24$
+\end{itemize}
+
+\subsection*{6.4.3.2 Eigenschaften}
+Für die Determinante einer Matrix gelten einige einfache Rechenregeln.\\
+Satz 6.15 Rechenregeln der Determinante\\
+Seien $n \in \mathbb{N}^{+}, A, B \in \mathbb{M}(n, n, \mathbb{R})$ und $a \in \mathbb{R}$. Dann gelten folgende Rechenregeln.\\
+(a) $\operatorname{det}\left(A^{T}\right)=\operatorname{det}(A)$\\
+(c) $\operatorname{det}(A \cdot B)=\operatorname{det}(A) \cdot \operatorname{det}(B)$\\
+(b) $\operatorname{det}(a \cdot A)=a^{n} \cdot \operatorname{det}(A)$\\
+(d) $\operatorname{det}\left(A^{-1}\right)=\frac{1}{\operatorname{det}(A)}$ falls $A$ regulär
+
+Beweis: Die Aussagen (a) und (b) sind klar, während (c) nur mit grossem Aufwand gezeigt werden kann. Falls $A$ regulär ist, dann hat sie eine Inverse $A^{-1} \in \mathbb{M}(n, n, \mathbb{R})$ und es gilt
+
+
+\begin{align*}
+A^{-1} \cdot A & =\mathbb{1} & & \operatorname{det}(\ldots)  \tag{6.117}\\
+\Rightarrow & \operatorname{det}\left(A^{-1} \cdot A\right) & =\operatorname{det}(\mathbb{1}) &  \tag{6.118}\\
+\Rightarrow & \operatorname{det}\left(A^{-1}\right) \cdot \operatorname{det}(A) & =1 & \mid: \operatorname{det}(A) . \tag{6.119}
+\end{align*}
+
+
+Daraus folgt $\operatorname{det}(A) \neq 0$ und nach der Division erhalten wir
+
+
+\begin{equation*}
+\underline{\underline{\operatorname{det}\left(A^{-1}\right)}=\frac{1}{\operatorname{det}(A)}} . \tag{6.120}
+\end{equation*}
+
+
+Damit haben wir die Aussage (d) bewiesen.\\
+Bemerkungen:\\
+i) Für die Determinante gibt es keine allgemeingültige Summen-Regel. Es gibt quadratische Matrizen $A$ und $B$, für welche gilt $\operatorname{det}(A+B)=\operatorname{det}(A)+\operatorname{det}(B)$ aber auch solche für die wir $\operatorname{det}(A+B) \neq \operatorname{det}(A)+\operatorname{det}(B)$ finden.\\
+ii) Die Rechenregel (c) aus Satz 6.15 ist eine äusserst wichtige Eigenschaft der Determinante. Sie hat unter anderem zur Folge, dass gilt\\
+$\operatorname{det}(B \cdot A)=\operatorname{det}(B) \cdot \operatorname{det}(A)=\operatorname{det}(A) \cdot \operatorname{det}(B)=\operatorname{det}(A \cdot B)$.\\
+Das heisst, man darf innerhalb einer Determinante die Faktoren eines Matrix-Produkts vertauschen. Im Gegensatz zur Situation bei der Spur gilt dies auch bei mehr als zwei Faktoren für beliebige Änderungen der Reihenfolge der Faktoren. Für drei Faktoren erhalten wir
+
+
+\begin{align*}
+\operatorname{det}(A \cdot B \cdot C) & =\operatorname{det}(C \cdot A \cdot B)=\operatorname{det}(B \cdot C \cdot A)=\operatorname{det}(A \cdot C \cdot B)=\operatorname{det}(B \cdot A \cdot C) \\
+& =\operatorname{det}(C \cdot B \cdot A)=\operatorname{det}(A) \cdot \operatorname{det}(B) \cdot \operatorname{det}(C) . \tag{6.122}
+\end{align*}
+
+
+
+\end{document}

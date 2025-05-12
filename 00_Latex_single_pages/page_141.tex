@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{7.3 Skalar-Produkt \& Metrik}
+\subsection*{7.3.1 Skalar-Produkt}
+\subsection*{7.3.1.1 Definition}
+Wir betrachten die folgende Definition.\\
+Definition 7.10 Skalar-Produkt\\
+Sei $(V, \mathbb{K},+, \cdot)$ ein Vektorraum über dem Zahlenkörper $\mathbb{K}$. Ein Skalar-Produkt auf $V$ ist eine Operation der Form
+
+
+\begin{align*}
+V \times V & \rightarrow \mathbb{K} \\
+(\mathbf{v} ; \mathbf{w}) & \mapsto\langle\mathbf{v}, \mathbf{w}\rangle, \tag{7.48}
+\end{align*}
+
+
+so dass für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{K}$ die folgenden Axiome gelten.\\
+SP-1 Linearität im 2. Argument:
+
+
+\begin{equation*}
+\langle\mathbf{u}, a \cdot \mathbf{v}+b \cdot \mathbf{w}\rangle=a \cdot\langle\mathbf{u}, \mathbf{v}\rangle+b \cdot\langle\mathbf{u}, \mathbf{w}\rangle \tag{7.49}
+\end{equation*}
+
+
+SP-2 Symmetrie:
+
+
+\begin{equation*}
+\langle\mathbf{w}, \mathbf{v}\rangle=\langle\mathbf{v}, \mathbf{w}\rangle^{*} \tag{7.50}
+\end{equation*}
+
+
+SP-3 Nicht-Degeneriertheit:
+
+
+\begin{equation*}
+\langle\mathbf{v}, \mathbf{p}\rangle=0 \text { für alle } \mathbf{p} \in V \Leftrightarrow \mathbf{v}=0 \tag{7.51}
+\end{equation*}
+
+
+Wir betrachten die folgende Definition.\\
+Definition 7.11 Positive Definitheit\\
+Sei $(V, \mathbb{K},+, \cdot)$ ein Vektorraum über dem Zahlenkörper $\mathbb{K} \in\{\mathbb{R}, \mathbb{C}\}$, dann heisst ein SkalarProdukt $\langle.,$.$\rangle auf V$ positiv definit, falls für alle $\mathbf{v} \in V$ gilt
+
+
+\begin{equation*}
+\langle\mathbf{v}, \mathbf{v}\rangle \geq 0 \quad \text { und } \quad\langle\mathbf{v}, \mathbf{v}\rangle=0 \Leftrightarrow \mathbf{v}=0 . \tag{7.52}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) In der Literatur sind die Begriffe Skalar-Produkt und inneres Produkt synonym.\\
+ii) Aus der positiven Definitheit folgt sofort SP-3. Deshalb wird bei positiv definiten SkalarProdukten das Axiom SP-3 durch die Eigenschaft der positiven Definitheit ersetzt.\\
+iii) Je nach Wahl von $\mathbb{K} \in\{\mathbb{R}, \mathbb{C}\}$ vereinfacht sich SP-2. Es gilt
+
+
+\begin{align*}
+& \mathbb{K}=\mathbb{R} \Rightarrow\langle\mathbf{w}, \mathbf{v}\rangle=\langle\mathbf{v}, \mathbf{w}\rangle  \tag{7.53}\\
+& \mathbb{K}=\mathbb{C} \Rightarrow\langle\mathbf{w}, \mathbf{v}\rangle=\langle\mathbf{v}, \mathbf{w}\rangle^{*} . \tag{7.54}
+\end{align*}
+
+
+
+\end{document}

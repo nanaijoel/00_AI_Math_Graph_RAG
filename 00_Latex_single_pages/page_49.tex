@@ -1,0 +1,71 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+Bemerkungen:\\
+i) Der Stokes-Integralsatz besagt die Gleichheit eines Linienintegrals mit einem Flussintegral. Es gilt
+
+
+\begin{equation*}
+\text { Zirkulation von } \mathbf{v} \equiv \text { Summe aller eingeschlossenen Wirbel von } \mathbf{v} \text {. } \tag{2.173}
+\end{equation*}
+
+
+ii) Der Stokes-Integralsatz kann allgemein in 2D und 3D formuliert werden.\\
+iii) Der Stokes-Integralsatz ist eine Verallgemeinerung der Newton-Leibniz-Formel in 2D bzw. 3D.\\
+iv) Der Stokes-Integralsatz lässt sich bezogen auf beide Seiten der Gleichung sinnvoll anwenden.\\
+v) Der Stokes-Integralsatz etabliert die Interpretation der Rotation als Wirbeldichte eines Vektorfeldes.\\
+vi) Gemäss Stokes-Integralsatz verschwindet offenbar die Zirkulation jedes wirbelfreien Vektorfeldes entlang einer beliebigen Randkurve $\partial G$. Aus $\operatorname{rot}(\mathbf{v})=0$ folgt
+
+
+\begin{equation*}
+\underline{\underline{\Upsilon_{\mathbf{v}}}}=\oint_{\partial G}\langle\mathbf{v}, \hat{\mathbf{e}}\rangle \mathrm{d} s=\int_{G}\langle\operatorname{rot}(\mathbf{v}), \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{G}\langle 0, \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{G} 0 \mathrm{~d} A=\underline{\underline{0}} \tag{2.174}
+\end{equation*}
+
+
+Anwendungen:
+
+\begin{itemize}
+  \item Elektrodynamik: Die Maxwell-Gleichungen für die Rotation des E-Feldes und B-Feldes lauten
+\end{itemize}
+
+
+\begin{align*}
+\operatorname{rot}(\mathbf{E}) & =-\dot{\mathbf{B}}  \tag{2.175}\\
+\operatorname{rot}(\mathbf{B}) & =\varepsilon_{0} \cdot \mu_{0} \cdot \dot{\mathbf{E}}+\mu_{0} \cdot \mathbf{J} . \tag{2.176}
+\end{align*}
+
+
+In einer statischen Situation, d.h. für $\dot{\mathbf{E}}=\dot{\mathbf{B}}=0$ vereinfachen sich diese Gleichungen zu
+
+
+\begin{align*}
+& \operatorname{rot}(\mathbf{E})=0  \tag{2.177}\\
+& \operatorname{rot}(\mathbf{B})=\mu_{0} \cdot \mathbf{J} . \tag{2.178}
+\end{align*}
+
+
+Für die Zirkulation des E-Feldes und B-Feldes entlang einer beliebigen Randkurve $\partial G$ folgt aus dem Stoкes-Integralsatz
+
+
+\begin{align*}
+\underline{\underline{\Upsilon_{\mathbf{E}}}} & =\oint_{\partial G}\langle\mathbf{E}, \hat{\mathbf{e}}\rangle \mathrm{d} s=\int_{G}\langle\operatorname{rot}(\mathbf{E}), \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{G}\langle 0, \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{G} 0 \mathrm{~d} A=\underline{\underline{0}}  \tag{2.179}\\
+\underline{\underline{\Upsilon_{\mathbf{B}}}} & =\oint_{\partial G}\langle\mathbf{B}, \hat{\mathbf{e}}\rangle \mathrm{d} s=\int_{G}\langle\operatorname{rot}(\mathbf{B}), \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{G}\left\langle\mu_{0} \cdot \mathbf{J}, \hat{\mathbf{n}}\right\rangle \mathrm{d} A=\mu_{0} \int_{G}\langle\mathbf{J}, \hat{\mathbf{n}}\rangle \mathrm{d} A \\
+& =\underline{\underline{\mu_{0} \cdot I_{\mathrm{eg}}} .} \tag{2.180}
+\end{align*}
+
+
+\begin{itemize}
+  \item Erhaltungssätze
+  \item Flächen-Berechnungen
+  \item Geometrische Analysis
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,105 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Beispiele:
+
+\begin{itemize}
+  \item Skalarfeld in 2D:
+\end{itemize}
+
+
+\begin{align*}
+f: \mathbb{R}^{2} & \rightarrow \mathbb{R} \\
+(x ; y) & \mapsto f(x ; y):=x \cdot y \tag{2.5}
+\end{align*}
+
+
+Es gilt dann
+
+
+\begin{align*}
+f(2 ; 3) & =2 \cdot 3=6  \tag{2.6}\\
+f(-3 ; 5) & =-3 \cdot 5=-15 . \tag{2.7}
+\end{align*}
+
+
+\begin{itemize}
+  \item Abstand zum Ursprung in nD:
+\end{itemize}
+
+\[
+\begin{array}{rlrl}
+n=1: & r(x) & :=\sqrt{x^{2}}=|x| \\
+n=2: & r(x ; y) & :=\sqrt{x^{2}+y^{2}} \\
+n=3: & r(x ; y ; z):=\sqrt{x^{2}+y^{2}+z^{2}} \\
+\text { allg: } & r\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right):=\sqrt{x_{1}^{2}+x_{2}^{2}+\ldots+x_{n}^{2}} \tag{2.11}
+\end{array}
+\]
+
+\begin{itemize}
+  \item Höhe über Meer auf einer topographischen Karte:
+\end{itemize}
+
+
+\begin{align*}
+H:[0, \pi] \times[0,2 \pi] & \rightarrow \mathbb{R}_{0}^{+}[\mathrm{m}] \\
+(\theta ; \varphi) & \mapsto H(\theta ; \varphi): \equiv \text { Höhe über Meer an der Position }(\theta ; \varphi) . \tag{2.12}
+\end{align*}
+
+
+\begin{itemize}
+  \item Volumen eines Kreiskegels als Funktion von Radius und Höhe:
+\end{itemize}
+
+
+\begin{align*}
+V: \mathbb{R}_{0}^{+}[\mathrm{m}] \times \mathbb{R}_{0}^{+}[\mathrm{m}] & \rightarrow \mathbb{R}_{0}^{+}\left[\mathrm{m}^{3}\right] \\
+(r ; h) & \mapsto V(r ; h):=\frac{1}{3} \cdot \pi \cdot r^{2} \cdot h . \tag{2.13}
+\end{align*}
+
+
+\begin{itemize}
+  \item Gesamtenergie eines Projektils der Masse m:
+\end{itemize}
+
+
+\begin{align*}
+E: \mathbb{R}\left[\frac{\mathrm{m}}{\mathrm{~s}}\right] & \times \mathbb{R}[\mathrm{m}] \\
+(v ; h) & \mapsto \mathbb{R}[\mathrm{J}]  \tag{2.14}\\
+& \mapsto(v ; h):=\frac{m}{2} \cdot v^{2}+m \cdot g \cdot h .
+\end{align*}
+
+
+\begin{itemize}
+  \item Zeitunabhängiges Temperaturfeld:
+\end{itemize}
+
+
+\begin{align*}
+T: \mathbb{R}^{3}[\mathrm{~m}] & \rightarrow \mathbb{R}_{0}^{+}[\mathrm{K}] \\
+(x ; y ; z) & \mapsto T(x ; y ; z): \equiv \text { Temperatur am Ort }(x ; y ; z) . \tag{2.15}
+\end{align*}
+
+
+\begin{itemize}
+  \item Zeitabhängiges Temperaturfeld:
+\end{itemize}
+
+
+\begin{align*}
+T: \mathbb{R}[\mathrm{s}] \times \mathbb{R}^{3}[\mathrm{~m}] & \rightarrow \mathbb{R}_{0}^{+}[\mathrm{K}] \\
+(t ; x ; y ; z) & \mapsto T(t ; x ; y ; z): \equiv \text { Temperatur zur Zeit } t \text { am Ort }(x ; y ; z) . \tag{2.16}
+\end{align*}
+
+
+
+\end{document}

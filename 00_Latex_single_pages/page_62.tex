@@ -1,0 +1,100 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+Variante 1: Durch strukturelle Ergänzung erhalten wir
+
+
+\begin{align*}
+\underline{\underline{F(x)}} & =\int x \cdot \cos \left(x^{2}\right) \mathrm{d} x=\int \frac{1}{2} \cdot 2 x \cdot \cos \left(x^{2}\right) \mathrm{d} x=\frac{1}{2} \int 2 x \cdot \cos \left(x^{2}\right) \mathrm{d} x \\
+& =\frac{1}{2} \int u^{\prime}(x) \cdot \cos (u(x)) \mathrm{d} x=\frac{1}{2} \int \cos (u) \mathrm{d} u=\frac{1}{2} \cdot \sin (u)+c=\underline{\underline{\frac{1}{2}} \cdot \sin \left(x^{2}\right)+c} \tag{3.4}
+\end{align*}
+
+
+Variante 2: Durch Kalkulieren mit den Differentialsymbolen erhalten wir
+
+
+\begin{equation*}
+\frac{\mathrm{d} u}{\mathrm{~d} x}=2 x \Leftrightarrow \mathrm{~d} u=2 x \mathrm{~d} x \Leftrightarrow \mathrm{~d} x=\frac{1}{2 x} \mathrm{~d} u \tag{3.5}
+\end{equation*}
+
+
+und somit
+
+
+\begin{align*}
+\underline{\underline{F(x)}} & =\int x \cdot \cos \left(x^{2}\right) \mathrm{d} x=\int x \cdot \cos (u) \cdot \frac{1}{2 x} \mathrm{~d} u=\frac{1}{2} \int \cos (u) \mathrm{d} u=\frac{1}{2} \cdot \sin (u)+c \\
+& =\underline{\underline{\frac{1}{2}} \cdot \sin \left(x^{2}\right)+c} \tag{3.6}
+\end{align*}
+
+
+\begin{itemize}
+  \item Wir betrachten das unbestimmte Integral
+\end{itemize}
+
+
+\begin{equation*}
+F(x)=\int \tan (x) \mathrm{d} x=\int \frac{\sin (x)}{\cos (x)} \mathrm{d} x \tag{3.7}
+\end{equation*}
+
+
+Als Substitution wählen wir
+
+
+\begin{equation*}
+u(x):=\cos (x) \Rightarrow u^{\prime}(x)=-\sin (x) . \tag{3.8}
+\end{equation*}
+
+
+Durch Kalkulieren mit den Differentialsymbolen erhalten wir
+
+
+\begin{equation*}
+\frac{\mathrm{d} u}{\mathrm{~d} x}=-\sin (x) \Leftrightarrow \mathrm{d} u=-\sin (x) \mathrm{d} x \Leftrightarrow \mathrm{~d} x=-\frac{1}{\sin (x)} \mathrm{d} u \tag{3.9}
+\end{equation*}
+
+
+und somit
+
+
+\begin{align*}
+\underline{\underline{F(x)}} & =\int \tan (x) \mathrm{d} x=\int \frac{\sin (x)}{\cos (x)} \cdot(-1) \cdot \frac{1}{\sin (x)} \mathrm{d} u=-\int \frac{1}{u} \mathrm{~d} u=-\ln (|u|)+c \\
+& =\underline{-\ln (|\cos (x)|)+c .} \tag{3.10}
+\end{align*}
+
+
+\begin{itemize}
+  \item Wir betrachten das bestimmte Integral
+\end{itemize}
+
+
+\begin{equation*}
+I=\int_{0}^{1} \sqrt{1-x^{2}} \mathrm{~d} x=\int_{0}^{1} \sqrt{1-u^{2}} \mathrm{~d} u \tag{3.11}
+\end{equation*}
+
+
+Als Substitution wählen wir
+
+
+\begin{equation*}
+u(\varphi):=\sin (\varphi) \Rightarrow u^{\prime}(\varphi)=\cos (\varphi) . \tag{3.12}
+\end{equation*}
+
+
+Durch Kalkulieren mit den Differentialsymbolen erhalten wir
+
+
+\begin{equation*}
+\frac{\mathrm{d} u}{\mathrm{~d} \varphi}=\cos (\varphi) \Leftrightarrow \mathrm{d} u=\cos (\varphi) \mathrm{d} \varphi \tag{3.13}
+\end{equation*}
+
+
+
+\end{document}

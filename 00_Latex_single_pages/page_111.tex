@@ -1,0 +1,72 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{6.3.3 Spezielle orthogonale Matrizen}
+\subsection*{6.3.3.1 Spiegelungen in nD}
+Wir betrachten $n \in \mathbb{N}^{+}$und die Spiegelung in $\mathbb{R}^{n}$ an einem ( $n-1$ )-dimensionalen Unterraum, welcher senkrecht steht zur Richtung $\hat{\mathbf{n}} \in \mathbb{R}^{n}$. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_381794b021f120bc7337g-1}
+
+Die Spiegelungsmatrix lässt sich durch eine einfache Formel aus $\hat{\mathbf{n}}$ berechnen.
+
+\section*{Satz 6.10 Householder-Formel}
+Die Spiegelung wird beschrieben durch die Matrix
+
+
+\begin{equation*}
+S(\hat{\mathbf{n}})=\mathbb{1}-2 \cdot \hat{\mathbf{n}} \cdot \hat{\mathbf{n}}^{T} . \tag{6.74}
+\end{equation*}
+
+
+Beweis: Um das Bild eines Vektors $\mathbf{v} \in \mathbb{R}^{n}$ unter der Spiegelung zu berechnen, zerlegen wir $\mathbf{v}$ in seine Anteile parallel und senkrecht zu $\hat{\mathbf{n}}$. Es sei also
+
+
+\begin{equation*}
+\mathbf{v}=\mathbf{v}_{\|}+\mathbf{v}_{\perp} \tag{6.75}
+\end{equation*}
+
+
+mit
+
+
+\begin{equation*}
+\mathbf{v}_{\|}=\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \cdot \hat{\mathbf{n}} \quad \text { und } \quad \mathbf{v}_{\perp}=\mathbf{v}-\mathbf{v}_{\|} . \tag{6.76}
+\end{equation*}
+
+
+Für die Spiegelungsmatrix $S(\hat{\mathbf{n}})$ gilt gemäss Skizze
+
+
+\begin{align*}
+\underline{\underline{S(\hat{\mathbf{n}}) \cdot \mathbf{v}}} & =\mathbf{v}-2 \cdot \mathbf{v}_{\|}=\mathbf{v}-2 \cdot\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \cdot \hat{\mathbf{n}}=\mathbf{v}-2 \cdot \hat{\mathbf{n}} \cdot\langle\mathbf{v}, \hat{\mathbf{n}}\rangle=\mathbf{v}-2 \cdot \hat{\mathbf{n}} \cdot\langle\hat{\mathbf{n}}, \mathbf{v}\rangle \\
+& =\mathbf{v}-2 \cdot \hat{\mathbf{n}} \cdot\left(\hat{\mathbf{n}}^{T} \cdot \mathbf{v}\right)=\mathbb{1} \cdot \mathbf{v}-2 \cdot\left(\hat{\mathbf{n}} \cdot \hat{\mathbf{n}}^{T}\right) \cdot \mathbf{v}=\left(\mathbb{1}-2 \cdot \hat{\mathbf{n}} \cdot \hat{\mathbf{n}}^{T}\right) \cdot \mathbf{v} . \tag{6.77}
+\end{align*}
+
+
+Dies impliziert (6.74) und wir haben den Satz bewiesen.
+
+\section*{Bemerkungen:}
+i) Es gilt $S(\hat{\mathbf{n}}) \in \mathrm{O}(n)$.\\
+ii) In jedem Fall gilt
+
+
+\begin{equation*}
+S(-\hat{\mathbf{n}})=S(\hat{\mathbf{n}}) \tag{6.78}
+\end{equation*}
+
+
+d.h. es spielt keine Rolle auf welche Seite man $\hat{\mathbf{n}}$ wählt.
+
+
+\end{document}

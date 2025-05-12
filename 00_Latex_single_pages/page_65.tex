@@ -1,0 +1,73 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+Beispiele:
+
+\begin{itemize}
+  \item Durch partielle Integration erhalten wir
+\end{itemize}
+
+\[
+\underline{\underline{F(x)}}=\int \begin{align*}
+& \downarrow  \tag{3.22}\\
+& x
+\end{align*} \cdot \mathrm{e}^{x} \mathrm{~d} x=x \mathrm{e}^{x}-\int 1 \cdot \mathrm{e}^{x} \mathrm{~d} x=\underline{\underline{\mathrm{e}^{x}}-\mathrm{e}^{x}+c=(x-1) \mathrm{e}^{x}+c .}
+\]
+
+\begin{itemize}
+  \item Durch partielle Integration und mit Hilfe des Pythagoras-Satzes für trigonometrische Funktionen finden wir die Gleichung
+\end{itemize}
+
+
+\begin{align*}
+F(x) & =\int \sin ^{2}(x) \mathrm{d} x=\int \stackrel{\downarrow}{\sin (x) \cdot \sin (x) \mathrm{d} x} \\
+& =\sin (x) \cdot(-\cos (x))-\int \cos (x) \cdot(-\cos (x)) \mathrm{d} x=-\sin (x) \cos (x)+\int \cos ^{2}(x) \mathrm{d} x \\
+& =-\sin (x) \cos (x)+\int\left(1-\sin ^{2}(x)\right) \mathrm{d} x=-\sin (x) \cos (x)+\int 1 \mathrm{~d} x-\int \sin ^{2}(x) \mathrm{d} x \\
+& =-\sin (x) \cos (x)+x+b-F(x) . \tag{3.23}
+\end{align*}
+
+
+Es gilt also
+
+
+\begin{align*}
+F(x) & =-\sin (x) \cos (x)+x+b-F(x) & & \mid+F(x)  \tag{3.24}\\
+2 \cdot F(x) & =-\sin (x) \cos (x)+x+b & & \mid: 2 . \tag{3.25}
+\end{align*}
+
+
+Daraus erhalten wir
+
+
+\begin{equation*}
+\underline{\underline{F(x)}}=\frac{-\sin (x) \cos (x)+x+b}{2}=\underline{=\frac{x-\sin (x) \cos (x)}{2}+c .} \tag{3.26}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Durch partielle Integration erhalten wir
+\end{itemize}
+
+
+\begin{align*}
+\underline{\underline{F(x)}} & =\int \ln (x) \mathrm{d} x=\int \ln (x) \cdot 1 \mathrm{~d} x=\ln (x) \cdot x-\int \ln ^{\prime}(x) \cdot x \mathrm{~d} x=x \cdot \ln (x)-\int \frac{1}{x} \cdot x \mathrm{~d} x \\
+& =x \cdot \ln (x)-\int 1 \mathrm{~d} x=x \cdot \ln (x)-x+c=\underline{\underline{x \cdot(\ln (x)-1)+c .}} \tag{3.27}
+\end{align*}
+
+
+Bemerkungen:\\
+i) Die Idee hinter der partiellen Integration ist die Umkehrung der Produkt-Regel aus der Differentialrechnung.\\
+ii) Durch Anwenden der partiellen Integration kann eine schwierige Integration auf eine einfachere Integration zurückgeführt werden.\\
+iii) Der Begriff partielle Integration bedeutet "teilweise Integration".\\
+iv) Eine häufige Fehlerquelle bei der Anwendung der partiellen Integration ist das negative Vorzeichen vor dem Integral auf der rechten Seite.
+
+
+\end{document}

@@ -1,0 +1,87 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.1.3.5 Invertierbare Matrix}
+Einige quadratische Matrizen haben so etwas wie einen Kehrwert.
+
+\section*{Definition 6.11 Invertierbare Matrix}
+Sei $n \in \mathbb{N}^{+}$. Eine quadratische Matrix $A \in \mathbb{M}(n, n, \mathbb{R})$ heisst invertierbar, falls es eine quadratische Matrix $A^{-1} \in \mathbb{M}(n, n, \mathbb{R})$ gibt, so dass
+
+
+\begin{equation*}
+A^{-1} \cdot A=\mathbb{1} . \tag{6.24}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Invertierbare Matrizen werden auch regulär genannt, während nicht invertierbare Matri$z e n$ als singulär bezeichnet werden.\\
+ii) Die quadratische Matrix $A^{-1}$, falls es die denn gibt, wird Inverse Matrix von $A$ genannt.\\
+iii) Obwohl die Matrix-Multiplikation im allgemeinen nicht kommutativ ist, lässt sich die Reihenfolge in (6.24) immer vertauschen. Ist $A$ invertierbar, dann gilt
+
+
+\begin{equation*}
+A^{-1} \cdot A=A \cdot A^{-1}=\mathbb{1} . \tag{6.25}
+\end{equation*}
+
+
+Daraus erhält man den Kommutator
+
+
+\begin{equation*}
+\left[A, A^{-1}\right]=A \cdot A^{-1}-A^{-1} \cdot A=\mathbb{1}-\mathbb{1}=0 . \tag{6.26}
+\end{equation*}
+
+
+iv) Die Einheitsmatrix ist offensichtlich invertierbar und ihre eigene Inverse, es gilt also
+
+
+\begin{equation*}
+\mathbb{1}^{-1}=\mathbb{1} . \tag{6.27}
+\end{equation*}
+
+
+v) Die Nullmatrix ist offensichtlich singulär, d.h. nicht invertierbar.\\
+vi) Die Inversion einer reellen Matrix ist offensichtlich eine Involution. Für jede invertierbare Matrix gilt
+
+
+\begin{equation*}
+\left(A^{-1}\right)^{-1}=A . \tag{6.28}
+\end{equation*}
+
+
+vii) Beispiel-Codes zur Berechnung von inversen Matrizen mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & M=inv(A) \\
+\hline
+Mathematica/WolframAlpha & M=Inverse [A] \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\
+$M=n p . l i n a l g . i n v ~(A) ~$ \\
+\end{tabular} \\
+\hline
+Python/Sympy & $M=A . \operatorname{inv}()$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item $[2]^{-1}=\left[\frac{1}{2}\right]$
+  \item $\left[\begin{array}{ll}2 & 1 \\ 5 & 3\end{array}\right]^{-1}=\left[\begin{array}{rr}3 & -1 \\ -5 & 2\end{array}\right]$
+\end{itemize}
+
+\end{document}

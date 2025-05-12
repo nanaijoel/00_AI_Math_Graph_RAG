@@ -1,0 +1,65 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Bemerkungen:\\
+i) In jedem Fall gilt
+
+
+\begin{equation*}
+\mu\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right) \geq 0 \tag{7.72}
+\end{equation*}
+
+
+ii) Weil für ein positiv definites Skalar-Produkt gilt $\operatorname{det}(G) \geq 0$, kann der Betrag in diesem Fall weggelassen werden.\\
+iii) Das Mass ist die Verallgemeinerung der Begriffe Länge, Fläche und Volumen auf beliebige reelle und komplexe Vektorräume mit Skalar-Produkt. Insbesondere gilt folgendes.
+
+
+\begin{align*}
+\mu(\mathbf{v}) & =\sqrt{|\langle\mathbf{v}, \mathbf{v}\rangle|}=|\mathbf{v}| \equiv \text { Länge von } \mathbf{v}  \tag{7.73}\\
+\mu\left(\mathbf{v}_{1} ; \mathbf{v}_{2}\right) & \equiv \text { Fläche des von } \mathbf{v}_{1} \text { und } \mathbf{v}_{2} \text { aufgespannten Parallelogramms }  \tag{7.74}\\
+\mu\left(\mathbf{v}_{1} ; \mathbf{v}_{2} ; \mathbf{v}_{3}\right) & \equiv \text { Volumen des von } \mathbf{v}_{1}, \mathbf{v}_{2} \text { und } \mathbf{v}_{3} \text { aufgespannten Spats } \tag{7.75}
+\end{align*}
+
+
+iv) Für $m>\operatorname{dim}(V)$ ist die Gram-Matrix $G$ in jedem Fall singulär und es folgt
+
+
+\begin{equation*}
+\mu\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right)=0 . \tag{7.76}
+\end{equation*}
+
+
+v) Anhand ihres Masses lässt sich beurteilen, ob eine Menge von Vektoren linear abhängig oder linear unabhängig ist.
+
+\subsection*{7.3.1.3 Eigenschaften reeller Skalar-Produkte}
+In diesem Abschnitt betrachten wir ausschliesslich reelle Vektorräume mit Skalar-Produkt. In jedem Fall gelten dann binomische Formeln. Wir betrachten dazu den folgenden Satz.
+
+Satz 7.10 Binomische Formeln\\
+Seien $(V, \mathbb{R},+, \cdot)$ ein reeller Vektorraum mit Skalar-Produkt $\langle.,$.$\rangle und \mathbf{v}, \mathbf{w} \in V$, dann gelten die folgenden binomischen Formeln.\\
+(a) $\langle\mathbf{v}+\mathbf{w}, \mathbf{v}+\mathbf{w}\rangle=\langle\mathbf{v}, \mathbf{v}\rangle+2 \cdot\langle\mathbf{v}, \mathbf{w}\rangle+\langle\mathbf{w}, \mathbf{w}\rangle$\\
+(b) $\langle\mathbf{v}-\mathbf{w}, \mathbf{v}-\mathbf{w}\rangle=\langle\mathbf{v}, \mathbf{v}\rangle-2 \cdot\langle\mathbf{v}, \mathbf{w}\rangle+\langle\mathbf{w}, \mathbf{w}\rangle$\\
+(c) $\langle\mathbf{v}+\mathbf{w}, \mathbf{v}-\mathbf{w}\rangle=\langle\mathbf{v}, \mathbf{v}\rangle-\langle\mathbf{w}, \mathbf{w}\rangle$
+
+Beweis: Übung.\\
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 7.11 Cauchy-Schwarz-Ungleichung}
+Seien $(V, \mathbb{R},+, \cdot)$ ein reeller Vektorraum mit positiv definitem Skalar-Produkt $\langle.,$.$\rangle und \mathbf{v}, \mathbf{w} \in$ $V$, dann gilt die Cauchy-Schwarz-Ungleichung
+
+
+\begin{equation*}
+|\langle\mathbf{v}, \mathbf{w}\rangle| \leq|\mathbf{v}| \cdot|\mathbf{w}| . \tag{7.77}
+\end{equation*}
+
+
+
+\end{document}

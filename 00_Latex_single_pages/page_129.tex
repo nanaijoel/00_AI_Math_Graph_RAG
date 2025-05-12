@@ -1,0 +1,84 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Bemerkungen:\\
+i) Die Eigenwerte sind gerade die Nullstellen des charakteristischen Polynoms.\\
+ii) Ein Polynom vom Grad $n$ kann maximal $n$ Nullstellen haben. Dementsprechend kann eine Matrix $A \in \mathbb{M}(n, n, \mathbb{R})$ auch höchstens $n$ Eigenwerte haben.\\
+iii) Die Nullstellen eines Polynoms lassen sich bekanntlich nur für $n \in\{1,2,3,4\}$ direkt durch Formeln berechnen. Man kann beweisen(!), dass es für Polynome vom Grad fünf oder höher keine direkten Formeln für die Nullstellen geben kann. Somit ist die Berechnung der Eigenwerte für $n \geq 5$ mit Hilfe des charakteristischen Polynoms sehr schwierig.\\
+iv) Für $n=2$ kann die Mitternachtsformel für quadratische Gleichungen eingesetzt werden, um die Eigenwerte zu berechnen. Aus (6.162) folgt, dass eine Matrix $A \in \mathbb{M}(2,2, \mathbb{R})$ genau dann Eigenwerte hat, wenn gilt
+
+
+\begin{equation*}
+D=\operatorname{tr}^{2}(A)-4 \cdot \operatorname{det}(A) \geq 0 . \tag{6.172}
+\end{equation*}
+
+
+In diesem Fall erhält man
+
+
+\begin{equation*}
+\lambda_{1,2}=\frac{\operatorname{tr}(A) \pm \sqrt{D}}{2} \tag{6.173}
+\end{equation*}
+
+
+v) Sind die Eigenwerte einer Matrix erst einmal bekannt, dann können die zugehörigen Eigenvektoren durch lösen des linearen Gleichungssystems (6.170) gefunden werden.\\
+vi) Beispiel-Codes zur Berechnung der Eigenwerte und Eigenvektoren mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $[\mathrm{E}, \mathrm{D}]=\mathrm{eig}(\mathrm{A})$ \\
+\hline
+Mathematica/WolframAlpha & \begin{tabular}{l}
+Eigenvalues [A] \\
+Eigenvectors [A] \\
+Eigensystem [A] \\
+\end{tabular} \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\[0pt]
+[S, E]=np.linalg.eig(A) \\
+\end{tabular} \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import sympy as sp; \\
+$\mathrm{S}=\mathrm{A}$. eigenvals() \\
+E=A.eigenvects() \\[0pt]
+[E, D] =A.diagonalize() \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+Um die Eigenwerte einer Matrix $A \in \mathbb{M}(n, n, \mathbb{R})$ zu berechnen, können wir also nach den folgenden Schritten vorgehen.
+
+S1 Berechnen des charakteristischen Polynoms
+
+
+\begin{equation*}
+p_{A}(\lambda)=\operatorname{det}(\lambda \cdot \mathbb{1}-A) . \tag{6.174}
+\end{equation*}
+
+
+S2 Bestimmen der Eigenwerte, d.h. der Nullstellen von $p_{A}(\lambda)$.\\
+S3 Für jeden Eigenwert $\lambda \in \operatorname{Spec}(A)$ die Lösungen des linearen Gleichungssystems
+
+
+\begin{equation*}
+(\lambda \cdot \mathbb{1}-A) \cdot \mathbf{E}=0 \tag{6.175}
+\end{equation*}
+
+
+berechnen.
+
+
+\end{document}

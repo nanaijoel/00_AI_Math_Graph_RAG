@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Bemerkungen:\\
+i) Für $z=0$ exisitiert in beiden Varianten kein eindeutiges Argument. Meistens wählt man $\arg (0)=0$.\\
+ii) Für fast alle Anwendungen kann sowohl die Basler-Variante als auch die Zürcher-Variante verwendet werden.\\
+iii) Die Formeln zur Berechnung von $\arg (z)$ aus Real- und Imaginärteil sind bei der ZürcherVariante etwas einfacher.\\
+iv) Beispiel-Codes zur Berechnung des Argumentes mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & phi=angle (z) \\
+\hline
+Mathematica/WolframAlpha & phi=Arg [z] \\
+\hline
+Python/Numpy & import numpy as np; phi=np.angle (z) \\
+\hline
+Python/Sympy & import sympy as sp; phi=sp. $\arg (z)$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Wir betrachten den folgenden Satz.\\
+Satz 5.3 Trigonometrische Form\\
+Seien $x, y \in \mathbb{R}, r \in \mathbb{R}^{+}$und $\varphi \in[0,2 \pi[$ oder $\varphi \in]-\pi, \pi]$ sowie
+
+
+\begin{equation*}
+\operatorname{cis}(\varphi):=\cos (\varphi)+\mathrm{i} \cdot \sin (\varphi) \tag{5.17}
+\end{equation*}
+
+
+dann gibt es ein eindeutiges $z \in \mathbb{C} \backslash\{0\}$ mit
+
+
+\begin{equation*}
+z=x+y \cdot \mathrm{i}=r \cdot \operatorname{cis}(\varphi) . \tag{5.18}
+\end{equation*}
+
+
+Ferner gelten die folgenden Umrechnungsformeln.\\
+(a) $\quad x=r \cdot \cos (\varphi) \wedge y=r \cdot \sin (\varphi)$\\
+(b) $r=|z|=\sqrt{x^{2}+y^{2}} \wedge \varphi=\arg (z)$
+
+Beweis: Die Aussage folgt sofort durch Anwenden der Trigonometrie in der Gauss-Ebene.\\
+Bemerkungen:\\
+i) Jede komplexe Zahl $z \in \mathbb{C}$ lässt sich auf zwei Arten darstellen, nämlich
+
+
+\begin{equation*}
+z=\underbrace{x+y \cdot \mathrm{i}}_{\text {arithmetische Form }}=\underbrace{r \cdot \operatorname{cis}(\varphi)}_{\text {trigonometrische Form }} \tag{5.19}
+\end{equation*}
+
+
+ii) Man bezeichnet die Schreibweise $z=r \cdot \operatorname{cis}(\varphi)$ nur dann als trigonometrische Form, wenn gilt $r=|z| \geq 0$. Der Winkel $\varphi \in \mathbb{R}$ darf jedoch beliebig gewählt werden, d.h. $\varphi$ muss nicht unbedingt das Argument gemäss einer der beiden Varianten sein.
+
+
+\end{document}

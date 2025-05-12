@@ -1,0 +1,57 @@
+##### STAGE: Kapitel-/Abschnittstitel mit 'matrix' #####
+
+=== MATCH: 6.1 Matrix-Algebra ===
+Seite: 89
+
+→ Nachbarn (ausgehend):
+  → 6.1.1 Definition (Seite 89)
+  → 6.1.2 Operationen (Seite 90)
+  → 6.1.3 Spezielle Matrizen (Seite 95)
+← Nachbarn (eingehend):
+  ← Kapitel 6: Matrizen & Lineare Abbildungen (Seite 89)
+
+==================================================
+
+##### STAGE: Kapitel-/Abschnittstitel mit 'matrix rechenregeln' #####
+
+=== MATCH: 6.1 Matrix-Algebra ===
+Seite: 89
+
+→ Nachbarn (ausgehend):
+  → 6.1.1 Definition (Seite 89)
+  → 6.1.2 Operationen (Seite 90)
+  → 6.1.3 Spezielle Matrizen (Seite 95)
+← Nachbarn (eingehend):
+  ← Kapitel 6: Matrizen & Lineare Abbildungen (Seite 89)
+
+==================================================
+
+##### STAGE: Unterkapitel mit 'matrix' #####
+
+=== MATCH: 2.5.3 Hesse-Matrix ===
+Seite: 42
+
+→ Nachbarn (ausgehend):
+  → Definition: Definition 2.20 (Seite 42)
+  → Beispiele: Beispiele: (Seite 142)
+  → Satz: Satz 2.14 (Seite 42)
+  → Bemerkungen: Bemerkungen: (Seite 147)
+  → Definition: Definition 2.21 (Seite 42)
+← Nachbarn (eingehend):
+  ← 2.5 Mehrfach-Differentiale (Seite 40)
+
+==================================================
+
+=== MATCH: 7.2.2 Matrix-Darstellung ===
+Seite: 138
+
+→ Nachbarn (ausgehend):
+  → Definition: Definition 7.8 (Seite 138)
+  → Satz: Satz 7.6 (Seite 139)
+  → Beweis: Beweis: Durch Einsetzen der Basis-Darstellung von v und weil a eine lineare Abbildung ist, (Seite 139)
+  → Bemerkungen: Bemerkungen: (Seite 147)
+← Nachbarn (eingehend):
+  ← 7.2 Lineare Abbildungen (Seite 138)
+
+==================================================
+

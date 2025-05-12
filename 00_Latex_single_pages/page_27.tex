@@ -1,0 +1,32 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{2.3.1.4 Integration über allgemeine Gebiete}
+Mit Hilfe des Fubini-Satzes können auch Integrale über allgemeinere Gebiete $G \subset \mathbb{R}$ berechnet. Wir zeigen im folgenden eine Auswahl von besonders häufig auftretenden Fällen.
+
+\begin{enumerate}
+  \item Wir betrachten ein in $y$-Richtung durch Graphen begrenztes Gebiet, wie im folgendem $x-y$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_bfcec06cb7f780c5d25bg-1}
+\end{enumerate}
+
+Gemäss Fubini-Satz erhalten wir in diesem Fall\\
+$\int_{G} f \mathrm{~d} A=\int_{x_{0}}^{x_{\mathrm{E}}} \int_{u(x)}^{v(x)} f(x ; y) \mathrm{d} y \mathrm{~d} x$.\\
+2. Wir betrachten ein in $x$-Richtung durch Graphen begrenztes Gebiet, wie im folgendem $x$ - $y$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_bfcec06cb7f780c5d25bg-1(1)}
+
+Gemäss Fubini-Satz erhalten wir in diesem Fall $\int_{G} f \mathrm{~d} A=\int_{y_{0}}^{y_{\mathrm{E}}} \int_{u(y)}^{v(y)} f(x ; y) \mathrm{d} x \mathrm{~d} y$.
+
+
+\end{document}

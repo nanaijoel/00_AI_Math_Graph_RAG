@@ -1,0 +1,65 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.5 Mehrfach-Differentiale}
+\subsection*{2.5.1 Partielle Ableitungen}
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.18 Partielle Ableitung}
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine reellwertige Funktion. Die partiellen Ableitungen von $f$ sind die Ableitungen von $f$ nach jeweils einer der $n$ Variablen, wobei die anderen als Konstanten betrachtet werden.
+
+Bemerkungen:\\
+i) Eine reellwertige Funktion heisst differntierbar, wenn alle partiellen Ableitungen existieren und stetig sind.\\
+ii) Wie die Ableitung in 1D können auch die partiellen Ableitungen in nD mit Hilfe des Newton-Differenzenquotienten definiert werden gemäss
+
+
+\begin{equation*}
+f_{, \mu}\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right):=\lim _{\delta s \rightarrow 0} \frac{f\left(x_{1} ; x_{2} ; \ldots ; x_{\mu}+\delta s ; \ldots ; x_{n}\right)-f\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right)}{\delta s} . \tag{2.134}
+\end{equation*}
+
+
+iii) Für die Masseinheit erhalten wir
+
+
+\begin{equation*}
+\left[f_{, \mu}\right]=\frac{[f]}{\left[x_{\mu}\right]} . \tag{2.135}
+\end{equation*}
+
+
+iv) Die partiellen Ableitungen beschreiben an jedem Punkt die Steigungen des Funktionsgraphen in Richtung der Koordinatenachsen.\\
+v) In der Literatur sind folgende Schreibweisen gebräuchlich
+
+
+\begin{equation*}
+f_{, \mu}=f_{, x_{\mu}}=f_{x_{\mu}}=\frac{\partial f}{\partial x_{\mu}}=\frac{\partial}{\partial x_{\mu}} f=\partial_{\mu} f . \tag{2.136}
+\end{equation*}
+
+
+\subsection*{2.5.2 Gradient}
+Wir betrachten die folgende Definition.\\
+Definition 2.19 Gradient\\
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare reellwertige Funktion. Der Gradient von $f$ ist das Vektorfeld
+
+\[
+\boldsymbol{\nabla} f:=\left[\begin{array}{l}
+f_{, 1}  \tag{2.137}\\
+f_{, 2} \\
+\vdots \\
+f_{, n}
+\end{array}\right]
+\]
+
+Bemerkungen:\\
+i) Der Gradient ist eine allgemeine Konstruktion in nD.
+
+
+\end{document}

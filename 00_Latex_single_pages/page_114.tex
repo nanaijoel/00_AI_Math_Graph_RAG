@@ -1,0 +1,58 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+
+\begin{align*}
+& =\mathbf{v}+(1-\cos (\varphi)) \cdot J(\hat{\boldsymbol{\varphi}}) \cdot(J(\hat{\boldsymbol{\varphi}}) \cdot \mathbf{v})+\sin (\varphi) \cdot J(\hat{\boldsymbol{\varphi}}) \cdot \mathbf{v} \\
+& =\mathbf{v}+(1-\cos (\varphi)) \cdot(J(\hat{\boldsymbol{\varphi}}) \cdot J(\hat{\boldsymbol{\varphi}})) \cdot \mathbf{v}+\sin (\varphi) \cdot J(\hat{\boldsymbol{\varphi}}) \cdot \mathbf{v} \\
+& =\mathbb{1} \cdot \mathbf{v}+(1-\cos (\varphi)) \cdot J^{2}(\hat{\boldsymbol{\varphi}}) \cdot \mathbf{v}+\sin (\varphi) \cdot J(\hat{\boldsymbol{\varphi}}) \cdot \mathbf{v} \\
+& =\underline{\underline{\left(\mathbb{1}+(1-\cos (\varphi)) \cdot J^{2}(\hat{\boldsymbol{\varphi}})+\sin (\varphi) \cdot J(\hat{\boldsymbol{\varphi}})\right) \cdot \mathbf{v}}} \tag{6.87}
+\end{align*}
+
+
+Dies impliziert (6.84) und wir haben den Satz bewiesen.\\
+Bemerkungen:\\
+i) Es gilt $R(\boldsymbol{\varphi}) \in \mathrm{O}(n)$.\\
+ii) In jedem Fall gilt
+
+
+\begin{equation*}
+\underline{\underline{R^{-1}}(\varphi)=R^{T}(\varphi)=R(-\varphi) .} \tag{6.88}
+\end{equation*}
+
+
+Wie geometrisch offensichtlich, ist die Rotation um den Winkel - $\varphi$ die Inverse der Rotation um den Winkel $\varphi$.\\
+iii) In der Rodrigues-Formel (6.84) steht in beiden Termen jeweils $J(\hat{\boldsymbol{\varphi}})$ und nicht $J(\boldsymbol{\varphi})$. Die Verwechslung der beiden ist eine berüchtigte Fehlerquelle.\\
+iv) Beispiel-Codes zum Erzeugen von Rodrigues-Rotationsmatrizen gemäss (6.84) mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $\mathrm{J}=$ @ (w) $[0,-\mathrm{w}(3), \mathrm{w}(2) ; \mathrm{w}(3), 0,-\mathrm{w}(1) ;-\mathrm{w}(2), \mathrm{w}(1), 0]$; R=@(n, phi)eye(3)+(1-cos(phi))*J(n/norm(n)) ${ }^{-2}$ $+\sin (\mathrm{phi}) * J(\mathrm{n} / \mathrm{norm}(\mathrm{n}))$; \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\
+def J(w): \\
+M=np.array ([[0, -w[2],w[1]],[w[2],0,-w[0]], [-w[1],w[0] ,0]]); \\
+return M; \\
+def R(phi,n): \\
+nn=n/np.linalg.norm(n); \\
+$M=n p . e y e(3)+(1-n p . \cos (p h i)) * J(n n) @ J(n n)$ \\
+$+\mathrm{np} . \sin (\mathrm{phi}) * J(\mathrm{nn})$; \\
+return M; \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{document}

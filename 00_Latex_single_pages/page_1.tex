@@ -1,0 +1,59 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\section*{Kapitel 1}
+\section*{Integrale in Anwendungen}
+\subsection*{1.1 Einfache Berechnung von Integralen}
+\subsection*{1.1.1 Lineare Modifikation}
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 1.1 Integration durch lineare Modifikation}
+Seien $f: \mathbb{R} \rightarrow \mathbb{R}$ eine integrierbare Funktion mit Stammfunktion $F: \mathbb{R} \rightarrow \mathbb{R}$ und $m, q, x_{0}, x_{\mathrm{E}} \in \mathbb{R}$ mit $m \neq 0$ und $x_{0}<x_{\mathrm{E}}$, dann gilt folgendes.\\
+(a) $\int f(m \cdot x+q) \mathrm{d} x=\frac{1}{m} \cdot F(m \cdot x+q)+c$\\
+(b) $\int_{x_{0}}^{x_{\mathrm{E}}} f(m \cdot x+q) \mathrm{d} x=\frac{1}{m} \cdot\left(F\left(m \cdot x_{\mathrm{E}}+q\right)-F\left(m \cdot x_{0}+q\right)\right)$
+
+Beweis: Übung.\\
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten ein unbestimmtes Elementarintegral und eine lineare Modifikation.
+\end{itemize}
+
+
+\begin{align*}
+\text { elementar: } & F(x)=\int \cos (x) \mathrm{d} x=\sin (x)+c \\
+\text { linear modifiziert: } & F(x)=\int \cos (2 x+3) \mathrm{d} x=\frac{1}{2} \cdot \sin (2 x+3)+c \tag{1.1}
+\end{align*}
+
+
+\begin{itemize}
+  \item Wir betrachten das unbestimmte Integral
+\end{itemize}
+
+
+\begin{equation*}
+\underline{\underline{F(x)}}=\int(7 x-2)^{3} \mathrm{~d} x=\frac{1}{7} \cdot \frac{1}{4} \cdot(7 x-2)^{4}+c=\underline{\underline{\frac{1}{28}} \cdot(7 x-2)^{4}+c .} \tag{1.2}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Wir betrachten das unbestimmte Integral
+\end{itemize}
+
+
+\begin{equation*}
+\underline{\underline{F(x)}}=\int 3^{2 x+9} \mathrm{~d} x=\frac{1}{2} \cdot \frac{1}{\ln (3)} \cdot 3^{2 x+9}+c=\underline{\underline{\frac{1}{\ln (3)}} \cdot 3^{2 x+9}+c .} \tag{1.3}
+\end{equation*}
+
+
+
+\end{document}

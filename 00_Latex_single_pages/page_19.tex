@@ -1,0 +1,54 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{bbold}
+
+\begin{document}
+ii) Man kann zeigen, dass die Bogenlänge $\Delta s$ nicht von der Wahl der Parametrisierung sondern nur von der Bahn abhängt (sofern mehrfache Durchläufe auch mehrfach gerechnet werden).\\
+iii) In 2D und 3D stimmt die Bogenlänge mit dem klassischen Begriff der Weglänge aus der Elementargeometrie überein.\\
+iv) Wählt man für den Kurvenparameter die geometrische Weglänge $\tau=s$ entlang der Bahn ("Kilometrierung"), dann gilt
+
+
+\begin{align*}
+& v(s)=1  \tag{2.51}\\
+& \underline{\underline{\Delta s}}=\int_{\tau_{0}}^{\tau_{\mathrm{E}}} v(\tau) \mathrm{d} \tau=\int_{s_{0}}^{s_{\mathrm{E}}} v(s) \mathrm{d} s=\int_{s_{0}}^{s_{\mathrm{E}}} 1 \mathrm{~d} s=\underline{\underline{s_{\mathrm{E}}-s_{0}}} \tag{2.52}
+\end{align*}
+
+
+v) In der Praxis lässt sich das Integral in (2.49) nur in einfachen Fällen analytisch berechnen. Meistens muss auf numerische Integration zurückgegriffen werden.
+
+\subsection*{2.2.2 Linienintegrale}
+Wir betrachten eine parametrisierte Kurve im Bereich eines Vektorfeldes. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_dc57745355fdb137ae35g-1}
+
+Wir betrachten die folgende Definition.\\
+Definition 2.9 Linienintegral\\
+Seien $n \in \mathbb{N}^{+}, \tau_{0}, \tau_{\mathrm{E}} \in \mathbb{R}$ mit $\tau_{0}<\tau_{\mathrm{E}}, \mathbf{s}:\left[\tau_{0}, \tau_{\mathrm{E}}\right] \rightarrow \mathbb{R}^{n}$ eine parametrisierte Kurve mit Geschwindigkeitsvektor $\mathbf{v}(\tau)$ und $\mathbf{w}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ ein Vektorfeld. Das Linienintegral des Vektorfeldes $\mathbf{w}$ entlang der Kurve $\mathbf{s}(\tau)$ ist die reelle Zahl
+
+
+\begin{equation*}
+I:=\int_{\tau_{0}}^{\tau_{\mathrm{E}}}\langle\mathbf{w}, \mathbf{v}\rangle \mathrm{d} \tau . \tag{2.53}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Begriffe Linienintegral und Kurvenintegral sind synonym.\\
+ii) Für die Masseinheit erhalten wir
+
+
+\begin{equation*}
+\underline{\underline{[I]}}=[\langle\mathbf{w}, \mathbf{v}\rangle] \cdot[\tau]=[\mathbf{w}] \cdot[\mathbf{v}] \cdot[\tau]=[\mathbf{w}] \cdot \frac{[\mathbf{s}]}{[\tau]} \cdot[\tau]=\underline{\underline{[\mathbf{w}]} \cdot[\mathbf{s}]} . \tag{2.54}
+\end{equation*}
+
+
+
+\end{document}

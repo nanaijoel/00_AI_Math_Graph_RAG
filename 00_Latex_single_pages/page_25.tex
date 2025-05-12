@@ -1,0 +1,36 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+Beweis: Um das Volumen zwischen dem Reckteck $G$ und dem Graphen von $f$ zu berechnen verwenden wir einen Archimedes-Cauchy-Riemann-Approximationsprozess. Dabei gehen wir nach folgenden Schritten vor.
+
+S1 Lokal: Wir betrachten einen kleinen Streifen des Rechtecks $G$ mit Breite $\delta x>0$, wie im folgenden $x-y$ - $z$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_5faa0fe9ee4abe22ae77g-1}
+
+Die Querschnittsfläche $A_{\mathrm{Q}}(x)$ können wir berechnen durch das bestimmte Integral\\
+$A_{\mathrm{Q}}(x)=\int_{y_{0}}^{y_{\mathrm{E}}} f(x ; y) \mathrm{d} y$.\\
+Das Volumen zwischen dem kleinen Streifen und dem Graphen von $f$ ist\\
+$\underline{\delta I} \approx \underline{A_{Q}(x) \cdot \delta x}$.\\
+S2 Global: Durch Integration über $x$ können wir das gesamte Volumen zwischen dem Rechteck $G$ und dem Graphen von $f$ berechnen. Wir erhalten\\
+$\underline{\underline{I}}=\int_{x_{0}}^{x_{\mathrm{E}}} A_{\mathrm{Q}}(x) \mathrm{d} x=\underline{\underline{\int_{x_{0}}} x_{y_{0}}^{x_{\mathrm{E}}} y_{\mathrm{E}}} f(x ; y) \mathrm{d} y \mathrm{~d} x$.
+
+Durch Vertauschen der Rollen von $x$ und $y$ erhalten wir auf analoge Weise die zweite Version. Damit haben wir den Satz bewiesen.
+
+Bemerkungen:\\
+i) Durch den Fubini-Satz kann ein Integral über ein Gebiet in 2D auf die Berechnung von 2 verschachtelten Integralen in 1D zurückgeführt werden und umgekehrt.\\
+ii) Bei der Anwendung des Fubini-Satzes werden die Zweifach-Integrale in der Reihenfolge von innen nach aussen berechnet.\\
+iii) Bei der Integration über ein Rechteck kann die Integrationsreihenfolge vertauscht werden.\\
+iv) Der Fubini-Satz ist ein allgemein gültiges Prinzip, dessen Aussage sowohl auf allgemeinere Gebiete als auch auf Gebiete in nD erweitert werden kann.
+
+
+\end{document}

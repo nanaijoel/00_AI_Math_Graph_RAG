@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+$a\left(\hat{\mathbf{e}}_{m}\right)=A \cdot \hat{\mathbf{e}}_{m}=\left[\begin{array}{cccc}A^{1}{ }_{1} & A^{1}{ }_{2} & \ldots & A^{1}{ }_{m} \\ A^{2} & A^{2} & \ldots & A^{2}{ }_{m} \\ A^{3}{ }_{1} & A^{3}{ }_{2} & \ldots & A^{3}{ }_{m} \\ \vdots & \vdots & \vdots & \vdots \\ A^{n}{ }_{1} & A^{n}{ }_{2} & \ldots & A^{n}{ }_{m}\end{array}\right] \cdot\left[\begin{array}{c}0 \\ 0 \\ \vdots \\ 0 \\ 1\end{array}\right]=\left[\begin{array}{c}A^{1}{ }_{m} \\ A^{2}{ }_{m} \\ A^{3}{ }_{m} \\ \vdots \\ A^{n}{ }_{m}\end{array}\right]$.\\
+Daraus erhalten wir
+
+
+\begin{align*}
+\underline{\underline{A}} & =\left[\begin{array}{cccc}
+A^{1}{ }_{1} & A^{1}{ }_{2} & \ldots & A^{1}{ }_{m} \\
+A^{2}{ }_{1} & A^{2}{ }_{2} & \ldots & A^{2}{ }_{m} \\
+\vdots & \vdots & \vdots & \vdots \\
+A^{n}{ }_{1} & A^{n}{ }_{2} & \ldots & A^{n}{ }_{m}
+\end{array}\right]=\left[\left[\begin{array}{c}
+A^{1}{ }_{1} \\
+A^{2}{ }_{1} \\
+\vdots \\
+A^{n}{ }_{1}
+\end{array}\right]\left[\begin{array}{c}
+A^{1}{ }_{2} \\
+A^{2}{ }_{2} \\
+\vdots \\
+A^{n}{ }_{2}
+\end{array}\right] \ldots\left[\begin{array}{c}
+A^{1}{ }_{m} \\
+A^{2}{ }_{m} \\
+\vdots \\
+A^{n}{ }_{m}
+\end{array}\right]\right] \\
+& =\left[\begin{array}{llll}
+a\left(\hat{\mathbf{e}}_{1}\right) & a\left(\hat{\mathbf{e}}_{2}\right) & \ldots & a\left(\hat{\mathbf{e}}_{m}\right)
+\end{array}\right] . \tag{6.50}
+\end{align*}
+
+
+Damit haben wir den Satz bewiesen.\\
+Bemerkungen:\\
+i) Um die Abbildungsmatrix einer linearen Abbildung zu bestimmen, braucht man also nur ihre geometrische Wirkung auf die Standard-Einheitsvektoren zu kennen.\\
+ii) Um den Spalten-Vektor-Satz auf eine geometrische Abbildung anwenden zu können, muss man jedoch schon wissen bzw. mit Hilfe der Haupteigenschaft (6.33) zuerst prüfen, dass die Abbildung auch wirklich linear ist.
+
+\subsection*{6.2.4 Beispiele}
+Bei folgenden Beispielen von linearen Abbildungen des Typs $a: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$, lässt sich die Abbildungsmatrix sehr leicht mit Hilfe des Spalten-Vektor-Konstruktionsverfahrens finden.
+
+\begin{itemize}
+  \item Identität: $\mathbb{1}=\left[\begin{array}{ll}1 & 0 \\ 0 & 1\end{array}\right]$
+  \item Streckung am Ursprung um den Faktor $\lambda \in \mathbb{R}: Z_{\lambda}=\lambda \cdot \mathbb{1}=\left[\begin{array}{cc}\lambda & 0 \\ 0 & \lambda\end{array}\right]$
+  \item Punktspiegelung am Ursprung: $P=-\mathbb{1}=\left[\begin{array}{rr}-1 & 0 \\ 0 & -1\end{array}\right]$
+  \item Projektion auf die $x$-Achse: $P_{x}:=\left[\begin{array}{ll}1 & 0 \\ 0 & 0\end{array}\right]$
+  \item Projektion auf die $y$-Achse: $P_{y}:=\left[\begin{array}{ll}0 & 0 \\ 0 & 1\end{array}\right]$
+  \item Spiegelung an der $x$-Achse: $S_{x}:=\left[\begin{array}{rr}1 & 0 \\ 0 & -1\end{array}\right]$
+\end{itemize}
+
+\end{document}

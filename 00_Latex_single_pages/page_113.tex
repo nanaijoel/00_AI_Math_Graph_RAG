@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Definition 6.17 Rotationsgenerator\\
+Für jedes $\mathbf{w} \in \mathbb{R}^{3}$ ist der Rotationsgenerator die Matrix
+
+\[
+J(\mathbf{w}):=\left[\begin{array}{ccc}
+0 & -w_{3} & w_{2}  \tag{6.82}\\
+w_{3} & 0 & -w_{1} \\
+-w_{2} & w_{1} & 0
+\end{array}\right] .
+\]
+
+Im folgenden Satz stellen wir die wichtigsten algebraischen Eigenschaften des Rotationsgenerators zusammen.
+
+Satz 6.11 Eigenschaften des Rotationsgenerators\\
+Seien $\mathbf{v}, \mathbf{w} \in \mathbb{R}^{3}$ mit $w=|\mathbf{w}|$, dann gilt folgendes.\\
+(a) $J(\mathbf{w})$ ist schiefsymmetrisch\\
+(d) $J^{T}(\mathbf{w})=-J(\mathbf{w})=J(-\mathbf{w})$\\
+(b) $J^{2}(\mathbf{w})$ ist symmetrisch\\
+(e) $J^{3}(\mathbf{w})=-w^{2} \cdot J(\mathbf{w})$\\
+(c) $J(\mathbf{w}) \cdot \mathbf{v}=\mathbf{w} \times \mathbf{v}$\\
+(f) $J^{4}(\mathbf{w})=-w^{2} \cdot J^{2}(\mathbf{w})$
+
+Bemerkungen:\\
+i) Gemäss Eigenschaft (c) beschreibt $J(\mathbf{w})$ gerade das Grassmann-Vektor-Produkt von links mit dem Vektor w.\\
+ii) Für alle $\mathbf{v}, \mathbf{w} \in \mathbb{R}^{3}$ gilt die berühmte Drehimpuls-Kommutatonsrelation
+
+
+\begin{equation*}
+[J(\mathbf{v}), J(\mathbf{w})]=J(\mathbf{v} \times \mathbf{w}) \tag{6.83}
+\end{equation*}
+
+
+Mit Hilfe des Rotationsgenerators lässt sich die Abbildungsmatrix einer Rotation in 3D einfach ausdrücken.
+
+\section*{Satz 6.12 Rodrigues-Formel}
+Die Rotation in $\mathbb{R}^{3}$ um den Winkel $\varphi \in \mathbb{R}$ rechtshändig um die Drehachse in Richtung $\hat{\boldsymbol{\varphi}} \in \mathbb{R}^{3}$ wird beschrieben durch die Abbildungsmatrix
+
+
+\begin{equation*}
+R(\boldsymbol{\varphi})=\mathbb{1}+(1-\cos (\varphi)) \cdot J^{2}(\hat{\boldsymbol{\varphi}})+\sin (\varphi) \cdot J(\hat{\boldsymbol{\varphi}}) . \tag{6.84}
+\end{equation*}
+
+
+Beweis: Um das Bild eines Vektors $\mathbf{v} \in \mathbb{R}^{3}$ unter der Rotation zu berechnen, zerlegen wir $\mathbf{v}$ in seine Anteile parallel und senkrecht zu $\hat{\varphi}$. Gemäss Skizze und den Eigenschaften des Grassmann- Vektor-Produkts gilt
+
+
+\begin{align*}
+\hat{\boldsymbol{\varphi}} \times \mathbf{v} & =\hat{\boldsymbol{\varphi}} \times \mathbf{v}_{\perp}=|\hat{\boldsymbol{\varphi}}| \cdot\left|\mathbf{v}_{\perp}\right| \cdot \hat{\mathbf{a}}=1 \cdot v_{\perp} \cdot \hat{\mathbf{a}}=v_{\perp} \cdot \hat{\mathbf{a}}  \tag{6.85}\\
+\hat{\boldsymbol{\varphi}} \times(\hat{\boldsymbol{\varphi}} \times \mathbf{v}) & =\hat{\boldsymbol{\varphi}} \times\left(v_{\perp} \cdot \hat{\mathbf{a}}\right)=v_{\perp} \cdot \hat{\boldsymbol{\varphi}} \times \hat{\mathbf{a}}=v_{\perp} \cdot \hat{\mathbf{b}} . \tag{6.86}
+\end{align*}
+
+
+Mit Hilfe der Skizze und durch Einsetzen des Rotationsgenerators erhalten wir daraus
+
+$$
+\begin{aligned}
+\underline{R(\boldsymbol{\varphi}) \cdot \mathbf{v}} & =\mathbf{v}+v_{\perp} \cdot \hat{\mathbf{b}}-v_{\perp} \cdot \cos (\varphi) \cdot \hat{\mathbf{b}}+v_{\perp} \cdot \sin (\varphi) \cdot \hat{\mathbf{a}} \\
+& =\mathbf{v}+(1-\cos (\varphi)) \cdot v_{\perp} \cdot \hat{\mathbf{b}}+\sin (\varphi) \cdot v_{\perp} \cdot \hat{\mathbf{a}} \\
+& =\mathbf{v}+(1-\cos (\varphi)) \cdot \hat{\boldsymbol{\varphi}} \times(\hat{\boldsymbol{\varphi}} \times \mathbf{v})+\sin (\varphi) \cdot \hat{\boldsymbol{\varphi}} \times \mathbf{v}
+\end{aligned}
+$$
+
+
+\end{document}

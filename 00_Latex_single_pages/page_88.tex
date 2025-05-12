@@ -1,0 +1,71 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{5.4.4 Wurzeln}
+Es gibt verschiedene Konventionen, was eine Wurzel mit komplexem Radikanden bedeuten soll.
+
+\begin{enumerate}
+  \item Alte Konvention: Die Wurzel ist als Menge aller Lösungen der entsprechenden PotenzGleichung aufzufassen. Das Element mit dem kleinsten Argument gemäss Basler-Variante wird dabei als Hauptwert bezeichnet und die anderen Elemente als Nebenwerte. Beispiele:
+\end{enumerate}
+
+\begin{itemize}
+  \item $\sqrt{4}=\{\underbrace{4}_{\text {Hauptwert }}, \underbrace{-4}_{\text {Nebenwert }}\}$
+  \item $\sqrt{-4}=\{\underbrace{2 \cdot \mathrm{i}}_{\text {Hauptwert }}, \underbrace{-2 \cdot \mathrm{i}}_{\text {Nebenwert }}\}$
+  \item $\sqrt{4 \cdot \mathrm{i}}=\{\underbrace{2 \cdot \mathrm{e}_{\text {Nebenwert }}^{\mathrm{i} \cdot \frac{\pi}{4}}}_{\text {Hauptwert }} \underbrace{2 \cdot \mathrm{e}^{-\mathrm{i} \cdot \frac{\pi}{4}}}\}$
+  \item $\sqrt[3]{-27}=\{\underbrace{3 \cdot \cdot^{\mathrm{i} \cdot \frac{\pi}{3}}}_{\text {Hauptwert }}, \underbrace{-3,3 \cdot \mathrm{e}^{-\mathrm{i} \cdot \frac{\pi}{3}}}_{\text {Nebenwerte }}\}$
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item Neue Konvention: Es wird zwischen reellen und komplexen Wurzeln unterschieden. Beispiele:
+\end{enumerate}
+
+\begin{itemize}
+  \item $\sqrt{4}=2 \quad$ (reelle Lösung)
+  \item $\sqrt{-4}$ existiert nicht
+  \item $\sqrt{4 \cdot \mathrm{i}}$ existiert nicht
+  \item $\sqrt[3]{-27}=-3 \quad$ (reelle Lösung)
+  \item $\sqrt{4}^{\mathbb{C}}=2$ (reelle Lösung, Hauptwert)
+  \item $\sqrt{-4}^{\mathbb{C}}=2 \cdot \mathrm{i}$ (Hauptwert)\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_a91aa67dcaef93a320c0g-1}
+  \item $\sqrt[3]{-27}^{\mathbb{C}}=3 \cdot \mathrm{e}^{\mathrm{i} \cdot \frac{\pi}{3}} \quad$ (Hauptwert)
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item Allgemeine Praxis: Es werden nur reelle Radikanden zugelassen und reelle Lösungen vor Hauptwerten bevorzugt. Ansonsten werden keine Wurzeln verwendet. Beispiele:
+\end{enumerate}
+
+\begin{itemize}
+  \item $\sqrt{4}=2 \quad$ (reelle Lösung, Hauptwert)
+  \item $\sqrt{-4}=2 \cdot \mathrm{i} \quad$ (Hauptwert)
+  \item $\sqrt[3]{-27}=-3 \quad$ (reelle Lösung)
+\end{itemize}
+
+Generell ist im Umgang mit Wurzeln Vorsicht geboten, wie die folgende Rechnung zeigt. Man könnte vermeintlich zu Schluss kommen
+
+
+\begin{equation*}
+1=\sqrt{1}=\sqrt{(-1) \cdot(-1)}=\sqrt{-1} \cdot \sqrt{-1}=\mathrm{i} \cdot \mathrm{i}=\mathrm{i}^{2}=-1 . \tag{5.47}
+\end{equation*}
+
+
+Das dritte Gleichheitszeichen in der obigen Rechnung ist falsch. Allgmein gilt für alle WurzelKonventionen\\
+$\sqrt{x \cdot y}=\sqrt{x} \cdot \sqrt{y}$ für $\quad x, y \in \mathbb{R}^{+}$\\
+$\sqrt{w \cdot z}= \pm \sqrt{w} \cdot \sqrt{z}$ für $w, z \in \mathbb{C}$,\\
+wobei das Vorzeichen von Fall zu Fall entschieden werden muss.
+
+
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Betrachten wir einen zweiten Satz Koeffizienten $\tilde{v}^{1}, \ldots, \tilde{v}^{n} \in \mathbb{K}$, so dass ebenfalls gilt
+
+
+\begin{equation*}
+\mathbf{v}=\sum_{k=1}^{n} \tilde{v}^{k} \cdot \mathbf{e}_{k} \tag{7.18}
+\end{equation*}
+
+
+dann erhalten wir\\
+$0=\mathbf{v}-\mathbf{v}=\sum_{k=1}^{n} \tilde{v}^{k} \cdot \mathbf{e}_{k}-\sum_{k=1}^{n} v^{k} \cdot \mathbf{e}_{k}=\sum_{k=1}^{n}\left(\tilde{v}^{k} \cdot \mathbf{e}_{k}-v^{k} \cdot \mathbf{e}_{k}\right)=\sum_{k=1}^{n}\left(\tilde{v}^{k}-v^{k}\right) \cdot \mathbf{e}_{k}$.\\
+Weil die Vektoren in $B$ gemäss Definition 7.4 auch linear unabhängig sind, folgt für jedes $k \in\{1, \ldots, n\}$, dass
+
+
+\begin{align*}
+& \tilde{v}^{k}-v^{k} & =0 & \mid+v^{k}  \tag{7.20}\\
+\Leftrightarrow & \tilde{v}^{k} & =v^{k} . & \tag{7.21}
+\end{align*}
+
+
+Wir haben also sowohl die Existenz als auch die Eindeutigkeit der Koeffizienten $v^{1}, \ldots, v^{n} \in \mathbb{K}$ gezeigt und damit den Satz bewiesen.
+
+Nicht jeder Vektorraum kann durch endlich viele Vektoren erzeugt werden. Betrachtet man hingegen auch Mengen aus unendlich vielen Vektoren, dann kann man in jedem nichttrivialen Vektorraum eine Basis finden.
+
+Satz 7.3 Existenz einer Basis\\
+In jedem nichttrivialen Vektorraum existiert eine Basis entweder aus endlich oder unendlich vielen Vektoren.
+
+Von besonderem Interesse ist der folgende Satz über die Anzahl Vektoren in einer Basis.\\
+Satz 7.4 Eindeutigkeit der Anzahl Basis-Vektoren\\
+Jede Basis eines Vektorraums besteht aus der gleichen Anzahl Basis-Vektoren.\\
+Die Tatsache, dass jede Basis eines Vektorraums aus gleich vielen Vektoren besteht, macht diese Anzahl zu einer wichtigen Kenngrösse, die einen eigenen Namen verdient.
+
+Definition 7.5 Dimension\\
+Die Anzahl Basis-Vektoren in jeder Basis eines Vektorraums heisst Dimension des Vektorraums.
+
+Bemerkungen:\\
+i) Insbesondere Funktionenräume können oft nicht endlich erzeugt werden und haben somit unendliche Dimension.\\
+ii) Bemerkenswert ist die Tatsache, dass der Begriff Dimension hier rein algebraisch definiert wird. Es wird dafür keinerlei Geometrie oder gar geometrische Anschauung benötigt.\\
+iii) Ist $n \in \mathbb{N}^{+}$die Dimension eines Vektorraums $(V, \mathbb{K},+, \cdot)$, dann schreibt man formell
+
+
+\begin{equation*}
+\operatorname{dim}(V)=n \tag{7.22}
+\end{equation*}
+
+
+
+\end{document}

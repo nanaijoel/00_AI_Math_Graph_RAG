@@ -1,0 +1,63 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{4.1.2 Maclaurin-Reihen der Elementarfunktionen}
+Die meisten bekannten Elementarfunktionen können durch Maclaurin-Reihen dargestellt werden. Wir betrachten dazu den folgenden Satz.
+
+Satz 4.2 Maclaurin-Reihen der Elementarfunktionen\\
+Die folgenden Elementarfunktionen sind auf ganz $\mathbb{R}$ analytisch und für alle $x \in \mathbb{R}$ gelten die folgenden Darstellungen durch Maclaurin-Reihen.
+
+
+\begin{align*}
+\exp (x) & =\sum_{k=0}^{\infty} \frac{x^{k}}{k!}=1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\frac{x^{4}}{4!}+\frac{x^{5}}{5!}+\ldots \\
+\sin (x) & =\sum_{k=0}^{\infty} \frac{(-1)^{k} x^{2 k+1}}{(2 k+1)!}=x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\frac{x^{7}}{7!}+\frac{x^{9}}{9!}-\ldots \\
+\cos (x) & =\sum_{k=0}^{\infty} \frac{(-1)^{k} x^{2 k}}{(2 k)!}=1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+\frac{x^{8}}{8!}-\ldots  \tag{4.11}\\
+\sinh (x) & =\sum_{k=0}^{\infty} \frac{x^{2 k+1}}{(2 k+1)!}=x+\frac{x^{3}}{3!}+\frac{x^{5}}{5!}+\frac{x^{7}}{7!}+\frac{x^{9}}{9!}+\ldots \\
+\cosh (x) & =\sum_{k=0}^{\infty} \frac{x^{2 k}}{(2 k)!}=1+\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+\frac{x^{6}}{6!}+\frac{x^{8}}{8!}+\ldots
+\end{align*}
+
+
+Beweis: Wir berechnen die Ableitungen von $f(x):=\exp (x)=\mathrm{e}^{x}$ sowie deren Werte an der Stelle $x_{0}=0$ und stellen die Resultate in der folgenden Tabelle zusammen.
+
+\begin{center}
+\begin{tabular}{|r|r|r|r|r|r|r|r|r|}
+\hline
+$k$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & $\ldots$ \\
+\hline\hline
+$f^{(k)}(x)$ & $\exp (x)$ & $\exp (x)$ & $\exp (x)$ & $\exp (x)$ & $\exp (x)$ & $\exp (x)$ & $\exp (x)$ & $\ldots$ \\
+\hline
+$f^{(k)}(0)$ & 1 & 1 & 1 & 1 & 1 & 1 & 1 & $\ldots$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Durch Einsetzen in die Formel der Maclaurin-Entwicklung für ein $n \in \mathbb{N}$ und ein $x \in \mathbb{R}$ erhalten wir
+
+
+\begin{align*}
+\underline{f(x)} & =f(0)+\frac{f^{(1)}(0)}{1!} \cdot x+\frac{f^{(2)}(0)}{2!} \cdot x^{2}+\frac{f^{(3)}(0)}{3!} \cdot x^{3}+\ldots+\frac{f^{(n)}(0)}{n!} \cdot x^{n}+R_{n}(x) \\
+& =1+\frac{1}{1!} \cdot x+\frac{1}{2!} \cdot x^{2}+\frac{1}{3!} \cdot x^{3}+\frac{1}{4!} \cdot x^{4}+\frac{1}{5!} \cdot x^{5}+\frac{1}{6!} \cdot x^{6}+\frac{1}{7!} \cdot x^{7}+\ldots+R_{n}(x) \\
+& =\sum_{k=0}^{n} \frac{x^{k}}{k!}+R_{n}(x) . \tag{4.13}
+\end{align*}
+
+
+Es sei $p:=\operatorname{sgn}(x)$, dann finden wir für das Restglied die Abschätzung
+
+$$
+\begin{aligned}
+\underline{\left|R_{n}(x)\right|} & =\left|\frac{(-1)^{n}}{n!} \int_{0}^{x} f^{(n+1)}(s) \cdot(s-x)^{n} \mathrm{~d} s\right|=\left|\frac{(-1)^{n}}{n!} \int_{0}^{x} \mathrm{e}^{s} \cdot(s-x)^{n} \mathrm{~d} s\right| \\
+& =\frac{1}{n!} \cdot\left|\int_{0}^{x} \mathrm{e}^{s} \cdot(s-x)^{n} \mathrm{~d} s\right| \leq \frac{p}{n!} \int_{0}^{x}\left|\mathrm{e}^{s} \cdot(s-x)^{n}\right| \mathrm{d} s=\frac{p}{n!} \int_{0}^{x}\left|\mathrm{e}^{s}\right| \cdot\left|(s-x)^{n}\right| \mathrm{d} s
+\end{aligned}
+$$
+
+
+\end{document}

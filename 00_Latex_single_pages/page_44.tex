@@ -1,0 +1,72 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.5.5 Rotation}
+Wir betrachten die folgende Definition.\\
+Definition 2.23 Rotation in 2D\\
+Sei $\mathbf{v}: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$ ein differentierbares Vektorfeld mit Komponenten
+
+\[
+\mathbf{v}\left(x^{1} ; x^{2}\right)=\left[\begin{array}{c}
+v^{1}\left(x^{1} ; x^{2}\right)  \tag{2.154}\\
+v^{2}\left(x^{1} ; x^{2}\right)
+\end{array}\right] .
+\]
+
+Die Rotation von $\mathbf{v}$ ist
+
+
+\begin{equation*}
+\operatorname{rot}(\mathbf{v}):=v^{2}{ }_{, 1}-v^{1}{ }_{, 2} . \tag{2.155}
+\end{equation*}
+
+
+Wir betrachten die folgende Definition.\\
+Definition 2.24 Rotation in 3D\\
+Sei $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ ein differentierbares Vektorfeld mit Komponenten
+
+\[
+\mathbf{v}\left(x^{1} ; x^{2} ; x^{3}\right)=\left[\begin{array}{c}
+v^{1}\left(x^{1} ; x^{2} ; x^{3}\right)  \tag{2.156}\\
+v^{2}\left(x^{1} ; x^{2} ; x^{3}\right) \\
+v^{3}\left(x^{1} ; x^{2} ; x^{3}\right)
+\end{array}\right] .
+\]
+
+Die Rotation von $\mathbf{v}$ ist
+
+\[
+\operatorname{rot}(\mathbf{v}):=\left[\begin{array}{c}
+v^{3}, 2-v^{2},{ }_{, 3}  \tag{2.157}\\
+v^{1}, 3-v^{3}, 1 \\
+v^{2}, v_{1}-v_{, 2}^{1}
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Die Rotation eines Vektorfeldes ist eine spezielle Konstruktion in 2D und 3D.\\
+ii) Die Rotation eines Vektorfeldes in 2D ist ein Skalarfeld.\\
+iii) Die Rotation eines Vektorfeldes in 3D ist ein Vektorfeld in 3D.\\
+iv) Die Rotation eines Vektorfeldes ist ein Mass für dessen Wirbeldichte.\\
+v) Ein Vektorfeld $\mathbf{v}$ heisst wirbelfrei, falls gilt
+
+
+\begin{equation*}
+\operatorname{rot}(\mathbf{v})=0 . \tag{2.158}
+\end{equation*}
+
+
+vi) In 3D steht rot(v) senkrecht auf der "Wirbel-Ebene" von v, analog zum Drehimpuls einer rotierenden Scheibe.\\
+vii) Im Englischen wird die Rotation als curl bezeichnet und entsprechend auch so in Formeln notiert, d.h. durch $\operatorname{curl}(\mathbf{v})$.
+
+
+\end{document}

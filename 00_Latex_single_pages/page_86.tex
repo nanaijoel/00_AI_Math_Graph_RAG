@@ -1,0 +1,85 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Beweis: Die Aussage folgt sofort aus der Euler-Formel.\\
+Bemerkungen:\\
+i) Jede komplexe Zahl $z \in \mathbb{C}$ lässt sich auf drei Arten darstellen, nämlich\\
+$z=\underbrace{x+y \cdot \mathrm{i}}_{\text {arithmetische Form }}=\underbrace{r \cdot \operatorname{cis}(\varphi)}_{\text {trigonometrische Form }}=\underbrace{r \cdot \mathrm{e}^{\mathrm{i} \cdot \varphi}}_{\text {exponentielle Form }}$.\\
+ii) Man bezeichnet die Schreibweise $z=r \cdot \mathrm{e}^{\mathrm{i} \cdot \varphi}$ nur dann als exponentielle Form, wenn gilt $r=|z| \geq 0$. Der Winkel $\varphi \in \mathbb{R}$ darf jedoch beliebig gewählt werden, d.h. $\varphi$ muss nicht unbedingt das Argument gemäss einer der beiden Varianten sein.\\
+iii) In exponentieller Form lässt sich die Multiplikation von zwei komplexen Zahlen auf einfache Weise in der Gauss-Ebene geometrisch interpretieren. Es gilt\\
+$\underline{\underline{z_{1}} \cdot z_{2}}=r_{1} \cdot \mathrm{e}^{\mathrm{i} \cdot \varphi_{1}} \cdot r_{2} \cdot \mathrm{e}^{\mathrm{i} \cdot \varphi_{2}}=r_{1} \cdot r_{2} \cdot \mathrm{e}^{\mathrm{i} \cdot \varphi_{1}+\mathrm{i} \cdot \varphi_{2}}=\underline{\underline{r_{1} \cdot r_{2}} \cdot \mathrm{e}^{\mathrm{i} \cdot\left(\varphi_{1}+\varphi_{2}\right)}}$.\\
+iv) In exponentieller Form lässt sich das Potenzieren einer komplexen Zahl mit einem strikt positiven Exponenten $p>0$ auf einfache Weise in der Gauss-Ebene geometrisch interpretieren. Es gilt\\
+$\underline{\underline{z^{p}}}=\left(r \cdot \mathrm{e}^{\mathrm{i} \cdot \varphi}\right)^{p}=r^{p} \cdot\left(\mathrm{e}^{\mathrm{i} \cdot \varphi}\right)^{p}=\underline{\underline{r^{p}} \cdot \mathrm{e}^{\mathrm{i} \cdot p \cdot \varphi}}$.
+
+\subsection*{5.4.3 Potenz-Gleichungen}
+Seien $w \in \mathbb{C}$ und $n \in \mathbb{N}^{+}$. Wir betrachten eine Potenz-Gleichung der Form
+
+
+\begin{equation*}
+z^{n}=w . \tag{5.34}
+\end{equation*}
+
+
+Dabei suchen wir alle komplexen Lösungen $z \in \mathbb{C}$. Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten die Potenz-Gleichung
+\end{itemize}
+
+
+\begin{equation*}
+z^{2}=4 \Rightarrow z_{1,2}= \pm \sqrt{4}= \pm 2 \Rightarrow \underline{\mathbb{L}=\{-2,2\}} . \tag{5.35}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Wir betrachten die Potenz-Gleichung
+\end{itemize}
+
+
+\begin{equation*}
+z^{2}=-4 \Rightarrow z_{1,2}= \pm \mathrm{i} \cdot \sqrt{4}= \pm 2 \cdot \mathrm{i} . \Rightarrow \underline{\underline{\mathbb{Q}}=\{-2 \cdot \mathrm{i}, 2 \cdot \mathrm{i}\}} . \tag{5.36}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Wir betrachten die Potenz-Gleichung
+\end{itemize}
+
+
+\begin{equation*}
+z^{3}=-27=|-27| \cdot \mathrm{e}^{\mathrm{i} \cdot \arg (-27)}=27 \cdot \mathrm{e}^{\mathrm{i} \cdot \pi}=27 \cdot \mathrm{e}^{\mathrm{i} \cdot(\pi+(k-1) \cdot 2 \pi)} \quad \text { für } \quad k \in \mathbb{Z} . \tag{5.37}
+\end{equation*}
+
+
+Wir erhalten die folgenden drei Lösungen
+
+
+\begin{equation*}
+k=1: \quad z_{1}=\sqrt[3]{27} \cdot \mathrm{e}^{\mathrm{i} \cdot \frac{\pi+0 \cdot 2 \pi}{3}}=3 \cdot \mathrm{e}^{\mathrm{i} \cdot \frac{\pi}{3}} \tag{5.38}
+\end{equation*}
+
+
+
+\begin{equation*}
+k=2: \quad z_{2}=\sqrt[3]{27} \cdot \mathrm{e}^{\mathrm{i} \cdot \frac{\pi+1 \cdot 2 \pi}{3}}=3 \cdot \mathrm{e}^{\mathrm{i} \cdot \pi}=-3 \tag{5.39}
+\end{equation*}
+
+
+
+\begin{equation*}
+k=3: \quad z_{3}=\sqrt[3]{27} \cdot \mathrm{e}^{\mathrm{i} \cdot \frac{\pi+2 \cdot 2 \pi}{3}}=3 \cdot \mathrm{e}^{\mathrm{i} \cdot \frac{5 \pi}{3}}=3 \cdot \mathrm{e}^{-\mathrm{i} \cdot \frac{\pi}{3}} \tag{5.40}
+\end{equation*}
+
+
+
+\end{document}

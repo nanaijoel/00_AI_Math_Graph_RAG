@@ -1,0 +1,79 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.3.2 Dreifach-Integrale}
+Die Theorie der Integrale in 3D ist ganz analog zur Theorie in 2D. Exemplarisch betrachten wir dazu den folgenden Satz.
+
+Satz 2.7 Fubini-Satz für Quader\\
+Seien $x_{0}, x_{\mathrm{E}}, y_{0}, y_{\mathrm{E}}, z_{0}, z_{\mathrm{E}} \in \mathbb{R}$ mit $x_{0}<x_{\mathrm{E}}, y_{0}<y_{\mathrm{E}}$ und $z_{0}<z_{\mathrm{E}}, f: \mathbb{R}^{3} \rightarrow \mathbb{R}$ eine integrierbare Funktion sowie $Q$ der Quader
+
+
+\begin{equation*}
+Q:=\left[x_{0}, x_{\mathrm{E}}\right] \times\left[y_{0}, y_{\mathrm{E}}\right] \times\left[z_{0}, z_{\mathrm{E}}\right] . \tag{2.90}
+\end{equation*}
+
+
+Dann gilt
+
+
+\begin{equation*}
+\int_{Q} f \mathrm{~d} V=\int_{z_{0}}^{z_{\mathrm{E}}} \int_{y_{0}}^{y_{\mathrm{E}}} \int_{x_{0}}^{x_{\mathrm{E}}} f(x ; y ; z) \mathrm{d} x \mathrm{~d} y \mathrm{~d} z . \tag{2.91}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Durch den Fubini-Satz kann ein Integral über ein Gebiet in 3D auf die Berechnung von 3 verschachtelten Integralen in 1D zurückgeführt werden und umgekehrt.\\
+ii) Bei der Anwendung des Fubini-Satzes werden die Dreifach-Integrale in der Reihenfolge von innen nach aussen berechnet.\\
+iii) Bei der Integration über einen Quader kann die Integrationsreihenfolge vertauscht werden.
+
+Integrale über Gebiete in 3D erhält man aus einem Archimedes-Cauchy-Riemann-Approximationsprozess in 3D gemäss folgenden Schritten.
+
+S1 Lokal: Der Beitrag zur Grösse $I$ eines kleinen Volumenstücks $\delta V$ im $x-y$ - $z$-Raum ist
+
+
+\begin{equation*}
+\underline{\delta I} \approx \ldots \approx f(x ; y ; z) \cdot \delta V . \tag{2.92}
+\end{equation*}
+
+
+S2 Global: Durch Integration über das Gebiet $G$ können wir die gesamte Grösse $I$ berechnen. Wir erhalten
+
+
+\begin{equation*}
+\underline{\underline{I}}=\int_{G} f \mathrm{~d} V=\underline{\underline{\ldots}} \tag{2.93}
+\end{equation*}
+
+
+Anwendungen:
+
+\begin{itemize}
+  \item Masse: Wir betrachten einen Körpers $K$ mit Dichte $\rho: \mathbb{R}^{3} \rightarrow \mathbb{R}$.
+\end{itemize}
+
+S1 Lokal: Die Masse eines kleinen Volumenstücks $\delta V$ im $x-y$ - $z$-Raum ist
+
+
+\begin{equation*}
+\underline{\delta m} \approx \rho \cdot \delta V=\rho(x ; y ; z) \cdot \delta V . \tag{2.94}
+\end{equation*}
+
+
+S2 Global: Durch Integration über den Körper K können wir seine gesamte Masse berechnen. Wir erhalten
+
+
+\begin{equation*}
+m=\int_{K} \rho \mathrm{~d} V . \tag{2.95}
+\end{equation*}
+
+
+
+\end{document}

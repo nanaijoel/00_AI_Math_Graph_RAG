@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+vi) Beispiel-Codes zum Erzeugen von diagonalen Matrizen mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $\mathrm{M}=\operatorname{diag}([1,2,3])$ \\
+\hline
+Mathematica/WolframAlpha & M=DiagonalMatrix [\{1, 2, 3\}] \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\
+M=np.diag([1, 2, 3]) \\
+\end{tabular} \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import sympy as sp; \\
+M=sp.diag(1,2,3) \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item \hspace{0pt} [3]
+  \item $\left[\begin{array}{ll}1 & 0 \\ 0 & 2\end{array}\right]$
+  \item $\left[\begin{array}{rrr}-7 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & -1\end{array}\right]$
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{3.2.2 Integration über Polstellen}
+Wir betrachten die Fläche zwischen dem Graphen einer Funktion $f: \mathbb{R} \backslash\left\{x_{\mathrm{p}}\right\} \rightarrow \mathbb{R}$ und einer vertikalen Asymptote bei $x_{\mathrm{p}} \in \mathbb{R}$. Eine solche Situation ist im folgenden $x$ - $y$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_bda369c65ba3d1048fcag-1}
+
+Wir betrachten die folgende Definition.\\
+Definition 3.3 Uneigentliches Integral über eine Polstelle.\\
+Seien $x_{0}, x_{\mathrm{p}}, x_{\mathrm{E}} \in \mathbb{R}$ mit $x_{0} \leq x_{\mathrm{p}} \leq x_{\mathrm{E}}$ und $f: \mathbb{R} \backslash\left\{x_{\mathrm{p}}\right\} \rightarrow \mathbb{R}$ eine integrierbare Funktion. Das uneigentliche Integral von $f$ über die Polstelle $x_{\mathrm{p}}$ ist
+
+
+\begin{equation*}
+\int_{x_{0}}^{x_{\mathrm{E}}} f(x) \mathrm{d} x:=\lim _{r>x_{\mathrm{P}}} \int_{x_{0}}^{r} f(x) \mathrm{d} x+\lim _{s \backslash x_{\mathrm{p}}} \int_{s}^{x_{\mathrm{E}}} f(x) \mathrm{d} x, \tag{3.40}
+\end{equation*}
+
+
+falls beide Grenzwerte konvergieren.\\
+Bemerkungen:\\
+i) Das uneigentliche Integral wird als Summe von zwei Grenzwerten berechnet und existiert somit nur dann, wenn beide einzeln konvergieren.\\
+ii) Falls $x_{\mathrm{p}} \in\left\{x_{0}, x_{\mathrm{E}}\right\}$, dann fällt einer der beiden Grenzwerte weg. Es gilt
+
+
+\begin{align*}
+& x_{\mathrm{p}}=x_{0} \Rightarrow \int_{x_{0}}^{x_{\mathrm{E}}} f(x) \mathrm{d} x=\int_{x_{\mathrm{P}}}^{x_{\mathrm{E}}} f(x) \mathrm{d} x=\lim _{s \backslash x_{\mathrm{P}}} \int_{s}^{x_{\mathrm{E}}} f(x) \mathrm{d} x  \tag{3.41}\\
+& x_{\mathrm{p}}=x_{\mathrm{E}} \Rightarrow \int_{x_{0}}^{x_{\mathrm{E}}} f(x) \mathrm{d} x=\int_{x_{0}}^{x_{\mathrm{p}}} f(x) \mathrm{d} x=\lim _{r \not x_{\mathrm{P}}} \int_{x_{0}}^{r} f(x) \mathrm{d} x . \tag{3.42}
+\end{align*}
+
+
+iii) Befinden sich mehr als eine Polstelle im Intervall $\left[x_{0}, x_{\mathrm{E}}\right]$, dann muss das Integral in Teilabschnitte unterteilt und weitere Grenzwerte eingeführt werden.\\
+iv) In der Praxis ist aus Integrand und Integrationsgrenzen nicht immer auf den ersten Blick ersichtlich, ob es sich um ein uneigentliches Integral mit Polstellen handelt, wie z.B. bei
+
+
+\begin{equation*}
+I=\int_{0}^{3} \frac{2 x-4}{1-\mathrm{e}^{\frac{2-x}{3}}} \mathrm{~d} x \tag{3.43}
+\end{equation*}
+ mit einem Pol bei $x=2$.
+
+
+\end{document}

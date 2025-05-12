@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Wir betrachten die folgende Definition.\\
+Definition 6.23 Mass\\
+Seien $m, n \in \mathbb{N}^{+}$und $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m} \in \mathbb{R}^{n}$ mit GRAM-Matrix $G$. Das Mass der Vektoren ist
+
+
+\begin{equation*}
+\mu\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right):=\sqrt{\operatorname{det}(G)} \tag{6.140}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Wegen $\operatorname{det}(G) \geq 0$ kann die Wurzel immer in $\mathbb{R}$ gezogen werden.\\
+ii) Das Mass ist die Verallgemeinerung der Begriffe Länge, Fläche und Volumen auf beliebige Dimensionen. Insbesondere gilt folgendes.
+
+
+\begin{align*}
+\mu(\mathbf{v}) & =\sqrt{\langle\mathbf{v}, \mathbf{v}\rangle}=|\mathbf{v}| \equiv \text { Länge von } \mathbf{v}  \tag{6.141}\\
+\mu\left(\mathbf{v}_{1} ; \mathbf{v}_{2}\right) & \equiv \text { Fläche des von } \mathbf{v}_{1} \text { und } \mathbf{v}_{2} \text { aufgespannten Parallelogramms }  \tag{6.142}\\
+\mu\left(\mathbf{v}_{1} ; \mathbf{v}_{2} ; \mathbf{v}_{3}\right) & \equiv \text { Volumen des von } \mathbf{v}_{1}, \mathbf{v}_{2} \text { und } \mathbf{v}_{3} \text { aufgespannten Spats } \tag{6.143}
+\end{align*}
+
+
+iii) Für die Standard-Einheitsvektoren gilt
+
+
+\begin{equation*}
+\mu\left(\hat{\mathbf{e}}_{1} ; \ldots ; \hat{\mathbf{e}}_{n}\right)=\sqrt{\operatorname{det}(\mathbb{1})}=\sqrt{1}=1 \tag{6.144}
+\end{equation*}
+
+
+iv) Für $m>n$ ist die Gram-Matrix $G$ in jedem Fall singulär und es folgt
+
+
+\begin{equation*}
+\mu\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right)=0 \tag{6.145}
+\end{equation*}
+
+
+Falls die Anzahl Vektoren gerade der Dimension gleicht, dann lässt sich die Berechnung des Masses vereinfachen.
+
+Satz 6.20 Mass-Formel in voller Dimension\\
+Seien $n \in \mathbb{N}^{+}$und $\mathbf{v}_{1}, \ldots, \mathbf{v}_{n} \in \mathbb{R}^{n}$ gerade die Spalten der Matrix
+
+\[
+A=\left[\begin{array}{llll}
+\mathbf{v}_{1} & \mathbf{v}_{2} & \ldots & \mathbf{v}_{n} \tag{6.146}
+\end{array}\right] \in \mathbb{M}(n, n, \mathbb{R})
+\]
+
+Dann gilt
+
+
+\begin{equation*}
+\mu\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{n}\right):=|\operatorname{det}(A)| \tag{6.147}
+\end{equation*}
+
+
+Beweis: Weil A eine quadratische Matrix ist, folgt\\
+$\underline{\left.\underline{\mu\left(\mathbf{v}_{1}\right.} ; \ldots ; \mathbf{v}_{n}\right)}=\sqrt{\operatorname{det}(G)}=\sqrt{\operatorname{det}\left(A^{T} \cdot A\right)}=\sqrt{\operatorname{det}\left(A^{T}\right) \cdot \operatorname{det}(A)}=\sqrt{\operatorname{det}(A) \cdot \operatorname{det}(A)}$
+
+
+\begin{equation*}
+=\sqrt{\operatorname{det}^{2}(A)}=\underline{\underline{|\operatorname{det}(A)|}} \tag{6.148}
+\end{equation*}
+
+
+Damit haben wir den Satz bewiesen.
+
+
+\end{document}

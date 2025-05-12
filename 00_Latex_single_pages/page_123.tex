@@ -1,0 +1,87 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+ii) Gilt $\operatorname{det}(A)=0$, dann ist die quadratische Matrix $A$ singulär, d.h. sie hat keine Inverse und die zugehörige lineare Abbildung a ist nicht bijektiv.
+
+Wir werden später sehen, dass der Determinante auch eine geometrische Bedeutung zukommt. In diesem Abschnitt erwähnen wir dazu nur den folgenden Satz über Determinanten von orthogonalen Matrizen.
+
+Satz 6.19 Determinante einer orthogonalen Matrix\\
+Seien $n \in \mathbb{N}^{+}$und $A \in \mathrm{O}(n)$, dann gilt $\operatorname{det}(A) \in\{-1,1\}$.\\
+Beweis: Für eine orthogonale Matrix $A$ muss gelten
+
+
+\begin{align*}
+\operatorname{det}(A) & \left.=\operatorname{det}\left(A^{T}\right)=\operatorname{det}\left(A^{-1}\right)=\frac{1}{\operatorname{det}(A)} \quad \right\rvert\, \cdot \operatorname{det}(A)  \tag{6.126}\\
+\Leftrightarrow \quad(\operatorname{det}(A))^{2} & =1 \tag{6.127}
+\end{align*}
+
+
+Daraus folgt
+
+
+\begin{equation*}
+\underline{\underline{\operatorname{det}( }(A) \in\{-1,1\} .} \tag{6.128}
+\end{equation*}
+
+
+Damit haben den Satz bewiesen.\\
+Bemerkungen:\\
+i) Die Umkehrung des Satzes 6.19 gilt nicht. Dazu betrachten wir z.B. die Matrix
+
+\[
+A=\left[\begin{array}{cc}
+\frac{1}{2} & 0  \tag{6.129}\\
+0 & 2
+\end{array}\right] .
+\]
+
+Wir berechnen leicht, dass zwar
+
+
+\begin{equation*}
+\operatorname{det}(A)=\frac{1}{2} \cdot 2-0 \cdot 0=1-0=1, \tag{6.130}
+\end{equation*}
+
+
+aber deswegen ist $A$ noch lange nicht orthogonal, denn es gilt
+
+\[
+A^{-1}=\left[\begin{array}{cc}
+2 & 0  \tag{6.131}\\
+0 & \frac{1}{2}
+\end{array}\right] \neq\left[\begin{array}{cc}
+\frac{1}{2} & 0 \\
+0 & 2
+\end{array}\right]=A^{T} .
+\]
+
+ii) Die Determinante teilt die Menge $\mathrm{O}(n)$ in zwei Teile auf. Man definiert
+
+
+\begin{equation*}
+\mathrm{O}^{ \pm}(n):=\{A \in \mathrm{O}(n) \mid \operatorname{det}(A)= \pm 1\} . \tag{6.132}
+\end{equation*}
+
+
+Ferner bezeichnet man
+
+
+\begin{equation*}
+\mathrm{SO}(n):=\mathrm{O}^{+}(n) \tag{6.133}
+\end{equation*}
+
+
+als spezielle orthogonale Gruppe in $n$ Dimensionen.\\
+iii) Man kann zeigen, dass $\mathrm{O}^{-}(n)$ alle Spiegelungsmatrizen und $\mathrm{O}^{+}(n)$ alle Rotationsmatrizen enthält.
+
+
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{7.3.1.2 Mass-Formeln}
+Mit Hilfe eines Skalar-Produkts lassen sich Masse (Längen, Flächen, Volumen, etc..) definieren. Wir betrachten dazu die folgende Definition.
+
+\section*{Definition 7.12 Gram-Matrix}
+Seien ( $V, \mathbb{K},+, \cdot$ ) ein Vektorraum über dem Zahlenkörper $\mathbb{K}, m \in \mathbb{N}^{+}$und $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m} \in V$. Die Gram-Matrix dieser Vektoren ist
+
+\[
+G\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right):=\left[\begin{array}{cccc}
+\left\langle\mathbf{v}_{1}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{1}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{1}, \mathbf{v}_{m}\right\rangle  \tag{7.65}\\
+\left\langle\mathbf{v}_{2}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{2}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{2}, \mathbf{v}_{m}\right\rangle \\
+\vdots & \vdots & \vdots & \vdots \\
+\left\langle\mathbf{v}_{m}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{m}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{m}, \mathbf{v}_{m}\right\rangle
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Die Komponenten der Gram-Matrix sind gerade alle möglichen Skalar-Produkte, die sich aus den Vektoren $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}$ bilden lassen. Davon gibt es insgesamt $m^{2}$ und konsequenterweise gilt $G \in \mathbb{M}(m, m, \mathbb{K})$.\\
+ii) Wegen SP-2 muss gelten
+
+
+\begin{equation*}
+G^{T}=G^{*} . \tag{7.66}
+\end{equation*}
+
+
+iii) Je nach Wahl von $\mathbb{K} \in\{\mathbb{R}, \mathbb{C}\}$ ergeben sich daraus unterschiedliche Eigenschaften der Gram-Matrix. Es gilt\\
+$\mathbb{K}=\mathbb{R} \Rightarrow G^{T}=G \quad$ (symmetrisch)\\
+$\mathbb{K}=\mathbb{C} \Rightarrow G^{T}=G^{*} \quad$ (hermitesch).\\
+iv) Für $\mathbb{K} \in\{\mathbb{R}, \mathbb{C}\}$ und ein positiv definites Skalar-Produkt muss gelten
+
+
+\begin{equation*}
+\operatorname{det}(G) \geq 0 . \tag{7.69}
+\end{equation*}
+
+
+Wir betrachten die folgende Definition.\\
+Definition 7.13 Mass\\
+Seien $(V, \mathbb{K},+, \cdot)$ ein Vektorraum über dem Zahlenkörper $\mathbb{K} \in\{\mathbb{R}, \mathbb{C}\}, m \in \mathbb{N}^{+}$und $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m} \in$ $V$. Das Mass der Vektoren ist
+
+
+\begin{equation*}
+\mu\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right):=\sqrt{|\operatorname{det}(G)|} . \tag{7.70}
+\end{equation*}
+
+
+Wir betrachten den folgenden Satz.\\
+Satz 7.9 Regularität des Masses\\
+Seien $(V, \mathbb{K},+, \cdot)$ ein Vektorraum über dem Zahlenkörper $\mathbb{K} \in\{\mathbb{R}, \mathbb{C}\}, m \in \mathbb{N}^{+}$und $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m} \in$ $V$. Dann gilt
+
+
+\begin{equation*}
+\mu\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right)=0 \Leftrightarrow G\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right) \text { singulär } \Leftrightarrow\left\{\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}\right\} \text { linear abhängig. } \tag{7.71}
+\end{equation*}
+
+
+
+\end{document}

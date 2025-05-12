@@ -1,0 +1,70 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.7.2 Zweite Richtungsableitung}
+Wir betrachten den folgenden Satz.\\
+Satz 2.26 Hesse-Formel in nD\\
+Seien $n \in \mathbb{N}^{+}, f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine zweifach differentierbare Funktion mit Hesse-Matrix $H:=\boldsymbol{\nabla}^{2} f$ und $\hat{\mathbf{v}}, \hat{\mathbf{w}} \in \mathbb{R}^{n}$ zwei Einheitsvektoren, dann gilt
+
+
+\begin{equation*}
+\nabla_{\hat{\mathbf{w}} \hat{\mathbf{v}}}^{2} f=\nabla_{\hat{\mathbf{w}}}\left(\nabla_{\hat{\mathbf{v}}} f\right)=\langle\hat{\mathbf{w}}, H \cdot \hat{\mathbf{v}}\rangle . \tag{2.200}
+\end{equation*}
+
+
+Beweis: Siehe Übungen.\\
+Bemerkungen:\\
+i) Für $\hat{\mathbf{w}}=\hat{\mathbf{v}}$ folgt
+
+
+\begin{equation*}
+\nabla_{\hat{\mathbf{v}} \hat{\mathbf{v}}}^{2} f=\langle\hat{\mathbf{v}}, H \cdot \hat{\mathbf{v}}\rangle . \tag{2.201}
+\end{equation*}
+
+
+Dies ist eine quadratische Form in $\hat{\mathbf{v}}$ mit $H$ als Matrix.\\
+ii) Wegen der Symmetrien von $H$ und des Skalar-Produkts kommutieren die zweiten Richtungsableiten, d.h. es gilt
+
+
+\begin{equation*}
+\nabla_{\hat{\mathrm{v}} \hat{\mathrm{w}}}^{2} f=\nabla_{\hat{\mathrm{w}} \hat{\mathrm{v}}}^{2} f . \tag{2.202}
+\end{equation*}
+
+
+iii) Für die Standard-Einheitsvektoren $\hat{\mathbf{e}}_{1}, \ldots, \hat{\mathbf{e}}_{n} \in \mathbb{R}^{n}$ entlang der Koordinatenachsen gilt
+
+
+\begin{equation*}
+\nabla_{\hat{e}_{\mu} \hat{e}_{\nu}}^{2} f=f_{, \nu, \mu}=H_{\nu \mu} . \tag{2.203}
+\end{equation*}
+
+
+iv) Die zweiten Richtungsableitungen verschwinden genau dann für alle Richtungen, wenn gilt $H=0$.
+
+\subsection*{2.7.3 Lokale Extrema}
+Wir betrachten die folgende Definition.\\
+Definition 2.27 Kritische Stelle\\
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ differentierbar, dann heisst ein Punkt $P \in \mathbb{R}^{n}$ kritische Stelle von $f$, wenn gilt
+
+
+\begin{equation*}
+\boldsymbol{\nabla} f(P)=0 . \tag{2.204}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Zur Bestimmung der kritischen Stellen von $f$ muss das Gleichungssystem (2.204) gelöst werden.\\
+ii) An einer kritischen Stelle einer Funktion kann sich ein Tief-Punkt, ein Hoch-Punkt oder ein Sattel-Punkt befinden.\\
+iii) Für $n=2$ verläuft die Tangentialebene an den Graphen von $f$ an einer kritischen Stelle horizontal.
+
+
+\end{document}

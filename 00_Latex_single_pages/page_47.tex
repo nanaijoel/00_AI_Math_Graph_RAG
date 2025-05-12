@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{2.6 Hauptsätze der Vektoranalysis}
+\subsection*{2.6.1 Gauss-Integralsatz}
+Wir betrachten einen Körper $K \subset \mathbb{R}^{3}$ mit Oberflüche $\partial K$, äusserem Einheitsnormalen-Vektorfeld $\hat{\mathbf{n}}$ im Bereich eines Vektorfeldes $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_4517a4360e7adc1653d0g-1}
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.19 Gauss-Integralsatz in 3D\\
+Seien $K \subset \mathbb{R}^{3}$ ein Körper mit Oberfläche $\partial K$, äusserem Einheitsnormalen-Vektorfeld $\hat{\mathbf{n}} \mathrm{im}$ Bereich eines differentierbaren Vektorfeldes $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$, dann gilt
+
+
+\begin{equation*}
+\oint_{\partial K}\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \mathrm{d} A=\Phi_{\mathbf{v}}=\int_{K} \operatorname{div}(\mathbf{v}) \mathrm{d} V . \tag{2.165}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Der Gauss-Integralsatz besagt die Gleichheit eines Flussintegrals mit einem Volumenintegral. Es gilt
+
+
+\begin{equation*}
+\text { Perforation von } \mathbf{v} \equiv \text { Summe aller eingeschlossenen Quellen von } \mathbf{v} \text {. } \tag{2.166}
+\end{equation*}
+
+
+ii) Der Gauss-Integralsatz kann allgemein in nD formuliert werden.\\
+iii) Der Gauss-Integralsatz ist eine Verallgemeinerung der Newton-Leibniz-Formel in nD.\\
+iv) Der Gauss-Integralsatz lässt sich bezogen auf beide Seiten der Gleichung sinnvoll anwenden.\\
+v) Der Gauss-Integralsatz etabliert die Interpretation der Divergenz als Quellendichte eines Vektorfeldes.\\
+vi) Gemäss Gauss-Integralsatz verschwindet offenbar die Perforation jedes quellenfreien Vektorfeldes durch eine beliebige Oberfläche $\partial V$. Aus $\operatorname{div}(\mathbf{v})=0$ folgt\\
+$\underline{\underline{\Phi_{\mathbf{v}}}}=\oint_{\partial K}\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{K} \operatorname{div}(\mathbf{v}) \mathrm{d} V=\int_{K} 0 \mathrm{~d} V=\underline{\underline{0}}$.\\
+Damit haben wir auch den Spezialfall aus Satz 2.11 bewiesen.
+
+
+\end{document}

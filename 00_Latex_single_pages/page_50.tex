@@ -1,0 +1,77 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.6.3 Potential-Sätze}
+Wir betrachten den folgenden Satz.\\
+Satz 2.21 Skalarpotential in 3D\\
+Seien $n \in\{2,3\}$ und $\mathbf{v}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ ein differentierbares, wirbelfreies Vektorfeld, dann gibt es ein Skalarfeld $\phi: \mathbb{R}^{n} \rightarrow \mathbb{R}$, so dass gilt
+
+
+\begin{equation*}
+\mathbf{v}=\boldsymbol{\nabla} \phi . \tag{2.181}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Jedes wirbelfreie Vektorfeld ist ein Gradientenfeld.\\
+ii) Das Skalarfeld $\phi$ heisst Skalarpotential oder Potential des Vektorfeldes v.\\
+iii) Das Skalarpotential ist eine Verallgemeinerung der Stammfunktion auf wirbelfreie Vektorfelder in 2D und 3D.\\
+iv) Für jedes wirbelfreie Vektorfeld $\mathbf{v}$ gibt es unendlich viele Möglichkeiten ein Skalarpotential zu wählen.
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.22 Vektorpotential in 3D\\
+Sei $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ ein differentierbares, quellenfreies Vektorfeld, dann gibt es ein Vektorfeld $\mathbf{A}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$, so dass gilt
+
+
+\begin{equation*}
+\mathbf{v}=\operatorname{rot}(\mathbf{A}) . \tag{2.182}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Jedes quellenfrei Vektorfeld ist ein Rotationsfeld.\\
+ii) Das Vektorfeld A heisst Vektorpotential des Vektorfeldes v.\\
+iii) Das Vektorpotential ist eine Verallgemeinerung der Stammfunktion auf quellenfreie Vektorfelder in 3D.\\
+iv) Für jedes quellenfreie Vektorfeld $\mathbf{v}$ gibt es unendlich viele Möglichkeiten ein Vektorpotential zu wählen.
+
+Anwendungen:
+
+\begin{itemize}
+  \item Elektrodynamik: Die Maxwell-Gleichungen beschreiben jeweils Divergenz und Rotation des E-Feldes und B-Feldes. Es gilt
+\end{itemize}
+
+\[
+\begin{array}{l|l}
+\operatorname{div}(\mathbf{E})=\frac{1}{\varepsilon_{0}} \cdot \rho & \operatorname{rot}(\mathbf{E})=-\dot{\mathbf{B}}  \tag{2.183}\\
+\operatorname{div}(\mathbf{B})=0 & \operatorname{rot}(\mathbf{B})=\varepsilon_{0} \cdot \mu_{0} \cdot \dot{\mathbf{E}}+\mu_{0} \cdot \mathbf{J} .
+\end{array}
+\]
+
+In einer statischen Situation, d.h. für $\dot{\mathbf{E}}=\dot{\mathbf{B}}=0$ vereinfachen sich diese Gleichungen zu
+
+\[
+\begin{array}{l|l}
+\operatorname{div}(\mathbf{E})=\frac{1}{\varepsilon_{0}} \cdot \rho & \operatorname{rot}(\mathbf{E})=0  \tag{2.184}\\
+\operatorname{div}(\mathbf{B})=0 & \operatorname{rot}(\mathbf{B})=\mu_{0} \cdot \mathbf{J} .
+\end{array}
+\]
+
+Weil also das E-Feld wirbelfrei und das B-Feld quellenfrei ist, gibt es entsprechend ein Skalarpotential $\phi$ und ein Vektorpotential A, so dass
+
+
+\begin{equation*}
+\mathbf{E}=-\boldsymbol{\nabla} \phi \quad \text { und } \quad \mathbf{B}=\operatorname{rot}(\mathbf{A}) . \tag{2.185}
+\end{equation*}
+
+
+
+\end{document}

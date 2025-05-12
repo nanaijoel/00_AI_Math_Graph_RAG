@@ -1,0 +1,46 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{2.4 Parametrisierte Flächen \& Flussintegrale}
+\subsection*{2.4.1 Parametrisierte Flächen}
+\subsection*{2.4.1.1 Definition}
+Wir betrachten eine allgemeine Fläche $M \subset \mathbb{R}^{3}$, welche durch zwei Parameter bzw. Koordinaten $u$ und $v$ aus einem Gebiet $U \subseteq \mathbb{R}^{2}$ parametrisiert wird. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_20b6346c67068df5eb72g-1}
+
+Definition 2.11 Parametrisierte Fläche\\
+Sei $U \subseteq \mathbb{R}^{2}$ ein Gebiet und $M \subset \mathbb{R}^{3}$ ein Fläche. Eine Parametrisierung von $M$ ist eine Funktion der Form
+
+
+\begin{align*}
+& \mathbf{P}: U \rightarrow \mathbb{R}^{3} \\
+& (u ; v) \mapsto \mathbf{P}(u ; v)=\left[\begin{array}{c}
+x(u ; v) \\
+y(u ; v) \\
+z(u ; v)
+\end{array}\right] \tag{2.98}
+\end{align*}
+
+
+so dass $M=\mathbf{P}(U)$.
+
+Bemerkungen:\\
+i) In Anlehnung an die Geographie werden $U$ Karten-Gebiet oder Karte und die Parameter $u$ und $v$ auch Koordinaten genannt.\\
+ii) Erfahrungsgemäss können viele Rechnungen im Umgang mit der Parametrisierung einfach gehalten werden, wenn man, sofern möglich, für das Karten-Gebiet $U$ ein Rechteck wählt.\\
+iii) Weil die Parametrisierung $\mathbf{P}$ von einem Gebiet in 2D in den Raum in 3D führt, kann sie als Funktion niemals surjektiv sein.\\
+iv) Die Parametrisierung $\mathbf{P}$ soll als Funktion so "injektiv wie möglich" gewählt werden. Solange nur mehrere einzelne Punkte oder Kurvenstücke aus dem Karten-Gebiet auf den gleichen Punkt in $M$ abgebildet werden, ergeben sich in der Regel keine Probleme.\\
+v) Die Parameter bzw. Koordinaten $u$ und $v$ können je nach Fläche ganz unterschiedliche Bedeutungen und Masseinheiten haben, z.B. Längen, Winkel, etc..
+
+
+\end{document}

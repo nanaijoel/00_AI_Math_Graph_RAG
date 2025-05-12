@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+Wir betrachten den folgenden Satz.\\
+Satz 2.25 Eigenschaften des Gradienten in 2D\\
+Seien $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$ differentierbar, $\hat{\mathbf{e}} \in \mathbb{R}^{2}$ ein Einheitsvektor und $\alpha=\measuredangle(\boldsymbol{\nabla} f ; \hat{\mathbf{e}})$, dann gilt folgendes.\\
+(a) $\nabla_{\hat{\mathrm{e}}} f \in[-|\boldsymbol{\nabla} f|,+|\boldsymbol{\nabla} f|]$\\
+(b) $\alpha=0 \Leftrightarrow \hat{\mathbf{e}} \|+\boldsymbol{\nabla} f \Leftrightarrow \nabla_{\hat{\mathbf{e}}} f=+|\boldsymbol{\nabla} f|$ maximal\\
+(c) $\alpha=\pi \Leftrightarrow \hat{\mathbf{e}} \|-\nabla f \Leftrightarrow \nabla_{\hat{\mathbf{e}}} f=-|\boldsymbol{\nabla} f|$ minimal\\
+(d) $\alpha=\frac{\pi}{2} \Leftrightarrow \hat{\mathbf{e}} \perp \boldsymbol{\nabla} f \Leftrightarrow \nabla_{\hat{\mathrm{e}}} f=0$\\
+(e) $\boldsymbol{\nabla} f=0 \Leftrightarrow$ Tangentialebene an den Graphen von $f$ verläuft horizontal
+
+Beweis: Für die Richtungsableitung von $f$ in Richtung ê erhalten wir
+
+
+\begin{equation*}
+\underline{\nabla_{\hat{\mathbf{e}}} f}=\langle\hat{\mathbf{e}}, \boldsymbol{\nabla} f\rangle=|\hat{\mathbf{e}}| \cdot|\nabla f| \cdot \cos (\alpha)=1 \cdot|\nabla f| \cdot \cos (\alpha)=\underline{\cos (\alpha) \cdot|\nabla f| .} \tag{2.199}
+\end{equation*}
+
+
+Daraus folgen unmittelbar alle Aussagen und wir haben den Satz bewiesen.\\
+Bemerkungen:\\
+i) Der Gradient $\boldsymbol{\nabla} f$ zeigt an jedem Punkt der $x-y$-Ebene gerade in die Richtung, in welcher die Steigung des Graphen von $f$ maximal ist.\\
+ii) Die Länge $|\nabla f|$ des Gradienten ist an jedem Punkt der $x$ - $y$-Ebene gerade die maximale Steigung des Graphen von $f$.\\
+iii) Der Gradient steht an jedem Punkt der $x$ - $y$-Ebene senkrecht auf der Level-Linie von $f$ durch diesen Punkt.\\
+iv) Dort wo der Gradient verschwindet verläuft die Tangentialebene an den Graphen von $f$ horizontal. Entsprechend hat $f$ dort einen Hoch-Punkt, Tief-Punkt oder Sattel-Punkt.\\
+v) Definition und Eigenschaften sowohl des Gradienten als auch der Richtungsableitung gelten ganz analog auch in nD.
+
+Zeichnet man den Gradienten und die Level-Linien von $f$ in der $x$ - $y$-Ebene ein, dann ergibt sich ein Bild wie im folgenden Beispiel.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_daf365c289cbfac44a30g-1}
+
+
+\end{document}

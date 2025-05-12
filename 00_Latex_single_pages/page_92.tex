@@ -1,0 +1,79 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+v) Beispiel-Codes zur Multiplikation und Division von Matrizen mit Skalaren mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $\mathrm{M}=2 * \mathrm{~A} ; \mathrm{M}=\mathrm{B} / 3$; \\
+\hline
+Mathematica/WolframAlpha & $\mathrm{M}=2 * \mathrm{~A}$; $\mathrm{M}=\mathrm{B} / 3$; \\
+\hline
+Python/Numpy & $\mathrm{M}=2 * \mathrm{~A} ; \mathrm{M}=\mathrm{B} / 3$; \\
+\hline
+Python/Sympy & $\mathrm{M}=2 * \mathrm{~A} ; \mathrm{M}=\mathrm{B} / 3$; \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item $2 \cdot\left[\begin{array}{rr}2 & -1 \\ 7 & 5\end{array}\right]=\left[\begin{array}{rr}4 & -2 \\ 14 & 10\end{array}\right]$
+  \item $\frac{1}{3} \cdot\left[\begin{array}{rr}9 & -12 \\ 3 & 0\end{array}\right]=\left[\begin{array}{rr}3 & -4 \\ 1 & 0\end{array}\right]$
+  \item $(-1) \cdot\left[\begin{array}{ll}3 & -3\end{array}\right]=\left[\begin{array}{ll}-3 & 3\end{array}\right]$
+\end{itemize}
+
+\subsection*{6.1.2.3 Transposition}
+Jede reelle Matrix lässt sich transponieren.\\
+Definition 6.4 Transposition\\
+Seien $m, n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(m, n, \mathbb{R})$, dann ist
+
+\[
+A^{T}:=\left[\begin{array}{llll}
+A^{1}{ }_{1} & A^{2}{ }_{1} & \ldots & A^{m}{ }_{1}  \tag{6.9}\\
+A^{1}{ }_{2} & A^{2}{ }_{2} & \ldots & A^{m}{ }_{2} \\
+\vdots & \vdots & \vdots & \vdots \\
+A^{1}{ }_{n} & A^{2}{ }_{n} & \ldots & A^{m}{ }_{n}
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Beim Transponieren einer reellen Matrix werden die Spalten mit den Zeilen vertauscht.\\
+ii) Ist $A \in \mathbb{M}(m, n, \mathbb{R})$, dann gilt $A^{T} \in \mathbb{M}(n, m, \mathbb{R})$.\\
+iii) Die Transposition ist eine Involution, d.h. für jede Matrix $A$ gilt
+
+
+\begin{equation*}
+\left(A^{T}\right)^{T}=A \tag{6.10}
+\end{equation*}
+
+
+iv) Beispiel-Codes zur Berechnung von Matrix-Transpositionen mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $M=A^{\prime}$ \\
+\hline
+Mathematica/WolframAlpha & M=Transpose [A] \\
+\hline
+Python/Numpy & $M=A . T$ \\
+\hline
+Python/Sympy & M=A.T \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{document}

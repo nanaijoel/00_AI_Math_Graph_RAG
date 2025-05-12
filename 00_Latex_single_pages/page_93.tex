@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Beispiele:
+
+\begin{itemize}
+  \item $\left[\begin{array}{rrr}2 & -1 & 3 \\ 7 & 5 & -4\end{array}\right]^{T}=\left[\begin{array}{rr}2 & 7 \\ -1 & 5 \\ 3 & -4\end{array}\right]$
+  \item $\left[\begin{array}{rr}2 & -1 \\ 7 & 5\end{array}\right]^{T}=\left[\begin{array}{rr}2 & 7 \\ -1 & 5\end{array}\right]$
+  \item $\left[\begin{array}{ll}2 & -1\end{array}\right]^{T}=\left[\begin{array}{r}2 \\ -1\end{array}\right]$
+\end{itemize}
+
+\subsection*{6.1.2.4 Matrix-Multiplikation}
+Zwei reelle Matrizen mit passenden Dimensionen lassen sich multiplizieren.
+
+\section*{Definition 6.5 Matrix-Produkt}
+Seien $l, m, n \in \mathbb{N}^{+}, A \in \mathbb{M}(l, m, \mathbb{R})$ und $B \in \mathbb{M}(m, n, \mathbb{R})$, dann ist das Matrix-Produkt
+
+
+\begin{equation*}
+C=A \cdot B \quad \text { definiert durch } \quad C_{j}^{i}:=\sum_{s=1}^{m} A_{s}^{i} \cdot B_{j}^{s} . \tag{6.11}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Das Matrix-Produkt $A \cdot B$ ist also genau dann definiert, wenn $A$ so viele Spalten wie $B$ Zeilen hat.\\
+ii) Für $A \in \mathbb{M}(l, m, \mathbb{R})$ und $B \in \mathbb{M}(m, n, \mathbb{R})$ gilt $A \cdot B \in \mathbb{M}(l, n, \mathbb{R})$.\\
+iii) Die Komponenten des Matrix-Produkts $A \cdot B$ sind gerade die Kontraktionen ("SkalarProdukte") der Zeilen von $A$ mit den Spalten von $B$.\\
+iv) Die Berechnung eines Matrix-Produkts ist im allgemeinen recht aufwändig.\\
+v) Beispiel-Codes zur Berechnung von Matrix-Produkten mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $M=A * B$ \\
+\hline
+Mathematica/WolframAlpha & $\mathrm{M}=\mathrm{A} . \mathrm{B}$ \\
+\hline
+Python/Numpy & $\mathrm{M}=\mathrm{A} @ \mathrm{~B}$ \\
+\hline
+Python/Sympy & $\mathrm{M}=\mathrm{A} * \mathrm{~B}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item $\left[\begin{array}{ll}1 & 2 \\ 3 & 4\end{array}\right] \cdot\left[\begin{array}{ll}5 & 6 \\ 7 & 8\end{array}\right]=\left[\begin{array}{ll}1 \cdot 5+2 \cdot 7 & 1 \cdot 6+2 \cdot 8 \\ 3 \cdot 5+4 \cdot 7 & 3 \cdot 6+4 \cdot 8\end{array}\right]=\left[\begin{array}{ll}19 & 22 \\ 43 & 50\end{array}\right]$
+  \item $\left[\begin{array}{ll}5 & 6 \\ 7 & 8\end{array}\right] \cdot\left[\begin{array}{ll}1 & 2 \\ 3 & 4\end{array}\right]=\left[\begin{array}{ll}5 \cdot 1+6 \cdot 3 & 5 \cdot 2+6 \cdot 4 \\ 7 \cdot 1+8 \cdot 3 & 7 \cdot 2+8 \cdot 4\end{array}\right]=\left[\begin{array}{ll}23 & 34 \\ 31 & 46\end{array}\right]$
+\end{itemize}
+
+\end{document}

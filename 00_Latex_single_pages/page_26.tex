@@ -1,0 +1,81 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Je nach Struktur des Integranden kann die Integration über ein Rechteck weiter vereinfacht werden. Wir betrachten dazu den folgenden Satz.
+
+Satz 2.6 Spezialfälle der Integration über ein Rechteck.\\
+Seien $x_{0}, x_{\mathrm{E}}, y_{0}, y_{\mathrm{E}} \in \mathbb{R}$ mit $x_{0}<x_{\mathrm{E}}$ und $y_{0}<y_{\mathrm{E}}$ sowie $G$ das Rechteck
+
+
+\begin{equation*}
+G:=\left[x_{0}, x_{\mathrm{E}}\right] \times\left[y_{0}, y_{\mathrm{E}}\right] \tag{2.80}
+\end{equation*}
+
+
+Dann gilt folgendes.\\
+(a) Konstanten-Regel: Für alle $C \in \mathbb{R}$ ist
+
+
+\begin{equation*}
+\int_{G} C \mathrm{~d} A=C \cdot\left(x_{\mathrm{E}}-x_{0}\right) \cdot\left(y_{\mathrm{E}}-y_{0}\right) \tag{2.81}
+\end{equation*}
+
+
+(b) Separation-Regel: Für zwei integrierbare Funktionen $g, h: \mathbb{R} \rightarrow \mathbb{R}$ ist
+
+
+\begin{equation*}
+\int_{G} g(x) \cdot h(y) \mathrm{d} A=\int_{x_{0}}^{x_{\mathrm{E}}} g(x) \mathrm{d} x \cdot \int_{y_{0}}^{y_{\mathrm{E}}} h(y) \mathrm{d} y \tag{2.82}
+\end{equation*}
+
+
+Beweis: Gemäss Fubini-Satz und Faktor-Regel gilt
+
+
+\begin{align*}
+\underline{\underline{\int_{G} g(x) \cdot h(y) \mathrm{d} A}} & =\int_{y_{0}}^{\int_{x_{0}}^{y_{\mathrm{E}}} \int_{x_{\mathrm{E}}}^{x_{\mathrm{E}}} g(x) \cdot h(y) \mathrm{d} x \mathrm{~d} y=\int_{y_{0}}^{y_{\mathrm{E}}} h(y) \cdot \int_{x_{0}}^{x_{\mathrm{E}}} g(x) \mathrm{d} x \mathrm{~d} y} \\
+& =\underline{\underline{\int_{x_{0}}^{x_{\mathrm{E}}}} g(x) \mathrm{d} x \cdot \int_{y_{0}}^{y_{\mathrm{E}}} h(y) \mathrm{d} y .} \tag{2.83}
+\end{align*}
+
+
+Wir zeigen mehrere Varianten, um die Konstanten-Regel zu beweisen.\\
+Variante 1: Gemäss Fubini-Satz und Faktor-Regel gilt
+
+
+\begin{align*}
+\underline{\underline{\int_{G} C \mathrm{~d} A}} & =\int_{y_{0}}^{y_{\mathrm{E}}} \int_{x_{0}}^{x_{\mathrm{E}}} C \mathrm{~d} x \mathrm{~d} y=C \int_{y_{0}}^{y_{\mathrm{E}}} \int_{x_{0}}^{x_{\mathrm{E}}} 1 \mathrm{~d} x \mathrm{~d} y=\left.C \int_{y_{0}}^{y_{\mathrm{E}}}[x]\right|_{x_{0}} ^{x_{\mathrm{E}}} \mathrm{~d} y=C \int_{y_{0}}^{y_{\mathrm{E}}}\left(x_{\mathrm{E}}-x_{0}\right) \mathrm{d} y \\
+& =C \cdot\left(x_{\mathrm{E}}-x_{0}\right) \int_{y_{0}}^{y_{\mathrm{E}}} 1 \mathrm{~d} y=\left.C \cdot\left(x_{\mathrm{E}}-x_{0}\right) \cdot[y]\right|_{y_{0}} ^{y_{\mathrm{E}}} \\
+& =\underline{\underline{C \cdot\left(x_{\mathrm{E}}-x_{0}\right) \cdot\left(y_{\mathrm{E}}-y_{0}\right) .}} \tag{2.84}
+\end{align*}
+
+
+Variante 2: Gemäss Faktor-Regel und Separation-Regel gilt
+
+
+\begin{align*}
+\underline{\underline{\int_{G} C \mathrm{~d} A}} & =C \int_{G} 1 \mathrm{~d} A=C \int_{G} 1 \cdot 1 \mathrm{~d} A=C \int_{x_{0}}^{x_{\mathrm{E}}} 1 \mathrm{~d} x \cdot \int_{y_{0}}^{y_{\mathrm{E}}} 1 \mathrm{~d} y=\left.\left.C \cdot[x]\right|_{x_{0}} ^{x_{\mathrm{E}}} \cdot[y]\right|_{y_{0}} ^{y_{\mathrm{E}}} \\
+& =\underline{\underline{C \cdot\left(x_{\mathrm{E}}-x_{0}\right) \cdot\left(y_{\mathrm{E}}-y_{0}\right)}} \tag{2.85}
+\end{align*}
+
+
+Variante 3: Gemäss Faktor-Regel und Flächensatz gilt
+
+
+\begin{equation*}
+\underline{\underline{\int_{G} C \mathrm{~d} A}}=C \int_{G} 1 \mathrm{~d} A=C \cdot A=C \cdot \Delta x \cdot \Delta y=\underline{\underline{C \cdot\left(x_{\mathrm{E}}-x_{0}\right) \cdot\left(y_{\mathrm{E}}-y_{0}\right)}} \tag{2.86}
+\end{equation*}
+
+
+Damit haben wir den Satz bewiesen.
+
+
+\end{document}

@@ -1,0 +1,106 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Beispiele:
+
+\begin{itemize}
+  \item Für jedes $n \in \mathbb{N}^{+}$bilden die Standard-Einheitsvektoren
+\end{itemize}
+
+\[
+\left\{\hat{\mathbf{e}}_{1}=\left[\begin{array}{c}
+1  \tag{7.23}\\
+0 \\
+0 \\
+\vdots \\
+0
+\end{array}\right], \hat{\mathbf{e}}_{2}=\left[\begin{array}{c}
+0 \\
+1 \\
+0 \\
+\vdots \\
+0
+\end{array}\right], \ldots, \hat{\mathbf{e}}_{n}=\left[\begin{array}{c}
+0 \\
+0 \\
+\vdots \\
+0 \\
+1
+\end{array}\right]\right\}
+\]
+
+eine Basis von $\mathbb{K}^{n}$, die sogenannte Standard-Basis. Somit folgt
+
+
+\begin{equation*}
+\operatorname{dim}\left(\mathbb{K}^{n}\right)=n . \tag{7.24}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Für jedes $n \in \mathbb{N}^{+}$bilden die Monome
+\end{itemize}
+
+
+\begin{equation*}
+\left\{1, x, x^{2}, x^{3}, \ldots, x^{n}\right\} \tag{7.25}
+\end{equation*}
+
+
+eine Basis des Polynomraums $\mathcal{P}_{n}(\mathbb{R})$. Somit folgt
+
+
+\begin{equation*}
+\operatorname{dim}\left(\mathcal{P}_{n}(\mathbb{R})\right)=n+1 \tag{7.26}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Die Funktionenräume $C(\mathbb{R})$ und $\mathcal{L}^{2}(\mathbb{R})$ können nicht endlich erzeugt werden und haben daher unendliche Dimension.
+\end{itemize}
+
+Ist in einem Vektorraum ( $V, \mathbb{K},+, \cdot)$ eine Basis $B=\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\}$ gewählt, dann lässt sich jeder Vektor eindeutig Linearkombination des Basis-Vektoren schreiben gemäss
+
+
+\begin{equation*}
+\mathbf{v}=\sum_{k=1}^{n} v^{k} \cdot \mathbf{e}_{k} \tag{7.27}
+\end{equation*}
+
+
+Die Koeffizienten $v^{1}, \ldots, v^{n} \in \mathbb{K}$ können wie im Falle der Euklid-Räume $\mathbb{R}^{n}$ in eine SpaltenMatrix geschrieben werden, d.h. man identifiziert
+
+\[
+\mathbf{v}=\left[\begin{array}{c}
+v^{1}  \tag{7.28}\\
+\vdots \\
+v^{n}
+\end{array}\right]
+\]
+
+Die Operationen + und $\cdot$ im Vektorraum lassen sich dann wieder durch die gewohnten Operationen in den Komponenten realisieren.
+
+Beispiel:
+
+\begin{itemize}
+  \item Wir betrachten den Vektorraum $\mathcal{P}_{2}(\mathbb{R})$ der quadratischen Funktionen mit reellen Koeffizienten und wählen die Basis $\left\{1, x, x^{2}\right\}$. Dann identifizieren wir
+\end{itemize}
+
+\[
+f(x)=3 x^{2}+5 x+7 \mapsto \mathbf{f}=\left[\begin{array}{l}
+7  \tag{7.29}\\
+5 \\
+3
+\end{array}\right]
+\]
+
+
+\end{document}

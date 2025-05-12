@@ -1,0 +1,59 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+vii) Ganz besondere Bedeutung kommt der Spur in der Quantenphysik und in der Chemie beim Aufstellen von Charaktertafeln zu, mit deren Hilfe man gewisse Eigenschaften von Molekülen beurteilen kann.\\
+viii) Beispiel-Codes zur Berechnung der Spur mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & s=trace (A) \\
+\hline
+Mathematica/WolframAlpha & $\mathrm{s}=\mathrm{Tr}[\mathrm{A}]$ \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\
+$\mathrm{s}=\mathrm{np} . \operatorname{trace}(\mathrm{A})$ \\
+\end{tabular} \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import sympy as sp; \\
+s=sp.trace (A) \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item $\operatorname{tr}\left(\left[\begin{array}{ll}1 & 2 \\ 3 & 4\end{array}\right]\right)=1+4=5$
+  \item $\operatorname{tr}\left(\left[\begin{array}{rrr}1 & -5 & 9 \\ 8 & 2 & 7 \\ -3 & 1 & -3\end{array}\right]\right)=1+2-3=0$
+  \item $\operatorname{tr}\left(\left[\begin{array}{rrr}5 & 0 & 0 \\ 0 & -9 & 0 \\ 0 & 0 & 8\end{array}\right]\right)=5-9+8=4$
+\end{itemize}
+
+\subsection*{6.4.2.2 Eigenschaften}
+Für die Spur einer Matrix gelten einige einfache Rechenregeln.\\
+Satz 6.13 Rechenregeln der Spur\\
+Seien $n \in \mathbb{N}^{+}, A, B \in \mathbb{M}(n, n, \mathbb{R})$ und $a \in \mathbb{R}$. Dann gelten folgende Rechenregeln.\\
+(a) $\operatorname{tr}\left(A^{T}\right)=\operatorname{tr}(A)$\\
+(c) $\operatorname{tr}(a \cdot A)=a \cdot \operatorname{tr}(A)$\\
+(b) $\operatorname{tr}(A+B)=\operatorname{tr}(A)+\operatorname{tr}(B)$\\
+(d) $\operatorname{tr}(B \cdot A)=\operatorname{tr}(A \cdot B)$
+
+Beweis: Die Matrizen $A$ und $A^{T}$ haben die gleichen Diagonalenelemente und folglich auch die gleiche Spur. Es gilt\\
+$\underline{\underline{\operatorname{tr}(A+B)}}=\sum_{s=1}^{n}\left(A_{s}^{s}+B_{s}^{s}\right)=\sum_{s=1}^{n} A_{s}^{s}+\sum_{s=1}^{n} B_{s}^{s}=\underline{\underline{\operatorname{tr}(A)+\operatorname{tr}(B)}}$.\\
+Ebenso erhalten wir\\
+$\underline{\underline{\operatorname{tr}(a \cdot A)}}=\sum_{s=1}^{n} a \cdot A_{s}^{s}=a \cdot \sum_{s=1}^{n} A_{s}^{s}=\underline{\underline{a \cdot \operatorname{tr}(A)}}$.
+
+
+\end{document}

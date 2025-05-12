@@ -1,0 +1,77 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+vi) Ein Flussintegral über eine geschlossene Fläche heisst Perforation des Vektorfeldes durch die betreffende Fläche.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_0e92860443a2101407cdg-1}
+
+In diesem Fall verwendet man das Ring-Integralzeichen, d.h.
+
+
+\begin{equation*}
+\Phi=\oint_{M}\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \mathrm{d} A . \tag{2.125}
+\end{equation*}
+
+
+vii) Der Fluss eines Vektorfeldes $\mathbf{v}$ durch eine Fläche ist das Integral des Anteils von v, welcher entlang ̂̂ und somit senkrecht zur Fläche zeigt. Der zu ̂̂ senkrechte bzw. zur Fläche parallele Anteil von v ist für den Fluss irrelevant.
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.10 Fluss bei konstantem Anteil senkrecht zur Fläche\\
+Seien $M$ eine parametrisierte Fläche mit Einheitsnormalen-Vektor n̂ und Flächeninhalt A sowie $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ ein Vektorfeld. Gilt entlang der Fläche $\langle\mathbf{v}, \hat{\mathbf{n}}\rangle=: C \equiv$ konst., dann beträgt der Fluss von v durch die Fläche
+
+
+\begin{equation*}
+\Phi=C \cdot A . \tag{2.126}
+\end{equation*}
+
+
+Beweis: Für den Fluss von v durch die Fläche erhalten wir
+
+
+\begin{equation*}
+\underline{\underline{\Phi}}=\int_{M}\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{M} C \mathrm{~d} A=C \int_{M} 1 \mathrm{~d} A=\underline{\underline{C \cdot A}} \tag{2.127}
+\end{equation*}
+
+
+Damit haben wir den Satz bewiesen.\\
+Wir betrachten den folgenden Satz.\\
+Satz 2.11 Perforation eines homogenen Vektorfeldes\\
+Die Perforation eines homogenen Vektorfeldes verschwindet.\\
+Anwendungen:
+
+\begin{itemize}
+  \item Strömungsdynamik:
+\end{itemize}
+
+
+\begin{equation*}
+\Phi_{\mathbf{v}}=\int_{M}\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \mathrm{d} A \equiv \text { Volumen-Fluss des Mediums durch die Fläche }\left[\frac{\mathrm{m}^{3}}{\mathrm{~s}}\right] . \tag{2.128}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Elektrodynamik: Wir betrachten die folgenden Fälle getrennt.
+\end{itemize}
+
+Fall 1: $M$ ist eine geschlossene Fläche. Dann gilt
+
+
+\begin{align*}
+& \Phi_{\mathbf{E}}=\oint_{M}\langle\mathbf{E}, \hat{\mathbf{n}}\rangle \mathrm{d} A=\frac{1}{\varepsilon_{0}} \cdot Q_{\mathrm{eg}}  \tag{2.129}\\
+& \Phi_{\mathbf{B}}=\oint_{M}\langle\mathbf{B}, \hat{\mathbf{n}}\rangle \mathrm{d} A=0 . \tag{2.130}
+\end{align*}
+
+
+
+\end{document}

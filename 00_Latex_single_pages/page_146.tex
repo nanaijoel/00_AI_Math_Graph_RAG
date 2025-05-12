@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Bemerkungen:\\
+i) Für alle Skalar-Produkte und alle $\mathbf{v}, \mathbf{w} \in V$ gilt die wichtige Konvention
+
+
+\begin{equation*}
+\mathbf{v} \perp \mathbf{w} \Leftrightarrow\langle\mathbf{v}, \mathbf{w}\rangle=0 \tag{7.91}
+\end{equation*}
+
+
+ii) Für positiv definite Skalar-Produkte kann die Formel (7.90) in jeden Fall angewendet werden, denn aus der Cauchy-Schwarz- Ungleichung folgt für alle $\mathbf{v}, \mathbf{w} \in V \backslash\{0\}$
+
+
+\begin{equation*}
+\frac{\langle\mathbf{v}, \mathbf{w}\rangle}{|\mathbf{v}| \cdot|\mathbf{w}|} \in[-1,1] . \tag{7.92}
+\end{equation*}
+
+
+iii) Für nicht positiv definite Skalar-Produkte lässt sich im allgemeinen keine universell gültige Formel für den Winkel zwischen zwei Vektoren finden.
+
+\subsection*{7.3.2 Metrik}
+Wir betrachten die folgende Definition.
+
+\section*{Definition 7.15 Metrik}
+Seien $(V, \mathbb{R},+, \cdot)$ ein reeller Vektorraum mit endlicher Dimension $n \in \mathbb{N}^{+}$und Skalar-Produkt $\langle.,$.$\rangle und B=\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subset V$ eine Basis von $V$. Die Metrik $g \in \mathbb{M}(n, n, \mathbb{R})$ ist die GramMatrix der Basis-Vektoren in $B$, d.h.
+
+\[
+g=G\left(\mathbf{e}_{1} ; \ldots ; \mathbf{e}_{n}\right):=\left[\begin{array}{ccc}
+\left\langle\mathbf{e}_{1}, \mathbf{e}_{1}\right\rangle & \ldots & \left\langle\mathbf{e}_{1}, \mathbf{e}_{n}\right\rangle  \tag{7.93}\\
+\vdots & \vdots & \vdots \\
+\left\langle\mathbf{e}_{n}, \mathbf{e}_{1}\right\rangle & \ldots & \left\langle\mathbf{e}_{n}, \mathbf{e}_{n}\right\rangle
+\end{array}\right]
+\]
+
+Bemerkungen:\\
+i) Die Komponenten der Metrik werden auch metrische Koeffizienten genannt. Für alle $i, j \in$ $\{1, \ldots, n\}$ gilt
+
+
+\begin{equation*}
+g_{i j}=\left\langle\mathbf{e}_{i}, \mathbf{e}_{j}\right\rangle \tag{7.94}
+\end{equation*}
+
+
+ii) Das Symbol $g$ wird sowohl für die Metrik als auch für deren Determinante verwendet. Welche Bedeutung gerade gemeint ist, muss aus dem Kontext abgelesen werden.\\
+iii) Die Metrik ist in jedem Fall regulär, weil die Basis-Vektoren nach Definition linear unabhängig sein müssen.\\
+iv) Die Metrik ist genau dann diagonal, wenn die Basis-Vektoren paarweise senkrecht aufeinander stehen.\\
+v) In $\mathbb{R}^{n}$ mit Gram-Riemann-Skalar-Produkt haben die Standard-Einheitsvektoren $\left\{\hat{\mathbf{e}}_{1}, \ldots, \hat{\mathbf{e}}_{n}\right\}$ die Metrik\\
+$\hat{g}=\mathbb{1} \quad$ bzw. $\quad g_{i j}=\delta_{i j}$.
+
+
+\end{document}

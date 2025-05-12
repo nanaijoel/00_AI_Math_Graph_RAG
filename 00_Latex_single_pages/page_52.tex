@@ -1,0 +1,39 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.7 Funktionsdiskussion in mehreren Variablen}
+\subsection*{2.7.1 Erste Richtungsableitung}
+Wir betrachten die folgende Situation.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_f1516df6af3ce43da735g-1}
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.24 Steigung entlang eines Funktionsgraphen in 2D\\
+Seien $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$ differentierbar, $P_{0}=\left(x_{0} ; y_{0} ; f\left(x_{0} ; y_{0}\right)\right) \in \mathbb{R}^{3}$ und $\hat{\mathbf{e}} \in \mathbb{R}^{2}$ ein Einheitsvektor, dann hat ein Weg auf dem Funktionsgraph von $f$ mit horizontaler Richtung ê am Punkt $P_{0}$ die Steigung
+
+
+\begin{equation*}
+m=\left\langle\hat{\mathbf{e}}, \boldsymbol{\nabla} f\left(x_{0} ; y_{0}\right)\right\rangle . \tag{2.189}
+\end{equation*}
+
+
+Beweis: Wir betrachten Fuktionsgraphen den von $f$ als parametrisierte Fläche mit Parametrisierung\\
+$\mathbf{Q}(x ; y):=\left[\begin{array}{c}x \\ y \\ f(x ; y)\end{array}\right]$.\\
+Für die Koordinatenbasis-Vektorfelder erhalten wir\\
+$\mathbf{e}_{1}=\mathbf{Q}_{, x}=\left[\begin{array}{c}1 \\ 0 \\ f_{, x}\end{array}\right] \quad$ und $\quad \mathbf{e}_{2}=\mathbf{Q}_{, y}=\left[\begin{array}{c}0 \\ 1 \\ f_{, y}\end{array}\right]$.\\
+Daraus erhalten wir den Normalen-Vektor\\
+$\mathbf{n}=\mathbf{e}_{1} \times \mathbf{e}_{2}=\left[\begin{array}{c}1 \\ 0 \\ f_{, x}\end{array}\right] \times\left[\begin{array}{c}0 \\ 1 \\ f_{, y}\end{array}\right]=\left[\begin{array}{c}0 \cdot f_{, y}-f_{, x} \cdot 1 \\ f_{, x} \cdot 0-1 \cdot f_{, y} \\ 1 \cdot 1-0 \cdot 0\end{array}\right]=\left[\begin{array}{c}-f_{, x} \\ -f_{, y} \\ 1\end{array}\right]$.
+
+
+\end{document}

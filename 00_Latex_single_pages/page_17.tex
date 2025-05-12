@@ -1,0 +1,46 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+iii) Der Kurvenparameter $\tau$ kann je nach parametrisierter Kurve ganz unterschiedliche geometrische oder physikalische Bedeutungen haben.
+
+\begin{itemize}
+  \item physikalische Zeit (Kinematik)
+  \item Länge
+  \item Winkel
+  \item eine beliebige "Absteckung" der Bahn\\
+iv) Die Bahn ist die Menge aller von der parametrisierten Kurve durchlaufenen Punkte, d.h. sie ist die Kurve im klassischen geometrischen Sinn.\\
+v) Der Bahnvektor ist der Richtungsvektor (Einheitsvektor) entlang der Bahn.\\
+vi) Die Parametrisierung $\mathbf{s}(\tau)$ muss nicht injektiv sein, aber soll so gewählt werden, dass gilt $v(\tau)>0$. Ausnahmen an einzelnen Punkten sind jedoch möglich. An diesen muss der Bahnvektor ê von Hand definiert werden.\\
+vii) Mehrere unterschiedliche parametrisierte Kurven können die gleiche Bahn haben.
+\end{itemize}
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten die parametrisierte Kurve\\
+$\mathbf{s}(\tau)=\left[\begin{array}{c}3 \cdot \cos (\tau) \\ 3 \cdot \sin (\tau)\end{array}\right] \quad$ für $\quad \tau \in[0, \pi]$.\\
+Die Bahn dieser parametrisierten Kurve ist ein Halbkreis mit Mittelpunkt am Ursprung und Radius $r=3$.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_5a3a52fc98004389f015g-1}
+  \item Wir betrachten die parametrisierte Kurve\\
+$\mathbf{s}(\tau)=\left[\begin{array}{c}3 \cdot \cos (\pi \cdot \tau) \\ 3 \cdot \sin (\pi \cdot \tau)\end{array}\right] \quad$ für $\quad \tau \in[0,1]$.\\
+Die Bahn ist die gleiche wie beim ersten Beispiel.
+  \item Wir betrachten die parametrisierte Kurve\\
+$\mathbf{s}(\tau)=\left[\begin{array}{c}3 \cdot \cos \left(\pi \cdot \tau^{2}\right) \\ 3 \cdot \sin \left(\pi \cdot \tau^{2}\right)\end{array}\right] \quad$ für $\quad \tau \in[0,1]$.\\
+Die Bahn ist die gleiche wie beim ersten Beispiel.
+  \item Wir betrachten die parametrisierte Kurve\\
+$\mathbf{s}(\tau)=\left[\begin{array}{l}3 \\ 2\end{array}\right]+\left[\begin{array}{r}-2 \\ 1\end{array}\right] \cdot \tau \quad$ für $\quad \tau \in[0,4]$.\\
+Die Bahn ist eine gerade Strecke zwischen den Punkten $(3 ; 2)$ und $(-5 ; 6)$.
+\end{itemize}
+
+\end{document}

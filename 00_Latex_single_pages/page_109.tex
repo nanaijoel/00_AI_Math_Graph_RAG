@@ -1,0 +1,63 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\[
+=\underline{\left[\begin{array}{cccc}
+\left\langle\mathbf{a}_{1}, \mathbf{a}_{1}\right\rangle & \left\langle\mathbf{a}_{1}, \mathbf{a}_{2}\right\rangle & \ldots & \left\langle\mathbf{a}_{1}, \mathbf{a}_{n}\right\rangle  \tag{6.63}\\
+\left\langle\mathbf{a}_{2}, \mathbf{a}_{1}\right\rangle & \left\langle\mathbf{a}_{2}, \mathbf{a}_{2}\right\rangle & \ldots & \left\langle\mathbf{a}_{2}, \mathbf{a}_{n}\right\rangle \\
+\vdots & \vdots & \vdots & \vdots \\
+\left\langle\mathbf{a}_{n}, \mathbf{a}_{1}\right\rangle & \left\langle\mathbf{a}_{n}, \mathbf{a}_{2}\right\rangle & \ldots & \left\langle\mathbf{a}_{n}, \mathbf{a}_{n}\right\rangle
+\end{array}\right] .}
+\]
+
+Damit haben (6.62) und den Satz bewiesen.\\
+Bemerkungen:\\
+i) Die Spalten-Vektoren einer orthogonalen Matrix sind Einheitsvektoren, die paarweise senkrecht aufeinander stehen.\\
+ii) Gemäss Spalten-Vektor-Konstruktionsverfahren werden durch eine orthogonale Abbildung die Standard-Einheitsvektoren $\hat{\mathbf{e}}_{1}, \ldots, \hat{\mathbf{e}}_{n} \in \mathbb{R}^{n}$ auf paarweise aufeinander senkrecht stehende Einheitsvektoren abgebildet.\\
+iii) Die Schreibweise der Komponenten der Einheitsmatrix als Koeffizienten $\delta_{i j}$ wird auch Kronecker-Symbol genannt.
+
+Bevor wir die geometrischen Eigenschaften von orthogonalen Abbildungen weiter untersuchen können, benötigen wir eine Rechenregel.
+
+\section*{Satz 6.8 Metrische Adjunktion}
+Seien $n \in \mathbb{N}^{+}, A \in \mathbb{M}(n, n, \mathbb{R})$ und $\mathbf{v}, \mathbf{w} \in \mathbb{R}^{n}$, dann gilt
+
+
+\begin{equation*}
+\langle\mathbf{v}, A \cdot \mathbf{w}\rangle=\left\langle A^{T} \cdot \mathbf{v}, \mathbf{w}\right\rangle . \tag{6.64}
+\end{equation*}
+
+
+Beweis: Weil das Skalar-Produkt von zwei Vektoren eine reelle Zahl ist, die als $1 \times 1$-Matrix aufgefasst werden kann und alle $1 \times 1$-Matrizen symmetrisch sind, erhalten wir
+
+
+\begin{align*}
+\underline{\underline{\langle\mathbf{v}, A \cdot \mathbf{w}\rangle}} & =\langle\mathbf{v}, A \cdot \mathbf{w}\rangle^{T}=\left(\mathbf{v}^{T} \cdot A \cdot \mathbf{w}\right)^{T}=\mathbf{w}^{T} \cdot A^{T} \cdot \mathbf{v}=\left\langle\mathbf{w}, A^{T} \cdot \mathbf{v}\right\rangle \\
+& =\underline{\underline{\left\langle A^{T} \cdot \mathbf{v}, \mathbf{w}\right\rangle}} \tag{6.65}
+\end{align*}
+
+
+Damit haben (6.64) und den Satz bewiesen.
+
+\section*{Bemerkungen:}
+i) Die Rechenregel (6.64) hat nichts mit Orthogonalität zu tun, sie gilt für alle quadratischen Matrizen.\\
+ii) Weil die Transposition eine Involution ist, gilt auch
+
+
+\begin{equation*}
+\left\langle\mathbf{v}, A^{T} \cdot \mathbf{w}\right\rangle=\left\langle\left(A^{T}\right)^{T} \cdot \mathbf{v}, \mathbf{w}\right\rangle=\langle A \cdot \mathbf{v}, \mathbf{w}\rangle . \tag{6.66}
+\end{equation*}
+
+
+iii) Gemäss (6.64) darf man eine Matrix vor einem Vektor in einem Skalar-Produkt auf die andere Seite "schieben", wenn man sie transponiert.
+
+
+\end{document}

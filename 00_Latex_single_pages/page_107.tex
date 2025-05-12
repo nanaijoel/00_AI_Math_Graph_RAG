@@ -1,0 +1,94 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.3 Orthogonale Matrizen}
+\subsection*{6.3.1 Definition}
+Es gibt reguläre Matrizen, deren Inverse gerade auch ihre Transponierte ist. Dies ist eine sehr interessante Eigenschaft, die sowohl algebraische als auch geometrische Konsequenzen hat.
+
+\section*{Definition 6.15 Orthogonale Matrix}
+Sei $n \in \mathbb{N}^{+}$. Eine reguläre Matrix $A \in \mathbb{M}(n, n, \mathbb{R})$ heisst orthogonal, falls
+
+
+\begin{equation*}
+A^{-1}=A^{T} \text {. } \tag{6.52}
+\end{equation*}
+
+
+Ferner definieren wir die Menge aller orthogonalen $n \times n$-Matrizen.
+
+\section*{Definition 6.16 Orthogonale Gruppe}
+Sei $n \in \mathbb{N}^{+}$. Die orthogonale Gruppe in nD ist die Menge
+
+
+\begin{equation*}
+\mathrm{O}(n):=\left\{A \in \mathbb{M}(n, n, \mathbb{R}) \mid A^{-1}=A^{T}\right\} . \tag{6.53}
+\end{equation*}
+
+
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 6.6 Orthogonale Gruppe}
+Sei $n \in \mathbb{N}^{+}$, dann bildet $\mathrm{O}(n)$ eine algebraische Gruppe, d.h. für alle $A, B, C \in \mathrm{O}(n)$ gilt folgendes.\\
+(a) Endogenität:
+
+$$
+A \cdot B \in \mathrm{O}(n)
+$$
+
+(c) Neutrales Element:
+
+$$
+\mathbb{1} \in \mathrm{O}(n)
+$$
+
+(b) Assoziativität:
+
+$$
+(A \cdot B) \cdot C=A \cdot(B \cdot C)
+$$
+
+(d) Inverse Elemente:
+
+$$
+A^{-1} \in \mathrm{O}(n)
+$$
+
+Bemerkungen:\\
+i) Offensichtlich gilt $\mathbb{1} \in \mathrm{O}(n)$ für alle $n \in \mathbb{N}^{+}$, denn es gilt
+
+
+\begin{equation*}
+\mathbb{1}^{-1}=\mathbb{1}=\mathbb{1}^{T} . \tag{6.54}
+\end{equation*}
+
+
+ii) Ist eine Matrix orthogonal und symmetrisch, dann folgt
+
+
+\begin{equation*}
+\underline{\underline{A^{-1}}}=A^{T}=\underline{\underline{A}} \Rightarrow \underline{\underline{A^{2}}}=A \cdot A=A^{-1} \cdot A=\underline{\underline{\mathbb{1}}} \tag{6.55}
+\end{equation*}
+
+
+Die orthogonalen symmetrischen Matrizen verhalten sich wie Wurzeln der Einheitsmatrix.\\
+iii) Ist eine Matrix orthogonal und schiefsymmetrisch, dann folgt
+
+
+\begin{equation*}
+\underline{\underline{A^{-1}}}=A^{T}=\underline{\underline{-A}} \Rightarrow \underline{\underline{A^{2}}}=-A^{-1} \cdot A=\underline{\underline{-\mathbb{1}}} . \tag{6.56}
+\end{equation*}
+
+
+Die orthogonalen schiefsymmetrischen Matrizen verhalten sich ähnlich wie die imaginäre Einheit $\mathrm{i} \in \mathbb{C}$.
+
+
+\end{document}

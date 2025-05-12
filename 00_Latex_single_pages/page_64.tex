@@ -1,0 +1,67 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\section*{Satz 3.2 Beschleunigungsarbeit}
+Um einen Körper der Masse $m$ von der Anfangsgeschwindigkeit $v_{0}$ auf die Endgeschwindigkeit $v_{\mathrm{E}}$ zu beschleunigen, muss am Körper eine Beschleunigungsarbeit geleistet werden von
+
+
+\begin{equation*}
+\Delta W=\frac{m}{2} \cdot v_{\mathrm{E}}^{2}-\frac{m}{2} \cdot v_{0}^{2} . \tag{3.18}
+\end{equation*}
+
+
+Beweis: Wir zeigen mehrere Varianten um die Beschleunigungsarbeit zu berechnen.\\
+Variante 1: Mit Hilfe des Arbeitsintegrals und mehrfacher Substitution erhalten wir
+
+
+\begin{align*}
+\underline{\underline{\Delta W}} & =\int_{s_{0}}^{s_{\mathrm{E}}} F(s) \mathrm{d} s=\int_{t_{0}}^{t_{\mathrm{E}}} F(s(t)) \cdot \dot{s}(t) \mathrm{d} t=\int_{t_{0}}^{t_{\mathrm{E}}} m \cdot a(t) \cdot v(t) \mathrm{d} t=m \int_{t_{0}}^{t_{\mathrm{E}}} v(t) \cdot \dot{v}(t) \mathrm{d} t \\
+& =m \int_{v_{0}}^{v_{\mathrm{E}}} v \mathrm{~d} v=\left.m \cdot \frac{1}{2} \cdot\left[v^{2}\right]\right|_{v_{0}} ^{v_{\mathrm{E}}}=\frac{m}{2} \cdot\left(v_{\mathrm{E}}^{2}-v_{0}^{2}\right)=\underline{\underline{\frac{m}{2}} \cdot v_{\mathrm{E}}^{2}-\frac{m}{2} \cdot v_{0}^{2} .} \tag{3.19}
+\end{align*}
+
+
+Variante 2: Wir verwenden einen Archimedes-Cauchy-Riemann-Approximationsprozess. Dabei gehen wir nach folgenden Schritten vor.
+
+S1 Lokal: Wir betrachten ein kleines Wegstück $\delta$ s. Die Beschleunigungsarbeit entlang $\delta s$ ist
+
+
+\begin{equation*}
+\underline{\delta W} \approx F(s) \cdot \delta s \approx m \cdot a(t) \cdot \frac{\delta s}{\delta t} \cdot \delta t \approx m \cdot \frac{\delta v}{\delta t} \cdot v \cdot \delta t=\underline{m \cdot v} \cdot \delta v . \tag{3.20}
+\end{equation*}
+
+
+S2 Global: Durch Integration über $v$ erhalten wir die Beschleunigungsarbeit
+
+
+\begin{equation*}
+\underline{\underline{\Delta W}}=m \int_{v_{0}}^{v_{\mathrm{E}}} v \mathrm{~d} v=\left.m \cdot \frac{1}{2} \cdot\left[v^{2}\right]\right|_{v_{0}} ^{v_{\mathrm{E}}}=\frac{m}{2} \cdot\left(v_{\mathrm{E}}^{2}-v_{0}^{2}\right)=\underline{\underline{\frac{m}{2}} \cdot v_{\mathrm{E}}^{2}-\frac{m}{2} \cdot v_{0}^{2}} . \tag{3.21}
+\end{equation*}
+
+
+Damit haben wir den Satz bewiesen.
+
+\subsection*{3.1.2 Partielle Integration}
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 3.3 Partielle Integration}
+Seien $g, h: \mathbb{R} \rightarrow \mathbb{R}$ differentierbare und integrierbare Funktionen und $x_{0}, x_{\mathrm{E}} \in \mathbb{R}$ mit $x_{0}<x_{\mathrm{E}}$, dann gilt folgendes.\\
+(a) $\begin{gathered}\downarrow \\ \int g^{\downarrow}(x) \cdot h^{\prime}(x) \mathrm{d} x=g(x) \cdot h(x)-\int g^{\prime}(x) \cdot h(x) \mathrm{d} x\end{gathered}$
+
+(b) $\quad$\begin{tabular}{c}
+$x_{x_{0}}^{x_{\mathrm{E}}} \stackrel{\downarrow}{g(x)} \cdot h^{\prime}(x) \mathrm{d} x=\left.[g(x) \cdot h(x)]\right|_{x_{0}} ^{x_{\mathrm{E}}}-\int_{x_{0}}^{x_{\mathrm{E}}} g^{\prime}(x) \cdot h(x) \mathrm{d} x$ \\
+\hline
+\end{tabular}
+
+Beweis: Übung.
+
+
+\end{document}

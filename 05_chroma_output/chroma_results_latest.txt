@@ -1,0 +1,54 @@
+=== TREFFER 1 ===
+ID: 6.1.1 Definition_262
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 89
+
+==================================================
+
+=== TREFFER 2 ===
+ID: 6.2.1 Definition_302
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 102
+
+==================================================
+
+=== TREFFER 3 ===
+ID: 6.3.1 Definition_317
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 107
+
+==================================================
+
+=== TREFFER 4 ===
+ID: 7.1.1 Definition_402
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 131
+
+==================================================
+
+=== TREFFER 5 ===
+ID: 7.2.1 Definition_428
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 138
+
+==================================================
+
+=== TREFFER 6 ===
+ID: 2.6.4 Zerlegungssatz_147
+Score (Abstand): 0.6406797766685486
+Text: Zerlegungssatz
+Typ: subsection
+Seite: 51
+
+==================================================
+

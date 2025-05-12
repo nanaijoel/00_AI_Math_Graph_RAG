@@ -1,0 +1,55 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+iii) Die Spiegelungsmatrix $S(\hat{\mathbf{n}})$ ist symmetrisch und es folgt\\
+$\underline{\underline{S^{-1}(\hat{\mathbf{n}})}=S^{T}(\hat{\mathbf{n}})=S(\hat{\mathbf{n}})}$.\\
+Wie geometrisch offensichtlich, ist die Spiegelungsmatrix ihre eigene Inverse.\\
+iv) Betrachtet man einen Normalen-Vektor $\mathbf{n} \in \mathbb{R}^{n} \backslash\{0\}$ der noch nicht normiert ist, dann kann man diese Normierung auch direkt in die Householder-Formel (6.74) einbauen. Es gilt\\
+$\underline{\underline{S(\mathbf{n})}}=\mathbb{1}-2 \cdot \hat{\mathbf{n}} \cdot \hat{\mathbf{n}}^{T}=\mathbb{1}-2 \cdot \frac{\mathbf{n}}{|\mathbf{n}|} \cdot \frac{\mathbf{n}^{T}}{|\mathbf{n}|}=\mathbb{1}-2 \cdot \frac{\mathbf{n} \cdot \mathbf{n}^{T}}{|\mathbf{n}|^{2}}=\underline{\underline{\mathbb{1}}-2 \cdot \frac{\mathbf{n} \cdot \mathbf{n}^{T}}{\langle\mathbf{n}, \mathbf{n}\rangle}}$.\\
+v) Beispiel-Codes zum Erzeugen von Householder-Spiegelungsmatrizen gemäss (6.80) mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & \includegraphics[max width=\textwidth]{2025_05_07_16a88d88102cc8e7d192g-1}
+ \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\
+def $S(n)$ : \\
+$\mathrm{nn}=\mathrm{n} / \mathrm{np}$.linalg.norm(n); \\
+M=np.eye(n.shape[0])-2*nn@nn.T; \\
+return M; \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{6.3.3.2 Rotationen in 3D}
+Wir betrachten die Rotation in $\mathbb{R}^{3}$ um den Winkel $\varphi \in \mathbb{R}$ rechtshändig um die Drehachse in Richtung $\hat{\boldsymbol{\varphi}} \in \mathbb{R}^{3}$. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_16a88d88102cc8e7d192g-1(1)}
+
+Zunächst bemerken wir, dass sich aus den Bestimmungsstücken $\varphi$ und $\hat{\boldsymbol{\varphi}}$ der Rotation auf kanonische Weise ein Vektor bilden lässt gemäss
+
+
+\begin{equation*}
+\varphi=\varphi \cdot \hat{\varphi} . \tag{6.81}
+\end{equation*}
+
+
+Dieser Vektor zeigt demnach in Richtung der Drehachse und hat gerade die Länge des Drehwinkels. Als nächstes betrachten wir die sogenannte Generator-Matrix.
+
+
+\end{document}

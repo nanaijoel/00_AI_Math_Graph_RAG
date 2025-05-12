@@ -1,0 +1,64 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Bemerkungen:\\
+i) Jeder Gradient ist wirbelfrei.\\
+ii) Jede Rotation ist quellenfrei.\\
+iii) In kartesischen Koordinaten ist $\Delta \mathbf{v}$ komponentenweise zu berechnen.\\
+iv) Die Terme $\boldsymbol{\nabla}_{\mathbf{w}} \mathbf{v}$ und $\boldsymbol{\nabla}_{\mathbf{v}} \mathbf{w}$ bezeichnen sogenannte Richtungsableitungen (siehe nächste Abschnitte.)
+
+\subsection*{2.5.6.2 Nabla-Operator}
+Wir betrachten die folgende Definition.\\
+Definition 2.25 Nabla-Operator in nD\\
+Sei $n \in \mathbb{N}^{+}$, dann ist der Nabla-Operator in $\mathbb{R}^{n}$ der Differentialoperator
+
+\[
+\boldsymbol{\nabla}:=\left[\begin{array}{c}
+\partial_{1}  \tag{2.159}\\
+\vdots \\
+\partial_{n}
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Der Nabla-Operator ist ein abstrakter Differentialoperator, welcher erst bei seiner Anwendung auf eine Funktion bzw. ein Vektorfeld eine sinnvolle mathematische Grösse ergibt.\\
+ii) Durch den Nabla-Operator können die Divergenz in nD und die Rotation in 3D durch Vektor-Operationen ausgedrückt werden. Insbesondere in älterer Literatur findet man die Schreibweisen
+
+
+\begin{equation*}
+\operatorname{div}(\mathbf{v})=\langle\boldsymbol{\nabla}, \mathbf{v}\rangle=\boldsymbol{\nabla} \cdot \mathbf{v} \tag{2.160}
+\end{equation*}
+
+
+$\operatorname{rot}(\mathbf{v})=\boldsymbol{\nabla} \times \mathbf{v}$.
+
+\subsection*{2.5.6.3 Anwendungen}
+Viele wichtige Formeln in der Physik werden durch Divergenz bzw. Rotation von Vektorfeldern ausgedrückt.
+
+\begin{itemize}
+  \item Strömungsdynamik: Beschreibt v das Geschwindigkeitsvektorfeld eines inkompressiblen Mediums (z.B. Wasser), dann ist es quellenfrei, d.h.\\
+$\operatorname{div}(\mathbf{v})=0$.
+  \item Elektrodynamik: Die Maxwell-Gleichungen beschreiben jeweils Divergenz und Rotation des E-Feldes und B-Feldes. Es gilt
+\end{itemize}
+
+\[
+\begin{array}{l|l}
+\operatorname{div}(\mathbf{E})=\frac{1}{\varepsilon_{0}} \cdot \rho & \operatorname{rot}(\mathbf{E})=-\dot{\mathbf{B}}  \tag{2.163}\\
+\operatorname{div}(\mathbf{B})=0 & \operatorname{rot}(\mathbf{B})=\varepsilon_{0} \cdot \mu_{0} \cdot \dot{\mathbf{E}}+\mu_{0} \cdot \mathbf{J} .
+\end{array}
+\]
+
+Der Ladungs-Erhaltungssatz kann ausgedrückt werden durch die Kontinuitätsgleichung\\
+$\dot{\rho}+\operatorname{div}(\mathbf{J})=0$.
+
+
+\end{document}

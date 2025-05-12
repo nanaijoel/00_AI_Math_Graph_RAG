@@ -1,0 +1,59 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.4.3 Flussintegrale}
+Wir betrachten eine parametrisierte Fläche im Bereich eines Vektorfeldes. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_fd5ff795e29286569815g-1}
+
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.17 Fluss eines Vektorfeldes}
+Seien $M$ eine parametrisierte Fläche mit Einheitsnormalen-Vektor $\hat{\mathbf{n}}$ und $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ ein integrierbares Vektorfeld. Der Fluss des Vektorfeldes v durch die Fläche M ist
+
+
+\begin{equation*}
+\Phi:=\int_{M}\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \mathrm{d} A . \tag{2.121}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Begriffe Flux, Fluss und Flussintegral sind synonym.\\
+ii) Für die Masseinheit erhalten wir
+
+
+\begin{equation*}
+[\Phi]=[\langle\mathbf{v}, \hat{\mathbf{n}}\rangle] \cdot[A]=[\mathbf{v}] \cdot[\hat{\mathbf{n}}] \cdot[A]=[\mathbf{v}] \cdot 1 \cdot[A]=\underline{\underline{\mathbf{v}}] \cdot[A]} . \tag{2.122}
+\end{equation*}
+
+
+iii) Man kann zeigen, dass das Flussintegral $\Phi$ bis auf das Vorzeichen nicht von der Wahl der Parametrisierung sondern nur von der Fläche $M$ abhängt (sofern mehrfache Durchläufe auch mehrfach gerechnet werden).\\
+iv) Um ein Flussintegral auszurechnen, müssen die Koordinaten der Punkte entlang der parametrisierten Fläche im Vektorfeld eingesetzt werden. Vollständig ausgeschrieben mit allen Abhängigkeiten ergibt dies
+
+
+\begin{equation*}
+\Phi=\int_{u_{0}}^{u_{\mathrm{E}}} \int_{v_{0}}^{v_{\mathrm{E}}}\langle\mathbf{v}(x(u ; v) ; y(u ; v) ; z(u ; v)), \hat{\mathbf{n}}(u ; v)\rangle \cdot \sqrt{g(u ; v)} \mathrm{d} v \mathrm{~d} u . \tag{2.123}
+\end{equation*}
+
+
+v) In der Literatur findet man für Flussintegrale durch eine Fläche $M$ die Schreibweisen
+
+
+\begin{equation*}
+\Phi=\int_{M}\langle\mathbf{v}, \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{M} \mathbf{v} \cdot \mathrm{~d} \mathbf{A} . \tag{2.124}
+\end{equation*}
+
+
+
+\end{document}

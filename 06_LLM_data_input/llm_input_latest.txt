@@ -1,0 +1,864 @@
+Du bist ein mathematisches Expertensystem und antwortest ausschließlich auf Deutsch. Beantworte die Frage basierend auf dem übergebenen Dokumentauszug - Notationen so wie in den Input Dateien gezeigt.Gib ausschließlich eine vollständige und gültige LaTeX-Datei zurück, die direkt mit pdflatex kompiliert werden kann.Verwende dazu folgende Struktur:
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+Beginne den Text nach \begin{document} und beende ihn mit \end{document}.
+
+### USER-FRAGE ###
+Definitionen des ganzen skripts
+
+### GRAPH-SUCHE ###
+##### STAGE: Kapitel-/Abschnittstitel mit 'matrix' #####
+
+=== MATCH: 6.1 Matrix-Algebra ===
+Seite: 89
+
+→ Nachbarn (ausgehend):
+  → 6.1.1 Definition (Seite 89)
+  → 6.1.2 Operationen (Seite 90)
+  → 6.1.3 Spezielle Matrizen (Seite 95)
+← Nachbarn (eingehend):
+  ← Kapitel 6: Matrizen & Lineare Abbildungen (Seite 89)
+
+==================================================
+
+##### STAGE: Kapitel-/Abschnittstitel mit 'matrix rechenregeln' #####
+
+=== MATCH: 6.1 Matrix-Algebra ===
+Seite: 89
+
+→ Nachbarn (ausgehend):
+  → 6.1.1 Definition (Seite 89)
+  → 6.1.2 Operationen (Seite 90)
+  → 6.1.3 Spezielle Matrizen (Seite 95)
+← Nachbarn (eingehend):
+  ← Kapitel 6: Matrizen & Lineare Abbildungen (Seite 89)
+
+==================================================
+
+##### STAGE: Unterkapitel mit 'matrix' #####
+
+=== MATCH: 2.5.3 Hesse-Matrix ===
+Seite: 42
+
+→ Nachbarn (ausgehend):
+  → Definition: Definition 2.20 (Seite 42)
+  → Beispiele: Beispiele: (Seite 142)
+  → Satz: Satz 2.14 (Seite 42)
+  → Bemerkungen: Bemerkungen: (Seite 147)
+  → Definition: Definition 2.21 (Seite 42)
+← Nachbarn (eingehend):
+  ← 2.5 Mehrfach-Differentiale (Seite 40)
+
+==================================================
+
+=== MATCH: 7.2.2 Matrix-Darstellung ===
+Seite: 138
+
+→ Nachbarn (ausgehend):
+  → Definition: Definition 7.8 (Seite 138)
+  → Satz: Satz 7.6 (Seite 139)
+  → Beweis: Beweis: Durch Einsetzen der Basis-Darstellung von v und weil a eine lineare Abbildung ist, (Seite 139)
+  → Bemerkungen: Bemerkungen: (Seite 147)
+← Nachbarn (eingehend):
+  ← 7.2 Lineare Abbildungen (Seite 138)
+
+==================================================
+
+### CHROMA-SUCHE ###
+=== TREFFER 1 ===
+ID: 6.1.1 Definition_262
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 89
+
+==================================================
+
+=== TREFFER 2 ===
+ID: 6.2.1 Definition_302
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 102
+
+==================================================
+
+=== TREFFER 3 ===
+ID: 6.3.1 Definition_317
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 107
+
+==================================================
+
+=== TREFFER 4 ===
+ID: 7.1.1 Definition_402
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 131
+
+==================================================
+
+=== TREFFER 5 ===
+ID: 7.2.1 Definition_428
+Score (Abstand): 0.5561665296554565
+Text: Definition
+Typ: subsection
+Seite: 138
+
+==================================================
+
+=== TREFFER 6 ===
+ID: 2.6.4 Zerlegungssatz_147
+Score (Abstand): 0.6406797766685486
+Text: Zerlegungssatz
+Typ: subsection
+Seite: 51
+
+==================================================
+
+### WICHTIGE LATEX-SEITEN ###
+### LaTeX-Seite 40 ###
+
+\subsection*{2.5 Mehrfach-Differentiale}
+\subsection*{2.5.1 Partielle Ableitungen}
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.18 Partielle Ableitung}
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine reellwertige Funktion. Die partiellen Ableitungen von $f$ sind die Ableitungen von $f$ nach jeweils einer der $n$ Variablen, wobei die anderen als Konstanten betrachtet werden.
+
+Bemerkungen:\\
+i) Eine reellwertige Funktion heisst differntierbar, wenn alle partiellen Ableitungen existieren und stetig sind.\\
+ii) Wie die Ableitung in 1D können auch die partiellen Ableitungen in nD mit Hilfe des Newton-Differenzenquotienten definiert werden gemäss
+
+
+\begin{equation*}
+f_{, \mu}\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right):=\lim _{\delta s \rightarrow 0} \frac{f\left(x_{1} ; x_{2} ; \ldots ; x_{\mu}+\delta s ; \ldots ; x_{n}\right)-f\left(x_{1} ; x_{2} ; \ldots ; x_{n}\right)}{\delta s} . \tag{2.134}
+\end{equation*}
+
+
+iii) Für die Masseinheit erhalten wir
+
+
+\begin{equation*}
+\left[f_{, \mu}\right]=\frac{[f]}{\left[x_{\mu}\right]} . \tag{2.135}
+\end{equation*}
+
+
+iv) Die partiellen Ableitungen beschreiben an jedem Punkt die Steigungen des Funktionsgraphen in Richtung der Koordinatenachsen.\\
+v) In der Literatur sind folgende Schreibweisen gebräuchlich
+
+
+\begin{equation*}
+f_{, \mu}=f_{, x_{\mu}}=f_{x_{\mu}}=\frac{\partial f}{\partial x_{\mu}}=\frac{\partial}{\partial x_{\mu}} f=\partial_{\mu} f . \tag{2.136}
+\end{equation*}
+
+
+\subsection*{2.5.2 Gradient}
+Wir betrachten die folgende Definition.\\
+Definition 2.19 Gradient\\
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare reellwertige Funktion. Der Gradient von $f$ ist das Vektorfeld
+
+\[
+\boldsymbol{\nabla} f:=\left[\begin{array}{l}
+f_{, 1}  \tag{2.137}\\
+f_{, 2} \\
+\vdots \\
+f_{, n}
+\end{array}\right]
+\]
+
+Bemerkungen:\\
+i) Der Gradient ist eine allgemeine Konstruktion in nD.
+
+### LaTeX-Seite 42 ###
+
+\subsection*{2.5.3 Hesse-Matrix}
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.20 Hesse-Matrix}
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine zweifach differentierbare reellwertige Funktion. Die HesseMatrix von $f$ ist das Vektorfeld
+
+\[
+\boldsymbol{\nabla}^{2} f:=\left[\begin{array}{cccc}
+f_{1,1} & f_{1,2} & \ldots & f_{1, n}  \tag{2.142}\\
+f_{2,1} & f_{2,2} & \ldots & f_{2, n} \\
+\vdots & \vdots & \vdots & \vdots \\
+f_{, n, 1} & f_{, n, 2} & \ldots & f_{, n, n}
+\end{array}\right] .
+\]
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten\\
+$f(x ; y):=x^{2} \cdot y^{2}$.\\
+Der Gradient von $f$ ist
+\end{itemize}
+
+\[
+\boldsymbol{\nabla} f=\left[\begin{array}{l}
+f_{, 1}  \tag{2.144}\\
+f_{, 2}
+\end{array}\right]=\left[\begin{array}{l}
+2 x \cdot y^{2} \\
+x^{2} \cdot 2 y
+\end{array}\right]=\left[\begin{array}{l}
+2 x y^{2} \\
+2 x^{2} y
+\end{array}\right] .
+\]
+
+Die Hesse-Matrix von $f$ ist
+
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 2.14 Schwarz-Clairaut-Young-Satz}
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine zweifach differentierbare reellwertige Funktion mit HesseMatrix $H \in \mathbb{M}(n, n, \mathbb{R})$, dann gilt
+
+
+\begin{equation*}
+H^{T}=H . \tag{2.146}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Symmetrie der Hesse-Matrix gemäss Schwarz-Clairaut-Young-Satz ist äquivalent zur Tatsache, dass die partiellen Ableitungen vertauscht werden dürfen, d.h. für alle $\mu, \nu \in\{1, \ldots, n\}$ gilt
+
+
+\begin{equation*}
+f_{\nu, \mu}=f_{, \mu, \nu} . \tag{2.147}
+\end{equation*}
+
+
+ii) Weil die Hesse-Matrix symmetrisch ist, ist sie diagonalisierbar, d.h. ähnlich zu einer diagonalen Matrix.
+
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.21 Laplace-Ableitung}
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine zweifach differentierbare reellwertige Funktion. Die LA-PLACE-Ableitung von $f$ ist
+
+
+\begin{equation*}
+\Delta f:=\operatorname{tr}\left(\nabla^{2} f\right)=f_{, 1,1}+f_{, 2,2}+\ldots+f_{, n, n} . \tag{2.148}
+\end{equation*}
+
+### LaTeX-Seite 51 ###
+
+\subsection*{2.6.4 Zerlegungssatz}
+Wir betrachten den folgenden Satz.\\
+Satz 2.23 Zerlegungssatz für Vektorfelder in 3D\\
+Jedes differentierbare Vektorfeld $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ lässt sich zerlegen in eine Summe aus einem wirbelfreien Vektorfeld $\mathbf{q}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$, einem quellenfreien Vektorfeld $\mathbf{w}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ und einem homogenen Vektorfeld $\mathbf{h}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$ gemäss
+
+
+\begin{equation*}
+\mathbf{v}=\mathbf{w}+\mathbf{q}+\mathbf{h} . \tag{2.186}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Bei einer solchen Zerlegung ist $\mathbf{w}$ ein reines Wirbelfeld und $\mathbf{q}$ ein reines Quellenfeld.\\
+ii) Für jedes differentierbare Vektorfeld gibt es unendlich viele Möglichkeiten eine Zerlegung der Form (2.186) zu wählen.\\
+iii) Gemäss den Potential-Sätzen hat $\mathbf{q}$ ein Skalarpotential $\phi$ und $\mathbf{w}$ ein Vektorpotential A, so dass gilt
+
+
+\begin{equation*}
+\mathbf{q}=\boldsymbol{\nabla} \phi \quad \text { und } \quad \mathbf{w}=\operatorname{rot}(\mathbf{A}) . \tag{2.187}
+\end{equation*}
+
+
+Mit Hilfe dieser Potentiale lässt sich die Zerlegung (2.186) schreiben gemäss
+
+
+\begin{equation*}
+\underline{\underline{\mathbf{v}}}=\mathbf{w}+\mathbf{q}+\mathbf{h}=\operatorname{rot}(\mathbf{A})+\boldsymbol{\nabla} \phi+\mathbf{h} . \tag{2.188}
+\end{equation*}
+
+### LaTeX-Seite 89 ###
+
+\section*{Kapitel 6}
+\section*{Matrizen \& Lineare Abbildungen}
+\subsection*{6.1 Matrix-Algebra}
+\subsection*{6.1.1 Definition}
+Wir machen folgende Definition.\\
+Definition 6.1 Matrix\\
+Seien $m, n \in \mathbb{N}^{+}$. Eine reelle $m \times n$-Matrix $A$ ist eine Zahlentabelle mit $m$ Zeilen und $n$ Spalten der Form
+
+\[
+A=\left[\begin{array}{llll}
+A^{1}{ }_{1} & A^{1}{ }_{2} & \ldots & A^{1}{ }_{n}  \tag{6.1}\\
+A^{2}{ }_{1} & A^{2}{ }_{2} & \ldots & A^{2}{ }_{n} \\
+\vdots & \vdots & \vdots & \vdots \\
+A^{m}{ }_{1} & A^{m}{ }_{2} & \ldots & A^{m}{ }_{n}
+\end{array}\right],
+\]
+
+wobei alle $A^{i}{ }_{j} \in \mathbb{R}$.\\
+Bemerkungen:\\
+i) Die Zahlen $m$ und $n$ heissen Dimensionen der Matrix $A$.\\
+ii) Die reellen Zahlen $A^{i}{ }_{j}$ heissen Komponenten der Matrix $A$. Eine $m \times n$-Matrix besteht offensichtlich aus $m \cdot n$ Komponenten.\\
+iii) Wir werden später sehen, dass es sinnvoll ist, den Zeilen-Index $i$ oben und den SpaltenIndex $j$ unten zu schreiben.\\
+iv) Für die Menge aller reellen $m \times n$-Matrizen gibt es verschiedene Bezeichnungen. Wir verwenden
+
+
+\begin{equation*}
+\mathbb{M}(m, n, \mathbb{R})=\mathbb{R}^{m \times n} . \tag{6.2}
+\end{equation*}
+
+
+v) Wir betrachten die Matrix
+
+\[
+M=\left[\begin{array}{lll}
+1 & 2 & 3  \tag{6.3}\\
+4 & 5 & 6
+\end{array}\right] .
+\]
+
+### LaTeX-Seite 90 ###
+
+Beispiel-Codes zur Definition dieser Matrix mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $\mathrm{M}=[1,2,3 ; 4,5,6]$ \\
+\hline
+Mathematica/WolframAlpha & $\mathrm{M}=\{\{1,2,3\},\{4,5,6\}\}$ \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\
+M=np.array([ $[1,2,3],[4,5,6]])$ \\
+\end{tabular} \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import sympy as sp; \\
+M=sp.Matrix ([[1, 2, 3], [4, 5, 6] ]) \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item Eine $2 \times 3$-Matrix: $A=\left[\begin{array}{rrr}2 & -1 & 3 \\ 7 & 5 & -4\end{array}\right]$
+  \item Eine $2 \times 2$-Matrix: $B=\left[\begin{array}{rr}2 & -1 \\ 7 & 5\end{array}\right]$
+  \item Eine $1 \times 3$-Matrix: $C=\left[\begin{array}{lll}2 & -1 & 3\end{array}\right]$
+  \item Eine $2 \times 1$-Matrix: $D=\left[\begin{array}{l}2 \\ 7\end{array}\right]$
+\end{itemize}
+
+\subsection*{6.1.2 Operationen}
+\subsection*{6.1.2.1 Addition \& Subtraktion}
+Zwei reelle Matrizen mit gleichen Dimensionen lassen sich addieren und subtrahieren.\\
+Definition 6.2 Addition \& Subtraktion\\
+Seien $m, n \in \mathbb{N}^{+}$und $A, B \in \mathbb{M}(m, n, \mathbb{R})$, dann ist
+
+\[
+A+B:=\left[\begin{array}{llll}
+A^{1}{ }_{1}+B^{1}{ }_{1} & A^{1}{ }_{2}+B^{1}{ }_{2} & \ldots & A^{1}{ }_{n}+B^{1}{ }_{n}  \tag{6.4}\\
+A^{2}{ }_{1}+B^{2}{ }_{1} & A^{2}{ }_{2}+B^{2}{ }_{2} & \ldots & A^{2}{ }_{n}+B^{2}{ }_{n} \\
+\vdots & \vdots & \vdots & \vdots \\
+A^{m}{ }_{1}+B^{m}{ }_{1} & A^{m}{ }_{2}+B^{m}{ }_{2} & \ldots & A^{m}{ }_{n}+B^{m}{ }_{n}
+\end{array}\right] .
+\]
+
+und
+
+\[
+A-B:=\left[\begin{array}{llll}
+A^{1}{ }_{1}-B^{1}{ }_{1} & A^{1}{ }_{2}-B^{1}{ }_{2} & \ldots & A^{1}{ }_{n}-B^{1}{ }_{n}  \tag{6.5}\\
+A^{2}{ }_{1}-B^{2}{ }_{1} & A^{2}{ }_{2}-B^{2}{ }_{2} & \ldots & A^{2}{ }_{n}-B^{2}{ }_{n} \\
+\vdots & \vdots & \vdots & \vdots \\
+A^{m}{ }_{1}-B^{m}{ }_{1} & A^{m}{ }_{2}-B^{m}{ }_{2} & \ldots & A^{m}{ }_{n}-B^{m}{ }_{n}
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Für alle $A, B \in \mathbb{M}(m, n, \mathbb{R})$ gilt $A \pm B \in \mathbb{M}(m, n, \mathbb{R})$.
+
+### LaTeX-Seite 95 ###
+
+\subsection*{6.1.3 Spezielle Matrizen}
+\subsection*{6.1.3.1 Quadratische Matrix}
+Eine ganz spezielle Rolle spielen reelle Matrizen, die gleich viele Zeilen wie Spalten haben.\\
+Definition 6.6 Quadratische Matrix\\
+Sei $n \in \mathbb{N}^{+}$. Eine reelle Matrix $A \in \mathbb{M}(n, n, \mathbb{R})$ heisst quadratische Matrix.
+
+Bemerkungen:\\
+i) Quadratische Matrizen haben genau $n^{2}$ Komponenten.\\
+ii) Das Produkt von zwei quadratischen Matrizen ist wieder eine quadratische Matrix, d.h. $A, B \in \mathbb{M}(n, n, \mathbb{R}) \Rightarrow A \cdot B \in \mathbb{M}(n, n, \mathbb{R})$.\\
+iii) Quadratische Matrizen können mit sich selbst multipliziert werden. So lassen sich Potenzen bilden. Für $n, p \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, n, \mathbb{R})$ ist
+
+
+\begin{equation*}
+A^{p}:=\underbrace{A \cdot \ldots \cdot A}_{p \text { Faktoren }} . \tag{6.12}
+\end{equation*}
+
+
+Die Potenz ist dann wieder eine quadratische Matrix, d.h. $A^{p} \in \mathbb{M}(n, n, \mathbb{R})$.\\
+Beispiele:
+
+\begin{itemize}
+  \item \hspace{0pt} [2]
+  \item $\left[\begin{array}{rr}2 & -1 \\ 7 & 5\end{array}\right]$
+  \item $\left[\begin{array}{rrr}3 & -6 & 7 \\ 1 & 0 & -2 \\ 1 & 8 & 9\end{array}\right]$
+\end{itemize}
+
+Von zwei quadratischen Matrizen gleicher Dimension können beide Produkt, d.h. sowohl $A \cdot B$ als auch $B \cdot A$ gebildet werden. Die Differenz ist in vielen Anwendungen von Interesse.
+
+Definition 6.7 Kommutator\\
+Seien $n \in \mathbb{N}^{+}$und $A, B \in \mathbb{M}(n, n, \mathbb{R})$. Der Kommutator von $A$ und $B$ ist die Matrix
+
+
+\begin{equation*}
+[A, B]:=A \cdot B-B \cdot A \tag{6.13}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Der Kommutator von zwei quadratischen Matrizen ist wieder eine quadratische Matrix, d.h. $A, B \in \mathbb{M}(n, n, \mathbb{R}) \Rightarrow[A, B] \in \mathbb{M}(n, n, \mathbb{R})$.\\
+ii) Der Kommutator verschwindet genau dann, wenn die Matrizen kommutieren, d.h. wenn gilt $A \cdot B=B \cdot A$.\\
+iii) Der Kommutator ist als Operation schiefsymmetrisch, d.h. es gilt
+
+
+\begin{equation*}
+[A, B]=-[B, A] . \tag{6.14}
+\end{equation*}
+
+### LaTeX-Seite 102 ###
+
+\subsection*{6.2 Lineare Abbildungen}
+\subsection*{6.2.1 Definition}
+Mit Hilfe von Matrizen können geometrische Abbildungen beschrieben werden. Wir machen dazu zwei Definitionen.
+
+Definition 6.13 Lineare Abbildung - Version 1\\
+Seien $m, n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, m, \mathbb{R})$. Eine Abbildung der Form
+
+
+\begin{align*}
+a: \mathbb{R}^{m} & \rightarrow \mathbb{R}^{n} \\
+\mathbf{x} & \mapsto a(\mathbf{x}):=A \cdot \mathbf{x} \tag{6.32}
+\end{align*}
+
+
+heisst lineare Abbildung.
+
+Definition 6.14 Lineare Abbildung - Version 2\\
+Seien $m, n \in \mathbb{N}^{+}$. Eine lineare Abbildung ist eine Abbildung des Typs $a: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ mit der Eigenschaft, dass für alle $\mathbf{v}, \mathbf{w} \in \mathbb{R}^{m}$ und $x, y \in \mathbb{R}$ gilt
+
+
+\begin{equation*}
+a(x \cdot \mathbf{v}+y \cdot \mathbf{w})=x \cdot a(\mathbf{v})+y \cdot a(\mathbf{w}) \tag{6.33}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die beiden Definitionen sind äquivalent. Es ist leicht einzusehen, dass die linearen Abbildungen gemäss Definition 6.13 die Haupteigenschaft (6.33) aus Definition 6.14 erfüllen. Es gilt
+
+
+\begin{align*}
+\underline{\underline{a(x \cdot \mathbf{v}+y \cdot \mathbf{w})}} & =A \cdot(x \cdot \mathbf{v}+y \cdot \mathbf{w})=A \cdot x \cdot \mathbf{v}+A \cdot y \cdot \mathbf{w}=x \cdot A \cdot \mathbf{v}+y \cdot A \cdot \mathbf{w} \\
+& =\underline{\underline{x \cdot a(\mathbf{v})+y \cdot a(\mathbf{w})}} \tag{6.34}
+\end{align*}
+
+
+ii) Die Matrix A, welche gemäss Definition 6.13 eine lineare Abbildung a beschreibt, wird Abbildungsmatrix genannt.\\
+iii) Ist die Abbildungsmatrix A quadratisch, d.h. $m=n$, dann ist $a$ eine Selbstabbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$.\\
+iv) Bekannte geometrische Abbildungen wie Streckungen, Projektionen, Spiegelungen und Rotationen sind lineare Abbildungen, welche jeweils durch eine Abbildungsmatrix ausgedrückt werden können.\\
+v) Für alle linearen Abbildungen gilt offensichtlich
+
+
+\begin{equation*}
+\underline{\underline{a(0)}}=A \cdot 0=\underline{\underline{0 .}} \tag{6.35}
+\end{equation*}
+
+
+vi) Für $n=m=1$ gibt es eine historisch bedingte Begriffskollision zwischen einer linearen Funktion in der Analysis und einer linearen Abbildung in der linearen Algebra.
+
+
+\begin{align*}
+\text { Analysis: } & f(x)=m \cdot x+q \\
+\text { Lineare Algebra: } & a(x)=A \cdot x \tag{6.36}
+\end{align*}
+
+### LaTeX-Seite 107 ###
+
+\subsection*{6.3 Orthogonale Matrizen}
+\subsection*{6.3.1 Definition}
+Es gibt reguläre Matrizen, deren Inverse gerade auch ihre Transponierte ist. Dies ist eine sehr interessante Eigenschaft, die sowohl algebraische als auch geometrische Konsequenzen hat.
+
+\section*{Definition 6.15 Orthogonale Matrix}
+Sei $n \in \mathbb{N}^{+}$. Eine reguläre Matrix $A \in \mathbb{M}(n, n, \mathbb{R})$ heisst orthogonal, falls
+
+
+\begin{equation*}
+A^{-1}=A^{T} \text {. } \tag{6.52}
+\end{equation*}
+
+
+Ferner definieren wir die Menge aller orthogonalen $n \times n$-Matrizen.
+
+\section*{Definition 6.16 Orthogonale Gruppe}
+Sei $n \in \mathbb{N}^{+}$. Die orthogonale Gruppe in nD ist die Menge
+
+
+\begin{equation*}
+\mathrm{O}(n):=\left\{A \in \mathbb{M}(n, n, \mathbb{R}) \mid A^{-1}=A^{T}\right\} . \tag{6.53}
+\end{equation*}
+
+
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 6.6 Orthogonale Gruppe}
+Sei $n \in \mathbb{N}^{+}$, dann bildet $\mathrm{O}(n)$ eine algebraische Gruppe, d.h. für alle $A, B, C \in \mathrm{O}(n)$ gilt folgendes.\\
+(a) Endogenität:
+
+$$
+A \cdot B \in \mathrm{O}(n)
+$$
+
+(c) Neutrales Element:
+
+$$
+\mathbb{1} \in \mathrm{O}(n)
+$$
+
+(b) Assoziativität:
+
+$$
+(A \cdot B) \cdot C=A \cdot(B \cdot C)
+$$
+
+(d) Inverse Elemente:
+
+$$
+A^{-1} \in \mathrm{O}(n)
+$$
+
+Bemerkungen:\\
+i) Offensichtlich gilt $\mathbb{1} \in \mathrm{O}(n)$ für alle $n \in \mathbb{N}^{+}$, denn es gilt
+
+
+\begin{equation*}
+\mathbb{1}^{-1}=\mathbb{1}=\mathbb{1}^{T} . \tag{6.54}
+\end{equation*}
+
+
+ii) Ist eine Matrix orthogonal und symmetrisch, dann folgt
+
+
+\begin{equation*}
+\underline{\underline{A^{-1}}}=A^{T}=\underline{\underline{A}} \Rightarrow \underline{\underline{A^{2}}}=A \cdot A=A^{-1} \cdot A=\underline{\underline{\mathbb{1}}} \tag{6.55}
+\end{equation*}
+
+
+Die orthogonalen symmetrischen Matrizen verhalten sich wie Wurzeln der Einheitsmatrix.\\
+iii) Ist eine Matrix orthogonal und schiefsymmetrisch, dann folgt
+
+
+\begin{equation*}
+\underline{\underline{A^{-1}}}=A^{T}=\underline{\underline{-A}} \Rightarrow \underline{\underline{A^{2}}}=-A^{-1} \cdot A=\underline{\underline{-\mathbb{1}}} . \tag{6.56}
+\end{equation*}
+
+
+Die orthogonalen schiefsymmetrischen Matrizen verhalten sich ähnlich wie die imaginäre Einheit $\mathrm{i} \in \mathbb{C}$.
+
+### LaTeX-Seite 131 ###
+
+\section*{Kapitel 7}
+\section*{Vektorräume}
+\subsection*{7.1 Vektorraumstruktur}
+\subsection*{7.1.1 Definition}
+Die fundamentale Struktur der linearen Algebra ist der Vektorraum. Dieser wird, wie in der modernen Mathematik allgemein üblich, mit Hilfe einer überschaubaren Aufzählung von grundlegenden Eigenschaften, den sogenannten Axiomen, definiert.
+
+\section*{Definition 7.1 Vektorraum}
+Ein Vektorraum ist ein Quadrupel $(V, \mathbb{K},+, \cdot)$, bestehend aus eine Menge $V$, einem Zahlenkörper $\mathbb{K}$ und zwei Operationen
+
+
+\begin{align*}
++: V \times V & \rightarrow V \\
+(\mathbf{v} ; \mathbf{w}) & \mapsto \mathbf{v}+\mathbf{w}
+\end{aligned} \quad \text { und } \quad \begin{aligned}
+\cdot: \mathbb{K} \times V & \rightarrow V  \tag{7.1}\\
+(a ; \mathbf{v}) & \mapsto a \cdot \mathbf{v},
+\end{align*}
+
+
+so dass für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{K}$ die folgenden Axiome gelten.\\
+VR-1 $(\mathbf{u}+\mathbf{v})+\mathbf{w}=\mathbf{u}+(\mathbf{v}+\mathbf{w})$\\
+$\mathbf{V R}$-2 Es gibt ein $\mathbf{0} \in V$ mit $\mathbf{0}+\mathbf{v}=\mathbf{v}$ für alle $\mathbf{v} \in V$.\\
+VR-3 Für jedes $\mathbf{v} \in V$ gibt es ein $-\mathbf{v} \in V$ mit $\mathbf{v}+(-\mathbf{v})=\mathbf{0}$.\\
+VR-4 w $+\mathbf{v}=\mathbf{v}+\mathbf{w}$\\
+VR-5 $a \cdot(\mathbf{v}+\mathbf{w})=a \cdot \mathbf{v}+a \cdot \mathbf{w}$\\
+VR-6 $(a+b) \cdot \mathbf{v}=a \cdot \mathbf{v}+b \cdot \mathbf{v}$\\
+VR-7 $(a \cdot b) \cdot \mathbf{v}=a \cdot(b \cdot \mathbf{v})$\\
+VR-8 $1 \cdot v=v$
+
+Entwickelt man eine mathematische Theorie ausgehend von Axiomen, dann müssen auch Aussagen, deren Gültigkeit in praktischen Anwendungen "selbstverständlich" ist, sorgfältig aus diesen Axiomen bewiesen werden. Ein schönes Beispiel ist die sogenannte Null-Koinzidenz, welche in allen Vektorräumen gilt.
+
+### LaTeX-Seite 138 ###
+
+\subsection*{7.2 Lineare Abbildungen}
+\subsection*{7.2.1 Definition}
+Der Begriff lineare Abbildung lässt sich zwischen allgemeinen Vektorräumen definieren.
+
+\section*{Definition 7.7 Lineare Abbildung}
+Seien $(V, \mathbb{K},+, \cdot)$ und $(W, \mathbb{K},+, \cdot)$ zwei Vektorräume über dem gleichen Zahlenkörper $\mathbb{K}$. Eine Abbildung der Form
+
+
+\begin{equation*}
+a: V \rightarrow W \tag{7.34}
+\end{equation*}
+
+
+heisst lineare Abbildung, falls für alle $\mathbf{u}, \mathbf{v} \in V$ und $x, y \in \mathbb{K}$ gilt
+
+
+\begin{equation*}
+a(x \cdot \mathbf{u}+y \cdot \mathbf{v})=x \cdot a(\mathbf{u})+y \cdot a(\mathbf{v}) \tag{7.35}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Für diese Definition ist es sehr wichtig, dass die Vektorräume $V$ und $W$ über dem gleichen Zahlenkörper $\mathbb{K}$ definiert sind.\\
+ii) Diese Definition entspricht der Definition 6.14 aus Abschnitt 6.2.1.\\
+iii) Eine lineare Abbildung erkennt man daran, dass sie die Struktur einer Linearkombination respektiert.\\
+iv) Für alle linearen Abbildungen gilt offensichtlich
+
+
+\begin{equation*}
+\underline{\underline{a(0)}}=a(0 \cdot 0)=0 \cdot a(0)=\underline{\underline{0}} . \tag{7.36}
+\end{equation*}
+
+
+Beispiele:
+
+\begin{itemize}
+  \item Die bereits bekannten geometrisch definierten linearen Abbildungen in $\mathbb{R}^{n}$ wie Spiegelungen, Drehungen, Projektionen etc...
+  \item Die Ableitung $d: \mathcal{P}_{n}(\mathbb{R}) \rightarrow \mathcal{P}_{n}(\mathbb{R})$ oder $d: \mathcal{P}_{n}(\mathbb{R}) \rightarrow \mathcal{P}_{n-1}(\mathbb{R})$.
+  \item Die Orthogonal-Projektion in $\mathcal{L}^{2}(\mathbb{R})$.
+\end{itemize}
+
+\subsection*{7.2.2 Matrix-Darstellung}
+Betrachtet man eine lineare Abbildung zwischen zwei endlich dimensionalen Vektorräumen und wählt in beiden jeweils eine Basis, dann kann man die lineare Abbildung durch eine Abbildungsmatrix darstellen.
+
+\section*{Definition 7.8 Abbildungsmatrix}
+Seien $(V, \mathbb{K},+, \cdot)$ und $(W, \mathbb{K},+, \cdot)$ zwei Vektorräume über dem gleichen Zahlenkörper $\mathbb{K}$ mit den endlichen Dimensionen $\operatorname{dim}(V)=n \in \mathbb{N}^{+}$bzw. $\operatorname{dim}(W)=m \in \mathbb{N}^{+}$und Basen $\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subseteq$ $V$ bzw. $\left\{\mathbf{E}_{1}, \ldots, \mathbf{E}_{m}\right\} \subseteq W$ sowie $a: V \rightarrow W$ eine lineare Abbildung. Die Abbildungsmatrix von $a$ bezüglich der gewählten Basen ist die Matrix $A \in \mathbb{M}(m, n, \mathbb{K})$ mit den Komponenten $A^{i}{ }_{j} \in \mathbb{K}$, so dass für alle $j \in\{1, \ldots, n\}$ gilt
+
+
+\begin{equation*}
+a\left(\mathbf{e}_{j}\right)=\sum_{i=1}^{m} A_{j}^{i} \cdot \mathbf{E}_{i} . \tag{7.37}
+\end{equation*}
+
+### LaTeX-Seite 139 ###
+
+Bemerkenswerterweise gilt nun der folgende Satz.\\
+Satz 7.6 Berechnung mit der Abbildungsmatrix\\
+Seien $(V, \mathbb{K},+, \cdot)$ und ( $W, \mathbb{K},+, \cdot$ ) zwei Vektorräume über dem gleichen Zahlenkörper $\mathbb{K}$ mit den endlichen Dimensionen $\operatorname{dim}(V)=n \in \mathbb{N}^{+}$bzw. $\operatorname{dim}(W)=m \in \mathbb{N}^{+}$und Basen $\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subseteq$ $V$ bzw. $\left\{\mathbf{E}_{1}, \ldots, \mathbf{E}_{m}\right\} \subseteq W$ sowie $a: V \rightarrow W$ eine lineare Abbildung mit Abbildungsmatrix $A \in \mathbb{M}(m, n, \mathbb{K})$. Ferner seien
+
+
+\begin{equation*}
+\mathbf{v}=\sum_{j=1}^{n} v^{j} \cdot \mathbf{e}_{j} \in V \quad \text { und } \quad \mathbf{w}=\sum_{i=1}^{m} w^{i} \cdot \mathbf{E}_{i} \in W \tag{7.38}
+\end{equation*}
+
+
+für welche gilt
+
+
+\begin{equation*}
+\mathbf{w}=a(\mathbf{v}) . \tag{7.39}
+\end{equation*}
+
+
+Für die Komponenten von v und w gilt dann die Beziehung
+
+\[
+\left[\begin{array}{c}
+w^{1}  \tag{7.40}\\
+\vdots \\
+w^{m}
+\end{array}\right]=\left[\begin{array}{ccc}
+A^{1}{ }_{1} & \ldots & A^{1}{ }_{n} \\
+\vdots & \vdots & \vdots \\
+A^{m} & \ldots & A^{m}{ }_{n}
+\end{array}\right] \cdot\left[\begin{array}{c}
+v^{1} \\
+\vdots \\
+v^{n}
+\end{array}\right] .
+\]
+
+Beweis: Durch Einsetzen der Basis-Darstellung von v und weil a eine lineare Abbildung ist, erhalten wir
+
+
+\begin{align*}
+\sum_{i=1}^{m} w^{i} \cdot \mathbf{E}_{i} & =\mathbf{w}=a(\mathbf{v})=a\left(\sum_{j=1}^{n} v^{j} \cdot \mathbf{e}_{j}\right)=\sum_{j=1}^{n} v^{j} \cdot a\left(\mathbf{e}_{j}\right)=\sum_{j=1}^{n} v^{j} \cdot \sum_{i=1}^{m} A_{j}^{i} \cdot \mathbf{E}_{i} \\
+& =\sum_{i=1}^{m} \underbrace{\sum_{j=1}^{n} A_{j}^{i} \cdot v^{j}}_{=w^{i}} \cdot \mathbf{E}_{i} . \tag{7.41}
+\end{align*}
+
+
+Wegen der Eindeutigkeit der Basis-Darstellung folgt aus einem Koeffizientenvergleich für alle $i \in\{1, \ldots, m\}$, dass
+
+
+\begin{equation*}
+w^{i}=\sum_{j=1}^{n} A_{j}^{i} \cdot v^{j} . \tag{7.42}
+\end{equation*}
+
+
+In Matrix-Schreibweise entspricht dies genau (7.40) und wir haben den Satz bewiesen.\\
+Bemerkungen:\\
+i) Sind in den Vektorräumen $V$ und $W$ jeweils Basen gewählt, dann reduziert sich die Anwendung einer linearen Abbildung auf eine Matrix-Multiplikation analog zur Situation für eine lineare Abbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$.\\
+ii) Die Eigenschaften einer linearen Abbildung können aus den Eigenschaften ihrer Abbildungsmatrix abgelesen werden.\\
+iii) Analog zur Situation für eine lineare Abbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ gelten auch hier der Verknüpfungssatz und der Inversionssatz für bijektive, lineare Abbildungen\\
+iv) Analog zur Situation für eine lineare Abbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ kann die Abbildungsmatrix mit Hilfe des Spalten-Vektor-Konstruktionsverfahrens gefunden werden.\\
+v) Wählt man in $V$ bzw. $W$ eine andere Basis, dann wird die gleiche lineare Abbildung durch eine andere Abbildungsmatrix beschrieben.
+
+### LaTeX-Seite 142 ###
+
+iv) Für reelle Vektorräume, d.h. für $\mathbb{K}=\mathbb{R}$ folgt aus der Kombination von SP-1 und SP-2 die Linearität im 1. Argument und damit die Bilinearität des Skalar-Produkts. Für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{R}$ gilt
+
+
+\begin{equation*}
+\langle a \cdot \mathbf{u}+b \cdot \mathbf{v}, \mathbf{w}\rangle=a \cdot\langle\mathbf{u}, \mathbf{w}\rangle+b \cdot\langle\mathbf{v}, \mathbf{w}\rangle \tag{7.55}
+\end{equation*}
+
+
+v) Für komplexe Vektorräume, d.h. für $\mathbb{K}=\mathbb{C}$ folgt aus der Kombination von SP-1 und SP-2 die Semilinearität im 1. Argument und damit die Sesquilinearität des Skalar-Produkts. Für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{C}$ gilt
+
+
+\begin{equation*}
+\langle a \cdot \mathbf{u}+b \cdot \mathbf{v}, \mathbf{w}\rangle=a^{*} \cdot\langle\mathbf{u}, \mathbf{w}\rangle+b^{*} \cdot\langle\mathbf{v}, \mathbf{w}\rangle . \tag{7.56}
+\end{equation*}
+
+
+Beispiele:
+
+\begin{itemize}
+  \item Gram-Riemann-Skalar-Produkt auf $\mathbb{K}^{n}$ (positiv definit):\\
+auf $V=\mathbb{R}^{n}: \quad\langle\mathbf{v}, \mathbf{w}\rangle:=v_{1} \cdot w_{1}+v_{2} \cdot w_{2}+\ldots+v_{n} \cdot w_{n}$\\
+auf $V=\mathbb{C}^{n}: \quad\langle\mathbf{v}, \mathbf{w}\rangle:=v_{1}^{*} \cdot w_{1}+v_{2}^{*} \cdot w_{2}+\ldots+v_{n}^{*} \cdot w_{n}$.\\
+Anwendungen: Geometrie, Datenanalyse
+  \item Lorentz-Minkowski-Skalar-Produkt auf $\mathbb{R}^{1+3}$ (nicht positiv definit):
+\end{itemize}
+
+
+\begin{equation*}
+\langle\mathbf{v}, \mathbf{w}\rangle:=v^{0} \cdot w^{0}-v^{1} \cdot w^{1}-v^{2} \cdot w^{2}-v^{3} \cdot w^{3} \tag{7.59}
+\end{equation*}
+
+
+Anwendungen: Relativitätstheorie
+
+\begin{itemize}
+  \item SCHUR-Skalar-Produkt auf $\mathbb{M}(n, n, \mathbb{R})$ (positiv definit):
+\end{itemize}
+
+
+\begin{equation*}
+\langle A, B\rangle:=\operatorname{tr}\left(A^{T} \cdot B\right) . \tag{7.60}
+\end{equation*}
+
+
+Anwendungen: Gruppen-Theorie, Datenanalyse
+
+\begin{itemize}
+  \item Wir betrachten den Funktionenraum der komplexen, integrierbaren, periodischen Funktionen auf $\mathbb{R}$ mit Periode $T>0$ gemäss
+\end{itemize}
+
+
+\begin{equation*}
+V=\{f: \mathbb{R} \rightarrow \mathbb{C} \mid f \text { ist integrierbar } \wedge f(t+T)=f(t) \text { für alle } t \in \mathbb{R}\} . \tag{7.61}
+\end{equation*}
+
+
+$L^{2}$-Skalar-Produkt auf $V$ (positiv definit):
+
+
+\begin{equation*}
+(f, g):=\frac{1}{T} \int_{T} f^{*}(t) \cdot g(t) \mathrm{d} t \tag{7.62}
+\end{equation*}
+
+
+Anwendungen: Fourier-Entwicklungen, Signalverarbeitung
+
+\begin{itemize}
+  \item $L^{2}$-Skalar-Produkt auf den LeBESGUE-Funktionenräumen $\mathcal{L}^{2}(\mathbb{R}, \mathbb{K})$ (positiv definit):\\
+auf $V=\mathcal{L}^{2}(\mathbb{R}, \mathbb{R}): \quad(f, g):=\int_{-\infty}^{\infty} f(t) \cdot g(t) \mathrm{d} t$\\
+auf $V=\mathcal{L}^{2}(\mathbb{R}, \mathbb{C}): \quad(f, g):=\int_{-\infty}^{\infty} f^{*}(t) \cdot g(t) \mathrm{d} t$.\\
+Anwendungen: Fourier- Transformation, Laplace-Transformation, Signalverarbeitung, Variationsrechnung, FEM-Simulationen, Quantenphysik
+\end{itemize}
+
+### LaTeX-Seite 147 ###
+
+Wir betrachten den folgenden Satz.\\
+Satz 7.12 Metrische Skalar-Produkt-Formel\\
+Seien $(V, \mathbb{R},+, \cdot)$ ein reeller Vektorraum mit endlicher Dimension $n \in \mathbb{N}^{+}$und Skalar-Produkt $\langle.,$.$\rangle und B=\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subset V$ eine Basis von $V$ mit Metrik $g \in \mathbb{M}(n, n, \mathbb{R})$ und $\mathbf{v}, \mathbf{w} \in V$ mit Basis-Darstellungen
+
+
+\begin{equation*}
+\mathbf{v}=\sum_{r=1}^{n} v^{r} \cdot \mathbf{e}_{r} \quad \text { bzw. } \quad \mathbf{w}=\sum_{s=1}^{n} w^{s} \cdot \mathbf{e}_{s} \tag{7.96}
+\end{equation*}
+
+
+Dann gilt
+
+\[
+\langle\mathbf{v}, \mathbf{w}\rangle=\left[\begin{array}{lll}
+v^{1} & \ldots & v^{n}
+\end{array}\right] \cdot\left[\begin{array}{ccc}
+g_{11} & \ldots & g_{1 n}  \tag{7.97}\\
+\vdots & \vdots & \vdots \\
+g_{n 1} & \cdots & g_{n n}
+\end{array}\right] \cdot\left[\begin{array}{c}
+w^{1} \\
+\vdots \\
+w^{n}
+\end{array}\right]=\mathbf{v}^{T} \cdot g \cdot \mathbf{w} .
+\]
+
+Beweis: Durch Einsetzen der Basis-Darstellungen und mit Hilfe der Bilinearität des SkalarProdukts erhalten wir
+
+
+\begin{align*}
+\underline{\underline{\mathbf{v}, \mathbf{w}\rangle}} & =\left\langle\sum_{r=1}^{n} v^{r} \cdot \mathbf{e}_{r}, \sum_{s=1}^{n} w^{s} \cdot \mathbf{e}_{s}\right\rangle=\sum_{r=1}^{n} \sum_{s=1}^{n} v^{r} \cdot w^{s} \cdot\left\langle\mathbf{e}_{r}, \mathbf{e}_{s}\right\rangle=\sum_{r=1}^{n} \sum_{s=1}^{n} v^{r} \cdot w^{s} \cdot g_{r s} \\
+& =\sum_{r=1}^{n} v^{r} \cdot \sum_{s=1}^{n} g_{r s} \cdot w^{s}=\left[\begin{array}{lll}
+v^{1} & \ldots & v^{n}
+\end{array}\right] \cdot\left[\begin{array}{c}
+g_{11} \cdot w^{1}+g_{12} \cdot w^{2}+\ldots+g_{1 n} \cdot w^{n} \\
+\vdots \\
+g_{n 1} \cdot w^{1}+g_{n 2} \cdot w^{2}+\ldots+g_{n n} \cdot w^{n}
+\end{array}\right] \\
+& =\left[\begin{array}{lll}
+v^{1} & \ldots & v^{n}
+\end{array}\right] \cdot\left[\begin{array}{ccc}
+g_{11} & \ldots & g_{1 n} \\
+\vdots & \vdots & \vdots \\
+g_{n 1} & \ldots & g_{n n}
+\end{array}\right] \cdot\left[\begin{array}{c}
+w^{1} \\
+\vdots \\
+w^{n}
+\end{array}\right]=\mathbf{v}^{T} \cdot g \cdot \mathbf{w} . \tag{7.98}
+\end{align*}
+
+
+Damit haben wir den Satz bewiesen.\\
+Bemerkungen:\\
+i) Durch die metrische Skalar-Produkt-Formel kann das Skalar-Produkt in einem beliebigen Vektorraum mit fix gewählter Basis aus den Komponenten der Vektoren als MatrixProdukt mit drei Faktoren berechnet werden.\\
+ii) In einem Vektorraum kann ein Skalar-Produkt definiert werden durch Angabe einer Basis und deren Metrik.\\
+iii) In $\mathbb{R}^{n}$ mit Gram-Riemann-Skalar-Produkt folgt
+
+
+\begin{equation*}
+\underline{\underline{\langle\mathbf{v}, \mathbf{w}\rangle}}=\mathbf{v}^{T} \cdot g \cdot \mathbf{w}=\mathbf{v}^{T} \cdot \mathbb{1} \cdot \mathbf{w}=\underline{\underline{\mathbf{v}^{T}} \cdot \mathbf{w}} \tag{7.99}
+\end{equation*}

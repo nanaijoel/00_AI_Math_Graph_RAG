@@ -1,0 +1,78 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Wir betrachten den folgenden Satz.\\
+Satz 7.12 Metrische Skalar-Produkt-Formel\\
+Seien $(V, \mathbb{R},+, \cdot)$ ein reeller Vektorraum mit endlicher Dimension $n \in \mathbb{N}^{+}$und Skalar-Produkt $\langle.,$.$\rangle und B=\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subset V$ eine Basis von $V$ mit Metrik $g \in \mathbb{M}(n, n, \mathbb{R})$ und $\mathbf{v}, \mathbf{w} \in V$ mit Basis-Darstellungen
+
+
+\begin{equation*}
+\mathbf{v}=\sum_{r=1}^{n} v^{r} \cdot \mathbf{e}_{r} \quad \text { bzw. } \quad \mathbf{w}=\sum_{s=1}^{n} w^{s} \cdot \mathbf{e}_{s} \tag{7.96}
+\end{equation*}
+
+
+Dann gilt
+
+\[
+\langle\mathbf{v}, \mathbf{w}\rangle=\left[\begin{array}{lll}
+v^{1} & \ldots & v^{n}
+\end{array}\right] \cdot\left[\begin{array}{ccc}
+g_{11} & \ldots & g_{1 n}  \tag{7.97}\\
+\vdots & \vdots & \vdots \\
+g_{n 1} & \cdots & g_{n n}
+\end{array}\right] \cdot\left[\begin{array}{c}
+w^{1} \\
+\vdots \\
+w^{n}
+\end{array}\right]=\mathbf{v}^{T} \cdot g \cdot \mathbf{w} .
+\]
+
+Beweis: Durch Einsetzen der Basis-Darstellungen und mit Hilfe der Bilinearität des SkalarProdukts erhalten wir
+
+
+\begin{align*}
+\underline{\underline{\mathbf{v}, \mathbf{w}\rangle}} & =\left\langle\sum_{r=1}^{n} v^{r} \cdot \mathbf{e}_{r}, \sum_{s=1}^{n} w^{s} \cdot \mathbf{e}_{s}\right\rangle=\sum_{r=1}^{n} \sum_{s=1}^{n} v^{r} \cdot w^{s} \cdot\left\langle\mathbf{e}_{r}, \mathbf{e}_{s}\right\rangle=\sum_{r=1}^{n} \sum_{s=1}^{n} v^{r} \cdot w^{s} \cdot g_{r s} \\
+& =\sum_{r=1}^{n} v^{r} \cdot \sum_{s=1}^{n} g_{r s} \cdot w^{s}=\left[\begin{array}{lll}
+v^{1} & \ldots & v^{n}
+\end{array}\right] \cdot\left[\begin{array}{c}
+g_{11} \cdot w^{1}+g_{12} \cdot w^{2}+\ldots+g_{1 n} \cdot w^{n} \\
+\vdots \\
+g_{n 1} \cdot w^{1}+g_{n 2} \cdot w^{2}+\ldots+g_{n n} \cdot w^{n}
+\end{array}\right] \\
+& =\left[\begin{array}{lll}
+v^{1} & \ldots & v^{n}
+\end{array}\right] \cdot\left[\begin{array}{ccc}
+g_{11} & \ldots & g_{1 n} \\
+\vdots & \vdots & \vdots \\
+g_{n 1} & \ldots & g_{n n}
+\end{array}\right] \cdot\left[\begin{array}{c}
+w^{1} \\
+\vdots \\
+w^{n}
+\end{array}\right]=\mathbf{v}^{T} \cdot g \cdot \mathbf{w} . \tag{7.98}
+\end{align*}
+
+
+Damit haben wir den Satz bewiesen.\\
+Bemerkungen:\\
+i) Durch die metrische Skalar-Produkt-Formel kann das Skalar-Produkt in einem beliebigen Vektorraum mit fix gewählter Basis aus den Komponenten der Vektoren als MatrixProdukt mit drei Faktoren berechnet werden.\\
+ii) In einem Vektorraum kann ein Skalar-Produkt definiert werden durch Angabe einer Basis und deren Metrik.\\
+iii) In $\mathbb{R}^{n}$ mit Gram-Riemann-Skalar-Produkt folgt
+
+
+\begin{equation*}
+\underline{\underline{\langle\mathbf{v}, \mathbf{w}\rangle}}=\mathbf{v}^{T} \cdot g \cdot \mathbf{w}=\mathbf{v}^{T} \cdot \mathbb{1} \cdot \mathbf{w}=\underline{\underline{\mathbf{v}^{T}} \cdot \mathbf{w}} \tag{7.99}
+\end{equation*}
+
+
+
+\end{document}

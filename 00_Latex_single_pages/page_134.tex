@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+ii) Das Konzept der linearen Hülle lässt sich auf eine beliebige Teilmenge $A \subseteq V$ eines Vektorraums ausweiten. In jedem Fall gilt
+
+
+\begin{equation*}
+\operatorname{span}(A) \equiv \text { Alle mögliche Linearkombinationen von Vektoren in } A . \tag{7.13}
+\end{equation*}
+
+
+Dabei ist zu beachten, dass auch dann wenn $A$ unendlich viele Vektoren enthält in jeder Linearkombination nur endlich viele davon auftreten dürfen.
+
+Definition 7.4 linear unabhängig, erzeugend und Basis\\
+Seien $(V, \mathbb{K},+, \cdot)$ ein Vektorraum, $n \in \mathbb{N}^{+}$.\\
+(a) Die Vektoren in $\left\{\mathbf{v}_{1}, \ldots, \mathbf{v}_{n}\right\} \subseteq V$ heissen linear unabhängig, falls
+
+
+\begin{equation*}
+0=\sum_{k=1}^{n} x_{k} \cdot \mathbf{v}_{k} \Leftrightarrow 0=x_{1}=\ldots=x_{n} . \tag{7.14}
+\end{equation*}
+
+
+(b) Die Vektoren in $\left\{\mathbf{v}_{1}, \ldots, \mathbf{v}_{n}\right\} \subseteq V$ heissen erzeugend, falls
+
+
+\begin{equation*}
+\operatorname{span}\left(\left\{\mathbf{v}_{1}, \ldots, \mathbf{v}_{n}\right\}\right)=V \tag{7.15}
+\end{equation*}
+
+
+(c) Die Vektoren in $\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subseteq V$ bilden eine Basis von $V$, falls sie linear unabhängig und erzeugend sind.
+
+Bemerkungen:\\
+i) Die Vektoren in $\left\{\mathbf{v}_{1}, \ldots, \mathbf{v}_{n}\right\} \subseteq V$ heissen linear abhängig, genau dann wenn sie nicht linear unabhängig sind.\\
+ii) In einer Menge von linear unabhängigen Vektoren lässt sich keiner dieser Vektoren als Linearkombination der andern darstellen. Jeder Vektor trägt so etwas wie eine "neue Richtung" bei, welche durch eine Linearkombination der andern nicht "beschritten" werden kann.\\
+iii) Ist eine Menge von Vektoren erzeugend, dann lässt sich jeder Vektor im Vektorraum als Linearkombination von Vektoren aus dieser Menge darstellen.
+
+Bei einer Basis kommen die Eigenschaften linear unabhängig und erzeugend zusammen. Dies führt auf folgendes Ergebnis, das für die Praxis äusserst wertvoll ist.
+
+Satz 7.2 Eindeutigkeit der Basis-Darstellung\\
+Sei $(V, \mathbb{K},+, \cdot)$ ein Vektorraum, $n \in \mathbb{N}^{+}, B=\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\} \subseteq V$ eine Basis und $\mathbf{v} \in V$. Dann gibt es eindeutige Koeffizienten $v^{1}, \ldots, v^{n} \in \mathbb{K}$, so dass
+
+
+\begin{equation*}
+\mathbf{v}=\sum_{k=1}^{n} v^{k} \cdot \mathbf{e}_{k} \tag{7.16}
+\end{equation*}
+
+
+Beweis: Weil die Vektoren in $B$ eine Basis des Vektorraums bilden, sind sie nach Definition 7.4 erzeugend. Somit gibt es Koeffizienten $v^{1}, \ldots, v^{n} \in \mathbb{K}$, so dass
+
+
+\begin{equation*}
+\mathbf{v}=\sum_{k=1}^{n} v^{k} \cdot \mathbf{e}_{k} \tag{7.17}
+\end{equation*}
+
+
+
+\end{document}

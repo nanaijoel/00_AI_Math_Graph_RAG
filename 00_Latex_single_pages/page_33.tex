@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{2.4.1.2 Koordinatenbasis-Vektorfelder}
+Wir betrachten folgende Definition.
+
+\section*{Definition 2.12 Koordinatenbasis-Vektorfelder}
+Seien $U \subseteq \mathbb{R}^{2}$ und $\mathbf{P}: U \rightarrow \mathbb{R}^{3}$ eine parametrisierte Fläche mit Koordinaten $u$ und $v$. Die Koordinatenbasis-Vektorfelder sind die Vektorfelder
+
+\[
+\begin{array}{|lrl|}
+\mathbf{e}_{u}: U & \rightarrow \mathbb{R}^{3}  \tag{2.101}\\
+(u ; v) & \mapsto \mathbf{e}_{u}(u ; v):=\mathbf{P}_{, u}(u ; v)
+\end{array} \quad \text { und } \quad \begin{aligned}
+& \mathbf{e}_{v}: U \rightarrow \mathbb{R}^{3} \\
+&(u ; v) \mapsto \mathbf{e}_{v}(u ; v):=\mathbf{P}_{, v}(u ; v), \\
+& \hline
+\end{aligned}
+\]
+
+wobei mit $\mathbf{P}_{, u}$ und $\mathbf{P}_{, v}$ die Ableitungen von $\mathbf{P}$ nach den Koordinaten $u$ bzw. $v$ gemeint sind.
+
+\section*{Bemerkungen:}
+i) Die Koordinatenbasis-Vektorfelder sind Funktionen der Koordinaten $u$ und $v$ und in diesem Sinne wirklich Vektorfelder.\\
+ii) Die Koordinatenbasis-Vektorfelder werden bezeichnet durch $\left\{\mathbf{e}_{u}, \mathbf{e}_{v}\right\}$ oder $\left\{\mathbf{e}_{1}, \mathbf{e}_{2}\right\}$.\\
+iii) An jedem Punkt von $M$ zeigen die Koordinatenbasis-Vektorfelder je in eine tangentiale Richtung. Sie spannen daher die Tangentialebene an $M$ auf.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_e77e3b9ac183d430c62ag-1}
+
+\subsection*{2.4.1.3 Normalen-Vektor}
+Wir betrachten folgende Definition.\\
+Definition 2.13 Normalen-Vektor\\
+Der Normalen-Vektor einer parametrisierten Fläche ist das Grassmann-Vektor-Produkt der Koordinatenbasis-Vektorfelder, d.h.
+
+
+\begin{equation*}
+\mathbf{n}:=\mathbf{e}_{u} \times \mathbf{e}_{v} . \tag{2.102}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Der Normalen-Vektor steht senkrecht auf der Fläche M.\\
+ii) Die Länge des Normalen-Vektors hängt ab von der Parametrisierung.
+
+
+\end{document}

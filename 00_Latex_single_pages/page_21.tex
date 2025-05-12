@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Anwendungen:
+
+\begin{itemize}
+  \item Mechanik: Arbeitsintegral gemäss
+\end{itemize}
+
+
+\begin{equation*}
+\Delta W=\int_{s_{0}}^{s_{\mathrm{E}}}\langle\mathbf{F}(s), \hat{\mathbf{e}}\rangle \mathrm{d} s . \tag{2.60}
+\end{equation*}
+
+
+\begin{itemize}
+  \item Elektrodynamik: Elektrische Spannung gemäss
+\end{itemize}
+
+
+\begin{equation*}
+U=\int_{s_{0}}^{s_{\mathrm{E}}}\langle\mathbf{E}, \hat{\mathbf{e}}\rangle \mathrm{d} s . \tag{2.61}
+\end{equation*}
+
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.1 Linienintegral bei konstantem Anteil entlang der Bahn\\
+Seien $n \in \mathbb{N}^{+}, \tau_{0}, \tau_{\mathrm{E}} \in \mathbb{R}$ mit $\tau_{0}<\tau_{\mathrm{E}}, \mathbf{s}:\left[\tau_{0}, \tau_{\mathrm{E}}\right] \rightarrow \mathbb{R}^{n}$ eine parametrisierte Kurve mit Bahnvektor $\hat{\mathbf{e}}(\tau)$ und Bogenlänge $\Delta s$ sowie $\mathbf{w}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ ein Vektorfeld. Gilt entlang der Bahn der Kurve $\langle\mathbf{w}, \widehat{\mathbf{e}}\rangle=: C \equiv$ konst., dann beträgt das Linienintegral von $\mathbf{w}$ entlang der Kurve
+
+
+\begin{equation*}
+I=C \cdot \Delta s . \tag{2.62}
+\end{equation*}
+
+
+Beweis: Für das Linienintegral von w entlang der Kurve erhalten wir
+
+
+\begin{align*}
+\underline{\underline{I}} & =\int_{\tau_{0}}^{\tau_{\mathrm{E}}}\langle\mathbf{w}, \mathbf{v}\rangle \mathrm{d} \tau=\int_{s_{0}}^{s_{\mathrm{E}}}\langle\mathbf{w}, \hat{\mathbf{e}}\rangle \mathrm{d} s=\int_{s_{0}}^{s_{\mathrm{E}}} C \mathrm{~d} s=C \int_{s_{0}}^{s_{\mathrm{E}}} 1 \mathrm{~d} s=\left.C \cdot[s]\right|_{s_{0}} ^{s_{\mathrm{E}}}=C \cdot\left(s_{\mathrm{E}}-s_{0}\right) \\
+& =\underline{\underline{C \cdot \Delta s} .} \tag{2.63}
+\end{align*}
+
+
+Damit haben wir den Satz bewiesen.
+
+
+\end{document}

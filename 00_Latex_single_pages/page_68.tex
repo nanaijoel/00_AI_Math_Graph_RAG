@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Bemerkungen:\\
+i) Uneigentliche Integrale sind als Grenzwerte definiert und existieren nur, wenn die betreffenden Grenzwerte konvergieren.\\
+ii) Bei der Berechnung eines uneigentlichen Integrals ist die Reihenfolge der Rechenschritte sehr wichtig. Zuerst muss eine Stammfunktion $F$ von $f$ gefunden und an den Grenzen $x_{0}$ und $s$ bzw. $-s$ und $x_{\mathrm{E}}$ ausgewertet werden. Erst dann wird der Grenzwert $s \rightarrow \infty$ betrachtet. Dieses Vorgehen führt zu Rechnungen der Form
+
+
+\begin{equation*}
+I=\int_{x_{0}}^{\infty} f(x) \mathrm{d} x=\lim _{s \rightarrow \infty} \int_{x_{0}}^{s} f(x) \mathrm{d} x=\left.\lim _{s \rightarrow \infty}[F(x)]\right|_{x_{0}} ^{s}=\lim _{s \rightarrow \infty}\left(F(s)-F\left(x_{0}\right)\right)=\ldots \tag{3.33}
+\end{equation*}
+
+
+iii) Das uneigentliche Integral kann nur existieren, wenn sich der Integrand der $x$-Achse asymptotisch annähert, d.h. es muss gelten
+
+
+\begin{equation*}
+\lim _{x \rightarrow \infty} f(x)=0 \quad \text { bzw. } \quad \lim _{x \rightarrow-\infty} f(x)=0 . \tag{3.34}
+\end{equation*}
+
+
+iv) Allein die Tatsache, dass sich der Integrand der $x$-Achse asymptotisch annähert reicht für die Existenz des uneigentlichen Integrals jedoch nicht aus! Es kommt vielmehr darauf an, wie "schnell" diese asymptotische Annäherung stattfindet.\\
+v) Beispiel-Codes zur Berechnung von uneigentlichen Integralen mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Mathematica/WolframAlpha & Integrate[1/x\^{}2,\{x,2, Infinity $\}]$ \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import sympy as $\mathrm{sp} ;$ \\
+sp.integrate $(1 / \mathrm{x} * * 2,(\mathrm{x}, 2, \mathrm{sp} .00)) ;$ \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+Wir betrachten den folgenden Satz.\\
+Satz 3.4 Uneigentliches Integral von reziproken Potenzen\\
+Seien $p, x_{0} \in \mathbb{R}$ mit $x_{0}>0$, dann gilt
+
+\[
+\int_{x_{0}}^{\infty} \frac{1}{x^{p}} \mathrm{~d} x=\left\{\begin{array}{r|l|}
+\frac{1}{p-1} \cdot \frac{1}{x_{0}^{p-1}} & p>1  \tag{3.35}\\
+\text { divergent } & p \leq 1 .
+\end{array}\right.
+\]
+
+Beweis: Übung.
+
+
+\end{document}

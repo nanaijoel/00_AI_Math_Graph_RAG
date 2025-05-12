@@ -1,0 +1,78 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Beweis: Für alle $x \in \mathbb{R}$ betrachten wir den Vektor
+
+
+\begin{equation*}
+\mathbf{u}(x):=x \cdot \mathbf{v}+\mathbf{w} \tag{7.78}
+\end{equation*}
+
+
+Wegen der positiven Definitheit des Skalar-Produkts gilt
+
+
+\begin{align*}
+& 0 \leq\langle\mathbf{u}(x), \mathbf{u}(x)\rangle=\langle x \cdot \mathbf{v}+\mathbf{w}, x \cdot \mathbf{v}+\mathbf{w}\rangle  \tag{7.79}\\
+& 0 \leq\langle x \cdot \mathbf{v}, x \cdot \mathbf{v}\rangle+2 \cdot\langle x \cdot \mathbf{v}, \mathbf{w}\rangle+\langle\mathbf{w}, \mathbf{w}\rangle  \tag{7.80}\\
+& 0 \leq x^{2} \cdot\langle\mathbf{v}, \mathbf{v}\rangle+2 \cdot x \cdot\langle\mathbf{v}, \mathbf{w}\rangle+\langle\mathbf{w}, \mathbf{w}\rangle  \tag{7.81}\\
+& 0 \leq\langle\mathbf{v}, \mathbf{v}\rangle \cdot x^{2}+2 \cdot\langle\mathbf{v}, \mathbf{w}\rangle \cdot x+\langle\mathbf{w}, \mathbf{w}\rangle=: f(x) . \tag{7.82}
+\end{align*}
+
+
+Offensichtlich ist $f(x)$ eine quadratische Funktion mit Grund-Form-Parameter
+
+
+\begin{equation*}
+a=\langle\mathbf{v}, \mathbf{v}\rangle, \quad b=2 \cdot\langle\mathbf{v}, \mathbf{w}\rangle \quad \text { und } \quad c=\langle\mathbf{w}, \mathbf{w}\rangle . \tag{7.83}
+\end{equation*}
+
+
+Für die Diskriminante von $f$ muss gelten
+
+\[
+\begin{array}{rlrl}
+0 & \geq D=b^{2}-4 \cdot a \cdot c & \\
+0 & \geq(2 \cdot\langle\mathbf{v}, \mathbf{w}\rangle)^{2}-4 \cdot\langle\mathbf{v}, \mathbf{v}\rangle \cdot\langle\mathbf{w}, \mathbf{w}\rangle & \\
+0 & \geq 4 \cdot\langle\mathbf{v}, \mathbf{w}\rangle^{2}-4 \cdot\langle\mathbf{v}, \mathbf{v}\rangle \cdot\langle\mathbf{w}, \mathbf{w}\rangle & \mid: 4 \\
+0 & \geq\langle\mathbf{v}, \mathbf{w}\rangle^{2}-\langle\mathbf{v}, \mathbf{v}\rangle \cdot\langle\mathbf{w}, \mathbf{w}\rangle & & \mid+\langle\mathbf{v}, \mathbf{v}\rangle \cdot\langle\mathbf{w}, \mathbf{w}\rangle \\
+\langle\mathbf{v}, \mathbf{v}\rangle \cdot\langle\mathbf{w}, \mathbf{w}\rangle & \geq\langle\mathbf{v}, \mathbf{w}\rangle^{2} & & \mid \sqrt{\cdots} . \tag{7.88}
+\end{array}
+\]
+
+Daraus folgt
+
+
+\begin{equation*}
+\underline{\underline{|\langle\mathbf{v}, \mathbf{w}\rangle|}} \leq \sqrt{\langle\mathbf{v}, \mathbf{v}\rangle \cdot\langle\mathbf{w}, \mathbf{w}\rangle}=\sqrt{\langle\mathbf{v}, \mathbf{v}\rangle} \cdot \sqrt{\langle\mathbf{w}, \mathbf{w}\rangle}=\underline{\underline{|\mathbf{v}| \cdot|\mathbf{w}|} .} \tag{7.89}
+\end{equation*}
+
+
+Damit haben wir den Satz bewiesen.\\
+Bemerkungen:\\
+i) Die Cauchy-Schwarz-Ungleichung gilt nur für positiv definite Skalar-Produkte.\\
+ii) Die Cauchy-Schwarz-Ungleichung gilt auch für positiv definite Skalar-Produkte in komplexen Vektorräumen, d.h. für $\mathbb{K}=\mathbb{C}$.\\
+iii) Im deutschsprachigen Raum ausserhalb Bayerns wird die CAUCHY-Schwarz- Ungleichung üblicherweise abgekürzt durch CSU.
+
+Wir betrachten die folgende Definition.\\
+Definition 7.14 Winkel zwischen Vektoren\\
+Seien $(V, \mathbb{R},+, \cdot)$ ein reeller Vektorraum mit positiv definitem Skalar-Produkt $\langle.,$.$\rangle und \mathbf{v}, \mathbf{w} \in$ $V$. Der Winkel zwischen $\mathbf{v}$ und $\mathbf{w}$ ist
+
+\[
+\measuredangle(\mathbf{v} ; \mathbf{w}):=\left\{\begin{array}{c|c}
+\arccos \left(\frac{\langle\mathbf{v}, \mathbf{w}\rangle}{|\mathbf{v}| \cdot|\mathbf{w}|}\right) & 0 \notin\{\mathbf{v}, \mathbf{w}\}  \tag{7.90}\\
+\frac{\pi}{2} & 0 \in\{\mathbf{v}, \mathbf{w}\} .
+\end{array}\right.
+\]
+
+
+\end{document}

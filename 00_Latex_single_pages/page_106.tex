@@ -1,0 +1,32 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\def\AA{\mathring{\mathrm{A}}}
+
+\begin{document}
+\begin{itemize}
+  \item Spiegelung an der $y$-Achse: $S_{y}:=\left[\begin{array}{rr}-1 & 0 \\ 0 & 1\end{array}\right]$
+  \item Spiegelung an der Geraden $y=x: S_{x y}:=\left[\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right]$
+  \item Drehung um den Ursprung um $\pi / 2: R(\pi / 2)=\circ:=\left[\begin{array}{rr}0 & -1 \\ 1 & 0\end{array}\right]$
+  \item Drehung um den Ursprung um $-\pi / 2: R(-\pi / 2)=-\AA:=\left[\begin{array}{rr}0 & 1 \\ -1 & 0\end{array}\right]$
+  \item Drehung um den Ursprung um $\varphi: R(\varphi)=\left[\begin{array}{rr}\cos (\varphi) & -\sin (\varphi) \\ \sin (\varphi) & \cos (\varphi)\end{array}\right]$
+\end{itemize}
+
+Die Matrix i̊, welche die Drehung um den Ursprung um $\pi / 2$ beschreibt, heisst symplektische Matrix. Sie hat analoge algebraische Eigenschaften wie die imaginäre Einheit in den komplexen Zahlen. Insbesondere gilt
+
+
+\begin{equation*}
+\AA^{2}=R^{2}(\pi / 2)=R(\pi / 2) \cdot R(\pi / 2)=R(\pi)=P=-\mathbb{1} . \tag{6.51}
+\end{equation*}
+
+
+
+\end{document}

@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.2.3 Spalten-Vektor-Konstruktionsverfahren}
+Wir betrachten eine lineare Abbildung $a: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ deren geometrische Wirkung auf Vektoren in $\mathbb{R}^{m}$ wir kennen, z.B. eine Streckung, Projektion, Spiegelung oder Drehung. Wie lässt sich nun die zugehörige Abbildungsmatrix $A$ berechnen? Um die überraschend einfache Antwort auf diese Frage zu finden, betrachten wir zunächst eine allgemeine $2 \times 2$-Matrix sowie die StandardEinheitsvektoren in $\mathbb{R}^{2}$, d.h.\\
+$A=\left[\begin{array}{ll}a & b \\ c & d\end{array}\right] \quad$ bzw. $\quad \hat{\mathbf{e}}_{1}=\left[\begin{array}{l}1 \\ 0\end{array}\right], \quad \hat{\mathbf{e}}_{2}=\left[\begin{array}{l}0 \\ 1\end{array}\right]$.\\
+Es gilt
+
+\[
+a\left(\hat{\mathbf{e}}_{1}\right)=A \cdot \hat{\mathbf{e}}_{1}=\left[\begin{array}{ll}a & b  \tag{6.43}\\ c & d\end{array}\right] \cdot\left[\begin{array}{l}1 \\ 0\end{array}\right]=\left[\begin{array}{l}a \cdot 1+b \cdot 0 \\ c \cdot 1+d \cdot 0\end{array}\right]=\left[\begin{array}{l}a \\ c\end{array}\right]
+\]
+
+$a\left(\hat{\mathbf{e}}_{2}\right)=A \cdot \hat{\mathbf{e}}_{2}=\left[\begin{array}{ll}a & b \\ c & d\end{array}\right] \cdot\left[\begin{array}{l}0 \\ 1\end{array}\right]=\left[\begin{array}{l}a \cdot 0+b \cdot 1 \\ c \cdot 0+d \cdot 1\end{array}\right]=\left[\begin{array}{l}b \\ d\end{array}\right]$.\\
+Die Bilder der Standard-Einheitsvektoren unter der linearen Abbildung a sind demnach gerade die Spalten der Abbildungsmatrix A. Dies ist eine allgemeingültige Tatsache, die für beliebige lineare Abbildungen gilt.
+
+Satz 6.5 Spalten-Vektor-Satz\\
+Seien $m, n \in \mathbb{N}^{+}, a: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ eine lineare Abbildung mit Abbildungsmatrix $A \in \mathbb{M}(n, m, \mathbb{R})$ und
+
+\[
+\hat{\mathbf{e}}_{1}=\left[\begin{array}{c}
+1  \tag{6.45}\\
+0 \\
+0 \\
+\vdots \\
+0
+\end{array}\right], \hat{\mathbf{e}}_{2}=\left[\begin{array}{c}
+0 \\
+1 \\
+0 \\
+\vdots \\
+0
+\end{array}\right], \ldots, \hat{\mathbf{e}}_{m}=\left[\begin{array}{c}
+0 \\
+0 \\
+\vdots \\
+0 \\
+1
+\end{array}\right] .
+\]
+
+Dann gilt
+
+\[
+A=\left[\begin{array}{llll}
+a\left(\hat{\mathbf{e}}_{1}\right) & a\left(\hat{\mathbf{e}}_{2}\right) & \ldots & a\left(\hat{\mathbf{e}}_{m}\right) \tag{6.46}
+\end{array}\right] .
+\]
+
+Beweis: Die Bilder der Einheitsvektoren aus (6.45) unter der linearen Abbildung a sind
+
+\[
+a\left(\hat{\mathbf{e}}_{1}\right)=A \cdot \hat{\mathbf{e}}_{1}=\left[\begin{array}{cccc}A^{1}{ }_{1} & A^{1}{ }_{2} & \ldots & A^{1}{ }_{m}  \tag{6.47}\\ A^{2}{ }_{1} & A^{2}{ }_{2} & \ldots & A^{2}{ }_{m} \\ A^{3}{ }_{1} & A^{3}{ }_{2} & \ldots & A^{3}{ }_{m} \\ \vdots & \vdots & \vdots & \vdots \\ A^{n}{ }_{1} & A^{n}{ }_{2} & \ldots & A^{n}{ }_{m}\end{array}\right] \cdot\left[\begin{array}{c}1 \\ 0 \\ 0 \\ \vdots \\ 0\end{array}\right]=\left[\begin{array}{c}A^{1}{ }_{1} \\ A^{2}{ }_{1} \\ A^{3}{ }_{1} \\ \vdots \\ A^{n}{ }_{1}\end{array}\right]
+\]
+
+\[
+a\left(\hat{\mathbf{e}}_{2}\right)=A \cdot \hat{\mathbf{e}}_{2}=\left[\begin{array}{cccc}A^{1}{ }_{1} & A^{1}{ }_{2} & \ldots & A^{1}{ }_{m}  \tag{6.48}\\ A^{2}{ }_{1} & A^{2}{ }_{2} & \ldots & A^{2}{ }_{m} \\ A^{3}{ }_{1} & A^{3}{ }_{2} & \ldots & A^{3}{ }_{m} \\ \vdots & \vdots & \vdots & \vdots \\ A^{n}{ }_{1} & A^{n}{ }_{2} & \ldots & A^{n}{ }_{m}\end{array}\right] \cdot\left[\begin{array}{c}0 \\ 1 \\ 0 \\ \vdots \\ 0\end{array}\right]=\left[\begin{array}{c}A^{1}{ }_{2} \\ A^{2}{ }_{2} \\ A^{3}{ }_{2} \\ \vdots \\ A^{n}{ }_{2}\end{array}\right]
+\]
+
+
+\end{document}

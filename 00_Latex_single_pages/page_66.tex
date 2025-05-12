@@ -1,0 +1,36 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+v) Es ist üblich und sinnvoll, vor Anwendung der partiellen Integration die Rollen der Faktoren im Integranden mit Pfeilen zu markieren.\\
+vi) Beim Aufleiten von $h^{\prime} \mapsto h$ darf eine beliebige Stammfunktion $h$ von $h^{\prime}$ verwendet werden. Es ist jedoch zwingend nötig, dass auf der rechten Seite in beiden Termen die gleiche Stammfunktion $h$ eingesetzt wird!\\
+vii) Allgemein gilt
+
+\[
+\int f(x) \mathrm{d} x=\int \begin{gather*}
+\downarrow  \tag{3.28}\\
+f(x) \cdot \stackrel{\uparrow}{1} \mathrm{~d} x=f(x) \cdot x-\int f^{\prime}(x) \cdot x \mathrm{~d} x .
+\end{gather*}
+\]
+
+Mit Hilfe dieses 1er-Tricks lassen sich u.a. die Stammfunktionen finden von\\
+$f \in\left\{\ln , \log _{a}\right.$, arcsin, , arccos, arctan, arccot, arsinh, arcosh, artanh, arcoth $\}$.\\
+Anwendungen:
+
+\begin{itemize}
+  \item Berechnung von Integralen
+  \item Taylor-Entwicklungen
+  \item Differentialgleichungen
+  \item Variationsrechnung
+  \item Fourier- und Laplace-Transformation
+  \item FEM-Simulationen
+\end{itemize}
+
+\end{document}

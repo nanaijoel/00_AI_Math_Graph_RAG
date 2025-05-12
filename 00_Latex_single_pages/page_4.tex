@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+S3 Für $N$ gross genug erhält man in guter Näherung
+
+
+\begin{equation*}
+A \approx \sum_{k=1}^{N} \delta A_{k}=\sum_{k=1}^{N} f\left(x_{k}\right) \cdot \delta x . \tag{1.7}
+\end{equation*}
+
+
+Unter Verwendung des modernen Cauchy-Grenzwertbegriffs erhält man\\
+$A=\int_{x_{0}}^{x_{\mathrm{E}}} f(x) \mathrm{d} x=\lim _{N \rightarrow \infty} \sum_{k=1}^{N} f\left(x_{k}\right) \cdot \delta x \approx \sum_{k=1}^{N} f\left(x_{k}\right) \cdot \delta x$.\\
+Bemerkungen:\\
+i) Aus (1.8) lässt sich die Herkunft des "Integral-Hakens" erkennen: Es ist ein grosses "S" für Summe. Analog wurde aus dem Faktor $\delta x$ das Differentialsymbol dx.\\
+ii) Früher berechnete man Integrale im Sinne von (1.8) näherungsweise durch Summen .\\
+iii) Heute berechnet man Summen im Sinne von (1.8) durch Integrale mit Hilfe der Newton-Leibniz-Formel.
+
+\subsection*{1.2.3 Konzeption am Urbeispiel}
+Wir betrachten den Graphen einer stetigen Funktion $f: \mathbb{R} \rightarrow \mathbb{R}$ entlang eines reellen Intervalls $\left[x_{0}, x_{\mathrm{E}}\right]$. Die Situation ist im folgenden $x-y$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_eb908acbc8be7f6e4794g-1}
+
+Um die Fläche zwischen der $x$-Achse oberhalb des Intervalles $\left[x_{0}, x_{\mathrm{E}}\right]$ und dem Graphen von $f$ zu berechnen, verwenden wir einen Archimedes-Cauchy-Riemann-Approximationsprozess. Dabei gehen wir nach folgenden Schritten vor.
+
+S1 Lokal: Wir betrachten einen kleinen Streifen an der Position $x$ der Breite $\delta x$. Die Fläche dieses Streifens beträgt\\
+$\underline{\delta A} \approx \underline{f(x) \cdot \delta x}$.\\
+S2 Global: Durch Integration über $x$ können wir die gesamte Fläche $A$ berechnen. Wir erhalten $\underline{\underline{A}}=\int_{x_{0}}^{x_{\mathrm{E}}} f(x) \mathrm{d} x=\left.[F(x)]\right|_{x_{0}} ^{x_{\mathrm{E}}}=\underline{\underline{F\left(x_{\mathrm{E}}\right)-F\left(x_{0}\right) .}}$
+
+
+\end{document}

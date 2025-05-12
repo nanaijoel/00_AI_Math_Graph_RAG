@@ -1,0 +1,29 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+Bemerkungen:\\
+i) Linear modifizierte Elementar-Integrale machen ca. 90\% aller Integrale in Alltag, Naturwissenschaft, Technik und Wirtschaft aus.\\
+ii) Die Methode der linearen Modifikation ist ein einfacher Spezialfall der allgemeineren Methode der Substitution.
+
+Liste mit den wichtigsten linear modifizierten Standard-Integralen:
+
+\begin{itemize}
+  \item $\int(m \cdot x+q)^{p} \mathrm{~d} x=\frac{1}{m \cdot(p+1)} \cdot(m \cdot x+q)^{p+1}+c$
+  \item $\int a^{m \cdot x+q} \mathrm{~d} x=\frac{1}{m \cdot \ln (a)} \cdot a^{m \cdot x+q}+c$
+  \item $\int y_{0} \cdot a^{\frac{x-x_{0}}{\Sigma}} \mathrm{~d} x=\frac{\Sigma}{\ln (a)} \cdot y_{0} \cdot a^{\frac{x-x_{0}}{\Sigma}}+c$
+  \item $\int A \cdot \sin (\omega \cdot t+\varphi) \mathrm{d} t=-\frac{A}{\omega} \cdot \cos (\omega \cdot t+\varphi)+c$
+\end{itemize}
+
+\subsection*{1.1.2 Integration mit Software}
+Siehe Demonstrationen mit Python/Numpy \& Python/Sympy.
+
+
+\end{document}

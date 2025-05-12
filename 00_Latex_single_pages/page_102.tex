@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.2 Lineare Abbildungen}
+\subsection*{6.2.1 Definition}
+Mit Hilfe von Matrizen können geometrische Abbildungen beschrieben werden. Wir machen dazu zwei Definitionen.
+
+Definition 6.13 Lineare Abbildung - Version 1\\
+Seien $m, n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, m, \mathbb{R})$. Eine Abbildung der Form
+
+
+\begin{align*}
+a: \mathbb{R}^{m} & \rightarrow \mathbb{R}^{n} \\
+\mathbf{x} & \mapsto a(\mathbf{x}):=A \cdot \mathbf{x} \tag{6.32}
+\end{align*}
+
+
+heisst lineare Abbildung.
+
+Definition 6.14 Lineare Abbildung - Version 2\\
+Seien $m, n \in \mathbb{N}^{+}$. Eine lineare Abbildung ist eine Abbildung des Typs $a: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ mit der Eigenschaft, dass für alle $\mathbf{v}, \mathbf{w} \in \mathbb{R}^{m}$ und $x, y \in \mathbb{R}$ gilt
+
+
+\begin{equation*}
+a(x \cdot \mathbf{v}+y \cdot \mathbf{w})=x \cdot a(\mathbf{v})+y \cdot a(\mathbf{w}) \tag{6.33}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die beiden Definitionen sind äquivalent. Es ist leicht einzusehen, dass die linearen Abbildungen gemäss Definition 6.13 die Haupteigenschaft (6.33) aus Definition 6.14 erfüllen. Es gilt
+
+
+\begin{align*}
+\underline{\underline{a(x \cdot \mathbf{v}+y \cdot \mathbf{w})}} & =A \cdot(x \cdot \mathbf{v}+y \cdot \mathbf{w})=A \cdot x \cdot \mathbf{v}+A \cdot y \cdot \mathbf{w}=x \cdot A \cdot \mathbf{v}+y \cdot A \cdot \mathbf{w} \\
+& =\underline{\underline{x \cdot a(\mathbf{v})+y \cdot a(\mathbf{w})}} \tag{6.34}
+\end{align*}
+
+
+ii) Die Matrix A, welche gemäss Definition 6.13 eine lineare Abbildung a beschreibt, wird Abbildungsmatrix genannt.\\
+iii) Ist die Abbildungsmatrix A quadratisch, d.h. $m=n$, dann ist $a$ eine Selbstabbildung des Typs $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$.\\
+iv) Bekannte geometrische Abbildungen wie Streckungen, Projektionen, Spiegelungen und Rotationen sind lineare Abbildungen, welche jeweils durch eine Abbildungsmatrix ausgedrückt werden können.\\
+v) Für alle linearen Abbildungen gilt offensichtlich
+
+
+\begin{equation*}
+\underline{\underline{a(0)}}=A \cdot 0=\underline{\underline{0 .}} \tag{6.35}
+\end{equation*}
+
+
+vi) Für $n=m=1$ gibt es eine historisch bedingte Begriffskollision zwischen einer linearen Funktion in der Analysis und einer linearen Abbildung in der linearen Algebra.
+
+
+\begin{align*}
+\text { Analysis: } & f(x)=m \cdot x+q \\
+\text { Lineare Algebra: } & a(x)=A \cdot x \tag{6.36}
+\end{align*}
+
+
+
+\end{document}

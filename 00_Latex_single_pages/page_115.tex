@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.4 Spur \& Determinante}
+\subsection*{6.4.1 Einleitung}
+Jede lineare Abbildung $a: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ wird durch eine Abbildungsmatrix $A \in \mathbb{M}(n, n, \mathbb{R})$ beschrieben. Aus diesen insgesamt $n^{2}$ reelle Zahlen lassen sich auf geschickte Weise Kennzahlen der Matrix berechnen, die bei der Untersuchung der algebraischen und geometrischen Eigenschaften der zugehörigen linearen Abbildung eine grosse Rolle spielen. Zwei besonders wichtige Kennzahlen einer Matrix sind ihre Spur und ihre Determinante.
+
+\subsection*{6.4.2 Spur}
+\subsection*{6.4.2.1 Definition}
+Für beliebige quadratische Matrizen machen wir folgende Definition.
+
+\section*{Definition 6.18 Spur}
+Seien $n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, n, \mathbb{R})$. Die Spur der Matrix $A$ ist die reelle Zahl
+
+
+\begin{equation*}
+\operatorname{tr}(A)=A_{1}^{1}+A_{2}^{2}+\ldots+A_{n}^{n} \tag{6.89}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Spur einer Matrix ist also ganz einfach die Summe ihrer Diagonalenelemente. Die Abkürzung tr kommt von der englischen Bezeichnung trace.\\
+ii) Offensichtlich gilt
+
+
+\begin{align*}
+& \operatorname{tr}(0)=0+\ldots+0=n \cdot 0=0  \tag{6.90}\\
+& \operatorname{tr}(\mathbb{1})=1+\ldots+1=n \cdot 1=n . \tag{6.91}
+\end{align*}
+
+
+iii) Die Spur einer diagonalen Matrix ist gerade die Summe ihrer Eigenwerte. Es gilt also
+
+
+\begin{equation*}
+\operatorname{tr}(D)=\lambda_{1}+\lambda_{2}+\ldots+\lambda_{n} \tag{6.92}
+\end{equation*}
+
+
+iv) Weil die Diagonalenelemente einer schiefsymmetrischen Matrix alle verschwinden, muss gelten
+
+
+\begin{equation*}
+A^{T}=-A \Rightarrow \operatorname{tr}(A)=0+\ldots+0=n \cdot 0=0 \tag{6.93}
+\end{equation*}
+
+
+v) Je nach Art der linearen Abbildung (Streckung, Spiegelung, Rotation, Projektion, etc..) die eine Abbildungsmatrix beschreibt, kann ihre Spur ganz unterschiedliche geometrische Bedeutungen haben.\\
+vi) Für eine Rotation in $\mathbb{R}^{3}$ um den Winkel $\varphi \in \mathbb{R}$ rechtshändig um die Drehachse in Richtung $\hat{\boldsymbol{\varphi}} \in \mathbb{R}^{3}$ findet man aus der Rodrigues-Formel die Spur
+
+
+\begin{equation*}
+\operatorname{tr}(R(\boldsymbol{\varphi}))=1+2 \cdot \cos (\varphi) \tag{6.94}
+\end{equation*}
+
+
+Man kann also aus der Spur den Drehwinkel $\varphi$ ablesen.
+
+
+\end{document}

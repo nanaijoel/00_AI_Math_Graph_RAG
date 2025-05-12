@@ -1,0 +1,90 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.4.4 Mass-Formeln}
+Mit Hilfe der Determinante lassen sich Begriffe wie Länge, Fläche, Volumen und entsprechende Verallgemeinerungen in beliebig dimensionalen Euklid-Räumen einführen und berechnen. Dazu machen wir folgende Definition.
+
+\section*{Definition 6.22 Gram-Matrix}
+Seien $m, n \in \mathbb{N}^{+}$und $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m} \in \mathbb{R}^{n}$. Die Gram-Matrix dieser Vektoren ist
+
+\[
+G\left(\mathbf{v}_{1} ; \ldots ; \mathbf{v}_{m}\right):=\left[\begin{array}{cccc}
+\left\langle\mathbf{v}_{1}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{1}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{1}, \mathbf{v}_{m}\right\rangle  \tag{6.134}\\
+\left\langle\mathbf{v}_{2}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{2}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{2}, \mathbf{v}_{m}\right\rangle \\
+\vdots & \vdots & \vdots & \vdots \\
+\left\langle\mathbf{v}_{m}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{m}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{m}, \mathbf{v}_{m}\right\rangle
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Die Komponenten der Gram-Matrix sind gerade alle möglichen Skalar-Produkte, die sich aus den Vektoren $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}$ bilden lassen. Davon gibt es insgesamt $m^{2}$ und konsequenterweise gilt $G \in \mathbb{M}(m, m, \mathbb{R})$.\\
+ii) Wegen der Symmetrie des Skalar-Produkts muss gelten
+
+
+\begin{equation*}
+G^{T}=G, \tag{6.135}
+\end{equation*}
+
+
+d.h. $G$ ist symmetrisch.\\
+iii) Wegen der positiven Definitheit des Skalar-Produkts muss gelten
+
+
+\begin{equation*}
+\operatorname{det}(G) \geq 0 . \tag{6.136}
+\end{equation*}
+
+
+iv) Für die Standard-Einheitsvektoren gilt
+
+
+\begin{equation*}
+G\left(\hat{\mathbf{e}}_{1} ; \ldots ; \hat{\mathbf{e}}_{n}\right)=\mathbb{1} . \tag{6.137}
+\end{equation*}
+
+
+v) Es sei $A \in \mathbb{M}(n, m, \mathbb{R})$ die Matrix, deren Spalten gerade die Vektoren $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}$ sind, d.h.
+
+\[
+A=\left[\begin{array}{llll}
+\mathbf{v}_{1} & \mathbf{v}_{2} & \ldots & \mathbf{v}_{m} \tag{6.138}
+\end{array}\right] .
+\]
+
+Dann gilt
+
+
+\begin{align*}
+\underline{\underline{A^{T} \cdot A}} & =\left[\begin{array}{c}
+\mathbf{v}_{1}^{T} \\
+\mathbf{v}_{2}^{T} \\
+\vdots \\
+\mathbf{v}_{m}^{T}
+\end{array}\right] \cdot\left[\begin{array}{llll}
+\mathbf{v}_{1} & \mathbf{v}_{2} & \ldots & \mathbf{v}_{m}
+\end{array}\right]=\left[\begin{array}{ccccc}
+\mathbf{v}_{1}^{T} \cdot \mathbf{v}_{1} & \mathbf{v}_{1}^{T} \cdot \mathbf{v}_{2} & \ldots & \mathbf{v}_{1}^{T} \cdot \mathbf{v}_{m} \\
+\mathbf{v}_{2}^{T} \cdot \mathbf{v}_{1} & \mathbf{v}_{2}^{T} \cdot \mathbf{v}_{2} & \ldots & \mathbf{v}_{2}^{T} \cdot \mathbf{v}_{m} \\
+\vdots & \vdots & \vdots & \vdots \\
+\mathbf{v}_{m}^{T} \cdot \mathbf{v}_{1} & \mathbf{v}_{m}^{T} \cdot \mathbf{v}_{2} & \ldots & \mathbf{v}_{m}^{T} \cdot \mathbf{v}_{m}
+\end{array}\right] \\
+& =\left[\begin{array}{cccc}
+\left\langle\mathbf{v}_{1}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{1}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{1}, \mathbf{v}_{m}\right\rangle \\
+\left\langle\mathbf{v}_{2}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{2}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{2}, \mathbf{v}_{m}\right\rangle \\
+\vdots & \vdots & \vdots & \vdots \\
+\left\langle\mathbf{v}_{m}, \mathbf{v}_{1}\right\rangle & \left\langle\mathbf{v}_{m}, \mathbf{v}_{2}\right\rangle & \ldots & \left\langle\mathbf{v}_{m}, \mathbf{v}_{m}\right\rangle
+\end{array}\right]=\underline{\underline{G}} . \tag{6.139}
+\end{align*}
+
+
+
+\end{document}

@@ -1,0 +1,112 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+ii) Ist $f$ ein Skalarfeld, dann ist $\boldsymbol{\nabla} f$ ein Vektorfeld.
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten
+\end{itemize}
+
+
+\begin{equation*}
+f(x ; y):=x^{2} \cdot y^{2} . \tag{2.138}
+\end{equation*}
+
+
+Der Gradient von $f$ ist
+
+\[
+\underline{\underline{\nabla f f}}=\left[\begin{array}{l}
+f_{, 1}  \tag{2.139}\\
+f_{, 2}
+\end{array}\right]=\left[\begin{array}{l}
+2 x \cdot y^{2} \\
+x^{2} \cdot 2 y
+\end{array}\right]=\left[\begin{array}{l}
+2 x y^{2} \\
+2 x^{2} y
+\end{array}\right] .
+\]
+
+\begin{itemize}
+  \item Wir betrachten
+\end{itemize}
+
+
+\begin{equation*}
+f(x ; y ; z):=x^{2} \cdot y+z . \tag{2.140}
+\end{equation*}
+
+
+Der Gradient von $f$ ist
+
+\[
+\underline{\underline{\boldsymbol{\nabla} f}}=\left[\begin{array}{l}
+f_{, 1}  \tag{2.141}\\
+f_{, 2} \\
+f_{3,3}
+\end{array}\right]=\left[\begin{array}{c}
+2 x \cdot y+0 \\
+x^{2} \cdot 1+0 \\
+0+1
+\end{array}\right]=\underline{\underline{\left[\begin{array}{c}
+2 x y \\
+x^{2} \\
+1
+\end{array}\right]} . . . . ~}
+\]
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.12 Elementare Rechenregeln für Gradienten\\
+Seien $n \in \mathbb{N}^{+}, g, h: \mathbb{R}^{n} \rightarrow \mathbb{R}$ differentierbare Funktionen und $a, b \in \mathbb{R}$, dann gelten die folgenden Rechenregeln.\\
+(a) Faktor-Regel:\\
+(c) Linearität:
+
+$$
+\boldsymbol{\nabla}(a \cdot g)=a \cdot \nabla g
+$$
+
+$$
+\boldsymbol{\nabla}(a \cdot g+b \cdot h)=a \cdot \boldsymbol{\nabla} g+b \cdot \boldsymbol{\nabla} h
+$$
+
+(b) Summen-Regel:\\
+(d) Produkt-Regel:
+
+$$
+\boldsymbol{\nabla}(g+h)=\boldsymbol{\nabla} g+\boldsymbol{\nabla} h
+$$
+
+$$
+\boldsymbol{\nabla}(g \cdot h)=(\boldsymbol{\nabla} g) \cdot h+g \cdot \boldsymbol{\nabla} h
+$$
+
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 2.13 Ketten-Regeln für Gradienten}
+Seien $n \in \mathbb{N}^{+}$, dann gelten folgende Ketten-Regeln.\\
+(a) Ketten-Regel A: Für differentierbare $g: \mathbb{R} \rightarrow \mathbb{R}$ und $h: \mathbb{R}^{n} \rightarrow \mathbb{R}$ gilt
+
+$$
+f\left(x^{1} ; \ldots ; x^{n}\right):=g\left(h\left(x^{1} ; \ldots ; x^{n}\right)\right) \Rightarrow \boldsymbol{\nabla} f=g^{\prime}\left(h\left(x^{1} ; \ldots ; x^{n}\right)\right) \cdot \boldsymbol{\nabla} h .
+$$
+
+(b) Ketten-Regel B: Für differentierbare $g: \mathbb{R}^{n} \rightarrow \mathbb{R}$ und $\mathbf{h}: \mathbb{R} \rightarrow \mathbb{R}^{n}$ gilt
+
+$$
+f(x):=g(\mathbf{h}(x)) \Rightarrow f^{\prime}(x)=\left\langle\boldsymbol{\nabla} g(\mathbf{h}(x)), \mathbf{h}^{\prime}(x)\right\rangle .
+$$
+
+
+\end{document}

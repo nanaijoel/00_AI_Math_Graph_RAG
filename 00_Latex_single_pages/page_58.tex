@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+S2 Für jede gefundene kritische Stelle $\left(x_{k} ; y_{k}\right)$ sind zu berechnen
+
+
+\begin{align*}
+z_{k} & =f\left(x_{k} ; y_{k}\right)  \tag{2.212}\\
+H_{k} & =\nabla^{2} f\left(x_{k} ; y_{k}\right) . \tag{2.213}
+\end{align*}
+
+
+S3 Ergebnistabelle:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|l|}
+\hline
+$k$ & $x_{k}$ & $y_{k}$ & $z_{k}$ & $H_{k 11}$ & $H_{k 22}$ & $H_{k 12}$ & $\operatorname{det}\left(H_{k}\right)$ & Typ: \\
+\hline\hline
+1 & $x_{1}$ & $y_{1}$ & $z_{1}$ & $\ldots$ & $\ldots$ & $\ldots$ & $\ldots$ & $\ldots$ \\
+$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ &  &  &  &  &  \\
+$n$ & $x_{n}$ & $y_{n}$ & $z_{n}$ & $\ldots$ & $\ldots$ & $\ldots$ & $\ldots$ & $\ldots$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{2.7.4 Globale Extrema}
+Wir betrachten ein Gebiet $G \subset \mathbb{R}^{2}$ und eine Funktion $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_c8fb93f1767599a79b2dg-1}
+
+Um die globalen Extrema einer Funktion in 2D zu bestimmen, kann nach den folgenden Schritten vorgegangen werden.
+
+S1 Inneres: Kritische Stellen von $f$ im Innern von $G$ bestimmen als Lösungen des Gleichungssystems
+
+
+\begin{equation*}
+\boldsymbol{\nabla} f(x ; y)=0 . \tag{2.215}
+\end{equation*}
+
+
+S2 Randstücke: Um die Kandidaten auf den Randstücken zu finden, kann nach den folgenden Schritten vorgegangen werden.
+
+S 2.1: Die Randstücke $\Gamma_{k}$ als parametrisierte Kurven beschreiben.\\
+S 2.2: Die Funkionen $u_{k}(\tau):=f(x(\tau) ; y(\tau))$ für $\tau \in\left[\tau_{0}, \tau_{\mathrm{E}}\right]$ berechnen.\\
+S 2.3: Die Lösungen der Gleichungen $0=\dot{u}_{k}(\tau)$ sind Kandidaten für globale Extrema.\\
+S3 Eckpunkte: Die Eckpunkte des Gebietes $G$ sind in jedem Fall Kandiaten für globale Extrema.
+
+
+\end{document}

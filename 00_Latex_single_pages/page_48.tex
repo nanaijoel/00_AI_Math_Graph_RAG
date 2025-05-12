@@ -1,0 +1,60 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+Anwendungen:
+
+\begin{itemize}
+  \item Strömungsdynamik: Aus der Inkompressibilität einer Flüssigkeit folgt die Quellenfreiheit des Geschwindigkeitsvektorfeldes v und somit das Verschwinden der Perforation von v durch eine beliebige Oberfäche $\partial V$.
+  \item Elektrodynamik: Die Maxwell-Gleichungen für die Divergenz des E-Feldes und B-Feldes lauten
+\end{itemize}
+
+
+\begin{equation*}
+\operatorname{div}(\mathbf{E})=\frac{1}{\varepsilon_{0}} \cdot \rho \tag{2.168}
+\end{equation*}
+
+
+$\operatorname{div}(\mathbf{B})=0$.\\
+Für die Perforation des E-Feldes und B-Feldes durch eine beliebige Oberfläche $\partial V$ folgt aus dem Gauss-Integralsatz
+
+
+\begin{align*}
+& \underline{\underline{\Phi_{\mathbf{E}}}}=\oint_{\partial V}\langle\mathbf{E}, \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{V} \operatorname{div}(\mathbf{E}) \mathrm{d} V=\int_{V} \frac{1}{\varepsilon_{0}} \cdot \rho \mathrm{~d} V=\frac{1}{\varepsilon_{0}} \int_{V} \rho \mathrm{~d} V=\underline{\underline{\frac{1}{\varepsilon_{0}}} \cdot Q_{\mathrm{eg}}}  \tag{2.170}\\
+& \underline{\underline{\Phi_{\mathbf{B}}}}=\oint_{\partial V}\langle\mathbf{B}, \hat{\mathbf{n}}\rangle \mathrm{d} A=\int_{V} \operatorname{div}(\mathbf{B}) \mathrm{d} V=\int_{V} 0 \mathrm{~d} V=\underline{\underline{0 .}} \tag{2.171}
+\end{align*}
+
+
+\begin{itemize}
+  \item Erhaltungssätze
+  \item Volumen-Berechnungen
+  \item Geometrische Analysis
+\end{itemize}
+
+\subsection*{2.6.2 Stokes-Integralsatz}
+Wir betrachten ein Gebiet $G \subset \mathbb{R}^{3}$ mit Randkurve $\partial G$, welche das Einheitsnormalen-Vektorfeld $\hat{\mathbf{n}}$ rechts umläuft im Bereich eines Vektorfeldes $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_fe97686687f5b2916ce8g-1}
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.20 Stokes-Integralsatz in 3D\\
+Seien $G \subset \mathbb{R}^{3}$ ein Gebiet mit Randkurve $\partial G$, welche das Einheitsnormalen-Vektorfeld $\hat{\mathbf{n}}$ rechts umläuft im Bereich eines Vektorfeldes $\mathbf{v}: \mathbb{R}^{3} \rightarrow \mathbb{R}^{3}$, dann gilt
+
+
+\begin{equation*}
+\oint_{\partial G}\langle\mathbf{v}, \hat{\mathbf{e}}\rangle \mathrm{d} s=\Upsilon_{\mathbf{v}}=\int_{G}\langle\operatorname{rot}(\mathbf{v}), \hat{\mathbf{n}}\rangle \mathrm{d} A \tag{2.172}
+\end{equation*}
+
+
+
+\end{document}

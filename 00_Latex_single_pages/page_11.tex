@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\subsection*{2.1.1.2 Level-Mengen}
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.2 Level-Menge}
+Seien $n \in \mathbb{N}^{+}, A \subseteq \mathbb{R}^{n}, B \subseteq \mathbb{R}$ und $f$ eine reellwertige Funktion der Form $f: A \rightarrow B$. Die Level-Menge zu einem Level $L \in \mathbb{R}$ ist das Urbild
+
+
+\begin{equation*}
+f^{-1}(\{L\})=\{p \in A \mid f(p)=L\} . \tag{2.17}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Level-Menge zum Level $L$ besteht aus allen Elementen der Definitionsmenge, an welchen die Funktion den Wert des Levels $L$ hat.\\
+ii) Die Begriffe Level-Menge und Niveau-Menge sind synonym.\\
+iii) Für $n=2$ sind die Level-Mengen meistens Kurven in der $x$ - $y$-Ebene, welche als LevelLinien bzw. Niveau-Linien bezeichnet werden.\\
+iv) Für $n=3$ sind die Level-Mengen meistens Flächen in 3D, welche als Level-Flächen bzw. Niveau-Flächen bezeichnet werden.\\
+v) Insbesondere für $n \in\{2,3\}$ ist die Struktur der Level-Mengen sehr nützlich für die Visualisierung (Plot) von $f$.
+
+Beispiele:
+
+\begin{itemize}
+  \item Die Level-Mengen des Abstandes zum Ursprung sind Sphären mit Mittelpunkt am Ursprung.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_42d0546c429a162d1d00g-1}
+  \item Die Level-Linien der Höhe über Meer sind die Höhenlinien auf einer topographischen Karte.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_42d0546c429a162d1d00g-1(1)}
+\end{itemize}
+
+\end{document}

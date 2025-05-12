@@ -1,0 +1,81 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Die Determinante einer $3 \times 3$-Matrix ist folglich
+
+
+\begin{align*}
+\operatorname{det}(A)= & A_{1}^{1} \cdot A_{2}^{2} \cdot A_{3}^{3}+A_{1}^{2} \cdot A_{2}^{3} \cdot A_{3}^{1}+A_{1}^{3} \cdot A^{1}{ }_{2} \cdot A_{3}^{2} \\
+& -A_{1}^{3} \cdot A_{2}^{2} \cdot A_{3}^{1}-A_{1}^{1} \cdot A^{3}{ }_{2} \cdot A_{3}^{2}-A_{1}^{2} \cdot A_{2}^{1} \cdot A_{3}^{3} \tag{6.112}
+\end{align*}
+
+
+iv) Offensichtlich gilt in allen Dimensionen
+
+
+\begin{equation*}
+\operatorname{det}(0)=0 \quad \text { und } \quad \operatorname{det}(\mathbb{1})=1 \tag{6.113}
+\end{equation*}
+
+
+v) Die Determinante einer diagonalen Matrix ist gerade das Produkt ihrer Eigenwerte. Es gilt also\\
+$\operatorname{det}(D)=\lambda_{1} \cdot \lambda_{2} \cdot \ldots \cdot \lambda_{n}$.\\
+vi) Die Determinante einer linken unteren oder rechten oberen Dreiecksmatrix reduziert sich auf das Produkt ihrer Diagonalenelemente. Es gilt also
+
+
+\begin{align*}
+& \operatorname{det}(L)=\operatorname{det}\left(\left[\begin{array}{ccccc}
+L_{1}^{1} & 0 & 0 & \ldots & 0 \\
+L_{1}^{2} & L^{2}{ }_{2} & 0 & \ldots & 0 \\
+\vdots & \vdots & \vdots & \ldots & \vdots \\
+L_{1}{ }_{1} & L^{n}{ }_{2} & L^{n}{ }_{3} & \ldots & L^{n}{ }_{n}
+\end{array}\right]\right)=L_{1}^{1} \cdot L_{2}^{2} \cdot \ldots \cdot L_{n}^{n}  \tag{6.115}\\
+& \operatorname{det}(R)=\operatorname{det}\left(\left[\begin{array}{ccccc}
+R_{1}^{1} & R_{2}^{1} & R_{3}^{1} & \ldots & R_{n}^{1} \\
+0 & R_{2}^{2} & R_{3}^{2} & \ldots & R_{n}^{2} \\
+\vdots & \ldots & \vdots & \vdots & \vdots \\
+0 & \ldots & 0 & 0 & R_{n}^{n}
+\end{array}\right]\right)=R_{1}^{1} \cdot R_{2}^{2} \cdot \ldots \cdot R_{n}^{n} \tag{6.116}
+\end{align*}
+
+
+vii) Beispiel-Codes zur Berechnung der Determinante mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $\mathrm{d}=\operatorname{det}(\mathrm{A})$ \\
+\hline
+Mathematica/WolframAlpha & $\mathrm{d}=$ Det [A] \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\
+d=np.linalg. $\operatorname{det}(\mathrm{A})$ \\
+\end{tabular} \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import sympy as sp; \\
+$\mathrm{d}=\mathrm{sp} . \operatorname{det}(\mathrm{A})$ \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item $\operatorname{det}\left(\left[\begin{array}{ll}1 & 2 \\ 3 & 4\end{array}\right]\right)=1 \cdot 4-3 \cdot 2=4-6=2$
+  \item $\operatorname{det}\left(\left[\begin{array}{ll}2 & 4 \\ 3 & 6\end{array}\right]\right)=2 \cdot 6-3 \cdot 4=12-12=0$
+  \item $\operatorname{det}\left(\left[\begin{array}{ll}2 & 0 \\ 0 & 3\end{array}\right]\right)=2 \cdot 3-0 \cdot 0=6-0=6$
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.5.3 Hesse-Matrix}
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.20 Hesse-Matrix}
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine zweifach differentierbare reellwertige Funktion. Die HesseMatrix von $f$ ist das Vektorfeld
+
+\[
+\boldsymbol{\nabla}^{2} f:=\left[\begin{array}{cccc}
+f_{1,1} & f_{1,2} & \ldots & f_{1, n}  \tag{2.142}\\
+f_{2,1} & f_{2,2} & \ldots & f_{2, n} \\
+\vdots & \vdots & \vdots & \vdots \\
+f_{, n, 1} & f_{, n, 2} & \ldots & f_{, n, n}
+\end{array}\right] .
+\]
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten\\
+$f(x ; y):=x^{2} \cdot y^{2}$.\\
+Der Gradient von $f$ ist
+\end{itemize}
+
+\[
+\boldsymbol{\nabla} f=\left[\begin{array}{l}
+f_{, 1}  \tag{2.144}\\
+f_{, 2}
+\end{array}\right]=\left[\begin{array}{l}
+2 x \cdot y^{2} \\
+x^{2} \cdot 2 y
+\end{array}\right]=\left[\begin{array}{l}
+2 x y^{2} \\
+2 x^{2} y
+\end{array}\right] .
+\]
+
+Die Hesse-Matrix von $f$ ist
+
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 2.14 Schwarz-Clairaut-Young-Satz}
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine zweifach differentierbare reellwertige Funktion mit HesseMatrix $H \in \mathbb{M}(n, n, \mathbb{R})$, dann gilt
+
+
+\begin{equation*}
+H^{T}=H . \tag{2.146}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Symmetrie der Hesse-Matrix gemäss Schwarz-Clairaut-Young-Satz ist äquivalent zur Tatsache, dass die partiellen Ableitungen vertauscht werden dürfen, d.h. für alle $\mu, \nu \in\{1, \ldots, n\}$ gilt
+
+
+\begin{equation*}
+f_{\nu, \mu}=f_{, \mu, \nu} . \tag{2.147}
+\end{equation*}
+
+
+ii) Weil die Hesse-Matrix symmetrisch ist, ist sie diagonalisierbar, d.h. ähnlich zu einer diagonalen Matrix.
+
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.21 Laplace-Ableitung}
+Seien $n \in \mathbb{N}^{+}$und $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine zweifach differentierbare reellwertige Funktion. Die LA-PLACE-Ableitung von $f$ ist
+
+
+\begin{equation*}
+\Delta f:=\operatorname{tr}\left(\nabla^{2} f\right)=f_{, 1,1}+f_{, 2,2}+\ldots+f_{, n, n} . \tag{2.148}
+\end{equation*}
+
+
+
+\end{document}

@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Die folgenden geometrischen Eigenschaften von orthogonalen Abbildungen bzw. Matrizen zeichnen diese aus.
+
+Satz 6.9 Invarianzen von orthogonalen Abbildungen\\
+Seien $n \in \mathbb{N}^{+}$und $A \in \mathrm{O}(n)$. Dann gilt für alle Vektoren $\mathbf{v}, \mathbf{w} \in \mathbb{R}^{n}$ folgendes.\\
+(a) Skalar-Produkt-Invarianz:
+
+
+\begin{equation*}
+\langle A \cdot \mathbf{v}, A \cdot \mathbf{w}\rangle=\langle\mathbf{v}, \mathbf{w}\rangle \tag{6.67}
+\end{equation*}
+
+
+(b) Längen-Invarianz:
+
+
+\begin{equation*}
+|A \cdot \mathbf{v}|=|\mathbf{v}| \tag{6.68}
+\end{equation*}
+
+
+(c) Winkel-Invarianz:
+
+
+\begin{equation*}
+\measuredangle(A \cdot \mathbf{v}, A \cdot \mathbf{w})=\measuredangle(\mathbf{v}, \mathbf{w}) \tag{6.69}
+\end{equation*}
+
+
+Beweis: Mit Hilfe der Rechenregel (6.64) und weil $A$ orthogonal ist, finden wir\\
+$\underline{\underline{\langle A \cdot \mathbf{v}, A \cdot \mathbf{w}\rangle}}=\left\langle A^{T} \cdot A \cdot \mathbf{v}, \mathbf{w}\right\rangle=\left\langle A^{-1} \cdot A \cdot \mathbf{v}, \mathbf{w}\right\rangle=\underline{\underline{\langle\mathbf{v}, \mathbf{w}\rangle}}$.\\
+Daraus folgt sofort auch\\
+$\underline{\underline{\mid A \cdot \mathbf{v}} \mid}=\sqrt{\langle A \cdot \mathbf{v}, A \cdot \mathbf{v}\rangle}=\sqrt{\langle\mathbf{v}, \mathbf{v}\rangle}=\underline{\underline{\mid \mathbf{v}} \mid}$.\\
+Wir betrachten die Fälle $0 \in\{\mathbf{v}, \mathbf{w}\}$ und $0 \notin\{\mathbf{v}, \mathbf{w}\}$ getrennt.\\
+Fall 1: Es sei $0 \in\{\mathbf{v}, \mathbf{w}\}$. In diesem Fall gilt auch $0 \in\{A \cdot \mathbf{v}, A \cdot \mathbf{w}\}$ und es folgt
+
+
+\begin{equation*}
+\underline{\underline{\measuredangle(A \cdot \mathbf{v}, A \cdot \mathbf{w})}}=\frac{\pi}{2}=\underline{\underline{\measuredangle(\mathbf{v}, \mathbf{w})}} \tag{6.72}
+\end{equation*}
+
+
+Fall 2: Es sei $0 \notin\{\mathbf{v}, \mathbf{w}\}$. In diesem Fall gilt auch $0 \notin\{A \cdot \mathbf{v}, A \cdot \mathbf{w}\}$ und es folgt
+
+
+\begin{equation*}
+\underline{\underline{\measuredangle(A \cdot \mathbf{v}, A \cdot \mathbf{w})}}=\arccos \left(\frac{\langle A \cdot \mathbf{v}, A \cdot \mathbf{w}\rangle}{|A \cdot \mathbf{v}| \cdot|A \cdot \mathbf{w}|}\right)=\arccos \left(\frac{\langle\mathbf{v}, \mathbf{w}\rangle}{|\mathbf{v}| \cdot|\mathbf{w}|}\right)=\underline{\underline{\measuredangle(\mathbf{v}, \mathbf{w}) .}} \tag{6.73}
+\end{equation*}
+
+
+Damit haben wir alle Aussagen und den Satz bewiesen.\\
+Bemerkungen:\\
+i) Die letzten beiden Invarianz-Eigenschaften aus Satz 6.9 werden auch Längentreue und Winkeltreue genannt. Orthogonale Abbildungen sind demnach Kongruenz-Abbildungen im Sinne der klassischen Geometrie. Das Umgekehrte gilt jedoch nicht, denn es gibt auch Kongruenz-Abbildungen die nicht linear sind und folglich auch nicht orthogonal sein können, z.B. Translationen.\\
+ii) Tatsächlich sind die Abbildungen in $\mathrm{O}(n)$ gerade die Spiegelungen und Drehungen in $\mathbb{R}^{n}$ sowie deren Verknüpfungen.
+
+
+\end{document}

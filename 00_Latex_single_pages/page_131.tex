@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\section*{Kapitel 7}
+\section*{Vektorräume}
+\subsection*{7.1 Vektorraumstruktur}
+\subsection*{7.1.1 Definition}
+Die fundamentale Struktur der linearen Algebra ist der Vektorraum. Dieser wird, wie in der modernen Mathematik allgemein üblich, mit Hilfe einer überschaubaren Aufzählung von grundlegenden Eigenschaften, den sogenannten Axiomen, definiert.
+
+\section*{Definition 7.1 Vektorraum}
+Ein Vektorraum ist ein Quadrupel $(V, \mathbb{K},+, \cdot)$, bestehend aus eine Menge $V$, einem Zahlenkörper $\mathbb{K}$ und zwei Operationen
+
+
+\begin{align*}
++: V \times V & \rightarrow V \\
+(\mathbf{v} ; \mathbf{w}) & \mapsto \mathbf{v}+\mathbf{w}
+\end{aligned} \quad \text { und } \quad \begin{aligned}
+\cdot: \mathbb{K} \times V & \rightarrow V  \tag{7.1}\\
+(a ; \mathbf{v}) & \mapsto a \cdot \mathbf{v},
+\end{align*}
+
+
+so dass für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{K}$ die folgenden Axiome gelten.\\
+VR-1 $(\mathbf{u}+\mathbf{v})+\mathbf{w}=\mathbf{u}+(\mathbf{v}+\mathbf{w})$\\
+$\mathbf{V R}$-2 Es gibt ein $\mathbf{0} \in V$ mit $\mathbf{0}+\mathbf{v}=\mathbf{v}$ für alle $\mathbf{v} \in V$.\\
+VR-3 Für jedes $\mathbf{v} \in V$ gibt es ein $-\mathbf{v} \in V$ mit $\mathbf{v}+(-\mathbf{v})=\mathbf{0}$.\\
+VR-4 w $+\mathbf{v}=\mathbf{v}+\mathbf{w}$\\
+VR-5 $a \cdot(\mathbf{v}+\mathbf{w})=a \cdot \mathbf{v}+a \cdot \mathbf{w}$\\
+VR-6 $(a+b) \cdot \mathbf{v}=a \cdot \mathbf{v}+b \cdot \mathbf{v}$\\
+VR-7 $(a \cdot b) \cdot \mathbf{v}=a \cdot(b \cdot \mathbf{v})$\\
+VR-8 $1 \cdot v=v$
+
+Entwickelt man eine mathematische Theorie ausgehend von Axiomen, dann müssen auch Aussagen, deren Gültigkeit in praktischen Anwendungen "selbstverständlich" ist, sorgfältig aus diesen Axiomen bewiesen werden. Ein schönes Beispiel ist die sogenannte Null-Koinzidenz, welche in allen Vektorräumen gilt.
+
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+S2 Global: Durch Integration über $z$ können wir die Kraft des gesamten Mediums auf die Staumauer berechnen. Wir erhalten
+
+
+\begin{equation*}
+\underline{\underline{F}}=\int_{z_{0}}^{z_{\mathrm{E}}} \rho \cdot g \cdot z \cdot b(z) \mathrm{d} z=\rho \cdot g \int_{z_{0}}^{z_{\mathrm{E}}} z \cdot b(z) \mathrm{d} z=\underline{\underline{\ldots}} \tag{1.14}
+\end{equation*}
+
+
+\subsection*{1.2.4.3 Massenträgheitsmomente}
+Wir betrachten einen dünnen Stab mit Länge $L$ und Masse m, welcher gedreht werden soll um eine Drehachse, die senkrecht zum Stab durch seinen Schwerpunkt verläuft. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_623fab7ba1f93dae8235g-1}
+
+Um das Trägheitsmoment des Stabes zu berechnen, verwenden wir einen Archimedes-Cauchy-Riemann-Approximationsprozess. Dabei gehen wir nach folgenden Schritten vor.
+
+S1 Lokal: Wir betrachten ein kleines Teilstück des Stabes an der Position $x$ mit Länge $\delta x$. Für die Masse $\delta m$ des Teilstücks gilt\\
+$\frac{\delta m}{m}=\frac{\delta x}{L} \Rightarrow \delta m=\frac{m}{L} \cdot \delta x$.\\
+Das Trägheitsmoment des Teilstücks beträgt\\
+$\underline{\delta I} \approx r^{2}(x) \cdot \delta m=x^{2} \cdot \frac{m}{L} \cdot \delta x=\underline{\frac{m}{L}} \cdot x^{2} \cdot \delta x$.\\
+S2 Global: Durch Integration über $x$ können wir das gesamte Trägheitsmoment des Stabes berechnen. Wir erhalten
+
+
+\begin{align*}
+\underline{\underline{I}} & =\int_{-\frac{L}{2}}^{\frac{L}{2}} \frac{m}{L} \cdot x^{2} \mathrm{~d} x=2 \cdot \frac{m}{L} \int_{0}^{\frac{L}{2}} x^{2} \mathrm{~d} x=\left.2 \cdot \frac{m}{L} \cdot \frac{1}{3} \cdot\left[x^{3}\right]\right|_{0} ^{\frac{L}{2}}=\frac{2}{3} \cdot \frac{m}{L} \cdot\left(\left(\frac{L}{2}\right)^{3}-0^{3}\right) \\
+& =\frac{2}{3} \cdot \frac{m}{L} \cdot \frac{L^{3}}{2^{3}}=\underline{\underline{\frac{1}{12}} \cdot m \cdot L^{2} .} \tag{1.17}
+\end{align*}
+
+
+
+\end{document}

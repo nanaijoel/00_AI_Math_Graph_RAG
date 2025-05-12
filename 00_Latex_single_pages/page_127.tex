@@ -1,0 +1,73 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.5.3 Charakteristisches Polynom}
+Wir machen folgende Definition.\\
+Definition 6.25 Charakteristisches Polynom\\
+Seien $n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, n, \mathbb{R})$. Die Funktion
+
+
+\begin{align*}
+p_{A}: & \mathbb{R}
+\end{align*} \rightarrow \mathbb{R}, ~\left(\lambda \mapsto p_{A}(\lambda):=\operatorname{det}(\lambda \cdot \mathbb{1}-A)\right.
+
+
+heisst charakteristisches Polynom von $A$.\\
+Bemerkungen:\\
+i) Der Funktionsterm von $p_{A}$ wirkt zunächst irritierend. Setzt man jedoch die Komponenten von $\mathbb{1}$ und $A$ ein und rechnet die Determinante aus, dann erhält man tatsächlich ein Polynom in $\lambda$.\\
+ii) Offensichtlich gilt
+
+
+\begin{align*}
+p_{0}(\lambda) & =\operatorname{det}(\lambda \cdot \mathbb{1}-0)=\operatorname{det}(\lambda \cdot \mathbb{1})=\lambda^{n} \cdot \operatorname{det}(\mathbb{1})=\lambda^{n} \cdot 1=\lambda^{n}  \tag{6.157}\\
+p_{\mathbb{1}}(\lambda) & =\operatorname{det}(\lambda \cdot \mathbb{1}-\mathbb{1})=\operatorname{det}((\lambda-1) \cdot \mathbb{1})=(\lambda-1)^{n} \cdot \operatorname{det}(\mathbb{1})=(\lambda-1)^{n} \cdot 1 \\
+& =(\lambda-1)^{n} . \tag{6.158}
+\end{align*}
+
+
+Das charakteristische Polynom hat ein paar wichtige Eigenschaften.\\
+Satz 6.21 Eigenschaften des charakteristischen Polynoms\\
+Seien $n \in \mathbb{N}^{+}$und $A \in \mathbb{M}(n, n, \mathbb{R})$. Dann ist $p_{A}$ ein Polynom vom Grad $n$ der Form
+
+
+\begin{equation*}
+p_{A}(\lambda)=a_{n} \cdot \lambda^{n}+a_{n-1} \cdot \lambda^{n-1}+\ldots+a_{1} \cdot \lambda+a_{0}, \tag{6.159}
+\end{equation*}
+
+
+wobei in jedem Fall gilt\\
+(a) $a_{n}=1$\\
+(b) $a_{n-1}=-\operatorname{tr}(A)$\\
+(c) $a_{0}=(-1)^{n} \cdot \operatorname{det}(A)$
+
+Beweis: Es gilt\\
+$\underline{\underline{a_{0}}}=p_{A}(0)=\operatorname{det}(0 \cdot \mathbb{1}-A)=\operatorname{det}(-A)=\underline{\underline{(-1)^{n}} \cdot \operatorname{det}(A)}$.\\
+Damit haben wir die Aussage (c) bewiesen.\\
+Bemerkungen:\\
+i) Für eine singuläre Matrix gilt $\operatorname{det}(A)=0$ und somit $a_{0}=0$. Das charakteristische Polynom hat dann die Form
+
+
+\begin{equation*}
+p_{A}(\lambda)=\lambda^{n}-\operatorname{tr}(A) \cdot \lambda^{n-1}+\ldots+a_{1} \cdot \lambda=\lambda \cdot\left(\lambda^{n-1}-\operatorname{tr}(A) \cdot \lambda^{n-2}+\ldots+a_{1}\right) . \tag{6.161}
+\end{equation*}
+
+
+ii) Für $n=2$ ist $p_{A}$ eine quadratische Funktion und es folgt
+
+
+\begin{equation*}
+p_{A}(\lambda)=\lambda^{2}-\operatorname{tr}(A) \cdot \lambda+\operatorname{det}(A) . \tag{6.162}
+\end{equation*}
+
+
+
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{5.4 Potenzen}
+\subsection*{5.4.1 Euler-Formel}
+Wir betrachten den folgenden Satz.\\
+Satz 5.4 Euler-Formel\\
+Sei $\varphi \in \mathbb{R}$, dann gilt
+
+
+\begin{equation*}
+\mathrm{e}^{\mathrm{i} \cdot \varphi}=\operatorname{cis}(\varphi)=\cos (\varphi)+\mathrm{i} \cdot \sin (\varphi) . \tag{5.28}
+\end{equation*}
+
+
+Beweis: Übung mit Hilfe von Maclaurin-Entwicklungen.\\
+Wir betrachten den folgenden Satz.\\
+Satz 5.5 Umkehrungen der Euler-Formel\\
+Sei $\varphi \in \mathbb{R}$, dann gilt folgendes.\\
+(a) $\sin (\varphi)=\frac{\mathrm{e}^{\mathrm{i} \cdot \varphi}-\mathrm{e}^{-\mathrm{i} \cdot \varphi}}{2 \cdot \mathrm{i}}=-\mathrm{i} \cdot \sinh (\mathrm{i} \cdot \varphi)$\\
+(b) $\cos (\varphi)=\frac{\mathrm{e}^{\mathrm{i} \cdot \varphi}+\mathrm{e}^{-\mathrm{i} \cdot \varphi}}{2}=\cosh (\mathrm{i} \cdot \varphi)$
+
+Beweis: Übung.\\
+Bemerkungen:\\
+i) Die Euler-Formel beschreibt die fundamentalen Zusammenhänge zwischen der natürlichen Exponentialfunktion und den trigonometrischen bzw. hyperbolischen Funktionen.\\
+ii) Aus der Euler-Formel lässt sich eine einfache algebraische Beziehung zwischen den fundamentalen Zahlen in $\{0,1, \mathrm{e}, \pi, \mathrm{i}\}$ herleiten. Es gilt
+
+
+\begin{equation*}
+\mathrm{e}^{\mathrm{i} \cdot \pi}+1=0 . \tag{5.29}
+\end{equation*}
+
+
+\subsection*{5.4.2 Exponentielle Form}
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 5.6 Exponentielle Form}
+Seien $x, y \in \mathbb{R}, r \in \mathbb{R}^{+}$und $\varphi \in[0,2 \pi[$ oder $\varphi \in]-\pi, \pi]$ dann gibt es ein eindeutiges $z \in \mathbb{C} \backslash\{0\}$ mit
+
+
+\begin{equation*}
+z=x+y \cdot \mathrm{i}=r \cdot \mathrm{e}^{\mathrm{i} \cdot \varphi} . \tag{5.30}
+\end{equation*}
+
+
+Ferner gelten die folgenden Umrechnungsformeln.\\
+(a) $x=r \cdot \cos (\varphi) \wedge y=r \cdot \sin (\varphi)$\\
+(b) $r=|z|=\sqrt{x^{2}+y^{2}} \wedge \varphi=\arg (z)$
+
+
+\end{document}

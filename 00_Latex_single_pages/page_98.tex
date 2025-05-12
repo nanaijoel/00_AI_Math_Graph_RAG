@@ -1,0 +1,95 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{6.1.3.4 Einheitsmatrix}
+Eine ganz spezielle Rolle spielen quadratische Matrizen, die auf der Hauptdiagonalen nur Einsen und sonst überall nur Nullen haben.
+
+Definition 6.10 Einheitsmatrix\\
+Sei $n \in \mathbb{N}^{+}$. Die Matrix $\mathbb{1} \in \mathbb{M}(n, n, \mathbb{R})$ mit
+
+\[
+\mathbb{1}=\left[\begin{array}{cccc}
+1 & 0 & \ldots & 0  \tag{6.20}\\
+0 & 1 & \ldots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \ldots & 1
+\end{array}\right]
+\]
+
+heisst Einheitsmatrix.
+
+Bemerkungen:\\
+i) Alle Einheitsmatrizen werden unabhängig von ihrer Dimension identifiziert und mit $\mathbb{1}$ bezeichnet. Es gilt also
+
+\[
+\mathbb{1}=[1]=\left[\begin{array}{ll}
+1 & 0  \tag{6.21}\\
+0 & 1
+\end{array}\right]=\left[\begin{array}{lll}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{array}\right]=\left[\begin{array}{llll}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array}\right]=\ldots .
+\]
+
+ii) Die Einheitsmatrix hat die gleichen algebraischen Eigenschaften wie die Zahl Eins. Für jede Matrix $A$ gilt
+
+
+\begin{equation*}
+\mathbb{1} \cdot A=A \cdot \mathbb{1}=A . \tag{6.22}
+\end{equation*}
+
+
+iii) Ist $A$ eine quadratische Matrix, dann folgt der Kommutator
+
+
+\begin{equation*}
+[A, \mathbb{1}]=A \cdot \mathbb{1}-\mathbb{1} \cdot A=A-A=0 . \tag{6.23}
+\end{equation*}
+
+
+Das heisst, die Einheitsmatrix kommutiert mit jeder quadratischen Matrix.\\
+iv) Die Einheitsmatrix ist offensichtlich symmetrisch.\\
+v) Beispiel-Codes zum Erzeugen von Einheitsmatrizen mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & \begin{tabular}{l}
+M=eye (3) \\
+M=eye $(2,3)$ \\
+\end{tabular} \\
+\hline
+Mathematica/WolframAlpha & M=IdentityMatrix [3] \\
+\hline
+Python/Numpy & \begin{tabular}{l}
+import numpy as np; \\
+$\mathrm{M}=\mathrm{np}$.eye (3) \\
+$M=n p$.eye $(2,3)$ \\
+\end{tabular} \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import sympy as sp; \\
+M=sp.eye(3) \\
+M=sp.eye $(2,3)$ \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{document}

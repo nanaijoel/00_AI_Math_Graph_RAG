@@ -1,0 +1,41 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\begin{itemize}
+  \item $\left[\begin{array}{ll}1 & 2\end{array}\right] \cdot\left[\begin{array}{l}3 \\ 4\end{array}\right]=[1 \cdot 3+2 \cdot 4]=[11]$
+  \item $\left[\begin{array}{l}1 \\ 2\end{array}\right] \cdot\left[\begin{array}{ll}3 & 4\end{array}\right]=\left[\begin{array}{cc}1 \cdot 3 & 1 \cdot 4 \\ 2 \cdot 3 & 2 \cdot 4\end{array}\right]=\left[\begin{array}{ll}3 & 4 \\ 6 & 8\end{array}\right]$
+\end{itemize}
+
+\subsection*{6.1.2.5 Rechnenregeln}
+Für reelle Matrizen gelten einige Rechenregeln.\\
+Satz 6.1 Rechenregeln für Matrizen\\
+Es seien $A, B, C$ reelle Matrizen und $a, b \in \mathbb{R}$. Sofern alle Operationen gemäss den Dimensionen definiert sind, gelten die folgenden Rechenregeln.\\
+(a) $A+B=B+A$\\
+(g) $A \cdot(B+C)=A \cdot B+A \cdot C$\\
+(b) $(A+B)+C=A+(B+C)$\\
+(h) $(A+B) \cdot C=A \cdot C+B \cdot C$\\
+(c) $a \cdot(A+B)=a \cdot A+a \cdot B$\\
+(i) $\left(A^{T}\right)^{T}=A$\\
+(d) $(a+b) \cdot A=a \cdot A+b \cdot A$\\
+(j) $(A+B)^{T}=A^{T}+B^{T}$\\
+(e) $(a \cdot A) \cdot B=a \cdot(A \cdot B)=A \cdot(a \cdot B)$\\
+(k) $(a \cdot A)^{T}=a \cdot A^{T}$\\
+(f) $(A \cdot B) \cdot C=A \cdot(B \cdot C)$\\
+(I) $(A \cdot B)^{T}=B^{T} \cdot A^{T}$
+
+Bemerkungen:\\
+i) Die Matrix-Addition ist also assoziativ und kommutativ und es gilt das Distributivgesetz sowohl bei der Multiplikation mit einem Skalar als auch mit einer reellen Matrix.\\
+ii) Die Matrix-Multiplikation ist im allgemeinen nicht kommutativ. Es gibt Matrizen $A$ und $B$, für welche gilt $A \cdot B=B \cdot A$ aber auch solche für die wir $A \cdot B \neq B \cdot A$ finden.\\
+iii) Das Transponierte eines Matrix-Produkts ist das umgekehrte Matrix-Produkt der Transponierten Faktoren.
+
+
+\end{document}

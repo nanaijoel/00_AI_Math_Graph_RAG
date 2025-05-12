@@ -1,0 +1,64 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{4.2 Taylor-Entwicklungen allgemein}
+\subsection*{4.2.1 Taylor-Formel}
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 4.3 Taylor-Entwicklung}
+Seien $n \in \mathbb{N}, x, x_{0} \in \mathbb{R}$ und $f: \mathbb{R} \rightarrow \mathbb{R}$ unendlich oft differentierbar. Dann gilt
+
+
+\begin{equation*}
+f(x)=T_{n}(x)+R_{n}(x), \tag{4.17}
+\end{equation*}
+
+
+mit dem Taycor-Polynom $T_{n}(x)$ und Restglied $R_{n}(x)$ gemäss
+
+
+\begin{align*}
+T_{n}(x) & =\sum_{k=0}^{n} \frac{f^{(k)}\left(x_{0}\right)}{k!} \cdot\left(x-x_{0}\right)^{k} \\
+& =f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right) \cdot\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2!} \cdot\left(x-x_{0}\right)^{2}+\ldots+\frac{f^{(n)}\left(x_{0}\right)}{n!} \cdot\left(x-x_{0}\right)^{n}  \tag{4.18}\\
+R_{n}(x) & =\frac{(-1)^{n}}{n!} \int_{x_{0}}^{x} f^{(n+1)}(s) \cdot(s-x)^{n} \mathrm{~d} s
+\end{align*}
+
+
+Beweis: Analog zum Beweis der Maclaurin-Entwicklung.\\
+Besonders interessant ist die Situation, wenn das Restglied für grosse $n$ immer kleiner wird. Dazu betrachten wir die folgende Definition.
+
+Definition 4.2 Analytische Funktion\\
+Seien $I \subseteq \mathbb{R}$ ein Intervall mit $x_{0} \in I$ und $f: I \rightarrow \mathbb{R}$ eine unendlich oft differentierbare Funktion. Die Funktion $f$ heisst analytisch auf $I$, falls für alle $x \in I$ gilt
+
+
+\begin{equation*}
+\lim _{n \rightarrow \infty} R_{n}(x)=0 . \tag{4.19}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Taylor-Entwicklung für $x_{0}=0$ ist gerade die Maclaurin-Entwicklung.\\
+ii) Das Taylor-Polynom $T_{n}(x)$ ist ein Polynom vom Grad $n$.\\
+iii) Um das Taylor-Polynom $T_{n}(x)$ aufzustellen, müssen die Funktionswerte von $f$ und ihren Ableitungen nur an der Stelle $x_{0}$ bekannt sein.\\
+iv) Eine analytische Funktion lässt sich durch ihre TAYLOR-Reihe vollständig darstellen, d.h. für alle $x \in I$ gilt
+
+
+\begin{equation*}
+\underline{\underline{f(x)}}=\lim _{n \rightarrow \infty} T_{n}(x)=\underline{\underline{\sum_{k=0}^{\infty}} \frac{f^{(k)}\left(x_{0}\right)}{k!} \cdot\left(x-x_{0}\right)^{k} .} \tag{4.20}
+\end{equation*}
+
+
+v) In jedem Fall, d.h. auch für nicht analytische Funktionen kann das Taylor-Polynom in der Nähe von $x=x_{0}$ als Näherung für $f$ verwendet werden, d.h. für $x$ nahe genug bei $x_{0}$ und $n$ gross genug gilt zumindest\\
+$f(x)=T_{n}(x)+R_{n}(x) \approx T_{n}(x)$.
+
+
+\end{document}

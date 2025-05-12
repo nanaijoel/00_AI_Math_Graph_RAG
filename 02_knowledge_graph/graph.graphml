@@ -1,0 +1,1361 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="node" attr.name="type" attr.type="string"/>
+<graph edgedefault="directed"><node id="Kapitel 1: Integrale in Anwendungen">
+  <data key="d0">chapter</data>
+</node>
+<node id="1.1 Einfache Berechnung von Integralen">
+  <data key="d0">section</data>
+</node>
+<node id="1.1.1 Lineare Modifikation">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 1.1">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Übung.">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Beispiele: Beispiele:">
+  <data key="d0">Beispiele</data>
+</node>
+<node id="Bemerkungen: Bemerkungen:">
+  <data key="d0">Bemerkungen</data>
+</node>
+<node id="1.1.2 Integration mit Software">
+  <data key="d0">subsection</data>
+</node>
+<node id="1.2 Archimedes-Cauchy-Riemann-Approximationsprozess">
+  <data key="d0">section</data>
+</node>
+<node id="1.2.1 Einleitung">
+  <data key="d0">subsection</data>
+</node>
+<node id="1.2.2 Historische Methode zur Berechnung von Integralen">
+  <data key="d0">subsection</data>
+</node>
+<node id="1.2.3 Konzeption am Urbeispiel">
+  <data key="d0">subsection</data>
+</node>
+<node id="1.2.4 Anwendungen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Kapitel 2: Vektoranalysis">
+  <data key="d0">chapter</data>
+</node>
+<node id="2.1 Grundlagen">
+  <data key="d0">section</data>
+</node>
+<node id="2.1.1 Skalarfelder">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.1">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.2">
+  <data key="d0">Definition</data>
+</node>
+<node id="Anwendungen: Anwendungen: Flächen-Plot.">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="Anwendungen: Anwendungen: Thematische Landkarten, Thermographie.">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="Anwendungen: Anwendungen: Höhenlinien, Äquipotentiallinien, Äquipotentialflächen, Atomorbitale.">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="2.1.2 Vektorfelder">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.3">
+  <data key="d0">Definition</data>
+</node>
+<node id="Anwendungen: Anwendungen:">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="Definition: Definition 2.4">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.5">
+  <data key="d0">Definition</data>
+</node>
+<node id="2.2 Parametrisierte Kurven &amp; Linienintegrale">
+  <data key="d0">section</data>
+</node>
+<node id="2.2.1 Parametrisierte Kurven">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.6">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.7">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.8">
+  <data key="d0">Definition</data>
+</node>
+<node id="2.2.2 Linienintegrale">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.9">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.1">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Für das Linienintegral von w entlang der Kurve erhalten wir">
+  <data key="d0">Beweis</data>
+</node>
+<node id="2.3 Mehrfach-Integrale">
+  <data key="d0">section</data>
+</node>
+<node id="2.3.1 Zweifach-Integrale">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.10">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.2">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 2.3">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 2.4">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 2.5">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Um das Volumen zwischen dem Reckteck G und dem Graphen von f zu berechnen">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 2.6">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Gemäss Fubini-Satz und Faktor-Regel gilt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="2.3.2 Dreifach-Integrale">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.7">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.4 Parametrisierte Flächen &amp; Flussintegrale">
+  <data key="d0">section</data>
+</node>
+<node id="2.4.1 Parametrisierte Flächen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.11">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.12">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.13">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.14">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.15">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.8">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Es seien e1 und e2 die Koordinatenbasis-Vektorfelder der parametrisierten Fläche mit">
+  <data key="d0">Beweis</data>
+</node>
+<node id="2.4.2 Flächenintegrale">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.16">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.9">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.4.3 Flussintegrale">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.17">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.10">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Für den Fluss von v durch die Fläche erhalten wir">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 2.11">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.5 Mehrfach-Differentiale">
+  <data key="d0">section</data>
+</node>
+<node id="2.5.1 Partielle Ableitungen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.18">
+  <data key="d0">Definition</data>
+</node>
+<node id="2.5.2 Gradient">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.19">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.12">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 2.13">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.5.3 Hesse-Matrix">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.20">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.14">
+  <data key="d0">Satz</data>
+</node>
+<node id="Definition: Definition 2.21">
+  <data key="d0">Definition</data>
+</node>
+<node id="2.5.4 Divergenz">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.22">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.15">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.5.5 Rotation">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.23">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 2.24">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.16">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.5.6 Weiteres zu Gradient, Divergenz und Rotation">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.17">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Siehe Übungen.">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 2.18">
+  <data key="d0">Satz</data>
+</node>
+<node id="Definition: Definition 2.25">
+  <data key="d0">Definition</data>
+</node>
+<node id="Anwendungen: Anwendungen">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="2.6 Hauptsätze der Vektoranalysis">
+  <data key="d0">section</data>
+</node>
+<node id="2.6.1 Gauss-Integralsatz">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.19">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.6.2 Stokes-Integralsatz">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.20">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.6.3 Potential-Sätze">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.21">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 2.22">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.6.4 Zerlegungssatz">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.23">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.7 Funktionsdiskussion in mehreren Variablen">
+  <data key="d0">section</data>
+</node>
+<node id="2.7.1 Erste Richtungsableitung">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.24">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Wir betrachten Fuktionsgraphen den von f als parametrisierte Fläche mit Parametri-">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Definition: Definition 2.26">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.25">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Für die Richtungsableitung von f in Richtung ˆe erhalten wir">
+  <data key="d0">Beweis</data>
+</node>
+<node id="2.7.2 Zweite Richtungsableitung">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.26">
+  <data key="d0">Satz</data>
+</node>
+<node id="2.7.3 Lokale Extrema">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 2.27">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 2.27">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 2.28">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Wir betrachten die Richtungsvektoren">
+  <data key="d0">Beweis</data>
+</node>
+<node id="2.7.4 Globale Extrema">
+  <data key="d0">subsection</data>
+</node>
+<node id="2.7.5 Extrema unter Nebenbedingungen in 2D">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 2.29">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Wir betrachten die Level-Linie von g zum Level L = 0. Liegt ein Extrema von f">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Kapitel 3: Integralrechnung">
+  <data key="d0">chapter</data>
+</node>
+<node id="3.1 Integrationsmethoden">
+  <data key="d0">section</data>
+</node>
+<node id="3.1.1 Substitution">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 3.1">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Durch Anwenden der Summen-Regel und Ketten-Regel und weil F ′ = f erhalten wir">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 3.2">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Wir zeigen mehrere Varianten um die Beschleunigungsarbeit zu berechnen.">
+  <data key="d0">Beweis</data>
+</node>
+<node id="3.1.2 Partielle Integration">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 3.3">
+  <data key="d0">Satz</data>
+</node>
+<node id="3.2 Uneigentliche Integrale">
+  <data key="d0">section</data>
+</node>
+<node id="3.2.1 Integration über unendliche Intervalle">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 3.1">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 3.4">
+  <data key="d0">Satz</data>
+</node>
+<node id="Definition: Definition 3.2">
+  <data key="d0">Definition</data>
+</node>
+<node id="3.2.2 Integration über Polstellen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 3.3">
+  <data key="d0">Definition</data>
+</node>
+<node id="Kapitel 4: Taylor-Entwicklungen">
+  <data key="d0">chapter</data>
+</node>
+<node id="4.1 Maclaurin-Entwicklungen">
+  <data key="d0">section</data>
+</node>
+<node id="4.1.1 Maclaurin-Formel">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 4.1">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Zunächst bemerken wir, dass gilt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Definition: Definition 4.1">
+  <data key="d0">Definition</data>
+</node>
+<node id="4.1.2 Maclaurin-Reihen der Elementarfunktionen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 4.2">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Wir berechnen die Ableitungen von f(x) := exp(x) = ex sowie deren Werte an der">
+  <data key="d0">Beweis</data>
+</node>
+<node id="4.1.3 Anwendungen">
+  <data key="d0">subsection</data>
+</node>
+<node id="4.2 Taylor-Entwicklungen allgemein">
+  <data key="d0">section</data>
+</node>
+<node id="4.2.1 Taylor-Formel">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 4.3">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Analog zum Beweis der Maclaurin-Entwicklung.">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Definition: Definition 4.2">
+  <data key="d0">Definition</data>
+</node>
+<node id="4.2.2 Anwendung lokale Extrema">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 4.4">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Wir betrachten die Taylor-Entwicklung von f der Ordnung m an der Stelle xk. Für">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Kapitel 5: Komplexe Zahlen">
+  <data key="d0">chapter</data>
+</node>
+<node id="5.1 Grundlagen">
+  <data key="d0">section</data>
+</node>
+<node id="5.1.1 Einleitung">
+  <data key="d0">subsection</data>
+</node>
+<node id="5.1.2 Konstruktion">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 5.1">
+  <data key="d0">Definition</data>
+</node>
+<node id="5.1.3 Zahlenumfang">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 5.1">
+  <data key="d0">Satz</data>
+</node>
+<node id="Definition: Definition 5.2">
+  <data key="d0">Definition</data>
+</node>
+<node id="5.1.4 Grundoperationen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 5.2">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Es gibt x, y ∈R, so dass gilt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="5.2 Gauss-Ebene">
+  <data key="d0">section</data>
+</node>
+<node id="5.2.1 Elementare Entsprechungen">
+  <data key="d0">subsection</data>
+</node>
+<node id="5.2.2 Trigonometrische Form">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 5.3">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 5.3">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Die Aussage folgt sofort durch Anwenden der Trigonometrie in der Gauss-Ebene.">
+  <data key="d0">Beweis</data>
+</node>
+<node id="5.3 Quadratische Gleichungen">
+  <data key="d0">section</data>
+</node>
+<node id="5.4 Potenzen">
+  <data key="d0">section</data>
+</node>
+<node id="5.4.1 Euler-Formel">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 5.4">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Übung mit Hilfe von Maclaurin-Entwicklungen.">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 5.5">
+  <data key="d0">Satz</data>
+</node>
+<node id="5.4.2 Exponentielle Form">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 5.6">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Die Aussage folgt sofort aus der Euler-Formel.">
+  <data key="d0">Beweis</data>
+</node>
+<node id="5.4.3 Potenz-Gleichungen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 5.7">
+  <data key="d0">Satz</data>
+</node>
+<node id="5.4.4 Wurzeln">
+  <data key="d0">subsection</data>
+</node>
+<node id="Kapitel 6: Matrizen &amp; Lineare Abbildungen">
+  <data key="d0">chapter</data>
+</node>
+<node id="6.1 Matrix-Algebra">
+  <data key="d0">section</data>
+</node>
+<node id="6.1.1 Definition">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.1">
+  <data key="d0">Definition</data>
+</node>
+<node id="6.1.2 Operationen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.2">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.3">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.4">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.5">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.1">
+  <data key="d0">Satz</data>
+</node>
+<node id="6.1.3 Spezielle Matrizen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.6">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.7">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.8">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.9">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.10">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.11">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.2">
+  <data key="d0">Satz</data>
+</node>
+<node id="Definition: Definition 6.12">
+  <data key="d0">Definition</data>
+</node>
+<node id="6.2 Lineare Abbildungen">
+  <data key="d0">section</data>
+</node>
+<node id="6.2.1 Definition">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.13">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.14">
+  <data key="d0">Definition</data>
+</node>
+<node id="6.2.2 Eigenschaften">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 6.3">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Wegen der Assoziativität des Matrix-Produkts finden wir für alle x ∈Rm">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 6.4">
+  <data key="d0">Satz</data>
+</node>
+<node id="6.2.3 Spalten-Vektor-Konstruktionsverfahren">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 6.5">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Die Bilder der Einheitsvektoren aus (6.45) unter der linearen Abbildung a sind">
+  <data key="d0">Beweis</data>
+</node>
+<node id="6.2.4 Beispiele">
+  <data key="d0">subsection</data>
+</node>
+<node id="6.3 Orthogonale Matrizen">
+  <data key="d0">section</data>
+</node>
+<node id="6.3.1 Definition">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.15">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.16">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.6">
+  <data key="d0">Satz</data>
+</node>
+<node id="6.3.2 Geometrische Eigenschaften">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 6.7">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Weil A orthogonal ist, gilt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 6.8">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Weil das Skalar-Produkt von zwei Vektoren eine reelle Zahl ist, die als 1 × 1-Matrix">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 6.9">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Mit Hilfe der Rechenregel (6.64) und weil A orthogonal ist, finden wir">
+  <data key="d0">Beweis</data>
+</node>
+<node id="6.3.3 Spezielle orthogonale Matrizen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 6.10">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Um das Bild eines Vektors v ∈Rn unter der Spiegelung zu berechnen, zerlegen wir v">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Definition: Definition 6.17">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.11">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 6.12">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Um das Bild eines Vektors v ∈R3 unter der Rotation zu berechnen, zerlegen wir">
+  <data key="d0">Beweis</data>
+</node>
+<node id="6.4 Spur &amp; Determinante">
+  <data key="d0">section</data>
+</node>
+<node id="6.4.1 Einleitung">
+  <data key="d0">subsection</data>
+</node>
+<node id="6.4.2 Spur">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.18">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.13">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Die Matrizen A und AT haben die gleichen Diagonalenelemente und folglich auch die">
+  <data key="d0">Beweis</data>
+</node>
+<node id="6.4.3 Determinante">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.19">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.14">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Um ein p ∈Sn zu definieren, wählen wir für jedes k ∈{1, . . . , n} einen Funktionswert">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Definition: Definition 6.20">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.21">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.15">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Die Aussagen (a) und (b) sind klar, während (c) nur mit grossem Aufwand gezeigt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 6.16">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 6.17">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 6.18">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 6.19">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Für eine orthogonale Matrix A muss gelten">
+  <data key="d0">Beweis</data>
+</node>
+<node id="6.4.4 Mass-Formeln">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.22">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 6.23">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.20">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Weil A eine quadratische Matrix ist, folgt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="6.5 Eigenwerte &amp; Eigenvektoren">
+  <data key="d0">section</data>
+</node>
+<node id="6.5.1 Einleitung">
+  <data key="d0">subsection</data>
+</node>
+<node id="6.5.2 Definition &amp; Eigenschaften">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.24">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition explizit ausgeschlossen. Die Zahl 0 ∈R kann jedoch als Eigenwert auftreten.">
+  <data key="d0">Definition</data>
+</node>
+<node id="6.5.3 Charakteristisches Polynom">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 6.25">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 6.21">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Es gilt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="6.5.4 Eigenwerte &amp; Eigenvektoren berechnen">
+  <data key="d0">subsection</data>
+</node>
+<node id="Satz: Satz 6.22">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Für einen Eigenwert λ ∈R und einen zugehörigen Eigenvektor E ∈Rn \ {0} gilt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="6.5.5 Spezielle Eigenwerte &amp; Eigenvektoren">
+  <data key="d0">subsection</data>
+</node>
+<node id="Kapitel 7: Vektorräume">
+  <data key="d0">chapter</data>
+</node>
+<node id="7.1 Vektorraumstruktur">
+  <data key="d0">section</data>
+</node>
+<node id="7.1.1 Definition">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 7.1">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 7.1">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Gemäss VR-8, VR-6 und wieder VR-8 und dann VR-1 sowie VR-3 gilt">
+  <data key="d0">Beweis</data>
+</node>
+<node id="7.1.2 Linearkombinationen, Basis &amp; Dimension">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 7.2">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 7.3">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 7.4">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 7.2">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Weil die Vektoren in B eine Basis des Vektorraums bilden, sind sie nach Definition 7.4">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Satz: Satz 7.3">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 7.4">
+  <data key="d0">Satz</data>
+</node>
+<node id="Definition: Definition 7.5">
+  <data key="d0">Definition</data>
+</node>
+<node id="7.1.3 Unterräume">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 7.6">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 7.5">
+  <data key="d0">Satz</data>
+</node>
+<node id="7.2 Lineare Abbildungen">
+  <data key="d0">section</data>
+</node>
+<node id="7.2.1 Definition">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 7.7">
+  <data key="d0">Definition</data>
+</node>
+<node id="7.2.2 Matrix-Darstellung">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 7.8">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 7.6">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Durch Einsetzen der Basis-Darstellung von v und weil a eine lineare Abbildung ist,">
+  <data key="d0">Beweis</data>
+</node>
+<node id="7.2.3 Bild &amp; Kern">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 7.9">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 7.7">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 7.8">
+  <data key="d0">Satz</data>
+</node>
+<node id="7.3 Skalar-Produkt &amp; Metrik">
+  <data key="d0">section</data>
+</node>
+<node id="7.3.1 Skalar-Produkt">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 7.10">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 7.11">
+  <data key="d0">Definition</data>
+</node>
+<node id="Anwendungen: Anwendungen: Geometrie, Datenanalyse">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="Anwendungen: Anwendungen: Relativitätstheorie">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="Anwendungen: Anwendungen: Gruppen-Theorie, Datenanalyse">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="Anwendungen: Anwendungen: Fourier-Entwicklungen, Signalverarbeitung">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="Anwendungen: Anwendungen: Fourier-Transformation, Laplace-Transformation, Signalverarbeitung, Va-">
+  <data key="d0">Anwendungen</data>
+</node>
+<node id="Definition: Definition 7.12">
+  <data key="d0">Definition</data>
+</node>
+<node id="Definition: Definition 7.13">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 7.9">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 7.10">
+  <data key="d0">Satz</data>
+</node>
+<node id="Satz: Satz 7.11">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Für alle x ∈R betrachten wir den Vektor">
+  <data key="d0">Beweis</data>
+</node>
+<node id="Definition: Definition 7.14">
+  <data key="d0">Definition</data>
+</node>
+<node id="7.3.2 Metrik">
+  <data key="d0">subsection</data>
+</node>
+<node id="Definition: Definition 7.15">
+  <data key="d0">Definition</data>
+</node>
+<node id="Satz: Satz 7.12">
+  <data key="d0">Satz</data>
+</node>
+<node id="Beweis: Beweis: Durch Einsetzen der Basis-Darstellungen und mit Hilfe der Bilinearität des Skalar-">
+  <data key="d0">Beweis</data>
+</node>
+<edge source="Kapitel 1: Integrale in Anwendungen" target="1.1 Einfache Berechnung von Integralen"/>
+<edge source="Kapitel 1: Integrale in Anwendungen" target="1.2 Archimedes-Cauchy-Riemann-Approximationsprozess"/>
+<edge source="1.1 Einfache Berechnung von Integralen" target="1.1.1 Lineare Modifikation"/>
+<edge source="1.1 Einfache Berechnung von Integralen" target="1.1.2 Integration mit Software"/>
+<edge source="1.1.1 Lineare Modifikation" target="Satz: Satz 1.1"/>
+<edge source="1.1.1 Lineare Modifikation" target="Beweis: Beweis: Übung."/>
+<edge source="1.1.1 Lineare Modifikation" target="Beispiele: Beispiele:"/>
+<edge source="1.1.1 Lineare Modifikation" target="Bemerkungen: Bemerkungen:"/>
+<edge source="1.2 Archimedes-Cauchy-Riemann-Approximationsprozess" target="1.2.1 Einleitung"/>
+<edge source="1.2 Archimedes-Cauchy-Riemann-Approximationsprozess" target="1.2.2 Historische Methode zur Berechnung von Integralen"/>
+<edge source="1.2 Archimedes-Cauchy-Riemann-Approximationsprozess" target="1.2.3 Konzeption am Urbeispiel"/>
+<edge source="1.2 Archimedes-Cauchy-Riemann-Approximationsprozess" target="1.2.4 Anwendungen"/>
+<edge source="1.2.2 Historische Methode zur Berechnung von Integralen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="Kapitel 2: Vektoranalysis" target="2.1 Grundlagen"/>
+<edge source="Kapitel 2: Vektoranalysis" target="2.2 Parametrisierte Kurven &amp; Linienintegrale"/>
+<edge source="Kapitel 2: Vektoranalysis" target="2.3 Mehrfach-Integrale"/>
+<edge source="Kapitel 2: Vektoranalysis" target="2.4 Parametrisierte Flächen &amp; Flussintegrale"/>
+<edge source="Kapitel 2: Vektoranalysis" target="2.5 Mehrfach-Differentiale"/>
+<edge source="Kapitel 2: Vektoranalysis" target="2.6 Hauptsätze der Vektoranalysis"/>
+<edge source="Kapitel 2: Vektoranalysis" target="2.7 Funktionsdiskussion in mehreren Variablen"/>
+<edge source="2.1 Grundlagen" target="2.1.1 Skalarfelder"/>
+<edge source="2.1 Grundlagen" target="2.1.2 Vektorfelder"/>
+<edge source="2.1.1 Skalarfelder" target="Definition: Definition"/>
+<edge source="2.1.1 Skalarfelder" target="Definition: Definition 2.1"/>
+<edge source="2.1.1 Skalarfelder" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.1.1 Skalarfelder" target="Beispiele: Beispiele:"/>
+<edge source="2.1.1 Skalarfelder" target="Definition: Definition 2.2"/>
+<edge source="2.1.1 Skalarfelder" target="Anwendungen: Anwendungen: Flächen-Plot."/>
+<edge source="2.1.1 Skalarfelder" target="Anwendungen: Anwendungen: Thematische Landkarten, Thermographie."/>
+<edge source="2.1.1 Skalarfelder" target="Anwendungen: Anwendungen: Höhenlinien, Äquipotentiallinien, Äquipotentialflächen, Atomorbitale."/>
+<edge source="2.1.2 Vektorfelder" target="Definition: Definition"/>
+<edge source="2.1.2 Vektorfelder" target="Definition: Definition 2.3"/>
+<edge source="2.1.2 Vektorfelder" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.1.2 Vektorfelder" target="Anwendungen: Anwendungen:"/>
+<edge source="2.1.2 Vektorfelder" target="Definition: Definition 2.4"/>
+<edge source="2.1.2 Vektorfelder" target="Definition: Definition 2.5"/>
+<edge source="2.2 Parametrisierte Kurven &amp; Linienintegrale" target="2.2.1 Parametrisierte Kurven"/>
+<edge source="2.2 Parametrisierte Kurven &amp; Linienintegrale" target="2.2.2 Linienintegrale"/>
+<edge source="2.2.1 Parametrisierte Kurven" target="Definition: Definition"/>
+<edge source="2.2.1 Parametrisierte Kurven" target="Definition: Definition 2.6"/>
+<edge source="2.2.1 Parametrisierte Kurven" target="Definition: Definition 2.7"/>
+<edge source="2.2.1 Parametrisierte Kurven" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.2.1 Parametrisierte Kurven" target="Beispiele: Beispiele:"/>
+<edge source="2.2.1 Parametrisierte Kurven" target="Definition: Definition 2.8"/>
+<edge source="2.2.2 Linienintegrale" target="Definition: Definition 2.9"/>
+<edge source="2.2.2 Linienintegrale" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.2.2 Linienintegrale" target="Anwendungen: Anwendungen:"/>
+<edge source="2.2.2 Linienintegrale" target="Satz: Satz 2.1"/>
+<edge source="2.2.2 Linienintegrale" target="Beweis: Beweis: Für das Linienintegral von w entlang der Kurve erhalten wir"/>
+<edge source="2.3 Mehrfach-Integrale" target="2.3.1 Zweifach-Integrale"/>
+<edge source="2.3 Mehrfach-Integrale" target="2.3.2 Dreifach-Integrale"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Definition: Definition"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Definition: Definition 2.10"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Satz: Satz 2.2"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Satz: Satz 2.3"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Satz: Satz 2.4"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Satz: Satz 2.5"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Beweis: Beweis: Um das Volumen zwischen dem Reckteck G und dem Graphen von f zu berechnen"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Satz: Satz 2.6"/>
+<edge source="2.3.1 Zweifach-Integrale" target="Beweis: Beweis: Gemäss Fubini-Satz und Faktor-Regel gilt"/>
+<edge source="2.3.2 Dreifach-Integrale" target="Satz: Satz 2.7"/>
+<edge source="2.3.2 Dreifach-Integrale" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.3.2 Dreifach-Integrale" target="Anwendungen: Anwendungen:"/>
+<edge source="2.4 Parametrisierte Flächen &amp; Flussintegrale" target="2.4.1 Parametrisierte Flächen"/>
+<edge source="2.4 Parametrisierte Flächen &amp; Flussintegrale" target="2.4.2 Flächenintegrale"/>
+<edge source="2.4 Parametrisierte Flächen &amp; Flussintegrale" target="2.4.3 Flussintegrale"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Definition: Definition"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Definition: Definition 2.11"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Beispiele: Beispiele:"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Definition: Definition 2.12"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Definition: Definition 2.13"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Definition: Definition 2.14"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Definition: Definition 2.15"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Satz: Satz 2.8"/>
+<edge source="2.4.1 Parametrisierte Flächen" target="Beweis: Beweis: Es seien e1 und e2 die Koordinatenbasis-Vektorfelder der parametrisierten Fläche mit"/>
+<edge source="2.4.2 Flächenintegrale" target="Definition: Definition 2.16"/>
+<edge source="2.4.2 Flächenintegrale" target="Satz: Satz 2.9"/>
+<edge source="2.4.2 Flächenintegrale" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.4.3 Flussintegrale" target="Definition: Definition 2.17"/>
+<edge source="2.4.3 Flussintegrale" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.4.3 Flussintegrale" target="Satz: Satz 2.10"/>
+<edge source="2.4.3 Flussintegrale" target="Beweis: Beweis: Für den Fluss von v durch die Fläche erhalten wir"/>
+<edge source="2.4.3 Flussintegrale" target="Satz: Satz 2.11"/>
+<edge source="2.4.3 Flussintegrale" target="Anwendungen: Anwendungen:"/>
+<edge source="2.5 Mehrfach-Differentiale" target="2.5.1 Partielle Ableitungen"/>
+<edge source="2.5 Mehrfach-Differentiale" target="2.5.2 Gradient"/>
+<edge source="2.5 Mehrfach-Differentiale" target="2.5.3 Hesse-Matrix"/>
+<edge source="2.5 Mehrfach-Differentiale" target="2.5.4 Divergenz"/>
+<edge source="2.5 Mehrfach-Differentiale" target="2.5.5 Rotation"/>
+<edge source="2.5 Mehrfach-Differentiale" target="2.5.6 Weiteres zu Gradient, Divergenz und Rotation"/>
+<edge source="2.5.1 Partielle Ableitungen" target="Definition: Definition 2.18"/>
+<edge source="2.5.1 Partielle Ableitungen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.5.2 Gradient" target="Definition: Definition 2.19"/>
+<edge source="2.5.2 Gradient" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.5.2 Gradient" target="Beispiele: Beispiele:"/>
+<edge source="2.5.2 Gradient" target="Satz: Satz 2.12"/>
+<edge source="2.5.2 Gradient" target="Satz: Satz 2.13"/>
+<edge source="2.5.3 Hesse-Matrix" target="Definition: Definition 2.20"/>
+<edge source="2.5.3 Hesse-Matrix" target="Beispiele: Beispiele:"/>
+<edge source="2.5.3 Hesse-Matrix" target="Satz: Satz 2.14"/>
+<edge source="2.5.3 Hesse-Matrix" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.5.3 Hesse-Matrix" target="Definition: Definition 2.21"/>
+<edge source="2.5.4 Divergenz" target="Definition: Definition 2.22"/>
+<edge source="2.5.4 Divergenz" target="Beispiele: Beispiele:"/>
+<edge source="2.5.4 Divergenz" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.5.4 Divergenz" target="Satz: Satz 2.15"/>
+<edge source="2.5.5 Rotation" target="Definition: Definition 2.23"/>
+<edge source="2.5.5 Rotation" target="Definition: Definition 2.24"/>
+<edge source="2.5.5 Rotation" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.5.5 Rotation" target="Satz: Satz 2.16"/>
+<edge source="2.5.6 Weiteres zu Gradient, Divergenz und Rotation" target="Satz: Satz 2.17"/>
+<edge source="2.5.6 Weiteres zu Gradient, Divergenz und Rotation" target="Beweis: Beweis: Siehe Übungen."/>
+<edge source="2.5.6 Weiteres zu Gradient, Divergenz und Rotation" target="Satz: Satz 2.18"/>
+<edge source="2.5.6 Weiteres zu Gradient, Divergenz und Rotation" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.5.6 Weiteres zu Gradient, Divergenz und Rotation" target="Definition: Definition 2.25"/>
+<edge source="2.5.6 Weiteres zu Gradient, Divergenz und Rotation" target="Anwendungen: Anwendungen"/>
+<edge source="2.6 Hauptsätze der Vektoranalysis" target="2.6.1 Gauss-Integralsatz"/>
+<edge source="2.6 Hauptsätze der Vektoranalysis" target="2.6.2 Stokes-Integralsatz"/>
+<edge source="2.6 Hauptsätze der Vektoranalysis" target="2.6.3 Potential-Sätze"/>
+<edge source="2.6 Hauptsätze der Vektoranalysis" target="2.6.4 Zerlegungssatz"/>
+<edge source="2.6.1 Gauss-Integralsatz" target="Satz: Satz 2.19"/>
+<edge source="2.6.1 Gauss-Integralsatz" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.6.1 Gauss-Integralsatz" target="Anwendungen: Anwendungen:"/>
+<edge source="2.6.2 Stokes-Integralsatz" target="Satz: Satz 2.20"/>
+<edge source="2.6.2 Stokes-Integralsatz" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.6.2 Stokes-Integralsatz" target="Anwendungen: Anwendungen:"/>
+<edge source="2.6.3 Potential-Sätze" target="Satz: Satz 2.21"/>
+<edge source="2.6.3 Potential-Sätze" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.6.3 Potential-Sätze" target="Satz: Satz 2.22"/>
+<edge source="2.6.3 Potential-Sätze" target="Anwendungen: Anwendungen:"/>
+<edge source="2.6.4 Zerlegungssatz" target="Satz: Satz 2.23"/>
+<edge source="2.6.4 Zerlegungssatz" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.7 Funktionsdiskussion in mehreren Variablen" target="2.7.1 Erste Richtungsableitung"/>
+<edge source="2.7 Funktionsdiskussion in mehreren Variablen" target="2.7.2 Zweite Richtungsableitung"/>
+<edge source="2.7 Funktionsdiskussion in mehreren Variablen" target="2.7.3 Lokale Extrema"/>
+<edge source="2.7 Funktionsdiskussion in mehreren Variablen" target="2.7.4 Globale Extrema"/>
+<edge source="2.7 Funktionsdiskussion in mehreren Variablen" target="2.7.5 Extrema unter Nebenbedingungen in 2D"/>
+<edge source="2.7.1 Erste Richtungsableitung" target="Satz: Satz 2.24"/>
+<edge source="2.7.1 Erste Richtungsableitung" target="Beweis: Beweis: Wir betrachten Fuktionsgraphen den von f als parametrisierte Fläche mit Parametri-"/>
+<edge source="2.7.1 Erste Richtungsableitung" target="Definition: Definition 2.26"/>
+<edge source="2.7.1 Erste Richtungsableitung" target="Satz: Satz 2.25"/>
+<edge source="2.7.1 Erste Richtungsableitung" target="Beweis: Beweis: Für die Richtungsableitung von f in Richtung ˆe erhalten wir"/>
+<edge source="2.7.1 Erste Richtungsableitung" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.7.2 Zweite Richtungsableitung" target="Satz: Satz 2.26"/>
+<edge source="2.7.2 Zweite Richtungsableitung" target="Beweis: Beweis: Siehe Übungen."/>
+<edge source="2.7.2 Zweite Richtungsableitung" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.7.3 Lokale Extrema" target="Definition: Definition 2.27"/>
+<edge source="2.7.3 Lokale Extrema" target="Bemerkungen: Bemerkungen:"/>
+<edge source="2.7.3 Lokale Extrema" target="Satz: Satz 2.27"/>
+<edge source="2.7.3 Lokale Extrema" target="Satz: Satz 2.28"/>
+<edge source="2.7.3 Lokale Extrema" target="Beweis: Beweis: Wir betrachten die Richtungsvektoren"/>
+<edge source="2.7.5 Extrema unter Nebenbedingungen in 2D" target="Satz: Satz 2.29"/>
+<edge source="2.7.5 Extrema unter Nebenbedingungen in 2D" target="Beweis: Beweis: Wir betrachten die Level-Linie von g zum Level L = 0. Liegt ein Extrema von f"/>
+<edge source="2.7.5 Extrema unter Nebenbedingungen in 2D" target="Bemerkungen: Bemerkungen:"/>
+<edge source="Kapitel 3: Integralrechnung" target="3.1 Integrationsmethoden"/>
+<edge source="Kapitel 3: Integralrechnung" target="3.2 Uneigentliche Integrale"/>
+<edge source="3.1 Integrationsmethoden" target="3.1.1 Substitution"/>
+<edge source="3.1 Integrationsmethoden" target="3.1.2 Partielle Integration"/>
+<edge source="3.1.1 Substitution" target="Satz: Satz 3.1"/>
+<edge source="3.1.1 Substitution" target="Beweis: Beweis: Durch Anwenden der Summen-Regel und Ketten-Regel und weil F ′ = f erhalten wir"/>
+<edge source="3.1.1 Substitution" target="Beispiele: Beispiele:"/>
+<edge source="3.1.1 Substitution" target="Bemerkungen: Bemerkungen:"/>
+<edge source="3.1.1 Substitution" target="Satz: Satz 3.2"/>
+<edge source="3.1.1 Substitution" target="Beweis: Beweis: Wir zeigen mehrere Varianten um die Beschleunigungsarbeit zu berechnen."/>
+<edge source="3.1.2 Partielle Integration" target="Satz: Satz 3.3"/>
+<edge source="3.1.2 Partielle Integration" target="Beweis: Beweis: Übung."/>
+<edge source="3.1.2 Partielle Integration" target="Beispiele: Beispiele:"/>
+<edge source="3.1.2 Partielle Integration" target="Bemerkungen: Bemerkungen:"/>
+<edge source="3.1.2 Partielle Integration" target="Anwendungen: Anwendungen:"/>
+<edge source="3.2 Uneigentliche Integrale" target="3.2.1 Integration über unendliche Intervalle"/>
+<edge source="3.2 Uneigentliche Integrale" target="3.2.2 Integration über Polstellen"/>
+<edge source="3.2.1 Integration über unendliche Intervalle" target="Definition: Definition 3.1"/>
+<edge source="3.2.1 Integration über unendliche Intervalle" target="Beispiele: Beispiele:"/>
+<edge source="3.2.1 Integration über unendliche Intervalle" target="Bemerkungen: Bemerkungen:"/>
+<edge source="3.2.1 Integration über unendliche Intervalle" target="Satz: Satz 3.4"/>
+<edge source="3.2.1 Integration über unendliche Intervalle" target="Beweis: Beweis: Übung."/>
+<edge source="3.2.1 Integration über unendliche Intervalle" target="Definition: Definition 3.2"/>
+<edge source="3.2.2 Integration über Polstellen" target="Definition: Definition 3.3"/>
+<edge source="3.2.2 Integration über Polstellen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="Kapitel 4: Taylor-Entwicklungen" target="4.1 Maclaurin-Entwicklungen"/>
+<edge source="Kapitel 4: Taylor-Entwicklungen" target="4.2 Taylor-Entwicklungen allgemein"/>
+<edge source="4.1 Maclaurin-Entwicklungen" target="4.1.1 Maclaurin-Formel"/>
+<edge source="4.1 Maclaurin-Entwicklungen" target="4.1.2 Maclaurin-Reihen der Elementarfunktionen"/>
+<edge source="4.1 Maclaurin-Entwicklungen" target="4.1.3 Anwendungen"/>
+<edge source="4.1.1 Maclaurin-Formel" target="Satz: Satz 4.1"/>
+<edge source="4.1.1 Maclaurin-Formel" target="Beweis: Beweis: Zunächst bemerken wir, dass gilt"/>
+<edge source="4.1.1 Maclaurin-Formel" target="Definition: Definition 4.1"/>
+<edge source="4.1.1 Maclaurin-Formel" target="Bemerkungen: Bemerkungen:"/>
+<edge source="4.1.2 Maclaurin-Reihen der Elementarfunktionen" target="Satz: Satz 4.2"/>
+<edge source="4.1.2 Maclaurin-Reihen der Elementarfunktionen" target="Beweis: Beweis: Wir berechnen die Ableitungen von f(x) := exp(x) = ex sowie deren Werte an der"/>
+<edge source="4.1.2 Maclaurin-Reihen der Elementarfunktionen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="4.2 Taylor-Entwicklungen allgemein" target="4.2.1 Taylor-Formel"/>
+<edge source="4.2 Taylor-Entwicklungen allgemein" target="4.2.2 Anwendung lokale Extrema"/>
+<edge source="4.2.1 Taylor-Formel" target="Satz: Satz 4.3"/>
+<edge source="4.2.1 Taylor-Formel" target="Beweis: Beweis: Analog zum Beweis der Maclaurin-Entwicklung."/>
+<edge source="4.2.1 Taylor-Formel" target="Definition: Definition 4.2"/>
+<edge source="4.2.1 Taylor-Formel" target="Bemerkungen: Bemerkungen:"/>
+<edge source="4.2.2 Anwendung lokale Extrema" target="Satz: Satz 4.4"/>
+<edge source="4.2.2 Anwendung lokale Extrema" target="Beweis: Beweis: Wir betrachten die Taylor-Entwicklung von f der Ordnung m an der Stelle xk. Für"/>
+<edge source="Kapitel 5: Komplexe Zahlen" target="5.1 Grundlagen"/>
+<edge source="Kapitel 5: Komplexe Zahlen" target="5.2 Gauss-Ebene"/>
+<edge source="Kapitel 5: Komplexe Zahlen" target="5.3 Quadratische Gleichungen"/>
+<edge source="Kapitel 5: Komplexe Zahlen" target="5.4 Potenzen"/>
+<edge source="5.1 Grundlagen" target="5.1.1 Einleitung"/>
+<edge source="5.1 Grundlagen" target="5.1.2 Konstruktion"/>
+<edge source="5.1 Grundlagen" target="5.1.3 Zahlenumfang"/>
+<edge source="5.1 Grundlagen" target="5.1.4 Grundoperationen"/>
+<edge source="5.1.2 Konstruktion" target="Definition: Definition 5.1"/>
+<edge source="5.1.2 Konstruktion" target="Bemerkungen: Bemerkungen:"/>
+<edge source="5.1.3 Zahlenumfang" target="Satz: Satz 5.1"/>
+<edge source="5.1.3 Zahlenumfang" target="Bemerkungen: Bemerkungen:"/>
+<edge source="5.1.3 Zahlenumfang" target="Definition: Definition 5.2"/>
+<edge source="5.1.4 Grundoperationen" target="Satz: Satz 5.2"/>
+<edge source="5.1.4 Grundoperationen" target="Beweis: Beweis: Es gibt x, y ∈R, so dass gilt"/>
+<edge source="5.2 Gauss-Ebene" target="5.2.1 Elementare Entsprechungen"/>
+<edge source="5.2 Gauss-Ebene" target="5.2.2 Trigonometrische Form"/>
+<edge source="5.2.1 Elementare Entsprechungen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="5.2.2 Trigonometrische Form" target="Definition: Definition 5.3"/>
+<edge source="5.2.2 Trigonometrische Form" target="Bemerkungen: Bemerkungen:"/>
+<edge source="5.2.2 Trigonometrische Form" target="Satz: Satz 5.3"/>
+<edge source="5.2.2 Trigonometrische Form" target="Beweis: Beweis: Die Aussage folgt sofort durch Anwenden der Trigonometrie in der Gauss-Ebene."/>
+<edge source="5.4 Potenzen" target="5.4.1 Euler-Formel"/>
+<edge source="5.4 Potenzen" target="5.4.2 Exponentielle Form"/>
+<edge source="5.4 Potenzen" target="5.4.3 Potenz-Gleichungen"/>
+<edge source="5.4 Potenzen" target="5.4.4 Wurzeln"/>
+<edge source="5.4.1 Euler-Formel" target="Satz: Satz 5.4"/>
+<edge source="5.4.1 Euler-Formel" target="Beweis: Beweis: Übung mit Hilfe von Maclaurin-Entwicklungen."/>
+<edge source="5.4.1 Euler-Formel" target="Satz: Satz 5.5"/>
+<edge source="5.4.1 Euler-Formel" target="Beweis: Beweis: Übung."/>
+<edge source="5.4.1 Euler-Formel" target="Bemerkungen: Bemerkungen:"/>
+<edge source="5.4.2 Exponentielle Form" target="Satz: Satz 5.6"/>
+<edge source="5.4.2 Exponentielle Form" target="Beweis: Beweis: Die Aussage folgt sofort aus der Euler-Formel."/>
+<edge source="5.4.2 Exponentielle Form" target="Bemerkungen: Bemerkungen:"/>
+<edge source="5.4.3 Potenz-Gleichungen" target="Satz: Satz 5.7"/>
+<edge source="5.4.3 Potenz-Gleichungen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="Kapitel 6: Matrizen &amp; Lineare Abbildungen" target="6.1 Matrix-Algebra"/>
+<edge source="Kapitel 6: Matrizen &amp; Lineare Abbildungen" target="6.2 Lineare Abbildungen"/>
+<edge source="Kapitel 6: Matrizen &amp; Lineare Abbildungen" target="6.3 Orthogonale Matrizen"/>
+<edge source="Kapitel 6: Matrizen &amp; Lineare Abbildungen" target="6.4 Spur &amp; Determinante"/>
+<edge source="Kapitel 6: Matrizen &amp; Lineare Abbildungen" target="6.5 Eigenwerte &amp; Eigenvektoren"/>
+<edge source="6.1 Matrix-Algebra" target="6.1.1 Definition"/>
+<edge source="6.1 Matrix-Algebra" target="6.1.2 Operationen"/>
+<edge source="6.1 Matrix-Algebra" target="6.1.3 Spezielle Matrizen"/>
+<edge source="6.1.1 Definition" target="Definition: Definition 6.1"/>
+<edge source="6.1.1 Definition" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.1.1 Definition" target="Beispiele: Beispiele:"/>
+<edge source="6.1.2 Operationen" target="Definition: Definition 6.2"/>
+<edge source="6.1.2 Operationen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.1.2 Operationen" target="Beispiele: Beispiele:"/>
+<edge source="6.1.2 Operationen" target="Definition: Definition 6.3"/>
+<edge source="6.1.2 Operationen" target="Definition: Definition 6.4"/>
+<edge source="6.1.2 Operationen" target="Definition: Definition 6.5"/>
+<edge source="6.1.2 Operationen" target="Satz: Satz 6.1"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Definition: Definition 6.6"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Beispiele: Beispiele:"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Definition: Definition 6.7"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Definition: Definition 6.8"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Definition: Definition 6.9"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Definition: Definition 6.10"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Definition: Definition 6.11"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Satz: Satz 6.2"/>
+<edge source="6.1.3 Spezielle Matrizen" target="Definition: Definition 6.12"/>
+<edge source="6.2 Lineare Abbildungen" target="6.2.1 Definition"/>
+<edge source="6.2 Lineare Abbildungen" target="6.2.2 Eigenschaften"/>
+<edge source="6.2 Lineare Abbildungen" target="6.2.3 Spalten-Vektor-Konstruktionsverfahren"/>
+<edge source="6.2 Lineare Abbildungen" target="6.2.4 Beispiele"/>
+<edge source="6.2.1 Definition" target="Definition: Definition 6.13"/>
+<edge source="6.2.1 Definition" target="Definition: Definition 6.14"/>
+<edge source="6.2.1 Definition" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.2.2 Eigenschaften" target="Satz: Satz 6.3"/>
+<edge source="6.2.2 Eigenschaften" target="Beweis: Beweis: Wegen der Assoziativität des Matrix-Produkts finden wir für alle x ∈Rm"/>
+<edge source="6.2.2 Eigenschaften" target="Satz: Satz 6.4"/>
+<edge source="6.2.2 Eigenschaften" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.2.3 Spalten-Vektor-Konstruktionsverfahren" target="Satz: Satz 6.5"/>
+<edge source="6.2.3 Spalten-Vektor-Konstruktionsverfahren" target="Beweis: Beweis: Die Bilder der Einheitsvektoren aus (6.45) unter der linearen Abbildung a sind"/>
+<edge source="6.2.3 Spalten-Vektor-Konstruktionsverfahren" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.3 Orthogonale Matrizen" target="6.3.1 Definition"/>
+<edge source="6.3 Orthogonale Matrizen" target="6.3.2 Geometrische Eigenschaften"/>
+<edge source="6.3 Orthogonale Matrizen" target="6.3.3 Spezielle orthogonale Matrizen"/>
+<edge source="6.3.1 Definition" target="Definition: Definition 6.15"/>
+<edge source="6.3.1 Definition" target="Definition: Definition 6.16"/>
+<edge source="6.3.1 Definition" target="Satz: Satz 6.6"/>
+<edge source="6.3.1 Definition" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.3.1 Definition" target="Beispiele: Beispiele:"/>
+<edge source="6.3.2 Geometrische Eigenschaften" target="Satz: Satz 6.7"/>
+<edge source="6.3.2 Geometrische Eigenschaften" target="Beweis: Beweis: Weil A orthogonal ist, gilt"/>
+<edge source="6.3.2 Geometrische Eigenschaften" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.3.2 Geometrische Eigenschaften" target="Satz: Satz 6.8"/>
+<edge source="6.3.2 Geometrische Eigenschaften" target="Beweis: Beweis: Weil das Skalar-Produkt von zwei Vektoren eine reelle Zahl ist, die als 1 × 1-Matrix"/>
+<edge source="6.3.2 Geometrische Eigenschaften" target="Satz: Satz 6.9"/>
+<edge source="6.3.2 Geometrische Eigenschaften" target="Beweis: Beweis: Mit Hilfe der Rechenregel (6.64) und weil A orthogonal ist, finden wir"/>
+<edge source="6.3.3 Spezielle orthogonale Matrizen" target="Satz: Satz 6.10"/>
+<edge source="6.3.3 Spezielle orthogonale Matrizen" target="Beweis: Beweis: Um das Bild eines Vektors v ∈Rn unter der Spiegelung zu berechnen, zerlegen wir v"/>
+<edge source="6.3.3 Spezielle orthogonale Matrizen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.3.3 Spezielle orthogonale Matrizen" target="Definition: Definition 6.17"/>
+<edge source="6.3.3 Spezielle orthogonale Matrizen" target="Satz: Satz 6.11"/>
+<edge source="6.3.3 Spezielle orthogonale Matrizen" target="Satz: Satz 6.12"/>
+<edge source="6.3.3 Spezielle orthogonale Matrizen" target="Beweis: Beweis: Um das Bild eines Vektors v ∈R3 unter der Rotation zu berechnen, zerlegen wir"/>
+<edge source="6.4 Spur &amp; Determinante" target="6.4.1 Einleitung"/>
+<edge source="6.4 Spur &amp; Determinante" target="6.4.2 Spur"/>
+<edge source="6.4 Spur &amp; Determinante" target="6.4.3 Determinante"/>
+<edge source="6.4 Spur &amp; Determinante" target="6.4.4 Mass-Formeln"/>
+<edge source="6.4.2 Spur" target="Definition: Definition"/>
+<edge source="6.4.2 Spur" target="Definition: Definition 6.18"/>
+<edge source="6.4.2 Spur" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.4.2 Spur" target="Beispiele: Beispiele:"/>
+<edge source="6.4.2 Spur" target="Satz: Satz 6.13"/>
+<edge source="6.4.2 Spur" target="Beweis: Beweis: Die Matrizen A und AT haben die gleichen Diagonalenelemente und folglich auch die"/>
+<edge source="6.4.3 Determinante" target="Definition: Definition"/>
+<edge source="6.4.3 Determinante" target="Definition: Definition 6.19"/>
+<edge source="6.4.3 Determinante" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.4.3 Determinante" target="Beispiele: Beispiele:"/>
+<edge source="6.4.3 Determinante" target="Satz: Satz 6.14"/>
+<edge source="6.4.3 Determinante" target="Beweis: Beweis: Um ein p ∈Sn zu definieren, wählen wir für jedes k ∈{1, . . . , n} einen Funktionswert"/>
+<edge source="6.4.3 Determinante" target="Definition: Definition 6.20"/>
+<edge source="6.4.3 Determinante" target="Definition: Definition 6.21"/>
+<edge source="6.4.3 Determinante" target="Satz: Satz 6.15"/>
+<edge source="6.4.3 Determinante" target="Beweis: Beweis: Die Aussagen (a) und (b) sind klar, während (c) nur mit grossem Aufwand gezeigt"/>
+<edge source="6.4.3 Determinante" target="Satz: Satz 6.16"/>
+<edge source="6.4.3 Determinante" target="Satz: Satz 6.17"/>
+<edge source="6.4.3 Determinante" target="Satz: Satz 6.18"/>
+<edge source="6.4.3 Determinante" target="Satz: Satz 6.19"/>
+<edge source="6.4.3 Determinante" target="Beweis: Beweis: Für eine orthogonale Matrix A muss gelten"/>
+<edge source="6.4.4 Mass-Formeln" target="Definition: Definition 6.22"/>
+<edge source="6.4.4 Mass-Formeln" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.4.4 Mass-Formeln" target="Definition: Definition 6.23"/>
+<edge source="6.4.4 Mass-Formeln" target="Satz: Satz 6.20"/>
+<edge source="6.4.4 Mass-Formeln" target="Beweis: Beweis: Weil A eine quadratische Matrix ist, folgt"/>
+<edge source="6.5 Eigenwerte &amp; Eigenvektoren" target="6.5.1 Einleitung"/>
+<edge source="6.5 Eigenwerte &amp; Eigenvektoren" target="6.5.2 Definition &amp; Eigenschaften"/>
+<edge source="6.5 Eigenwerte &amp; Eigenvektoren" target="6.5.3 Charakteristisches Polynom"/>
+<edge source="6.5 Eigenwerte &amp; Eigenvektoren" target="6.5.4 Eigenwerte &amp; Eigenvektoren berechnen"/>
+<edge source="6.5 Eigenwerte &amp; Eigenvektoren" target="6.5.5 Spezielle Eigenwerte &amp; Eigenvektoren"/>
+<edge source="6.5.2 Definition &amp; Eigenschaften" target="Definition: Definition 6.24"/>
+<edge source="6.5.2 Definition &amp; Eigenschaften" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.5.2 Definition &amp; Eigenschaften" target="Definition: Definition explizit ausgeschlossen. Die Zahl 0 ∈R kann jedoch als Eigenwert auftreten."/>
+<edge source="6.5.3 Charakteristisches Polynom" target="Definition: Definition 6.25"/>
+<edge source="6.5.3 Charakteristisches Polynom" target="Bemerkungen: Bemerkungen:"/>
+<edge source="6.5.3 Charakteristisches Polynom" target="Satz: Satz 6.21"/>
+<edge source="6.5.3 Charakteristisches Polynom" target="Beweis: Beweis: Es gilt"/>
+<edge source="6.5.3 Charakteristisches Polynom" target="Beispiele: Beispiele:"/>
+<edge source="6.5.4 Eigenwerte &amp; Eigenvektoren berechnen" target="Satz: Satz 6.22"/>
+<edge source="6.5.4 Eigenwerte &amp; Eigenvektoren berechnen" target="Beweis: Beweis: Für einen Eigenwert λ ∈R und einen zugehörigen Eigenvektor E ∈Rn \ {0} gilt"/>
+<edge source="6.5.4 Eigenwerte &amp; Eigenvektoren berechnen" target="Bemerkungen: Bemerkungen:"/>
+<edge source="Kapitel 7: Vektorräume" target="7.1 Vektorraumstruktur"/>
+<edge source="Kapitel 7: Vektorräume" target="7.2 Lineare Abbildungen"/>
+<edge source="Kapitel 7: Vektorräume" target="7.3 Skalar-Produkt &amp; Metrik"/>
+<edge source="7.1 Vektorraumstruktur" target="7.1.1 Definition"/>
+<edge source="7.1 Vektorraumstruktur" target="7.1.2 Linearkombinationen, Basis &amp; Dimension"/>
+<edge source="7.1 Vektorraumstruktur" target="7.1.3 Unterräume"/>
+<edge source="7.1.1 Definition" target="Definition: Definition 7.1"/>
+<edge source="7.1.1 Definition" target="Satz: Satz 7.1"/>
+<edge source="7.1.1 Definition" target="Beweis: Beweis: Gemäss VR-8, VR-6 und wieder VR-8 und dann VR-1 sowie VR-3 gilt"/>
+<edge source="7.1.1 Definition" target="Bemerkungen: Bemerkungen:"/>
+<edge source="7.1.1 Definition" target="Beispiele: Beispiele:"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Definition: Definition 7.2"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Definition: Definition 7.3"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Bemerkungen: Bemerkungen:"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Definition: Definition 7.4"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Satz: Satz 7.2"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Beweis: Beweis: Weil die Vektoren in B eine Basis des Vektorraums bilden, sind sie nach Definition 7.4"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Satz: Satz 7.3"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Satz: Satz 7.4"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Definition: Definition 7.5"/>
+<edge source="7.1.2 Linearkombinationen, Basis &amp; Dimension" target="Beispiele: Beispiele:"/>
+<edge source="7.1.3 Unterräume" target="Definition: Definition 7.6"/>
+<edge source="7.1.3 Unterräume" target="Bemerkungen: Bemerkungen:"/>
+<edge source="7.1.3 Unterräume" target="Satz: Satz 7.5"/>
+<edge source="7.1.3 Unterräume" target="Beispiele: Beispiele:"/>
+<edge source="7.2 Lineare Abbildungen" target="7.2.1 Definition"/>
+<edge source="7.2 Lineare Abbildungen" target="7.2.2 Matrix-Darstellung"/>
+<edge source="7.2 Lineare Abbildungen" target="7.2.3 Bild &amp; Kern"/>
+<edge source="7.2.1 Definition" target="Definition: Definition 7.7"/>
+<edge source="7.2.1 Definition" target="Bemerkungen: Bemerkungen:"/>
+<edge source="7.2.1 Definition" target="Beispiele: Beispiele:"/>
+<edge source="7.2.2 Matrix-Darstellung" target="Definition: Definition 7.8"/>
+<edge source="7.2.2 Matrix-Darstellung" target="Satz: Satz 7.6"/>
+<edge source="7.2.2 Matrix-Darstellung" target="Beweis: Beweis: Durch Einsetzen der Basis-Darstellung von v und weil a eine lineare Abbildung ist,"/>
+<edge source="7.2.2 Matrix-Darstellung" target="Bemerkungen: Bemerkungen:"/>
+<edge source="7.2.3 Bild &amp; Kern" target="Definition: Definition 7.9"/>
+<edge source="7.2.3 Bild &amp; Kern" target="Bemerkungen: Bemerkungen:"/>
+<edge source="7.2.3 Bild &amp; Kern" target="Satz: Satz 7.7"/>
+<edge source="7.2.3 Bild &amp; Kern" target="Satz: Satz 7.8"/>
+<edge source="7.3 Skalar-Produkt &amp; Metrik" target="7.3.1 Skalar-Produkt"/>
+<edge source="7.3 Skalar-Produkt &amp; Metrik" target="7.3.2 Metrik"/>
+<edge source="7.3.1 Skalar-Produkt" target="Definition: Definition"/>
+<edge source="7.3.1 Skalar-Produkt" target="Definition: Definition 7.10"/>
+<edge source="7.3.1 Skalar-Produkt" target="Definition: Definition 7.11"/>
+<edge source="7.3.1 Skalar-Produkt" target="Bemerkungen: Bemerkungen:"/>
+<edge source="7.3.1 Skalar-Produkt" target="Beispiele: Beispiele:"/>
+<edge source="7.3.1 Skalar-Produkt" target="Anwendungen: Anwendungen: Geometrie, Datenanalyse"/>
+<edge source="7.3.1 Skalar-Produkt" target="Anwendungen: Anwendungen: Relativitätstheorie"/>
+<edge source="7.3.1 Skalar-Produkt" target="Anwendungen: Anwendungen: Gruppen-Theorie, Datenanalyse"/>
+<edge source="7.3.1 Skalar-Produkt" target="Anwendungen: Anwendungen: Fourier-Entwicklungen, Signalverarbeitung"/>
+<edge source="7.3.1 Skalar-Produkt" target="Anwendungen: Anwendungen: Fourier-Transformation, Laplace-Transformation, Signalverarbeitung, Va-"/>
+<edge source="7.3.1 Skalar-Produkt" target="Definition: Definition 7.12"/>
+<edge source="7.3.1 Skalar-Produkt" target="Definition: Definition 7.13"/>
+<edge source="7.3.1 Skalar-Produkt" target="Satz: Satz 7.9"/>
+<edge source="7.3.1 Skalar-Produkt" target="Satz: Satz 7.10"/>
+<edge source="7.3.1 Skalar-Produkt" target="Beweis: Beweis: Übung."/>
+<edge source="7.3.1 Skalar-Produkt" target="Satz: Satz 7.11"/>
+<edge source="7.3.1 Skalar-Produkt" target="Beweis: Beweis: Für alle x ∈R betrachten wir den Vektor"/>
+<edge source="7.3.1 Skalar-Produkt" target="Definition: Definition 7.14"/>
+<edge source="7.3.2 Metrik" target="Definition: Definition 7.15"/>
+<edge source="7.3.2 Metrik" target="Bemerkungen: Bemerkungen:"/>
+<edge source="7.3.2 Metrik" target="Satz: Satz 7.12"/>
+<edge source="7.3.2 Metrik" target="Beweis: Beweis: Durch Einsetzen der Basis-Darstellungen und mit Hilfe der Bilinearität des Skalar-"/>
+</graph></graphml>

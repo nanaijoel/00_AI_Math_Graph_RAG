@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{bbold}
+
+\begin{document}
+Die Lösungsmenge ist daher
+
+
+\begin{equation*}
+\underline{\underline{L}=\left\{3 \cdot \mathrm{e}^{\mathrm{i} \cdot \frac{\pi}{3}},-3,3 \cdot \mathrm{e}^{-\mathrm{i} \cdot \frac{\pi}{3}}\right\} .} \tag{5.41}
+\end{equation*}
+
+
+Die Lösungen bilden ein gleichseitiges Dreieck in der Gauss-Ebene.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_68c58d275f0b63bcefaeg-1}
+
+Wir betrachten den folgenden Satz.\\
+Satz 5.7 Lösungen von Potenz-Gleichungen\\
+Seien $w, z \in \mathbb{C}, n \in \mathbb{N}^{+}, r, \varphi \in \mathbb{R}$ mit $r>0$ und $z$ erfülle die Potenz-Gleichung
+
+
+\begin{equation*}
+z^{n}=w=r \cdot \mathrm{e}^{\mathrm{i} \cdot \varphi} . \tag{5.42}
+\end{equation*}
+
+
+Dann gilt folgendes.\\
+(a) Für $w=0$ hat (5.42) genau eine Lösung für $z$, nämlich
+
+
+\begin{equation*}
+z=0 \text {. } \tag{5.43}
+\end{equation*}
+
+
+(b) Für $w \neq 0$ hat (5.42) genau $n$ Lösungen für $z$, nämlich
+
+
+\begin{equation*}
+z_{k}=\sqrt[n]{r} \cdot \mathrm{e}^{\mathrm{i} \cdot \frac{\varphi+(k-1) \cdot 2 \pi}{n}} \quad \text { für } \quad k \in\{1, \ldots, n\} . \tag{5.44}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Tatsache, dass (5.42) ausser für $w=0$ genau $n$ Lösungen hat, wird als algebraische Vollständigkeit oder algebraische Abgeschlossenheit von $\mathbb{C}$ bezeichnet.\\
+ii) Für alle Lösungen von (5.42) gilt
+
+
+\begin{equation*}
+\left|z_{k}\right|=\sqrt[n]{r}=\sqrt[n]{|w|} . \tag{5.45}
+\end{equation*}
+
+
+Die Lösungen liegen in der Gauss-Ebene daher auf dem Kreis um den Ursprung mit Radius $\sqrt[n]{|w|}$.\\
+iii) Zwischen zwei benachbarten Lösungen von (5.42) liegt jeweils ein Winkel von
+
+
+\begin{equation*}
+\Delta \varphi=\frac{2 \pi}{n} . \tag{5.46}
+\end{equation*}
+
+
+iv) Die Lösungen von (5.42) bilden ein reguläres $n$-Eck in der Gauss-Ebene.
+
+
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+ii) Addiert oder subtrahiert man zwei reelle Matrizen, dann addiert bzw. subtrahiert man ihre Komponenten.\\
+iii) Die Addition bzw. Subtraktion von zwei reellen Matrizen unterschiedlicher Dimensionen ist nicht definiert.\\
+iv) Beispiel-Codes zur Addition und Subtraktion von Matrizen mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+MATLAB/Octave & $\mathrm{M}=\mathrm{A}+\mathrm{B} ; \mathrm{M}=\mathrm{A}-\mathrm{B}$; \\
+\hline
+Mathematica/WolframAlpha & $\mathrm{M}=\mathrm{A}+\mathrm{B} ; \mathrm{M}=\mathrm{A}-\mathrm{B}$; \\
+\hline
+Python/Numpy & $\mathrm{M}=\mathrm{A}+\mathrm{B} ; \mathrm{M}=\mathrm{A}-\mathrm{B}$; \\
+\hline
+Python/Sympy & $\mathrm{M}=\mathrm{A}+\mathrm{B} ; \mathrm{M}=\mathrm{A}-\mathrm{B}$; \\
+\hline
+\end{tabular}
+\end{center}
+
+Beispiele:
+
+\begin{itemize}
+  \item $\left[\begin{array}{rr}2 & -1 \\ 7 & 5\end{array}\right]+\left[\begin{array}{ll}1 & -2 \\ 6 & -5\end{array}\right]=\left[\begin{array}{rr}3 & -3 \\ 13 & 0\end{array}\right]$
+  \item $\left[\begin{array}{rr}2 & -1 \\ 7 & 5\end{array}\right]-\left[\begin{array}{ll}1 & -2 \\ 6 & -5\end{array}\right]=\left[\begin{array}{rr}1 & 1 \\ 1 & 10\end{array}\right]$
+  \item $\left[\begin{array}{ll}0 & 1\end{array}\right]+\left[\begin{array}{ll}-1 & -1\end{array}\right]=\left[\begin{array}{ll}-1 & 0\end{array}\right]$
+\end{itemize}
+
+\subsection*{6.1.2.2 Multiplikation mit einem Skalar}
+Jede reelle Matrix lässt sich mit einer reellen Zahl multiplizieren.\\
+Definition 6.3 Multiplikation mit einem Skalar\\
+Seien $m, n \in \mathbb{N}^{+}, a \in \mathbb{R}$ und $A \in \mathbb{M}(m, n, \mathbb{R})$, dann ist
+
+\[
+a \cdot A:=\left[\begin{array}{llll}
+a \cdot A^{1}{ }_{1} & a \cdot A^{1}{ }_{2} & \ldots & a \cdot A^{1}{ }_{n}  \tag{6.6}\\
+a \cdot A^{2}{ }_{1} & a \cdot A^{2}{ }_{2} & \ldots & a \cdot A^{2}{ }_{n} \\
+\vdots & \vdots & \vdots & \vdots \\
+a \cdot A^{m}{ }_{1} & a \cdot A^{m}{ }_{2} & \ldots & a \cdot A^{m}{ }_{n}
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Für alle $a \in \mathbb{R}$ und $A \in \mathbb{M}(m, n, \mathbb{R})$ gilt $a \cdot A \in \mathbb{M}(m, n, \mathbb{R})$.\\
+ii) Multipliziert man eine reelle Matrix mit einem Skalar, dann multipliziert man ihre Komponenten mit dem Skalar.\\
+iii) Es soll keine Rolle spielen, ob der Skalar links oder rechts der reellen Matrix geschrieben wird. Man definiert
+
+
+\begin{equation*}
+A \cdot a:=a \cdot A . \tag{6.7}
+\end{equation*}
+
+
+iv) Aus der Multiplikation mit einem Skalar ergibt sich auf natürliche Weise eine Division. Es soll gelten
+
+
+\begin{equation*}
+\frac{A}{a}:=\frac{1}{a} \cdot A . \tag{6.8}
+\end{equation*}
+
+
+
+\end{document}

@@ -1,0 +1,89 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+iii) Durch Normierung erhält man aus dem Normalen-Vektor den Einheitsnormalen-Vektor
+
+
+\begin{equation*}
+\hat{\mathbf{n}}:= \pm \frac{1}{|\mathbf{n}|} \cdot \mathbf{n} . \tag{2.103}
+\end{equation*}
+
+
+iv) Für geschlossene Flächen $M$ wird das Vorzeichen des Einheitsnormalen-Vektors so gewählt, dass $\hat{\mathbf{n}}$ überall nach aussen zeigt.
+
+\subsection*{2.4.1.4 Metrik}
+Wir betrachten folgende Definition.
+
+\section*{Definition 2.14 Metrik}
+Die Metrik einer parametrisierten Fläche ist die Gram-Matrix der Koordinatenbasis-Vektorfelder, d.h.
+
+\[
+G:=\left[\begin{array}{ll}
+g_{11} & g_{12}  \tag{2.104}\\
+g_{21} & g_{22}
+\end{array}\right]:=\left[\begin{array}{ll}
+\left\langle\mathbf{e}_{1}, \mathbf{e}_{1}\right\rangle & \left\langle\mathbf{e}_{1}, \mathbf{e}_{2}\right\rangle \\
+\left\langle\mathbf{e}_{2}, \mathbf{e}_{1}\right\rangle & \left\langle\mathbf{e}_{2}, \mathbf{e}_{2}\right\rangle
+\end{array}\right] .
+\]
+
+Bemerkungen:\\
+i) Weil das Skalar-Produkt symmetrisch ist, gilt dies auch für $G$, d.h.
+
+
+\begin{equation*}
+G^{T}=G \tag{2.105}
+\end{equation*}
+
+
+ii) Weil das Skalar-Produkt positiv definit ist, gilt dies auch für $G$, d.h.
+
+
+\begin{equation*}
+g:=\operatorname{det}(G)=g_{11} \cdot g_{22}-g_{21} \cdot g_{12}>0 . \tag{2.106}
+\end{equation*}
+
+
+iii) In vielen Anwendungen stehen die Koordinatenbasis-Vektorfelder senkrecht aufeinander. Allgemein gilt
+
+
+\begin{equation*}
+\mathbf{e}_{1} \perp \mathbf{e}_{2} \Leftrightarrow G \text { ist diagonal. } \tag{2.107}
+\end{equation*}
+
+
+\subsection*{2.4.1.5 Mass-Funktion}
+Wir betrachten folgende Definition.
+
+\section*{Definition 2.15 Mass-Funktion}
+Seien $G$ die Metrik einer parametrisierten Fläche und
+
+
+\begin{equation*}
+g:=\operatorname{det}(G), \tag{2.108}
+\end{equation*}
+
+
+dann ist die Mass-Funktion die Wurzel $\sqrt{g}$.\\
+Wir betrachten folgenden Satz.
+
+\section*{Satz 2.8 Normalen-Vektor \& Mass-Funktion}
+Seien $\mathbf{n}$ der Normalen-Vektor und $\sqrt{g}$ die Mass-Funktion einer parametrisierten Fläche, dann gilt
+
+\[
+\begin{array}{|l|}
+\hline g  \tag{2.109}\\
+\hline
+\end{array}
+\]
+
+
+\end{document}

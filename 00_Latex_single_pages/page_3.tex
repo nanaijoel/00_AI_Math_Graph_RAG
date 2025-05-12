@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{1.2 Archimedes-Cauchy-Riemann-Approximationsprozess}
+\subsection*{1.2.1 Einleitung}
+Einleitende Bemerkungen:\\
+i) Die Abkürzung ACR-Prozess steht für Archimedes-Cauchy-Riemann- Approximationsprozess.\\
+ii) Sinn und Zweck eines ACR-Prozess ist nicht die Berechnung von Integralen sondern das Auffinden von Integralen in der Praxis. Das Konzept ist im folgenden Schema dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_63370f1e1f15f16530dag-1}\\
+iii) Aus den historischen Wurzeln des ACR-Prozesses ergibt sich auch die Erklärung für die Schreibweise mit dem "Integral-Haken".
+
+\subsection*{1.2.2 Historische Methode zur Berechnung von Integralen}
+Wir betrachten den Graphen einer stetigen Funktion $f: \mathbb{R} \rightarrow \mathbb{R}$ entlang eines reellen Intervalls $\left[x_{0}, x_{\mathrm{E}}\right]$. Die Situation ist im folgenden $x$ - $y$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_63370f1e1f15f16530dag-1(1)}
+
+Schon bevor die Newton-Leibniz-Formel bekannt war, gab es Methoden zur näherungsweise Berechnung der Fläche $A$ entlang des reellen Intervalls $\left[x_{0}, x_{\mathrm{E}}\right]$ zwischen der $x$-Achse und dem Graphen von $f$. Dabei wurde typischerweise nach den folgenden Schritten vorgegangen.
+
+S1 Man wählt ein $N \in \mathbb{N}^{+}$und definiert sich die Werte
+
+
+\begin{align*}
+\delta x & :=\frac{x_{\mathrm{E}}-x_{0}}{N}  \tag{1.4}\\
+x_{k} & :=x_{0}+k \cdot \delta x \quad \text { für } k \in\{1, \ldots, N\} . \tag{1.5}
+\end{align*}
+
+
+S2 Man berechnet für $k \in\{1, \ldots, N\}$ die Flächeninhalte der Rechtecke gemäss
+
+
+\begin{equation*}
+\delta A_{k}:=f\left(x_{k}\right) \cdot \delta x . \tag{1.6}
+\end{equation*}
+
+
+
+\end{document}

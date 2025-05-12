@@ -1,0 +1,84 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+
+\begin{align*}
+& =\frac{f(0)}{0!}+\frac{f^{\prime}(0)}{1!} \cdot x+\frac{f^{\prime \prime}(0)}{2!} \cdot x^{2}+\ldots+\frac{f^{(n)}(0)}{n!} \cdot x^{n}+\frac{(-1)^{n}}{n!} \int_{0}^{x} f^{(n+1)}(s) \cdot(s-x)^{n} \mathrm{~d} s \\
+& =\underline{\underline{T_{n}(x)+R_{n}(x)}} \tag{4.4}
+\end{align*}
+
+
+Damit haben den Satz bewiesen.\\
+Besonders interessant ist die Situation, wenn das Restglied für grosse $n$ immer kleiner wird. Dazu betrachten wir die folgende Definition.
+
+\section*{Definition 4.1 Analytische Funktion}
+Seien $I \subseteq \mathbb{R}$ ein Intervall mit $0 \in I$ und $f: I \rightarrow \mathbb{R}$ eine unendlich oft differentierbare Funktion. Die Funktion $f$ heisst analytisch auf $I$, falls für alle $x \in I$ gilt
+
+
+\begin{equation*}
+\lim _{n \rightarrow \infty} R_{n}(x)=0 \tag{4.5}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Das Maclaurin-Polynom $T_{n}(x)$ ist ein Polynom vom Grad $n$.\\
+ii) Um das Maclaurin-Polynom $T_{n}(x)$ aufzustellen, müssen die Funktionswerte von $f$ und ihren Ableitungen nur an der Stelle $x=0$ bekannt sein.\\
+iii) Eine analytische Funktion lässt sich durch ihre Maclaurin-Reihe vollständig darstellen, d.h. für alle $x \in I$ gilt
+
+
+\begin{equation*}
+\underline{\underline{f(x)}}=\lim _{n \rightarrow \infty} T_{n}(x)=\underline{\underline{\sum_{k=0}^{\infty}} \frac{f^{(k)}(0)}{k!} \cdot x^{k} .} \tag{4.6}
+\end{equation*}
+
+
+iv) In jedem Fall, d.h. auch für nicht analytische Funktionen kann das Maclaurin-Polynom in der Nähe von $x=0$ als Näherung für $f$ verwendet werden, d.h. für $x$ nahe genug bei 0 und $n$ gross genug gilt zumindest
+
+
+\begin{equation*}
+f(x)=T_{n}(x)+R_{n}(x) \approx T_{n}(x) \tag{4.7}
+\end{equation*}
+
+
+v) Hat $f$ eine Parität, dann hat das Maclaurin-Polynom die gleiche Parität. In jedem Fall gilt
+
+
+\begin{align*}
+& f \text { hat positive Parität } \Leftrightarrow T_{n}(x) \text { enthält nur gerade Potenzen von } x \text {, }  \tag{4.8}\\
+& f \text { hat negative Parität } \Leftrightarrow T_{n}(x) \text { enthält nur ungerade Potenzen von } x . \tag{4.9}
+\end{align*}
+
+
+vi) Ist $f$ selbst ein Polynom vom Grad $p \in \mathbb{N}$, dann ist $f$ auf ganz $\mathbb{R}$ analytisch und es gilt
+
+
+\begin{equation*}
+T_{n}(x)=f(x) \text { für alle } n \geq p . \tag{4.10}
+\end{equation*}
+
+
+vii) Beispiel-Codes zur Berechnung von Maclaurin-Entwicklungen mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Mathematica/WolframAlpha & Series $[\operatorname{Exp}[\mathrm{x}],\{\mathrm{x}, 0, \mathrm{n}\}]$ \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import $\operatorname{sympy}$ as $\mathrm{sp} ;$ \\
+sp.series $(\operatorname{sp} . \exp (x), x, 0, n+1) ;$ \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{document}

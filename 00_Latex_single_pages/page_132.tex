@@ -1,0 +1,58 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\section*{Satz 7.1 Null-Koinzidenz}
+In jedem Vektorraum ( $V, \mathbb{K},+, \cdot$ ) gilt für alle Vektoren $\mathbf{v} \in V$
+
+
+\begin{equation*}
+0 \cdot \mathbf{v}=0 . \tag{7.2}
+\end{equation*}
+
+
+Beweis: Gemäss VR-8, VR-6 und wieder VR-8 und dann VR-1 sowie VR-3 gilt
+
+\[
+\begin{array}{rlrl} 
+& 0 \cdot \mathbf{v}+\mathbf{v}=0 \cdot \mathbf{v}+1 \cdot \mathbf{v}=(0+1) \cdot \mathbf{v}=1 \cdot \mathbf{v}=\mathbf{v} & +(-\mathbf{v}) \\
+\Leftrightarrow & (0 \cdot \mathbf{v}+\mathbf{v})+(-\mathbf{v})=\mathbf{v}+(-\mathbf{v}) \\
+\Leftrightarrow & 0 \cdot \mathbf{v}+(\mathbf{v}+(-\mathbf{v}))=\mathbf{0} \\
+\Leftrightarrow & 0 \cdot \mathbf{v}+\mathbf{0}=\mathbf{0} . \tag{7.6}
+\end{array}
+\]
+
+Aus VR-2 folgt schliesslich
+
+
+\begin{equation*}
+\underline{\underline{0 \cdot v}=0 .} \tag{7.7}
+\end{equation*}
+
+
+Damit haben wir (7.2) und den Satz bewiesen.\\
+Bemerkungen:\\
+i) Die Elemente des Zahlenkörpers $\mathbb{K}$ werden Skalare und die Elemente der Menge $V$ werden Vektoren genannt.\\
+ii) Die Vektoren in einem Vektorraum erfüllen oft weitere Strukturen, sie können z.B. Punkte in der Geometrie oder Funktionen in der Analysis sein. Insbesondere bilden alle möglichen physikalischen Grössen einen Vektorraum.\\
+iii) Auch für die Struktur des Zahlenkörpers $\mathbb{K}$ gibt es ein System von Axiomen, die wir hier einfach stillschweigend anwenden. In diesem Kurs gilt fast immer $\mathbb{K}=\mathbb{R}$. In diesem Fall spricht man auch von einem reellen Vektorraum. Denkbar wären aber auch $\mathbb{K} \in\{\mathbb{Q}, \mathbb{C}\}$.\\
+iv) Wegen der Null-Koinzidenz ist es sinnvoll, $0 \in \mathbb{K}$ und $\mathbf{0} \in V$ zu identifizieren. Wir schreiben von nun an einfach nur noch 0 .\\
+v) Wenn in Anwendungen "klar" ist, welcher Zahlenkörper $\mathbb{K}$ und welche Operationen + bzw. - gemeint ist, dann wird der Vektorraum meist nur noch durch die Menge $V$ der Vektoren bezeichnet und nicht mehr das ganze Quadrupel ( $V, \mathbb{K},+, \cdot)$ geschrieben.\\
+vi) Die 8 Axiome des Vektorraums zusammen mit ersten Folgerungen wie der Null-Koinzidenz sind das, was man gemeinhin unter den "üblichen Rechenregeln" für Vektoren versteht.\\
+vii) Aufgrund der Axiome lassen sich in jedem Vektorraum beliebige Linearkombinationen von Vektoren bilden. Es gelten dabei die "üblichen Rechenregeln" und insbesondere ist jede Linearkombination von Vektoren wieder ein Vektor, d.h. Vektorräume sind unter der Bildung von Linearkombinationen abgeschlossen.
+
+Beispiele:
+
+\begin{itemize}
+  \item Der einfachste Vektorraum ist der triviale Vektorraum, der aus einem beliebigen Zahlenkörper aber nur einem einzigen Vektor besteht, nämlich 0 , d.h. $(\{0\}, \mathbb{K},+, \cdot)$.
+  \item Für $n \in \mathbb{N}^{+}$die bekannten Euklid-Räume $\left(\mathbb{R}^{n}, \mathbb{R},+, \cdot\right)$.
+\end{itemize}
+
+\end{document}

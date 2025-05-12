@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\section*{Kapitel 3}
+\section*{Integralrechnung}
+\subsection*{3.1 Integrationsmethoden}
+\subsection*{3.1.1 Substitution}
+Wir betrachten den folgenden Satz.
+
+\section*{Satz 3.1 Integration durch Substitution}
+Seien $f: \mathbb{R} \rightarrow \mathbb{R}$ eine integrierbare Funktion mit Stammfunktion $F: \mathbb{R} \rightarrow \mathbb{R}, u: \mathbb{R} \rightarrow \mathbb{R}$ eine differentierbare Funktion und $x_{0}, x_{\mathrm{E}} \in \mathbb{R}$ mit $x_{0}<x_{\mathrm{E}}$, dann gilt folgendes.\\
+(a) $\int f(u(x)) \cdot u^{\prime}(x) \mathrm{d} x=\int f(u) \mathrm{d} u=F(u(x))+c$\\
+(b) $\int_{x_{0}}^{x_{\mathrm{E}}} f(u(x)) \cdot u^{\prime}(x) \mathrm{d} x=\int_{u\left(x_{0}\right)}^{u\left(x_{\mathrm{E}}\right)} f(u) \mathrm{d} u=F\left(u\left(x_{\mathrm{E}}\right)\right)-F\left(u\left(x_{0}\right)\right)$
+
+Beweis: Durch Anwenden der Summen-Regel und Ketten-Regel und weil $F^{\prime}=f$ erhalten wir
+
+
+\begin{equation*}
+(F(u(x))+c)^{\prime}=F^{\prime}(u(x)) \cdot u^{\prime}(x)+0=f(u(x)) \cdot u^{\prime}(x) . \tag{3.1}
+\end{equation*}
+
+
+Aus der Newton-Leibniz-Formel folgt sofort (a) und durch Einsetzen der Integrationsgrenzen erhalten wir (b). Damit haben wir den Satz bewiesen.
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten das unbestimmte Integral
+\end{itemize}
+
+
+\begin{equation*}
+F(x)=\int x \cdot \cos \left(x^{2}\right) \mathrm{d} x . \tag{3.2}
+\end{equation*}
+
+
+Als Substitution wählen wir
+
+
+\begin{equation*}
+u(x):=x^{2} \Rightarrow u^{\prime}(x)=2 x . \tag{3.3}
+\end{equation*}
+
+
+Wir zeigen mehrere Varianten, um das unbestimmte Integral zu berechnen.
+
+
+\end{document}

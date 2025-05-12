@@ -1,0 +1,66 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\begin{itemize}
+  \item $\left[\begin{array}{rr}2 & 5 \\ -3 & -8\end{array}\right]^{-1}=\left[\begin{array}{rr}8 & 5 \\ -3 & -2\end{array}\right]$
+\end{itemize}
+
+Für invertierbare Matrizen gelten einige Rechenregeln.\\
+Satz 6.2 Elementare Rechenregeln der Inversion\\
+Es seien $A, B$ invertierbare Matrizen und $a \in \mathbb{R} \backslash\{0\}$. Dann gelten folgende Rechenregeln.\\
+(a) $(a \cdot A)^{-1}=\frac{1}{a} \cdot A^{-1}$\\
+(c) $\left(A^{T}\right)^{-1}=\left(A^{-1}\right)^{T}$\\
+(b) $(A \cdot B)^{-1}=B^{-1} \cdot A^{-1}$\\
+(d) $\left(A^{-1}\right)^{-1}=A$
+
+\subsection*{6.1.3.6 Diagonale Matrix}
+Mit quadratischen Matrizen, die nur auf der Hauptdiagonalen von Null verschiedene Komponenten haben, lässt sich besonders einfach rechnen.
+
+Definition 6.12 Diagonal-Matrix\\
+Sei $n \in \mathbb{N}^{+}$und $\lambda_{1}, \ldots, \lambda_{n} \in \mathbb{R}$. Eine Matrix $D \in \mathbb{M}(n, n, \mathbb{R})$ der Form
+
+\[
+D=\left[\begin{array}{cccc}
+\lambda_{1} & 0 & \cdots & 0  \tag{6.29}\\
+0 & \lambda_{2} & \ddots & \vdots \\
+\vdots & \ddots & \ddots & 0 \\
+0 & \cdots & 0 & \lambda_{n}
+\end{array}\right]
+\]
+
+heisst diagonal.\\
+Bemerkungen:\\
+i) Die reellen Zahlen $\lambda_{1}, \ldots, \lambda_{n}$ auf der Hauptdiagonalen heissen Eigenwerte der Matrix D.\\
+ii) Die Einheitsmatrix sowie jede quadratische Nullmatrix sind offensichtlich diagonal.\\
+iii) Jede diagonale Matrix ist offensichtlich symmetrisch.\\
+iv) Zwei beliebige diagonalen Matrizen kommutieren, d.h. es gilt
+
+
+\begin{equation*}
+[D, \tilde{D}]=0 . \tag{6.30}
+\end{equation*}
+
+
+Aber: Diagonale Matrizen kommutieren nicht mit allen Matrizen!\\
+v) Sind alle Eigenwerte einer diagonalen Matrix von Null verschieden, dann ist die Matrix invertierbar. Die Inverse ist ebenfalls diagonal und es gilt
+
+\[
+D^{-1}=\left[\begin{array}{rrcr}
+\frac{1}{\lambda_{1}} & 0 & \ldots & 0  \tag{6.31}\\
+0 & \frac{1}{\lambda_{2}} & \ldots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \ldots & \frac{1}{\lambda_{n}}
+\end{array}\right] .
+\]
+
+
+\end{document}

@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item Wir betrachten ein dreieckartiges Gebiet, wie im folgendem $x$ - $y$-Diagramm dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_280b6f4360f4bba83187g-1(1)}
+\end{enumerate}
+
+Gemäss Fubini-Satz erhalten wir in diesem Fall\\
+$\int_{G} f \mathrm{~d} A=\int_{x_{0}}^{x_{\mathrm{E}}} \int_{y_{0}}^{g(x)} f(x ; y) \mathrm{d} y \mathrm{~d} x=\int_{y_{0}}^{y_{\mathrm{E}}} \int_{x_{0}}^{g^{-1}(y)} f(x ; y) \mathrm{d} x \mathrm{~d} y$.\\
+4. Ein komplizierteres Gebiet kann meistens in einfachere Gebiete zerlegt und das Integral mit Hilfe des Zerlegungssatzes berechnet werden.\\
+Bemerkungen:\\
+i) Bei allen Anwendungen des Fubini-Satzes werden die Zweifach-Integrale in der Reihenfolge von innen nach aussen berechnet. Dabei dürfen die Grenzen des inneren Integrals von der Integrationsvariablen des äusseren Integrals abhängen.\\
+ii) Bei der Integration über ein dreieckartiges Gebiet kann die Integrationsreihenfolge auf einfache Weise vertauscht werden.\\
+iii) Es gibt eine Analogie zwischen den Grenzen eines Zweifach-Integrals und den Bewegungen des Stifts in einem Plotter.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_280b6f4360f4bba83187g-1}
+
+Dabei kann man sich vorstellen, dass der Stift des Plotters das Gebiet auf dem Papier komplett "überstreichen" muss.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Inneres Integral & schnelle hin und her Bewegungen des Stifts entlang des Balkens \\
+\hline
+Äusseres Integral & langsame Bewegung des Balkens entlang des Papiers \\
+\hline
+\end{tabular}
+\end{center}
+
+Beim Vertauschen der Integrationsreihenfolge wird das Papier um einen rechten Winkel gedreht.
+
+
+\end{document}

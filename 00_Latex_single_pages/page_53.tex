@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+Wir betrachten $\Delta x, \Delta y \in \mathbb{R}$, so dass gilt\\
+$\hat{\mathbf{e}}=\left[\begin{array}{l}\Delta x \\ \Delta y\end{array}\right]$.\\
+Ferner seien $P:=(x ; y ; z)$ der Punkt oberhalb des Punktes $\left(x_{0}+\Delta x ; y_{0}+\Delta y\right)$ auf der Tangentialebene $E_{0}$ an den Graphen von $f$ im Punkt $P_{0}$ und\\
+$\mathbf{w}:=\mathbf{P}-\mathbf{P}_{0}=\left[\begin{array}{c}x-x_{0} \\ y-y_{0} \\ z-f\left(x_{0} ; y_{0}\right)\end{array}\right]=\left[\begin{array}{c}x-x_{0} \\ y-y_{0} \\ z-z_{0}\end{array}\right]=\left[\begin{array}{c}\Delta x \\ \Delta y \\ \Delta z\end{array}\right]$.\\
+Weil der Vektor w die Punkte $P$ und $P_{0}$ auf der Tangentialebene $E_{0}$ verbindet, liegt er selbst auf der Tangentialeben $E_{0}$ und es muss gelten
+
+\[
+0=\langle\mathbf{w}, \mathbf{n}\rangle=\left\langle\left[\begin{array}{c}\Delta x  \tag{2.195}\\ \Delta y \\ \Delta z\end{array}\right],\left[\begin{array}{c}-f_{, x} \\ -f_{, y} \\ 1\end{array}\right]\right\rangle=-\Delta x \cdot f_{, x}-\Delta y \cdot f_{, y}+\Delta z \cdot 1
+\]
+
+$=\Delta z-\left(\Delta x \cdot f_{, x}+\Delta y \cdot f_{, y}\right)=\Delta z-\left\langle\left[\begin{array}{c}\Delta x \\ \Delta y\end{array}\right],\left[\begin{array}{l}f_{, x} \\ f_{, y}\end{array}\right]\right\rangle=\Delta z-\langle\hat{\mathbf{e}}, \boldsymbol{\nabla} f\rangle$.\\
+Daraus folgt
+
+
+\begin{equation*}
+\Delta z=\langle\hat{\mathbf{e}}, \boldsymbol{\nabla} f\rangle \tag{2.196}
+\end{equation*}
+
+
+und für die gesuchte Steigung erhalten wir\\
+$\underline{\underline{m}}=\frac{\Delta z}{\Delta s}=\frac{\Delta z}{|\hat{\mathbf{e}}|}=\frac{\langle\hat{\mathbf{e}}, \boldsymbol{\nabla} f\rangle}{1}=\underline{\underline{\langle\hat{\mathbf{e}}, \nabla} \boldsymbol{\nabla}\rangle}$.\\
+Damit haben wir den Satz bewiesen.\\
+Wir betrachten die folgende Definition.\\
+Definition 2.26 Richtungsableitung in nD\\
+Seien $n \in \mathbb{N}^{+}, f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ differentierbar und $\hat{\mathbf{e}} \in \mathbb{R}^{n}$ ein Einheitsvektor, dann ist die Richtungsableitung von $f$ in Richtung ê die reelle Zahl
+
+
+\begin{equation*}
+\nabla_{\hat{\mathbf{e}}} f:=\langle\hat{\mathbf{e}}, \boldsymbol{\nabla} f\rangle . \tag{2.198}
+\end{equation*}
+
+
+Wir betrachten die Situation in der $x$ - $y$-Ebene gemäss folgende Skizze.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_d0bba98847a137d0005ag-1}
+
+
+\end{document}

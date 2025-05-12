@@ -1,0 +1,87 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.4.2 Flächenintegrale}
+Sei $\mathbf{P}: U \rightarrow \mathbb{R}^{3}$ die Parametrisierung einer Fläche M. Mit Hilfe der Parametrisierung, welche alle Punkte von $M$ durch Koordinatenpaare $(u ; v) \in U$ beschreibt, kann eine Funktion des Typs
+
+
+\begin{equation*}
+f: M \rightarrow \mathbb{R} \tag{2.113}
+\end{equation*}
+
+
+aufgefasst werden als Funktion der Form
+
+
+\begin{align*}
+f: U & \rightarrow \mathbb{R} \\
+(u ; v) & \mapsto f(u ; v):=f(\mathbf{P}(u ; v)) . \tag{2.114}
+\end{align*}
+
+
+Wir betrachten folgende Definition.\\
+Definition 2.16 Flächenintegral über eine parametrisierte Fläche\\
+Seien $U \subseteq \mathbb{R}^{2}, \mathbf{P}: U \rightarrow \mathbb{R}^{3}$ eine parametrisierte Fläche mit Mass-Funktion $\sqrt{g}$ und $f: M \rightarrow \mathbb{R}$, dann ist das Integral von $f$ über $M$ definiert durch
+
+
+\begin{equation*}
+\int_{M} f \mathrm{~d} A:=\int_{U} f \sqrt{g} \mathrm{~d} U . \tag{2.115}
+\end{equation*}
+
+
+Wir betrachten folgenden Satz.\\
+Satz 2.9 Flächeninhalt einer parametrisierten Fläche\\
+Seien $U \subseteq \mathbb{R}^{2}$ und $\mathbf{P}: U \rightarrow \mathbb{R}^{3}$ die Parametrisierung einer parametrisierten Fläche $M=\mathbf{P}(U)$ mit Mass-Funktion $\sqrt{g}$, dann lässt sich der Flächeninhalt von $M$ berechnen durch
+
+
+\begin{equation*}
+A=\int_{M} 1 \mathrm{~d} A=\int_{U} \sqrt{g} \mathrm{~d} U . \tag{2.116}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Für die Masseinheit erhalten wir
+
+
+\begin{equation*}
+\underline{\left.\underline{\left[\int_{M}\right.} f \mathrm{~d} A\right]}=[f] \cdot[A]=\underline{\underline{[f] \cdot[\sqrt{g}] \cdot[u] \cdot[v]}} . \tag{2.117}
+\end{equation*}
+
+
+ii) Ist das Karten-Gebiet $U$ ein Rechteck der Form
+
+
+\begin{equation*}
+U=\left[u_{0}, u_{\mathrm{E}}\right] \times\left[v_{0}, v_{\mathrm{E}}\right], \tag{2.118}
+\end{equation*}
+
+
+dann lässt sich ein Flächenintegral berechnen durch
+
+
+\begin{equation*}
+\underline{\underline{I}}=\int_{M} f \mathrm{~d} A:=\int_{U} f \sqrt{g} \mathrm{~d} U=\underline{\int_{u_{0}}^{u_{\mathrm{E}}} \int_{v_{0}}^{v_{\mathrm{E}}} f(u ; v) \sqrt{g(u ; v)} \mathrm{d} v \mathrm{~d} u .} \tag{2.119}
+\end{equation*}
+
+
+iii) Ein kleines Flächenstück auf $M$ kann im Sinne eines Archimedes-Cauchy-RiemannApproximationsprozess ausgedrückt werden durch
+
+
+\begin{equation*}
+\underline{\underline{\delta A}} \approx \sqrt{g} \cdot \delta U=\sqrt{g} \cdot \delta u \cdot \delta v . \tag{2.120}
+\end{equation*}
+
+
+Die Mass-Funktion ist also gerade der Umrechnungsfaktor für den Flächeninhalt $\delta U$ eines kleinen Flächenstücks im Kartengebiet $U$ auf das entsprechende kleine Flächenstück $\delta A$ auf $M$.
+
+
+\end{document}

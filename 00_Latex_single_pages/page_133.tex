@@ -1,0 +1,53 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\begin{itemize}
+  \item Für $n \in \mathbb{N}^{+}$die rationalen und komplexen Euklid-Räume ( $\left.\mathbb{Q}^{n}, \mathbb{Q},+, \cdot\right)$ bzw. ( $\left.\mathbb{C}^{n}, \mathbb{C},+, \cdot\right)$.
+  \item Für $n, m \in \mathbb{N}^{+}$die Matrix-Räume $(\mathbb{M}(m, n, \mathbb{K}), \mathbb{K},+, \cdot)$ aus Matrizen mit Komponenten aus dem Zahlenkörper $\mathbb{K}$.
+  \item In der Geometrie lässt sich jede Gerade, Ebene, Hyperebene, etc.. als Vektorraum beschreiben.
+  \item Für $n \in \mathbb{N}^{+}$der Funktionenraum der Polynome mit reellen Koefizienten vom Grad kleiner oder gleich $n$, d.h. $\left(\mathcal{P}_{n}(\mathbb{R}), \mathbb{R},+, \cdot\right)$ mit\\
+$\mathcal{P}_{n}(\mathbb{R}):=\{f: \mathbb{R} \rightarrow \mathbb{R} \mid f$ ist ein Polynom vom Grad $p \leq n\}$.
+  \item Der Funktionenraum der stetigen, reellwertigen Funktionen, d.h. $(C(\mathbb{R}), \mathbb{R},+, \cdot)$ mit\\
+$C(\mathbb{R}):=\{f: \mathbb{R} \rightarrow \mathbb{R} \mid f$ ist stetig $\}$.
+  \item Für $p \in \mathbb{N}^{+}$die Lebesgue-Funktionenräume, d.h. $\left(\mathcal{L}^{p}(\mathbb{R}), \mathbb{R},+, \cdot\right)$ mit\\
+$\mathcal{L}^{p}(\mathbb{R}):=\left\{f: \mathbb{R} \rightarrow \mathbb{R} \mid f\right.$ ist integrierbar $\left.\wedge \int_{-\infty}^{\infty}|f(x)|^{p} \mathrm{~d} x<\infty\right\}$.\\
+In der Physik spielt der Lebesgue-Funktionenraum $\mathcal{L}^{2}(\mathbb{R})$ eine sehr wichtige Rolle.
+\end{itemize}
+
+\subsection*{7.1.2 Linearkombinationen, Basis \& Dimension}
+Die Operationen + und • und die gemäss den Vektorraum-Axiomen dafür geforderten Rechenregeln garantieren, das sich in jedem Vektorraum auf sinnvolle Weise Linearkombinationen bilden lassen.
+
+Definition 7.2 Linearkombination\\
+Seien $(V, \mathbb{K},+, \cdot)$ ein Vektorraum, $m \in \mathbb{N}^{+},\left\{\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}\right\} \subseteq V$ und $\left\{x_{1}, \ldots, x_{m}\right\} \subseteq \mathbb{K}$. Eine Linearkombination der Vektoren $\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}$ ist eine Formel der Form
+
+
+\begin{equation*}
+\mathbf{w}=\sum_{k=1}^{m} x_{k} \cdot \mathbf{v}_{k} . \tag{7.11}
+\end{equation*}
+
+
+Sind Linearkombinationen erst einmal definiert, dann stellt sich die Frage, welche Teilmenge des Vektorraums durch Linearkombinieren von einigen Vektoren mit beliebigen Koeffizienten aus dem Zahlenkörper erzeugt wird.
+
+Definition 7.3 Lineare Hülle\\
+Seien $(V, \mathbb{K},+, \cdot)$ ein Vektorraum und $m \in \mathbb{N}^{+}$. Die lineare Hülle von $\left\{\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}\right\} \subseteq V$ ist
+
+
+\begin{equation*}
+\operatorname{span}\left(\left\{\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}\right\}\right):=\left\{\sum_{k=1}^{m} x_{k} \cdot \mathbf{v}_{k} \mid x_{1}, \ldots, x_{m} \in \mathbb{K}\right\} . \tag{7.12}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) In der Literatur wird die lineare Hülle auch Spann oder Spannweite genannt.
+
+
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+vi) Das TAYLor-Polynom für $n=1$ heisst auch Linearisierung von $f$ an der Stelle $x_{0}$. Es gilt\\
+$T_{1}(x)=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right) \cdot\left(x-x_{0}\right)$.\\
+Der Graph von $T_{1}$ ist offensichtlich die Tangente an den Funktionsgraphen von $f$ an der Stelle $x_{0}$.\\
+vii) Ist $f$ selbst ein Polynom vom Grad $p \in \mathbb{N}$, dann ist $f$ auf ganz $\mathbb{R}$ analytisch und es gilt
+
+
+\begin{equation*}
+T_{n}(x)=f(x) \quad \text { für alle } n \geq p \text {. } \tag{4.23}
+\end{equation*}
+
+
+viii) Beispiel-Codes zur Berechnung von TAYLOR-Entwicklungen mit gängiger Software.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Mathematica/WolframAlpha & Series [Exp [x] , \{x, x\_0,n\}] \\
+\hline
+Python/Sympy & \begin{tabular}{l}
+import sympy as sp; \\
+sp.series $\left(\operatorname{sp.exp}(x), x, x_{-} 0, n+1\right) ;$ \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{4.2.2 Anwendung lokale Extrema}
+Wir betrachten den folgenden Satz aus der Kurvendiskussion.\\
+Satz 4.4 Lokale Extrema - erweiterte Kriterien\\
+Seien $f: \mathbb{R} \rightarrow \mathbb{R}$ eine genügend of differentierbare, reelle Funktion, $x_{k} \in \mathbb{R}$ und $m \in \mathbb{N}^{+} \backslash\{1\}$, so dass
+
+
+\begin{equation*}
+0=f^{\prime}\left(x_{k}\right)=f^{\prime \prime}\left(x_{k}\right)=\ldots=f^{(m-1)}\left(x_{k}\right) \tag{4.24}
+\end{equation*}
+
+
+$0 \neq f^{(m)}\left(x_{k}\right)$.\\
+Dann gilt folgendes.\\
+(a) Falls $m$ gerade und $f^{(m)}\left(x_{k}\right)<0$, dann hat $f$ bei $x_{k}$ einen Hoch-Punkt.\\
+(b) Falls $m$ gerade und $f^{(m)}\left(x_{k}\right)>0$, dann hat $f$ bei $x_{k}$ einen Tief-Punkt.\\
+(c) Falls $m$ ungerade, dann hat $f$ bei $x_{k}$ einen Sattel-Punkt.
+
+Beweis: Wir betrachten die TAYLOR-Entwicklung von $f$ der Ordnung $m$ an der Stelle $x_{k}$. Für alle $x \in \mathbb{R}$ nahe genug bei $x_{k}$ gilt
+
+
+\begin{equation*}
+\underline{f(x)}=T_{m}(x)+R_{m}(x) \approx T_{m}(x)=\underline{f\left(x_{k}\right)+\frac{f^{(m)}\left(x_{k}\right)}{m!} \cdot\left(x-x_{k}\right)^{m} .} \tag{4.26}
+\end{equation*}
+
+
+Wir betrachten die Fälle $m$ gerade und $m$ ungerade getrennt.\\
+Fall 1: m gerade. In diesem Fall hat $T_{m}$ und somit auch $f$ bei $x_{k}$ ein lokales Extremum. Aus dem Vorzeichen des Faktors vor der Potenz $\left(x-x_{k}\right)^{m}$ lässt sich der Typ des lokalen Extremums ablesen. Es gilt\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_a80b639bc5fae803754fg-1}\\
+$\underline{\underline{f^{(m)}}\left(x_{k}\right)>0} \Rightarrow T_{m}$ und somit auch $f$ hat bei $x_{k}$ einen $\underline{\underline{\text { Tief-Punkt. }}}$.\\
+Fall 2: $m$ ungerade. In diesem Fall hat $T_{m}$ und somit auch $f$ bei $x_{k}$ einen $\underline{\underline{\text { Sattel-Punkt. }} \text {. }}$\\
+Damit haben wir den Satz bewiesen.
+
+
+\end{document}

@@ -1,0 +1,86 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+iv) Für reelle Vektorräume, d.h. für $\mathbb{K}=\mathbb{R}$ folgt aus der Kombination von SP-1 und SP-2 die Linearität im 1. Argument und damit die Bilinearität des Skalar-Produkts. Für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{R}$ gilt
+
+
+\begin{equation*}
+\langle a \cdot \mathbf{u}+b \cdot \mathbf{v}, \mathbf{w}\rangle=a \cdot\langle\mathbf{u}, \mathbf{w}\rangle+b \cdot\langle\mathbf{v}, \mathbf{w}\rangle \tag{7.55}
+\end{equation*}
+
+
+v) Für komplexe Vektorräume, d.h. für $\mathbb{K}=\mathbb{C}$ folgt aus der Kombination von SP-1 und SP-2 die Semilinearität im 1. Argument und damit die Sesquilinearität des Skalar-Produkts. Für alle $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ und $a, b \in \mathbb{C}$ gilt
+
+
+\begin{equation*}
+\langle a \cdot \mathbf{u}+b \cdot \mathbf{v}, \mathbf{w}\rangle=a^{*} \cdot\langle\mathbf{u}, \mathbf{w}\rangle+b^{*} \cdot\langle\mathbf{v}, \mathbf{w}\rangle . \tag{7.56}
+\end{equation*}
+
+
+Beispiele:
+
+\begin{itemize}
+  \item Gram-Riemann-Skalar-Produkt auf $\mathbb{K}^{n}$ (positiv definit):\\
+auf $V=\mathbb{R}^{n}: \quad\langle\mathbf{v}, \mathbf{w}\rangle:=v_{1} \cdot w_{1}+v_{2} \cdot w_{2}+\ldots+v_{n} \cdot w_{n}$\\
+auf $V=\mathbb{C}^{n}: \quad\langle\mathbf{v}, \mathbf{w}\rangle:=v_{1}^{*} \cdot w_{1}+v_{2}^{*} \cdot w_{2}+\ldots+v_{n}^{*} \cdot w_{n}$.\\
+Anwendungen: Geometrie, Datenanalyse
+  \item Lorentz-Minkowski-Skalar-Produkt auf $\mathbb{R}^{1+3}$ (nicht positiv definit):
+\end{itemize}
+
+
+\begin{equation*}
+\langle\mathbf{v}, \mathbf{w}\rangle:=v^{0} \cdot w^{0}-v^{1} \cdot w^{1}-v^{2} \cdot w^{2}-v^{3} \cdot w^{3} \tag{7.59}
+\end{equation*}
+
+
+Anwendungen: Relativitätstheorie
+
+\begin{itemize}
+  \item SCHUR-Skalar-Produkt auf $\mathbb{M}(n, n, \mathbb{R})$ (positiv definit):
+\end{itemize}
+
+
+\begin{equation*}
+\langle A, B\rangle:=\operatorname{tr}\left(A^{T} \cdot B\right) . \tag{7.60}
+\end{equation*}
+
+
+Anwendungen: Gruppen-Theorie, Datenanalyse
+
+\begin{itemize}
+  \item Wir betrachten den Funktionenraum der komplexen, integrierbaren, periodischen Funktionen auf $\mathbb{R}$ mit Periode $T>0$ gemäss
+\end{itemize}
+
+
+\begin{equation*}
+V=\{f: \mathbb{R} \rightarrow \mathbb{C} \mid f \text { ist integrierbar } \wedge f(t+T)=f(t) \text { für alle } t \in \mathbb{R}\} . \tag{7.61}
+\end{equation*}
+
+
+$L^{2}$-Skalar-Produkt auf $V$ (positiv definit):
+
+
+\begin{equation*}
+(f, g):=\frac{1}{T} \int_{T} f^{*}(t) \cdot g(t) \mathrm{d} t \tag{7.62}
+\end{equation*}
+
+
+Anwendungen: Fourier-Entwicklungen, Signalverarbeitung
+
+\begin{itemize}
+  \item $L^{2}$-Skalar-Produkt auf den LeBESGUE-Funktionenräumen $\mathcal{L}^{2}(\mathbb{R}, \mathbb{K})$ (positiv definit):\\
+auf $V=\mathcal{L}^{2}(\mathbb{R}, \mathbb{R}): \quad(f, g):=\int_{-\infty}^{\infty} f(t) \cdot g(t) \mathrm{d} t$\\
+auf $V=\mathcal{L}^{2}(\mathbb{R}, \mathbb{C}): \quad(f, g):=\int_{-\infty}^{\infty} f^{*}(t) \cdot g(t) \mathrm{d} t$.\\
+Anwendungen: Fourier- Transformation, Laplace-Transformation, Signalverarbeitung, Variationsrechnung, FEM-Simulationen, Quantenphysik
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,51 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+und somit
+
+
+\begin{align*}
+\underline{\underline{I}} & =\int_{0}^{\frac{\pi}{2}} \sqrt{1-\sin ^{2}(\varphi)} \cdot \cos (\varphi) \mathrm{d} \varphi=\int_{0}^{\frac{\pi}{2}} \sqrt{\cos ^{2}(\varphi)} \cdot \cos (\varphi) \mathrm{d} \varphi=\int_{0}^{\frac{\pi}{2}}|\cos (\varphi)| \cdot \cos (\varphi) \mathrm{d} \varphi \\
+& =\int_{0}^{\frac{\pi}{2}} \cos (\varphi) \cdot \cos (\varphi) \mathrm{d} \varphi=\int_{0}^{\frac{\pi}{2}} \cos ^{2}(\varphi) \mathrm{d} \varphi=\ldots=\frac{\pi}{\underline{4}} \tag{3.14}
+\end{align*}
+
+
+Das verbleibende Integral ist ein Standard-Integral, dass durch partielle Integration berechnet werden kann.
+
+Bemerkungen:\\
+i) Die Idee hinter der Integration durch Substitution ist die Umkehrung der Ketten-Regel aus der Differentialrechnung.\\
+ii) Durch Anwenden der Substitution kann eine schwierige Integration auf eine einfachere Integration zurückgeführt werden.\\
+iii) Der Begriff Substitution bedeutet "Ersetzung".\\
+iv) Bei der Substitution wird die unabhängige Variable gewechselt gemäss
+
+
+\begin{equation*}
+x \mapsto u \quad \text { oder } \quad u \mapsto x . \tag{3.15}
+\end{equation*}
+
+
+v) Das Kalkulieren mit den Differentialsymbolen ist analog zu den Berechnungsschritten in einem Archimedes-Cauchy-Riemann-Approximationsprozess gemäss\\
+$\delta I \approx f(u(x)) \cdot u^{\prime}(x) \cdot \delta x \approx f(u(x)) \cdot \frac{\delta u}{\delta x} \cdot \delta x=f(u) \cdot \delta u$.\\
+vi) Eine häufige Fehlerquelle bei der Berechnung von bestimmten Integralen durch Substitution ist das Anpassen der Integrationsgrenzen.\\
+vii) In den meisten Fällen aus der Praxis (ca. 90\%) ist die Substitution $u$ eine lineare Funktion der Form\\
+$u(x)=m \cdot x+q \Rightarrow \frac{\mathrm{~d} u}{\mathrm{~d} x}=u^{\prime}(x)=m \Leftrightarrow \mathrm{~d} x=\frac{1}{m} \mathrm{~d} u$.\\
+Erkennt man dies vorweg, dann kann das einfachere Verfahren der linearen Modifikation durchgeführt werden.
+
+Die Methode der Substitution hat nicht nur praktische Bedeutung bei der Berechnung von konkreten Integralen sondern auch bei der Herleitung von Integralformeln. Ein Standard-Beispiel ist die Formel für die kinetische Energie aus der Physik. Dazu betrachten wir einen Körper der Masse $m$, welcher von der Anfangsgeschwindigkeit $v_{0}$ auf die Endgeschwindigkeit $v_{\mathrm{E}}$ beschleunigt wird. Die Situation ist in der folgenden Skizze dargestellt.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_38b1aac7586f7bdbab24g-1}
+
+Wir betrachten dazu den folgenden Satz.
+
+
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+
+\begin{document}
+Satz 2.3 Zerlegungssatz in 2D\\
+Seien $G, H \subset \mathbb{R}^{2}$ Gebiete und $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$ eine integrierbare Funktion, dann gilt
+
+
+\begin{equation*}
+\int_{G \cup H} f \mathrm{~d} A=\int_{G} f \mathrm{~d} A+\int_{H} f \mathrm{~d} A-\int_{G \cap H} f \mathrm{~d} A . \tag{2.72}
+\end{equation*}
+
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.4 Flächensatz\\
+Sei $G \subset \mathbb{R}^{2}$ ein Gebiet mit Flächeninhalt $A>0$, dann gilt
+
+
+\begin{equation*}
+A=\int_{G} 1 \mathrm{~d} A \tag{2.73}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Im Spezialfall, dass der Integrand den konstanten Wert 1 hat, ist das Volumen zwischen dem Gebiet $G$ in der $x$ - $y$-Ebene und dem Graph des Integranden gerade der Flächeninhalt von $G$.\\
+ii) Man prüft leicht nach, dass der berechnete Flächeninhalt die korrekte Masseinheit hat. Es gilt
+
+
+\begin{equation*}
+\underline{\underline{[A]}}=\left[\int_{G} 1 \mathrm{~d} A\right]=[x] \cdot[y] \cdot[1]=[x] \cdot[y] \cdot 1=\underline{\underline{[x] \cdot[y]}} \tag{2.74}
+\end{equation*}
+
+
+iii) Der Flächensatz stellt eine fundamentale Verbindung her zwischen dem Begriff Integral aus der Analysis und dem Begriff Flächeninhalt aus der Geometrie.
+
+\subsection*{2.3.1.3 Integration über Rechtecke}
+Ein besonders einfacher Fall liegt vor, wenn das Gebiet $G$ ein achsenparalleles Rechteck in der $x-y$-Ebene ist.\\
+\includegraphics[max width=\textwidth, center]{2025_05_07_b61f34afb962cf0dba0bg-1}
+
+Wir betrachten dazu den folgenden Satz.\\
+Satz 2.5 Fubini-Satz für Rechtecke\\
+Seien $x_{0}, x_{\mathrm{E}}, y_{0}, y_{\mathrm{E}} \in \mathbb{R}$ mit $x_{0}<x_{\mathrm{E}}$ und $y_{0}<y_{\mathrm{E}}, f: \mathbb{R}^{2} \rightarrow \mathbb{R}$ eine integrierbare Funktion sowie $G$ das Rechteck
+
+
+\begin{equation*}
+G:=\left[x_{0}, x_{\mathrm{E}}\right] \times\left[y_{0}, y_{\mathrm{E}}\right] . \tag{2.75}
+\end{equation*}
+
+
+Dann gilt
+
+
+\begin{equation*}
+\int_{G} f \mathrm{~d} A=\int_{y_{0}}^{y_{\mathrm{E}}} \int_{x_{0}}^{x_{\mathrm{E}}} f(x ; y) \mathrm{d} x \mathrm{~d} y=\int_{x_{0}}^{x_{\mathrm{E}}} \int_{y_{0}}^{y_{\mathrm{E}}} f(x ; y) \mathrm{d} y \mathrm{~d} x . \tag{2.76}
+\end{equation*}
+
+
+
+\end{document}

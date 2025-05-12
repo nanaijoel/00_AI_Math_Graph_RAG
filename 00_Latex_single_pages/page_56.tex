@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+Wir betrachten den folgenden Satz.\\
+Satz 2.27 Lokale Extrema in nD\\
+Seien $n \in \mathbb{N}^{+}, f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ zweifach differentierbar, $P \in \mathbb{R}^{n}$ eine kritische Stelle von $f$ und $H=\nabla^{2} f(P)$ mit Spektrum $\operatorname{spec}(H)=\left\{\lambda_{1}, \ldots, \lambda_{n}\right\} \subset \mathbb{R}$, dann gilt folgendes.\\
+(a) Falls $\lambda_{1}, \ldots, \lambda_{n}<0$, dann hat $f$ bei $P$ einen Hoch-Punkt.\\
+(b) Falls $\lambda_{1}, \ldots, \lambda_{n}>0$, dann hat $f$ bei $P$ einen Tief-Punkt.\\
+(c) Falls $\lambda_{1}, \ldots, \lambda_{n} \neq 0$ mit unterschiedlichen Vorzeichen, dann hat $f$ bei $P$ einen Sattel-Punkt.
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.28 Lokale Extrema in 2D\\
+Seien $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$ zweifach differentierbar, $\left(x_{0} ; y_{0}\right) \in \mathbb{R}^{2}$ eine kritische Stelle von $f$ und $H=\boldsymbol{\nabla}^{2} f\left(x_{0} ; y_{0}\right)$, dann gilt folgendes.\\
+(a) Falls $\operatorname{det}(H)>0$ und $H_{11}, H_{22}<0$, dann hat $f$ bei $\left(x_{0} ; y_{0}\right)$ einen Hoch-Punkt.\\
+(b) Falls $\operatorname{det}(H)>0$ und $H_{11}, H_{22}>0$, dann hat $f$ bei $\left(x_{0} ; y_{0}\right)$ einen Tief-Punkt.\\
+(c) Falls $\operatorname{det}(H)<0$, dann hat $f$ bei $\left(x_{0} ; y_{0}\right)$ einen Sattel-Punkt.
+
+Beweis: Wir betrachten die Richtungsvektoren\\
+$\hat{\mathbf{e}}(t)=\frac{1}{\sqrt{1+t^{2}}} \cdot\left[\begin{array}{c} \pm 1 \\ t\end{array}\right] \quad$ für $\quad t \in \mathbb{R}$.\\
+Durch die Richtungen gemäss (2.205) in Kombination mit den Richtungen die aus (2.205) durch einen Tausch der Komponenten hervorgehen, können offensichtlich alle möglichen Richtungen in 2D überlappend beschrieben werden. Für die zweite Richtungsableitung von $f$ in die Richtungen $\hat{\mathbf{e}}(t)$ erhalten wir
+
+
+\begin{align*}
+\boldsymbol{\nabla}_{\hat{\mathbf{e}} \hat{\mathbf{e}}}^{2} f & =\langle\hat{\mathbf{e}}, H \cdot \hat{\mathbf{e}}\rangle=\hat{\mathbf{e}}^{T} \cdot H \cdot \hat{\mathbf{e}}=\frac{1}{\sqrt{1+t^{2}}} \cdot\left[\begin{array}{c} 
+\pm 1 \\
+t
+\end{array}\right]^{T} \cdot\left[\begin{array}{cc}
+H_{11} & H_{12} \\
+H_{21} & H_{22}
+\end{array}\right] \cdot \frac{1}{\sqrt{1+t^{2}}} \cdot\left[\begin{array}{c} 
+\pm 1 \\
+t
+\end{array}\right] \\
+& =\frac{1}{1+t^{2}} \cdot\left[\begin{array}{ll} 
+\pm 1 & t
+\end{array}\right] \cdot\left[\begin{array}{cc}
+H_{11} & H_{12} \\
+H_{21} & H_{22}
+\end{array}\right] \cdot\left[\begin{array}{c} 
+\pm 1 \\
+t
+\end{array}\right]=\frac{1}{1+t^{2}} \cdot\left[\begin{array}{cc} 
+\pm 1 & t
+\end{array}\right] \cdot\left[\begin{array}{c}
+H_{11} \cdot( \pm 1)+H_{12} \cdot t \\
+H_{21} \cdot( \pm 1)+H_{22} \cdot t
+\end{array}\right] \\
+& =\frac{1}{1+t^{2}} \cdot\left( \pm 1 \cdot\left(H_{11} \cdot( \pm 1)+H_{12} \cdot t\right)+t \cdot\left(H_{21} \cdot( \pm 1)+H_{22} \cdot t\right)\right) \\
+& =\frac{1}{1+t^{2}} \cdot\left(H_{11} \pm H_{12} \cdot t \pm H_{21} \cdot t+H_{22} \cdot t^{2}\right)=\frac{1}{1+t^{2}} \cdot\left(H_{22} \cdot t^{2} \pm 2 \cdot H_{12} \cdot t+H_{11}\right) \\
+& =: \frac{1}{1+t^{2}} \cdot g(t) \tag{2.206}
+\end{align*}
+
+
+mit der quadratischen Funktion\\
+$g(t)=H_{22} \cdot t^{2} \pm 2 \cdot H_{12} \cdot t+H_{11}$.\\
+Die Diskriminante von $g$ ist\\
+$\underline{D}=\left( \pm 2 \cdot H_{12}\right)^{2}-4 \cdot H_{22} \cdot H_{11}=4 \cdot H_{12}^{2}-4 \cdot H_{11} \cdot H_{22}=-4 \cdot\left(H_{11} \cdot H_{22}-H_{21} \cdot H_{12}\right)$
+
+
+\end{document}

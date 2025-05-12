@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+
+\begin{equation*}
+=-4 \cdot \operatorname{det}(H) . \tag{2.208}
+\end{equation*}
+
+
+Dieses Ergebnis erhält man offensichtlich auch dann, wenn man in (2.205) die Komponenten von $\hat{\mathbf{e}}(t)$ vertauscht. Wir betrachten die Fälle der verschiedenen Vorzeichen von $\operatorname{det}(H)$ getrennt.
+
+Fall 1: $\operatorname{det}(H)<0$ : In diesem Fall gilt $D>0, g$ und somit $\nabla_{\hat{e} \hat{e} e}^{2} f$ haben zwei reelle Nullstellen und nehmen deshalb sowohl strikt positive als auch strikt negative Werte an. Demnach hat $f$ bei $\left(x_{0} ; y_{0}\right)$ einen Sattel-Punkt.
+
+Fall 2: $\operatorname{det}(H)=0$ : In diesem Fall lassen sich aus $H$ keine Schlüsse über den Typ der kritischen Stelle von $f$ ziehen.\\
+Fall 3: $\operatorname{det}(H)>0$ : In diesem Fall gilt $D<0, g$ und somit $\nabla_{\hat{e ̂ e} \hat{e}}^{2} f$ haben keine reelle Nullstellen und nehmen deshalb entweder nur strikt positive oder nur strikt negative Werte an. Es muss also gelten
+
+
+\begin{equation*}
+\operatorname{sgn}\left(\nabla_{\hat{\mathbf{e}} \hat{e}}^{2} f\right)=\operatorname{sgn}\left(\nabla_{\hat{\mathbf{e}}_{1} \hat{e}_{1}}^{2} f\right)=\operatorname{sgn}\left(\boldsymbol{\nabla}_{\hat{\mathbf{e}}_{2} \hat{e}_{2}}^{2} f\right)=\operatorname{sgn}\left(H_{11}\right)=\operatorname{sgn}\left(H_{22}\right) . \tag{2.209}
+\end{equation*}
+
+
+Wir betrachten die Fälle der verschiedenen Vorzeichen von $H_{11}$ bzw. $H_{22}$ getrennt.\\
+Fall 3.1: $H_{11}, H_{22}<0$ : In diesem Fall gilt für alle Richtungen $\nabla_{\hat{e ̂} \hat{e}}^{2} f<0$. Demnach hat $f$ bei $\left(x_{0} ; y_{0}\right)$ einen Hoch-Punkt.
+
+Fall 3.2: $H_{11}, H_{22}>0$ : In diesem Fall gilt für alle Richtungen $\nabla_{\hat{\hat{e}} \hat{e}}^{2} f>0$. Demnach hat $f$ bei $\left(x_{0} ; y_{0}\right)$ einen Tief-Punkt.
+
+Damit haben wir alle Aussagen und den Satz bewiesen.
+
+\section*{Bemerkungen:}
+i) Ob an einer kritischen Stelle ein Hoch-Punkt, Tief-Punkt oder Sattel-Punkt vorliegt, lässt sich also genau dann mit Hilfe von $H$ entscheiden, wenn $H$ regulär ist. Ist $H$ singulär, dann lassen sich aus $H$ keine Schlüsse über den Typ der kritischen Stelle ziehen.\\
+ii) In $n D$ lässt sich anhand der Vorzeichen der Eigenwerte von $H$ ablesen, ob $\nabla_{\hat{e ̂ e ̂ e}}^{2} f$ für alle Richtungen ê das gleiche Vorzeichen hat.\\
+iii) In 2D lässt sich anhand des Vorzeichens von $\operatorname{det}(H)$ ablesen, ob $\nabla_{\hat{\hat{e}} \hat{e} f}^{2} f$ für alle Richtungen ê das gleiche Vorzeichen hat, denn $H$ ist symmetrisch und somit gilt
+
+
+\begin{equation*}
+\operatorname{det}(H)=\lambda_{1} \cdot \lambda_{2} . \tag{2.210}
+\end{equation*}
+
+
+iv) In 2D müssen im Fall $\operatorname{det}(H)>0$ die Komponenten $H_{11}$ und $H_{22}$ das gleiche Vorzeichen haben. Anhand dieses Vorzeichens kann dann zwischen Hoch-Punkt und Tief-Punkt unterschieden werden.
+
+Um die lokalen Extrema einer Funktion in 2D zu bestimmen, kann nach den folgenden Schritten vorgegangen werden.
+
+S1 Die kritische Stellen von $f$ sind zu bestimmen als Lösungen des Gleichungssystems
+
+
+\begin{equation*}
+\nabla f(x ; y)=0 . \tag{2.211}
+\end{equation*}
+
+
+
+\end{document}

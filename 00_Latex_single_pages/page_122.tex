@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+iii) Eine quadratische Matrix $U$ heisst unimodular, falls gilt $\operatorname{det}(U)=1$. Für eine beliebige quadratische Matrix $A$ folgt dann\\
+$\operatorname{det}(U \cdot A)=\operatorname{det}(U) \cdot \operatorname{det}(A)=1 \cdot \operatorname{det}(A)=\operatorname{det}(A)$.\\
+Ferner ist das Produkt von zwei unimodularen Matrizen wieder unimodular.\\
+Gewisse einfache Modifikationen an einer Matrix führen auch zu einfachen Veränderungen ihrer Determinante.
+
+Satz 6.16 Modifikationsregeln der Determinante\\
+Sei $n \in \mathbb{N}^{+}, A \in \mathbb{M}(n, n, \mathbb{R})$ und $a \in \mathbb{R}$. Dann gelten folgende Modifikationsregeln.\\
+(a) Zeilentausch $\Rightarrow \operatorname{det}(A) \mapsto-\operatorname{det}(A)$.\\
+(b) Spaltentausch $\Rightarrow \operatorname{det}(A) \mapsto-\operatorname{det}(A)$.\\
+(c) Multiplikation einer Zeile mit $a \Rightarrow \operatorname{det}(A) \mapsto a \cdot \operatorname{det}(A)$.\\
+(d) Multiplikation einer Spalte mit $a \Rightarrow \operatorname{det}(A) \mapsto a \cdot \operatorname{det}(A)$.
+
+Besonders nützlich ist auch die folgende Modifikationsregel.\\
+Satz 6.17 Invarianz der Determinante unter einem GaUss-Schritt\\
+Subtrahiert man von einer Zeile einer $n \times n$-Matrix ein beliebiges Vielfaches einer andern Zeile, dann ändert sich die Determinante der Matrix nicht.
+
+Die Modifikationsregeln ermöglichen es, Determinanten mit Hilfe des Gauss-Verfahrens zu berechnen. Als Beispiel berechnen wir die Determinante der Matrix\\
+$A=\left[\begin{array}{rrr}1 & 2 & -3 \\ 2 & -4 & 1 \\ 2 & 2 & 8\end{array}\right]$.\\
+Wir erhalten
+
+\[
+\underline{\underline{\operatorname{det}(A)}}\left|\begin{array}{rrr}1 & 2 & -3  \tag{6.125}\\ 2 & -4 & 1 \\ 2 & 2 & 8\end{array}\right|=2\left|\begin{array}{rrr}{[1]} & 2 & -3 \\ 2 & -4 & 1 \\ 1 & 1 & 4\end{array}\right| \cdot 2=\left|\begin{array}{rrr}{[1]} & 2 & -3 \\ 0 & -8 & 7 \\ 0 & -1 & 7\end{array}\right| \cdot 2
+\]
+
+$$
+=8\left|\begin{array}{rrr}
+{[1]} & 2 & -3 \\
+0 & {[1]} & -7 \\
+0 & 8 & -7
+\end{array}\right| \cdot 2 \cdot(-1)^{3}=\left|\begin{array}{rrr}
+{[1]} & 2 & -3 \\
+0 & {[1]} & -7 \\
+0 & 0 & {[49]}
+\end{array}\right| \cdot 2 \cdot(-1)=1 \cdot 1 \cdot 49 \cdot 2 \cdot(-1)=\underline{\underline{-98} .}
+$$
+
+Eine der Hauptanwendungen von Determinanten ist die Prüfung einer quadratischen Matrix auf Singularität bzw. Regularität. Es gilt nämlich der folgende, bemerkenswerte Satz.
+
+Satz 6.18 Regularitätssatz\\
+Eine quadratische Matrix $A$ ist genau dann regulär, wenn gilt $\operatorname{det}(A) \neq 0$.\\
+Bemerkungen:\\
+i) Gilt $\operatorname{det}(A) \neq 0$, dann ist die quadratische Matrix $A$ regulär, d.h. sie hat eine Inverse $A^{-1}$ und die zugehörige lineare Abbildung a ist bijektiv und hat eine Umkehrabbildung $a^{-1}$.
+
+
+\end{document}

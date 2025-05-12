@@ -1,0 +1,90 @@
+\documentclass[10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+\begin{document}
+\subsection*{2.5.4 Divergenz}
+Wir betrachten die folgende Definition.
+
+\section*{Definition 2.22 Divergenz}
+Seien $n \in \mathbb{N}^{+}$und $\mathbf{v}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ ein differentierbares Vektorfeld mit Komponenten
+
+\[
+\mathbf{v}\left(x^{1} ; \ldots ; x^{n}\right)=\left[\begin{array}{c}
+v^{1}\left(x^{1} ; \ldots ; x^{n}\right)  \tag{2.149}\\
+\vdots \\
+v^{n}\left(x^{1} ; \ldots ; x^{n}\right)
+\end{array}\right] .
+\]
+
+Die Divergenz von $\mathbf{v}$ ist
+
+
+\begin{equation*}
+\operatorname{div}(\mathbf{v}):=v^{1}{ }_{, 1}+v^{2}{ }_{, 2}+\ldots+v^{n}{ }_{, n} . \tag{2.150}
+\end{equation*}
+
+
+Beispiele:
+
+\begin{itemize}
+  \item Wir betrachten
+\end{itemize}
+
+\[
+\mathbf{v}(x ; y):=\left[\begin{array}{l}
+x \cdot y^{2}  \tag{2.151}\\
+x^{3} \cdot y^{3}
+\end{array}\right] .
+\]
+
+Die Divergenz von v ist
+
+
+\begin{equation*}
+\underline{\underline{\operatorname{div}(\mathbf{v})}}=v^{1}{ }_{, 1}+v_{, 2}^{2}=\left(x \cdot y^{2}\right)_{, x}+\left(x^{3} \cdot y^{3}\right)_{, y}=1 \cdot y^{2}+x^{3} \cdot 3 \cdot y^{2}=\underline{\underline{y^{2}} \cdot\left(1+3 x^{3}\right) .} \tag{2.152}
+\end{equation*}
+
+
+Bemerkungen:\\
+i) Die Divergenz eines Vektorfeldes ist eine allgemeine Konstruktion in nD.\\
+ii) Die Divergenz eines Vektorfeldes ist ein Skalarfeld.\\
+iii) Die Divergenz eines Vektorfeldes ist ein Mass für dessen Quellendichte.\\
+iv) Ein Vektorfeld $\mathbf{v}$ heisst quellenfrei, falls gilt
+
+
+\begin{equation*}
+\operatorname{div}(\mathbf{v})=0 . \tag{2.153}
+\end{equation*}
+
+
+Wir betrachten den folgenden Satz.\\
+Satz 2.15 Elementare Rechenregeln für Divergenzen\\
+Seien $n \in \mathbb{N}^{+}, \mathbf{v}, \mathbf{w}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ differentierbare Vektorfelder, $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ eine differentierbare Funktion und $a, b \in \mathbb{R}$, dann gelten die folgenden Rechenregeln.\\
+(a) Faktor-Regel:\\
+(c) Linearität:
+
+$$
+\operatorname{div}(a \cdot \mathbf{v})=a \cdot \operatorname{div}(\mathbf{v})
+$$
+
+$$
+\operatorname{div}(a \cdot \mathbf{v}+b \cdot \mathbf{w})=a \cdot \operatorname{div}(\mathbf{v})+b \cdot \operatorname{div}(\mathbf{w})
+$$
+
+(b) Summen-Regel:\\
+(d) Produkt-Regel:
+
+$$
+\operatorname{div}(\mathbf{v}+\mathbf{w})=\operatorname{div}(\mathbf{v})+\operatorname{div}(\mathbf{w})
+$$
+
+
+\end{document}
