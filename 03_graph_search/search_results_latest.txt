@@ -1,57 +1,58 @@
-##### STAGE: Kapitel-/Abschnittstitel mit 'matrix' #####
+##### STAGE: Alle Begriffe in Unterkapiteln #####
 
-=== MATCH: 6.1 Matrix-Algebra ===
-Seite: 89
-
-→ Nachbarn (ausgehend):
-  → 6.1.1 Definition (Seite 89)
-  → 6.1.2 Operationen (Seite 90)
-  → 6.1.3 Spezielle Matrizen (Seite 95)
-← Nachbarn (eingehend):
-  ← Kapitel 6: Matrizen & Lineare Abbildungen (Seite 89)
-
-==================================================
-
-##### STAGE: Kapitel-/Abschnittstitel mit 'matrix rechenregeln' #####
-
-=== MATCH: 6.1 Matrix-Algebra ===
-Seite: 89
+Seitenbereich: 40–41
 
 → Nachbarn (ausgehend):
-  → 6.1.1 Definition (Seite 89)
-  → 6.1.2 Operationen (Seite 90)
-  → 6.1.3 Spezielle Matrizen (Seite 95)
-← Nachbarn (eingehend):
-  ← Kapitel 6: Matrizen & Lineare Abbildungen (Seite 89)
-
-==================================================
-
-##### STAGE: Unterkapitel mit 'matrix' #####
-
-=== MATCH: 2.5.3 Hesse-Matrix ===
-Seite: 42
-
-→ Nachbarn (ausgehend):
-  → Definition: Definition 2.20 (Seite 42)
-  → Beispiele: Beispiele: (Seite 142)
-  → Satz: Satz 2.14 (Seite 42)
-  → Bemerkungen: Bemerkungen: (Seite 147)
-  → Definition: Definition 2.21 (Seite 42)
+  → 2.5.2_Definition_Definition_2.19 (Seite 40)
+  → 2.5.2_Bemerkungen_Bemerkungen (Seite 40)
+  → 2.5.2_Beispiele_Beispiele (Seite 41)
+  → 2.5.2_Satz_Satz_2.12 (Seite 41)
+  → 2.5.2_Satz_Satz_2.13 (Seite 41)
 ← Nachbarn (eingehend):
   ← 2.5 Mehrfach-Differentiale (Seite 40)
 
 ==================================================
 
-=== MATCH: 7.2.2 Matrix-Darstellung ===
-Seite: 138
+Seitenbereich: 45–46
 
 → Nachbarn (ausgehend):
-  → Definition: Definition 7.8 (Seite 138)
-  → Satz: Satz 7.6 (Seite 139)
-  → Beweis: Beweis: Durch Einsetzen der Basis-Darstellung von v und weil a eine lineare Abbildung ist, (Seite 139)
-  → Bemerkungen: Bemerkungen: (Seite 147)
+  → 2.5.6_Satz_Satz_2.17 (Seite 45)
+  → 2.5.6_Beweis_Beweis_Siehe_Übungen. (Seite 45)
+  → 2.5.6_Satz_Satz_2.18 (Seite 45)
+  → 2.5.6_Bemerkungen_Bemerkungen (Seite 46)
+  → 2.5.6_Definition_Definition_2.25 (Seite 46)
+  → 2.5.6_Anwendungen_Anwendungen (Seite 46)
 ← Nachbarn (eingehend):
-  ← 7.2 Lineare Abbildungen (Seite 138)
+  ← 2.5 Mehrfach-Differentiale (Seite 40)
+
+==================================================
+
+##### STAGE: Einzelbegriffe in Unterkapiteln #####
+
+Seitenbereich: 40–41
+
+→ Nachbarn (ausgehend):
+  → 2.5.2_Definition_Definition_2.19 (Seite 40)
+  → 2.5.2_Bemerkungen_Bemerkungen (Seite 40)
+  → 2.5.2_Beispiele_Beispiele (Seite 41)
+  → 2.5.2_Satz_Satz_2.12 (Seite 41)
+  → 2.5.2_Satz_Satz_2.13 (Seite 41)
+← Nachbarn (eingehend):
+  ← 2.5 Mehrfach-Differentiale (Seite 40)
+
+==================================================
+
+Seitenbereich: 45–46
+
+→ Nachbarn (ausgehend):
+  → 2.5.6_Satz_Satz_2.17 (Seite 45)
+  → 2.5.6_Beweis_Beweis_Siehe_Übungen. (Seite 45)
+  → 2.5.6_Satz_Satz_2.18 (Seite 45)
+  → 2.5.6_Bemerkungen_Bemerkungen (Seite 46)
+  → 2.5.6_Definition_Definition_2.25 (Seite 46)
+  → 2.5.6_Anwendungen_Anwendungen (Seite 46)
+← Nachbarn (eingehend):
+  ← 2.5 Mehrfach-Differentiale (Seite 40)
 
 ==================================================
 

@@ -19,11 +19,14 @@ def clean_latex_file(path):
     if content.strip().endswith("```"):
         content = content.rstrip("`").rstrip()
 
+    # Entferne alle \includegraphics-Zeilen (auch mit optionalen Parametern)
+    content = re.sub(r"\\includegraphics\[.*?\]\{.*?\}", "", content)
+    content = re.sub(r"\\includegraphics\{.*?\}", "", content)
+
     # Repariere \begin{aligned} außerhalb von Mathe-Modus
     def wrap_aligned(match):
-        return r"\[\n" + match.group(0) + r"\n\]"
+        return r"\\[\n" + match.group(0) + r"\n\\]"
 
-    # Nur ersetzen, wenn nicht schon innerhalb von \[...\]
     aligned_pattern = r"(?<!\\\[)\s*\\begin{aligned}.*?\\end{aligned}(?!\s*\\\])"
     content = re.sub(aligned_pattern, wrap_aligned, content, flags=re.DOTALL)
 
@@ -56,7 +59,6 @@ def compile_latex_to_pdf(latex_file, output_dir):
             print(e.stdout)
             return None
 
-    # Ursprüngliches PDF liegt im gleichen Verzeichnis wie LaTeX-Datei
     generated_pdf = os.path.join(os.path.dirname(latex_file), base_name + ".pdf")
     if os.path.exists(generated_pdf):
         try:

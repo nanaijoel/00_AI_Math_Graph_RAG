@@ -1,1 +1,1 @@
-Nabla-Operator alle Informationen im Skript
+Definition, satz, Bemerkungen und Rechenregeln zu Gradient
