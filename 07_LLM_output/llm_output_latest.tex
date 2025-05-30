@@ -1,4 +1,3 @@
-
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -9,24 +8,51 @@
 
 \begin{document}
 
-\section*{Metrische Skalar-Produkt-Formel}
+\section*{Definition und Berechnung von Eigenwerten}
 
-Eine metrische Skalar-Produkt-Formel ermöglicht es, das Skalar-Produkt zweier Vektoren in einem Vektorraum durch ihre Koordinaten in Bezug auf eine fixe Basis auszudrücken. Für einen reellen Vektorraum mit endlicher Dimension $n \in \mathbb{N}^+$, einem Skalar-Produkt $\langle \cdot, \cdot \rangle$ und einer Basis $B = \{e_1, \ldots, e_n\} \subset V$, ist die Metrik $g \in \mathbb{M}(n, n, \mathbb{R})$ durch die Gram-Matrix der Basisvektoren in $B$ definiert. 
+Ein Eigenwert $\lambda$ einer quadratischen Matrix $A \in \mathbb{M}(n, n, \mathbb{R})$ wird definiert über die Existenz eines nichttrivialen Vektors $E \in \mathbb{R}^n \setminus \{0\}$, genannt Eigenvektor, sodass gilt:
+\[
+A \cdot E = \lambda \cdot E.
+\]
+Dies wird oft umformuliert über das charakteristische Polynom $p_A(\lambda)$, welches als Determinante der Matrix $(\lambda \cdot I - A)$ definiert ist:
+\[
+p_A(\lambda) = \det(\lambda \cdot I - A).
+\]
 
-Seien $v, w \in V$ Vektoren im Vektorraum $V$ mit den Basisdarstellungen 
-\[
-v = \sum_{r=1}^n v_r \cdot e_r \quad \text{und} \quad w = \sum_{s=1}^n w_s \cdot es,
-\]
-wobei $v_r, w_s \in \mathbb{R}$ die Koordinaten der Vektoren $v$ und $w$ bezüglich der Basis $B$ sind. Dann kann das Skalar-Produkt der Vektoren $v$ und $w$ durch die Metrik $g$ als
-\[
-\langle v, w \rangle = \begin{bmatrix} v_1 & \cdots & v_n \end{bmatrix} \cdot G \cdot \begin{bmatrix} w_1 \\ \vdots \\ w_n \end{bmatrix} = v^T \cdot g \cdot w
-\]
-ausgedrückt werden, wobei $G$ die Matrix ist, deren Einträge $g_{ij} = \langle e_i, e_j \rangle$ sind, also
-\[
-G = \begin{bmatrix} \langle e_1, e_1 \rangle & \cdots & \langle e_1, e_n \rangle \\ \vdots & \ddots & \vdots \\ \langle e_n, e_1 \rangle & \cdots & \langle e_n, e_n \rangle \end{bmatrix}
-\]
-Ist $g_{ij} = \langle e_i, e_j \rangle$ die $(i,j)$-Eintrag der Matrix $g$, so ist die Matrixform der Metrik $g_{ij} = \langle e_i, e_j \rangle$, wobei die Einträge $g_{ij}$ auch als metrische Koeffizienten bezeichnet werden.
+\textbf{Eigenwerte sind die Nullstellen dieses charakteristischen Polynoms.} Durch Nullsetzen von $p_A(\lambda)$ und Lösen der resultierenden Gleichung findet man die potenziellen Eigenwerte.
 
-Diese Beschreibung durch die metrische Skalar-Produkt-Formel ermöglicht eine konsistente Behandlung von Skalarprodukten und erlaubt es, geometrische und algebraische Eigenschaften von Vektorräumen und Metriken zu analysieren, insbesondere in der Anwendung auf Probleme der Physik und Ingenieurwissenschaften, wo Koordinatenformen oft verwendet werden.
+\section*{Beispiel zur Eigenwertberechnung}
+
+Betrachten wir die Matrix
+\[
+A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}.
+\]
+Wir möchten die Eigenwerte finden. Zuerst berechnen wir das charakteristische Polynom:
+\[
+p_A(\lambda) = \det(\lambda \cdot I - A) = \det\begin{pmatrix} \lambda - 2 & -1 \\ -1 & \lambda - 2 \end{pmatrix} = (\lambda-2)^2 - (-1)^2.
+\]
+Das vereinfach sich zu
+\[
+p_A(\lambda) = \lambda^2 - 4\lambda + 3.
+\]
+Die Eigenwerte sind die Lösungen der Gleichung $p_A(\lambda) = 0$:
+\[
+\lambda^2 - 4\lambda + 3 = 0.
+\]
+Das lässt sich lösen durch Faktorisierung oder mit der quadratischen Formel:
+\[
+\lambda_{1,2} = \frac{4 \pm \sqrt{16 - 12}}{2} = \frac{4 \pm 2}{2} \Rightarrow \lambda_1 = 3,\, \lambda_2 = 1.
+\]
+
+Also hat die Matrix $A$ die Eigenwerte $3$ und $1$.
+
+\section*{Zusammenfassung}
+
+Um die Eigenwerte einer Matrix zu berechnen:
+\begin{enumerate}
+    \item Stellen Sie das charakteristische Polynom auf: $p_A(\lambda) = \det(\lambda I - A)$.
+    \item Finden Sie die Nullstellen dieses Polynoms, die die Eigenwerte $\lambda$ sind.
+\end{enumerate}
+Man beachte, dass für Matrizen höherer Ordnung ($n \geq 5$) die Lösung der charakteristischen Gleichung algebraisch anspruchsvoll oder sogar unmöglich werden kann. Hierzu können numerische Methoden oder spezielle Softwarelösungen eingesetzt werden.
 
 \end{document}

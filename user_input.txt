@@ -1,1 +1,1 @@
-Metrische Skalar-Produkt-Formel. Was kannst du mir dazu sagen?
+Wie kann ich die Eigenwerte berechnen? Zeige mir die formelle Definition und ein Rechenbeispiel

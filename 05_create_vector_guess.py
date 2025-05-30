@@ -6,7 +6,7 @@ import json
 import numpy as np
 
 
-def search_chroma(search_term, collection_name='math_contextual', top_n=5, output_dir='05_chroma_output/'):
+def search_chroma(search_term, collection_name='math_contextual', top_n=3, output_dir='05_chroma_output/'):
     chroma_client = chromadb.PersistentClient(path="04_chromaDB")
     collection = chroma_client.get_collection(name=collection_name)
     embed_client = OpenAI()
