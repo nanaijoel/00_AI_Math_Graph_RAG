@@ -9,52 +9,24 @@
 
 \begin{document}
 
-\section*{Matrix Rotation in 2D}
+\section*{Metrische Skalar-Produkt-Formel}
 
-Die Anwendung einer Rotationsmatrix in 2D ist ein grundlegendes Verfahren in der linearen Algebra und findet in vielen Bereichen wie der Computergrafik, der Robotik und der Physik Anwendung. Die Matrixprodukte und Rotationen sind definiert, um Koordinatensysteme zu transformieren, insbesondere um Punkte und Vektoren in der Ebene zu drehen.
+Eine metrische Skalar-Produkt-Formel ermöglicht es, das Skalar-Produkt zweier Vektoren in einem Vektorraum durch ihre Koordinaten in Bezug auf eine fixe Basis auszudrücken. Für einen reellen Vektorraum mit endlicher Dimension $n \in \mathbb{N}^+$, einem Skalar-Produkt $\langle \cdot, \cdot \rangle$ und einer Basis $B = \{e_1, \ldots, e_n\} \subset V$, ist die Metrik $g \in \mathbb{M}(n, n, \mathbb{R})$ durch die Gram-Matrix der Basisvektoren in $B$ definiert. 
 
-\subsection*{Definition der 2D Rotationsmatrix}
-
-Die allgemeine Form der Rotationsmatrix $R(\theta)$, die einen Vektor um einen Winkel $\theta$ im mathematisch positiven Sinn (gegen den Uhrzeigersinn) dreht, ist gegeben durch:
+Seien $v, w \in V$ Vektoren im Vektorraum $V$ mit den Basisdarstellungen 
 \[
-R(\theta) = \begin{bmatrix}
-\cos(\theta) & -\sin(\theta) \\
-\sin(\theta) & \cos(\theta)
-\end{bmatrix}.
+v = \sum_{r=1}^n v_r \cdot e_r \quad \text{und} \quad w = \sum_{s=1}^n w_s \cdot es,
 \]
-
-\subsection*{Anwendung der Rotationsmatrix}
-
-Um einen Punkt $(x, y) \in \mathbb{R}^2$ um den Ursprung um den Winkel $\theta$ zu drehen, multipliziert man die Rotationsmatrix $R(\theta)$ mit dem Punktvektor:
-
+wobei $v_r, w_s \in \mathbb{R}$ die Koordinaten der Vektoren $v$ und $w$ bezüglich der Basis $B$ sind. Dann kann das Skalar-Produkt der Vektoren $v$ und $w$ durch die Metrik $g$ als
 \[
-\begin{bmatrix}
-x' \\
-y'
-\end{bmatrix}
-=
-\begin{bmatrix}
-\cos(\theta) & -\sin(\theta) \\
-\sin(\theta) & \cos(\theta)
-\end{bmatrix}
-\begin{bmatrix}
-x \\
-y
-\end{bmatrix}
-.
+\langle v, w \rangle = \begin{bmatrix} v_1 & \cdots & v_n \end{bmatrix} \cdot G \cdot \begin{bmatrix} w_1 \\ \vdots \\ w_n \end{bmatrix} = v^T \cdot g \cdot w
 \]
+ausgedrückt werden, wobei $G$ die Matrix ist, deren Einträge $g_{ij} = \langle e_i, e_j \rangle$ sind, also
+\[
+G = \begin{bmatrix} \langle e_1, e_1 \rangle & \cdots & \langle e_1, e_n \rangle \\ \vdots & \ddots & \vdots \\ \langle e_n, e_1 \rangle & \cdots & \langle e_n, e_n \rangle \end{bmatrix}
+\]
+Ist $g_{ij} = \langle e_i, e_j \rangle$ die $(i,j)$-Eintrag der Matrix $g$, so ist die Matrixform der Metrik $g_{ij} = \langle e_i, e_j \rangle$, wobei die Einträge $g_{ij}$ auch als metrische Koeffizienten bezeichnet werden.
 
-Die resultierenden Koordinaten $(x', y')$ sind dann die Positionen des Punktes nach der Drehung.
-
-\subsection*{Eigenschaften}
-
-Die Rotationsmatrix hat einige wichtige Eigenschaften:
-\begin{itemize}
-  \item Die Determinante von $R(\theta)$ ist stets 1, was bedeutet, dass sie volumenerhaltend ist.
-  \item Sie ist orthogonal, d.h., $R(\theta)^\top R(\theta) = I$, wobei $I$ die Einheitsmatrix und $^\top$ die Transposition der Matrix ist.
-  \item Die Inverse der Rotationsmatrix ist gleich ihrer Transposition: $R(\theta)^{-1} = R(\theta)^\top$.
-\end{itemize}
-
-Diese Eigenschaften sind wesentlich für viele Anwendungen in der Physik und anderen technischen Disziplinen, bei denen die Orientierung und der rechenschaftliche Aspekt der Transformationsmatrizen von Bedeutung sind.
+Diese Beschreibung durch die metrische Skalar-Produkt-Formel ermöglicht eine konsistente Behandlung von Skalarprodukten und erlaubt es, geometrische und algebraische Eigenschaften von Vektorräumen und Metriken zu analysieren, insbesondere in der Anwendung auf Probleme der Physik und Ingenieurwissenschaften, wo Koordinatenformen oft verwendet werden.
 
 \end{document}

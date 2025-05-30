@@ -2,17 +2,18 @@ import json
 from pathlib import Path
 from tqdm import tqdm
 import chromadb
-from sentence_transformers import SentenceTransformer
+from openai import OpenAI
+
 
 def create_contextual_chroma(hierarchy_path="01_hierarchy/hierarchy.json", db_dir="04_chromaDB"):
     db_path = Path(db_dir)
     db_path.mkdir(exist_ok=True)
 
-    model_id = "intfloat/e5-large"
-    model = SentenceTransformer(model_id)
+    client = OpenAI()
+    embed_model = "text-embedding-ada-002"
 
-    client = chromadb.PersistentClient(path=str(db_path))
-    collection = client.get_or_create_collection("math_contextual")
+    chroma_client = chromadb.PersistentClient(path=str(db_path))
+    collection = chroma_client.get_or_create_collection("math_contextual")
 
     documents, metadatas, ids, embeddings = [], [], [], []
 
@@ -27,42 +28,67 @@ def create_contextual_chroma(hierarchy_path="01_hierarchy/hierarchy.json", db_di
                 subsec_title = subsec["title"]
                 topic = subsec_title
 
-                for i, entry in enumerate(subsec.get("content", [])):
+                combined_texts = []
+                types = set()
+                pages = set()
+
+                for entry in subsec.get("content", []):
                     entry_type = entry.get("type", "Sonstiges")
                     entry_text = entry.get("text", "").strip()
                     entry_details = entry.get("details", "").strip()
                     entry_page = entry.get("page", subsec.get("page", -1))
 
-                    full_text = f"""Kapitel: {chap_title}
-Abschnitt: {sec_title}
-Unterabschnitt: {subsec_title}
-Typ: {entry_type}
-Seite: {entry_page}
+                    if not entry_text and not entry_details:
+                        continue
 
-{entry_text}
-{entry_details}
-""".strip()
+                    types.add(entry_type)
+                    pages.add(entry_page)
 
-                    entry_id = f"{subsec_id}_{entry_type}_{i}"
+                    text = f"{entry_type}:\n{entry_text}\n{entry_details}".strip()
+                    combined_texts.append(text)
 
-                    documents.append(full_text)
-                    ids.append(entry_id)
-                    metadatas.append({
-                        "chapter": chap_id,
-                        "chapter_title": chap_title,
-                        "section": sec_id,
-                        "section_title": sec_title,
-                        "subsection": subsec_id,
-                        "subsection_title": subsec_title,
-                        "type": entry_type,
-                        "page": entry_page,
-                        "topic": topic,
-                        "embedding_model": model_id
-                    })
-                    embeddings.append(model.encode(full_text))
+                if not combined_texts:
+                    continue
+
+                joined_text = "\n\n".join(combined_texts)
+
+                full_text = (
+                    f"Kapitel: {chap_title}\n"
+                    f"Abschnitt: {sec_title}\n"
+                    f"Unterabschnitt: {subsec_title}\n"
+                    f"Typen: {sorted(types)}\n"
+                    f"Seiten: {sorted(pages)}\n\n"
+                    f"{joined_text}"
+                )
+
+                entry_id = f"{subsec_id}_full"
+
+                documents.append(full_text)
+                ids.append(entry_id)
+                metadatas.append({
+                    "chapter": chap_id,
+                    "chapter_title": chap_title,
+                    "section": sec_id,
+                    "section_title": sec_title,
+                    "subsection": subsec_id,
+                    "subsection_title": subsec_title,
+                    "page": ", ".join(str(p) for p in sorted(pages)),
+                    "topic": topic,
+                    "embedding_model": embed_model
+                })
+
+                try:
+                    embedding = client.embeddings.create(
+                        input=full_text,
+                        model=embed_model
+                    ).data[0].embedding
+                    embeddings.append(embedding)
+                except Exception as e:
+                    print(f"Fehler beim Einbetten von {entry_id}: {e}")
+                    embeddings.append([0.0] * 1536)  # Dummy-Vektor
 
     collection.add(documents=documents, metadatas=metadatas, ids=ids, embeddings=embeddings)
-    print(f"Fertig: {len(documents)} Einträge mit Embeddings in {db_dir}/ gespeichert.")
+    print(f"\nFertig: {len(documents)} Einträge gespeichert in → {db_dir}/")
 
 if __name__ == "__main__":
     create_contextual_chroma()
