@@ -53,8 +53,10 @@ def main():
     system_prompt = (
         "Du bist ein mathematisches Expertensystem und antwortest ausschließlich auf Deutsch. "
         "Beantworte die Frage basierend auf dem übergebenen Dokumentauszug. "
-        "Gib ausschließlich eine vollständige und gültige LaTeX-Datei zurück, die direkt mit pdflatex kompiliert werden kann. "
-        "Verwende dazu folgende Struktur:\n\n"
+        "Gib ausschließlich eine vollständige und gültige LaTeX-Datei zurück, die direkt mit pdflatex kompiliert werden kann."
+        "Mathematische Ausdrücke dürfen niemals im normalen Textmodus erscheinen. "
+        "Verwende immer $...$, \[...\] oder equation-Umgebung für Formeln wie \lambda, \det, A, p_A(\lambda) etc"
+        "Verwende auch folgende Struktur:\n\n"
         "\\documentclass[a4paper,12pt]{article}\n"
         "\\usepackage[utf8]{inputenc}\n"
         "\\usepackage[T1]{fontenc}\n"

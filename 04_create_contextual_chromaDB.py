@@ -8,7 +8,7 @@ def create_contextual_chroma(hierarchy_path="01_hierarchy/hierarchy.json", db_di
     db_path = Path(db_dir)
     db_path.mkdir(exist_ok=True)
 
-    model_id = "sentence-transformers/distiluse-base-multilingual-cased-v2"
+    model_id = "intfloat/e5-large"
     model = SentenceTransformer(model_id)
 
     client = chromadb.PersistentClient(path=str(db_path))

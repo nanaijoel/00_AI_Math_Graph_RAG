@@ -67,7 +67,7 @@ def extract_topic_and_types(search_term, hierarchy_json_path="01_hierarchy/hiera
 def search_chroma_by_types_and_topic(topic, types, collection_name='math_contextual', top_n=4, output_dir='05_chroma_output/'):
     chroma_client = chromadb.PersistentClient(path="04_chromaDB")
     collection = chroma_client.get_collection(name=collection_name)
-    embed_model = SentenceTransformer("sentence-transformers/distiluse-base-multilingual-cased-v2")
+    embed_model = SentenceTransformer("intfloat/e5-large")
 
     os.makedirs(output_dir, exist_ok=True)
     latest_filename = os.path.join(output_dir, "chroma_results_latest.txt")
@@ -103,10 +103,10 @@ def search_chroma_by_types_and_topic(topic, types, collection_name='math_context
     return latest_filename
 
 
-def search_chroma(search_term, collection_name='math_contextual', top_n=10, output_dir='05_chroma_output/'):
+def search_chroma(search_term, collection_name='math_contextual', top_n=5, output_dir='05_chroma_output/'):
     chroma_client = chromadb.PersistentClient(path="04_chromaDB")
     collection = chroma_client.get_collection(name=collection_name)
-    embed_model = SentenceTransformer("sentence-transformers/distiluse-base-multilingual-cased-v2")
+    embed_model = SentenceTransformer("intfloat/e5-large")
     query_embedding = embed_model.encode([search_term])
 
     results = collection.query(query_embeddings=query_embedding, n_results=top_n)

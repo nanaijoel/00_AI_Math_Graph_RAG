@@ -9,9 +9,52 @@
 
 \begin{document}
 
-\section*{Definition eines homogenen Vektorfelds}
-Ein Vektorfeld $\mathbf{v}: A \rightarrow B$, definiert über Teilmengen $A, B \subseteq \mathbb{R}^n$ mit $n \in \mathbb{N}^+ \backslash \{1\}$, heißt \textit{homogen}, wenn ein Vektor $\mathbf{w} \in B$ existiert, so dass für alle Punkte $\mathbf{p} \in A$ gilt:
-\[ \mathbf{v}(\mathbf{p}) = \mathbf{w}. \]
-Dies bedeutet, dass das Vektorfeld $\mathbf{v}$ an jedem Punkt in $A$ den gleichen Vektor $\mathbf{w}$ annimmt.
+\section*{Matrix Rotation in 2D}
+
+Die Anwendung einer Rotationsmatrix in 2D ist ein grundlegendes Verfahren in der linearen Algebra und findet in vielen Bereichen wie der Computergrafik, der Robotik und der Physik Anwendung. Die Matrixprodukte und Rotationen sind definiert, um Koordinatensysteme zu transformieren, insbesondere um Punkte und Vektoren in der Ebene zu drehen.
+
+\subsection*{Definition der 2D Rotationsmatrix}
+
+Die allgemeine Form der Rotationsmatrix $R(\theta)$, die einen Vektor um einen Winkel $\theta$ im mathematisch positiven Sinn (gegen den Uhrzeigersinn) dreht, ist gegeben durch:
+\[
+R(\theta) = \begin{bmatrix}
+\cos(\theta) & -\sin(\theta) \\
+\sin(\theta) & \cos(\theta)
+\end{bmatrix}.
+\]
+
+\subsection*{Anwendung der Rotationsmatrix}
+
+Um einen Punkt $(x, y) \in \mathbb{R}^2$ um den Ursprung um den Winkel $\theta$ zu drehen, multipliziert man die Rotationsmatrix $R(\theta)$ mit dem Punktvektor:
+
+\[
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos(\theta) & -\sin(\theta) \\
+\sin(\theta) & \cos(\theta)
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+.
+\]
+
+Die resultierenden Koordinaten $(x', y')$ sind dann die Positionen des Punktes nach der Drehung.
+
+\subsection*{Eigenschaften}
+
+Die Rotationsmatrix hat einige wichtige Eigenschaften:
+\begin{itemize}
+  \item Die Determinante von $R(\theta)$ ist stets 1, was bedeutet, dass sie volumenerhaltend ist.
+  \item Sie ist orthogonal, d.h., $R(\theta)^\top R(\theta) = I$, wobei $I$ die Einheitsmatrix und $^\top$ die Transposition der Matrix ist.
+  \item Die Inverse der Rotationsmatrix ist gleich ihrer Transposition: $R(\theta)^{-1} = R(\theta)^\top$.
+\end{itemize}
+
+Diese Eigenschaften sind wesentlich für viele Anwendungen in der Physik und anderen technischen Disziplinen, bei denen die Orientierung und der rechenschaftliche Aspekt der Transformationsmatrizen von Bedeutung sind.
 
 \end{document}

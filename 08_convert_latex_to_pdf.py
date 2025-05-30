@@ -30,8 +30,17 @@ def clean_latex_file(path):
     aligned_pattern = r"(?<!\\\[)\s*\\begin{aligned}.*?\\end{aligned}(?!\s*\\\])"
     content = re.sub(aligned_pattern, wrap_aligned, content, flags=re.DOTALL)
 
+    # Entferne fehlerhafte Escape-Zeichen (z. B. \" in Matheumgebung)
+    content = re.sub(r'\\"', '"', content)  # ersetzt \" durch "
+    # content = re.sub(r'\\([^\w])', r'\1', content)  # entfernt \ vor Sonderzeichen, z. B. \: oder \; falls unzulässig
+
+    # Optional: Umlaute explizit ersetzen (falls GPT sie als \"o etc. schreibt)
+    content = content.replace('\\"a', 'ä').replace('\\"o', 'ö').replace('\\"u', 'ü')
+    content = content.replace('\\"A', 'Ä').replace('\\"O', 'Ö').replace('\\"U', 'Ü')
+
     with open(path, "w", encoding="utf-8") as f:
         f.write(content)
+
 
 def compile_latex_to_pdf(latex_file, output_dir):
     clean_latex_file(latex_file)
